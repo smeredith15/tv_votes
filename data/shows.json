@@ -73337,16 +73337,125 @@
   {
    "id": "shameless",
    "title": "Shameless",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 34307,
+   "poster": "/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:54:10.589Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 12,
+     "airDate": "2011-01-09",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 12,
+     "airDate": "2012-01-08",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 12,
+     "airDate": "2013-01-13",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 12,
+     "airDate": "2014-01-12",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 12,
+     "airDate": "2015-01-11",
+     "watched": true
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 12,
+     "airDate": "2016-01-10",
+     "watched": true
+    },
+    {
+     "number": 7,
+     "name": "Season 7",
+     "episodes": 12,
+     "airDate": "2016-10-02",
+     "watched": true
+    },
+    {
+     "number": 8,
+     "name": "Season 8",
+     "episodes": 12,
+     "airDate": "2017-11-05",
+     "watched": true
+    },
+    {
+     "number": 9,
+     "name": "Season 9",
+     "episodes": 14,
+     "airDate": "2018-09-09",
+     "watched": true
+    },
+    {
+     "number": 10,
+     "name": "Season 10",
+     "episodes": 12,
+     "airDate": "2019-11-10",
+     "watched": true
+    },
+    {
+     "number": 11,
+     "name": "Season 11",
+     "episodes": 12,
+     "airDate": "2020-12-06",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -73366,7 +73475,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "shantaram",

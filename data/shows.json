@@ -90475,14 +90475,14 @@
      "name": "Season 1",
      "episodes": 8,
      "airDate": "2019-12-20",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
      "airDate": "2021-12-17",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,

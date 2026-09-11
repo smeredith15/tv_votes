@@ -58938,16 +58938,60 @@
   {
    "id": "night-of",
    "title": "The Night Of",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 66276,
+   "poster": "/q13XJHdnsmxQL9rXRcnNDrZGHjO.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "Pure Flix",
+     "type": "flatrate",
+     "logo": "/qAccuffS0YOegynkbRchQeBrw7W.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:35:47.700Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 8,
+     "airDate": "2016-07-10",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -58967,7 +59011,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "night-on-earth",

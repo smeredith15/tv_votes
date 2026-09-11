@@ -85606,16 +85606,66 @@
   {
    "id": "upload",
    "title": "Upload",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 86248,
+   "poster": "/6TPGDrU9MyWbn2TpggJphVAVXiq.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Amazon Prime Video Free with Ads",
+     "type": "ads",
+     "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T23:05:25.302Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2020-04-30",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 7,
+     "airDate": "2022-03-10",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 8,
+     "airDate": "2023-10-19",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 4,
+     "airDate": "2025-08-25",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -85635,7 +85685,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "utopia",

@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useStore } from "./lib/store";
+import { RUNNING_VERSION, publishedVersion, reloadTo } from "./lib/version";
 import { HistoryView } from "./views/HistoryView";
 import { InboxView } from "./views/InboxView";
 import { LibraryView } from "./views/LibraryView";
@@ -26,6 +27,20 @@ type TabId = (typeof TABS)[number]["id"];
 export function App() {
   const store = useStore(import.meta.env.BASE_URL);
   const [tab, setTab] = useState<TabId>("now");
+  const [newVersion, setNewVersion] = useState<string | null>(null);
+
+  // Check on open, and whenever you come back to the tab.
+  const checkVersion = useCallback(async () => {
+    const published = await publishedVersion(import.meta.env.BASE_URL);
+    setNewVersion(published && published !== RUNNING_VERSION ? published : null);
+  }, []);
+
+  useEffect(() => {
+    void checkVersion();
+    const onFocus = () => void checkVersion();
+    window.addEventListener("focus", onFocus);
+    return () => window.removeEventListener("focus", onFocus);
+  }, [checkVersion]);
   const { data, needsToken, pending, sync, syncing, error } = store;
 
   return (
@@ -47,6 +62,17 @@ export function App() {
           </button>
         )}
       </header>
+
+      {newVersion && (
+        <div className="banner ok" role="status">
+          <div className="row" style={{ justifyContent: "space-between" }}>
+            <span>A newer version of the app has been published.</span>
+            <button className="primary" onClick={() => reloadTo(newVersion)}>
+              Load it
+            </button>
+          </div>
+        </div>
+      )}
 
       {error && <div className="banner" role="alert">{error}</div>}
 

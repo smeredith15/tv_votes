@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { LEDGERS, eligibleLedgers, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, LedgerId, Show } from "../lib/types";
@@ -53,6 +53,13 @@ export function ShowsView({ store, data }: { store: Store; data: Dataset }) {
   }, [data.shows, filter, query, service]);
 
   const current = selected ? data.shows.find((s) => s.id === selected) ?? null : null;
+  const detail = useRef<HTMLDivElement>(null);
+
+  // The panel opens above a long list, so a show picked from further down would
+  // otherwise open off-screen and look as though the click had done nothing.
+  useEffect(() => {
+    if (current) detail.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [current]);
 
   return (
     <>
@@ -81,7 +88,9 @@ export function ShowsView({ store, data }: { store: Store; data: Dataset }) {
         <p className="small muted" style={{ marginBottom: 0 }}>{shown.length.toLocaleString()} shows</p>
       </div>
 
-      {current && <ShowDetail store={store} data={data} show={current} onClose={() => setSelected(null)} />}
+      <div ref={detail}>
+        {current && <ShowDetail store={store} data={data} show={current} onClose={() => setSelected(null)} />}
+      </div>
 
       <div className="panel scroll">
         <table>

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ConflictError, commitFiles, readRepo, type RepoConfig } from "./github";
-import { applyOps, compact, type Op } from "./ops";
+import { applyOps, cloneForOps, compact, type Op } from "./ops";
 import { loadList, loadRecord, save } from "./persist";
 import { ALL_FILES, changedFiles, datasetFrom, describe, serialize } from "./sync";
 import type { Dataset } from "./types";
@@ -131,7 +131,7 @@ export function useStore(baseUrl: string): Store {
   // What the screen shows: the published data with your unsaved changes on top.
   const data = useMemo(() => {
     if (!base) return null;
-    return applyOps(structuredClone(base), pending);
+    return applyOps(cloneForOps(base, pending), pending);
   }, [base, pending]);
 
   const sync = useCallback(async () => {
@@ -142,18 +142,26 @@ export function useStore(baseUrl: string): Store {
     const ops = compact(pending);
     if (ops.length === 0) return;
 
+    // Hold on to the exact ops being sent: anything ticked while the save is
+    // in flight must stay queued rather than be cleared with them.
+    const sending = pending;
+
     setSyncing(true);
     setError(null);
     try {
-      await push(settings.repo, ops);
-      setPending([]);
-      await reload();
+      const saved = await push(settings.repo, ops);
+      // Use what was committed as the new starting point. Re-reading instead
+      // would blank the ticks until it came back, and GitHub can serve the
+      // previous commit for a moment after a write — which looked exactly like
+      // the save not having registered.
+      setBase(saved);
+      setPending((queued) => queued.filter((op) => !sending.includes(op)));
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
       setSyncing(false);
     }
-  }, [pending, reload, settings.repo]);
+  }, [pending, settings.repo]);
 
   return { data, settings, setSettings, dispatch, pending: pending.length, sync, syncing, error, needsToken, reload };
 }
@@ -163,11 +171,11 @@ export function useStore(baseUrl: string): Store {
  * every file they altered together. A conflict means the other of you saved
  * first, so we re-read and replay rather than overwrite.
  */
-async function push(repo: RepoConfig, ops: Op[], attempt = 0): Promise<void> {
+async function push(repo: RepoConfig, ops: Op[], attempt = 0): Promise<Dataset> {
   const snapshot = await readRepo(repo, ALL_FILES);
   const next = applyOps(datasetFrom(snapshot.files), ops);
   const changed = changedFiles(snapshot.files, serialize(next));
-  if (Object.keys(changed).length === 0) return;
+  if (Object.keys(changed).length === 0) return next;
 
   try {
     await commitFiles(repo, snapshot.headSha, changed, describe(ops));
@@ -175,4 +183,6 @@ async function push(repo: RepoConfig, ops: Op[], attempt = 0): Promise<void> {
     if (e instanceof ConflictError && attempt < 2) return push(repo, ops, attempt + 1);
     throw e;
   }
+  // What the repo now holds, without having to ask for it back.
+  return next;
 }

@@ -1,4 +1,5 @@
 import { LEDGERS, totalSpent } from "../lib/ledgers";
+import { BUILT_AT, RUNNING_VERSION } from "../lib/version";
 import { RepoPanel } from "./RepoPanel";
 import type { Store } from "../lib/store";
 import type { Dataset } from "../lib/types";
@@ -8,6 +9,20 @@ export function SettingsView({ store, data }: { store: Store; data: Dataset }) {
 
   return (
     <>
+      <div className="panel">
+        <div className="row" style={{ justifyContent: "space-between" }}>
+          <strong className="small">This app</strong>
+          <span className="small muted">
+            build <code>{RUNNING_VERSION}</code>
+            {BUILT_AT && ` · ${new Date(BUILT_AT).toLocaleString()}`}
+          </span>
+        </div>
+        <p className="small muted" style={{ marginBottom: 0 }}>
+          If that does not match the newest commit on main, the browser is still holding an older copy —
+          a hard refresh replaces it.
+        </p>
+      </div>
+
       <RepoPanel store={store} />
 
       <div className="panel">

@@ -126,6 +126,54 @@ export function applyOps(data: Dataset, ops: Op[]): Dataset {
   return ops.reduce(applyOp, data);
 }
 
+/** Show ids an op will write to, so only those need copying. */
+function targets(op: Op): string[] {
+  switch (op.type) {
+    case "vote":
+    case "season":
+    case "field":
+    case "freePoints":
+      return [op.showId];
+    case "addShow":
+      return [op.show.id];
+    case "inbox":
+      return op.show ? [op.show.id] : [];
+    default:
+      return [];
+  }
+}
+
+/**
+ * A copy of the dataset that the ops may safely be applied to, without
+ * duplicating the parts they never touch.
+ *
+ * The whole thing is some 1.6 MB across a thousand shows, and this runs on
+ * every click: deep-copying all of it made each tick of a season cost tens of
+ * milliseconds before React had drawn anything. Untouched shows keep their
+ * identity too, which lets the list skip re-rendering them.
+ */
+export function cloneForOps(data: Dataset, ops: Op[]): Dataset {
+  const touched = new Set(ops.flatMap(targets));
+  const universes = new Set(ops.flatMap((op) => (op.type === "universeItem" ? [op.universeId] : [])));
+
+  return {
+    ...data,
+    shows: data.shows.map((show) =>
+      touched.has(show.id)
+        ? { ...show, seasons: show.seasons.map((s) => ({ ...s })), votes: structuredClone(show.votes) }
+        : show,
+    ),
+    universes: data.universes.map((universe) =>
+      universes.has(universe.id)
+        ? { ...universe, order: universe.order.map((item) => ({ ...item })) }
+        : universe,
+    ),
+    history: [...data.history],
+    inbox: [...data.inbox],
+    plex: { ...data.plex, shows: { ...data.plex.shows } },
+  };
+}
+
 /** Collapse repeat edits to the same target so a sync sends one change, not ten. */
 export function compact(ops: Op[]): Op[] {
   const keyed = new Map<string, Op>();

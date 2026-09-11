@@ -132,6 +132,20 @@ anything ticked by hand is overwritten.
 The token is the `X-Plex-Token` on any request the Plex web app makes. It is
 only ever sent to your own server, and nothing puts it in the repo.
 
+## When a deploy does not seem to have landed
+
+GitHub Pages serves `index.html` with ten minutes of caching, so a browser can
+keep running the previous bundle well after a deploy — which looks exactly like
+the deploy having failed.
+
+The app now checks for this itself: each build is stamped with its commit, and
+the running page compares that against `version.json` (fetched past the cache)
+on open and whenever you come back to the tab. If a newer one is out, a banner
+offers to load it. Settings shows which build you are on, so it can always be
+checked against the newest commit on `main`.
+
+A hard refresh (Ctrl/Cmd-Shift-R) does the same thing by hand.
+
 ## Fairness
 
 Each draw records the seed, the roll, the total ticket count, both allocations

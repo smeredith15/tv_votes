@@ -88207,14 +88207,14 @@
      "name": "Season One: The Maze",
      "episodes": 10,
      "airDate": "2016-10-02",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season Two: The Door",
      "episodes": 10,
      "airDate": "2018-04-22",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,

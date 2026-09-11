@@ -83,6 +83,18 @@ test("base64 encoding survives a large payload and non-ASCII titles", () => {
   assert.equal(round, text);
 });
 
+test("the commit message names what the save did", () => {
+  assert.equal(describe([{ type: "clearHistory" }]), "Clear the draw history");
+  assert.equal(describe([{ type: "forgetDraw", drawId: "x" }]), "Delete 1 draw");
+  assert.equal(
+    describe([
+      { type: "plexSeason", showId: "a", season: 1, present: true },
+      { type: "plexSeason", showId: "a", season: 2, present: true },
+    ]),
+    "Update what is on Plex (2)",
+  );
+});
+
 test("the commit message says which way the inbox went", () => {
   const show = makeShow({ id: "x" });
   assert.equal(describe([{ type: "inbox", tmdbId: 1, accept: false }]), "Inbox: dismissed 1");

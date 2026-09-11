@@ -10,7 +10,8 @@
     "typecheck": "tsc -b --noEmit",
     "test": "esbuild test/*.test.ts --bundle --platform=node --format=esm --outdir=.test-build --out-extension:.js=.mjs --log-level=warning && node --test '.test-build/*.mjs' 'test/*.test.mjs'",
     "refresh": "node scripts/refresh.mjs",
-    "discover": "node scripts/discover.mjs"
+    "discover": "node scripts/discover.mjs",
+    "plex": "node scripts/plex.mjs"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",

@@ -45,6 +45,10 @@ export function Poster({ show, size = 46 }: { show: Show; size?: number }) {
       width={size}
       height={Math.round(size * 1.5)}
       loading="lazy"
+      // A stale path or an unreachable TMDB should leave a gap, not a broken icon.
+      onError={(e) => {
+        e.currentTarget.hidden = true;
+      }}
       style={{ borderRadius: 6, objectFit: "cover", flex: "0 0 auto" }}
     />
   );

@@ -97,8 +97,23 @@ export function episodesPerWeek(show: Show): number {
   return show.runtime === 30 ? 2 : 1;
 }
 
+/** Every point committed on this ballot, whether or not it can still win. */
 export function totalSpent(data: Dataset, ledger: LedgerId, person: string): number {
   return data.shows.reduce((sum, show) => sum + (show.votes[ledger]?.[person] ?? 0), 0);
+}
+
+/**
+ * Points that can actually win something: the ones the draw counts.
+ *
+ * The workbook had no notion of a show dropping off, so its total and this
+ * were the same number. Here a finished show stops being drawable while its
+ * points sit there, and it is this figure, not the raw total, that says how
+ * much pull each of you really has.
+ */
+export function effectiveSpent(data: Dataset, ledger: LedgerId, person: string): number {
+  return data.shows
+    .filter((show) => isEligible(show, ledger))
+    .reduce((sum, show) => sum + (show.votes[ledger]?.[person] ?? 0), 0);
 }
 
 /**
@@ -112,8 +127,22 @@ export function strandedPoints(data: Dataset, ledger: LedgerId, person: string):
     .reduce((sum, show) => sum + (show.votes[ledger]?.[person] ?? 0), 0);
 }
 
-/** The workbook's "cheater" check: nobody may outspend the other. */
+/**
+ * The workbook's "cheater" check: nobody may outspend the other.
+ *
+ * Measured on what the draw will actually use. Comparing raw totals would call
+ * a ballot fair while one of you quietly had less say, because some of their
+ * points were parked on a show that had finished.
+ */
 export function ledgerBalanced(data: Dataset, ledger: LedgerId): boolean {
-  const spends = data.people.map((p) => totalSpent(data, ledger, p));
+  const spends = data.people.map((p) => effectiveSpent(data, ledger, p));
   return spends.every((s) => s === spends[0]);
+}
+
+/** Shows holding points on this ballot that can no longer win them anything. */
+export function strandedShows(data: Dataset, ledger: LedgerId): Show[] {
+  return data.shows.filter(
+    (show) =>
+      !isEligible(show, ledger) && data.people.some((p) => (show.votes[ledger]?.[p] ?? 0) > 0),
+  );
 }

@@ -1,5 +1,5 @@
 import type { Op } from "./ops";
-import type { Dataset, Draw, InboxItem, Universe } from "./types";
+import type { Dataset, Draw, InboxItem, PlexLibrary, Universe } from "./types";
 
 /** Which repo file each kind of change lands in. */
 export const FILES = {
@@ -7,6 +7,7 @@ export const FILES = {
   universes: "data/universes.json",
   history: "data/history.json",
   inbox: "data/inbox.json",
+  plex: "data/plex.json",
 } as const;
 
 export const ALL_FILES = Object.values(FILES);
@@ -23,14 +24,23 @@ function format(value: unknown): string {
   return `${JSON.stringify(value, null, 1)}\n`;
 }
 
-/** Assemble the four files into the one dataset the app works with. */
+export const EMPTY_PLEX: PlexLibrary = { updatedAt: null, shows: {} };
+
+/**
+ * Assemble the data files into the one dataset the app works with. A file
+ * that is not there yet reads as empty, so adding one does not break a repo
+ * that predates it.
+ */
 export function datasetFrom(files: Record<string, string>): Dataset {
-  const shows = JSON.parse(files[FILES.shows]) as ShowsFile;
+  const read = <T,>(path: string, fallback: T): T =>
+    files[path] === undefined ? fallback : (JSON.parse(files[path]) as T);
+
   return {
-    ...shows,
-    universes: JSON.parse(files[FILES.universes]) as Universe[],
-    history: JSON.parse(files[FILES.history]) as Draw[],
-    inbox: JSON.parse(files[FILES.inbox]) as InboxItem[],
+    ...(JSON.parse(files[FILES.shows]) as ShowsFile),
+    universes: read<Universe[]>(FILES.universes, []),
+    history: read<Draw[]>(FILES.history, []),
+    inbox: read<InboxItem[]>(FILES.inbox, []),
+    plex: read<PlexLibrary>(FILES.plex, EMPTY_PLEX),
   };
 }
 
@@ -46,6 +56,7 @@ export function serialize(data: Dataset): Record<string, string> {
     [FILES.universes]: format(data.universes),
     [FILES.history]: format(data.history),
     [FILES.inbox]: format(data.inbox),
+    [FILES.plex]: format(data.plex),
   };
 }
 
@@ -69,7 +80,10 @@ export function describe(ops: Op[]): string {
   }
 
   const kinds = new Set(ops.map((o) => o.type));
+  if (kinds.has("clearHistory")) return "Clear the draw history";
+  if (kinds.size === 1 && kinds.has("forgetDraw")) return `Delete ${ops.length} draw${ops.length === 1 ? "" : "s"}`;
   if (kinds.size === 1 && kinds.has("vote")) return `Update votes (${ops.length})`;
   if (kinds.size === 1 && kinds.has("season")) return `Update watched seasons (${ops.length})`;
+  if (kinds.size === 1 && kinds.has("plexSeason")) return `Update what is on Plex (${ops.length})`;
   return `Update ledgers (${ops.length} changes)`;
 }

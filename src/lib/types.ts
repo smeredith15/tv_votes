@@ -100,6 +100,17 @@ export interface Universe {
   order: UniverseItem[];
 }
 
+/**
+ * Which seasons of a show are sitting on the Plex server, keyed by show id.
+ * Kept in its own file: it is regenerated wholesale by the sync script and has
+ * nothing to do with how anyone voted.
+ */
+export interface PlexLibrary {
+  updatedAt: string | null;
+  /** Show id -> the season numbers present. An empty list means none. */
+  shows: Record<string, number[]>;
+}
+
 export interface Dataset {
   people: PersonId[];
   displayNames?: Record<PersonId, string>;
@@ -109,5 +120,6 @@ export interface Dataset {
   universes: Universe[];
   history: Draw[];
   inbox: InboxItem[];
+  plex: PlexLibrary;
   updatedAt?: string;
 }

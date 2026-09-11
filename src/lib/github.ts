@@ -76,11 +76,12 @@ export async function readRepo(config: RepoConfig, paths: string[]): Promise<Sna
     paths.map(async (path) => {
       const blob = bySha.get(path);
       if (!blob) {
-        throw new Error(
-          tree.truncated
-            ? `Could not find ${path}: the repo listing came back truncated.`
-            : `${path} is not in the repo.`,
-        );
+        if (tree.truncated) {
+          throw new Error(`Could not find ${path}: the repo listing came back truncated.`);
+        }
+        // Not an error: a data file added after this repo was last written
+        // simply is not there, and reads as empty.
+        return [path, undefined] as const;
       }
       const res = await request(config, `git/blobs/${blob}`, {
         headers: { Accept: "application/vnd.github.raw" },
@@ -90,7 +91,10 @@ export async function readRepo(config: RepoConfig, paths: string[]): Promise<Sna
     }),
   );
 
-  return { headSha: sha, files: Object.fromEntries(entries) };
+  return {
+    headSha: sha,
+    files: Object.fromEntries(entries.filter(([, body]) => body !== undefined)) as Record<string, string>,
+  };
 }
 
 /**

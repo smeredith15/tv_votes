@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useStore } from "./lib/store";
 import { HistoryView } from "./views/HistoryView";
 import { InboxView } from "./views/InboxView";
+import { LibraryView } from "./views/LibraryView";
+import { NowView } from "./views/NowView";
 import { RepoPanel } from "./views/RepoPanel";
 import { SettingsView } from "./views/SettingsView";
 import { ShowsView } from "./views/ShowsView";
@@ -9,8 +11,10 @@ import { UniverseView } from "./views/UniverseView";
 import { VoteView } from "./views/VoteView";
 
 const TABS = [
+  { id: "now", label: "Now watching" },
   { id: "vote", label: "Vote" },
   { id: "shows", label: "Shows" },
+  { id: "library", label: "Watched & Plex" },
   { id: "universes", label: "Universes" },
   { id: "history", label: "History" },
   { id: "inbox", label: "Inbox" },
@@ -21,7 +25,7 @@ type TabId = (typeof TABS)[number]["id"];
 
 export function App() {
   const store = useStore(import.meta.env.BASE_URL);
-  const [tab, setTab] = useState<TabId>("vote");
+  const [tab, setTab] = useState<TabId>("now");
   const { data, needsToken, pending, sync, syncing, error } = store;
 
   return (
@@ -61,10 +65,12 @@ export function App() {
         <p className="muted">Loading the ledgers…</p>
       ) : (
         <>
+          {tab === "now" && <NowView store={store} data={data} />}
           {tab === "vote" && <VoteView store={store} data={data} />}
           {tab === "shows" && <ShowsView store={store} data={data} />}
+          {tab === "library" && <LibraryView store={store} data={data} />}
           {tab === "universes" && <UniverseView store={store} data={data} />}
-          {tab === "history" && <HistoryView data={data} />}
+          {tab === "history" && <HistoryView store={store} data={data} />}
           {tab === "inbox" && <InboxView store={store} data={data} />}
           {tab === "settings" && <SettingsView store={store} data={data} />}
         </>

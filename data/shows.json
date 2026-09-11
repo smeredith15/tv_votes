@@ -14841,16 +14841,50 @@
   {
    "id": "chernobyl",
    "title": "Chernobyl",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 87108,
+   "poster": "/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T21:05:48.449Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 5,
+     "airDate": "2019-05-06",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -14870,7 +14904,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "chief-of-war",

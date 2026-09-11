@@ -81632,14 +81632,14 @@
      "name": "Season 1",
      "episodes": 10,
      "airDate": "2023-01-19",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 16,
      "airDate": "2024-06-27",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {

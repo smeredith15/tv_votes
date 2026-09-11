@@ -7606,16 +7606,73 @@
   {
    "id": "bear",
    "title": "The Bear",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 136315,
+   "poster": "/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+   "providers": [
+    {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "YouTube TV",
+     "type": "flatrate",
+     "logo": "/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
+    },
+    {
+     "name": "FXNow",
+     "type": "flatrate",
+     "logo": "/a7ZF6Ng3d6KDMylLUMH1OjAeTqW.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T21:03:39.546Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2022-06-23",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2023-06-22",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 10,
+     "airDate": "2024-06-26",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 10,
+     "airDate": "2025-06-25",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 8,
+     "airDate": "2026-06-25",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -7635,7 +7692,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "beast-in-me",

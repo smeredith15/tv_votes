@@ -40188,16 +40188,184 @@
   {
    "id": "it-s-always-sunny-in-philadelphia",
    "title": "It's Always Sunny in Philadelphia",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 2710,
+   "poster": "/o0tMMK33JqmtpcWw0H41cEr9xQB.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "fuboTV",
+     "type": "flatrate",
+     "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+    },
+    {
+     "name": "YouTube TV",
+     "type": "flatrate",
+     "logo": "/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
+    },
+    {
+     "name": "FXNow",
+     "type": "flatrate",
+     "logo": "/a7ZF6Ng3d6KDMylLUMH1OjAeTqW.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:25:09.442Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 7,
+     "airDate": "2005-08-04",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2006-06-29",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 15,
+     "airDate": "2007-09-13",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 13,
+     "airDate": "2008-09-18",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 12,
+     "airDate": "2009-09-17",
+     "watched": true
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 13,
+     "airDate": "2010-09-16",
+     "watched": true
+    },
+    {
+     "number": 7,
+     "name": "Season 7",
+     "episodes": 13,
+     "airDate": "2011-09-15",
+     "watched": true
+    },
+    {
+     "number": 8,
+     "name": "Season 8",
+     "episodes": 10,
+     "airDate": "2012-10-11",
+     "watched": true
+    },
+    {
+     "number": 9,
+     "name": "Season 9",
+     "episodes": 10,
+     "airDate": "2013-09-04",
+     "watched": true
+    },
+    {
+     "number": 10,
+     "name": "Season 10",
+     "episodes": 10,
+     "airDate": "2015-01-14",
+     "watched": true
+    },
+    {
+     "number": 11,
+     "name": "Season 11",
+     "episodes": 10,
+     "airDate": "2016-01-06",
+     "watched": true
+    },
+    {
+     "number": 12,
+     "name": "Season 12",
+     "episodes": 10,
+     "airDate": "2017-01-04",
+     "watched": true
+    },
+    {
+     "number": 13,
+     "name": "Season 13",
+     "episodes": 10,
+     "airDate": "2018-09-05",
+     "watched": true
+    },
+    {
+     "number": 14,
+     "name": "Season 14",
+     "episodes": 10,
+     "airDate": "2019-09-25",
+     "watched": true
+    },
+    {
+     "number": 15,
+     "name": "Season 15",
+     "episodes": 8,
+     "airDate": "2021-12-01",
+     "watched": true
+    },
+    {
+     "number": 16,
+     "name": "Season 16",
+     "episodes": 8,
+     "airDate": "2023-06-07",
+     "watched": true
+    },
+    {
+     "number": 17,
+     "name": "Season 17",
+     "episodes": 8,
+     "airDate": "2025-07-08",
+     "watched": true
+    },
+    {
+     "number": 18,
+     "name": "Season 18",
+     "episodes": 10,
+     "airDate": "2026-08-17",
+     "watched": false
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -40217,7 +40385,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": "2026-09-14"
   },
   {
    "id": "it-s-bruno",

@@ -26127,16 +26127,82 @@
   {
    "id": "fall-and-rise-of-reggie-dinkins",
    "title": "The Fall and Rise of Reggie Dinkins",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 291334,
+   "poster": "/lrF8Ve4GoazCalfbrSY52tUIXSN.jpg",
+   "providers": [
+    {
+     "name": "fuboTV",
+     "type": "flatrate",
+     "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+    },
+    {
+     "name": "Peacock Premium",
+     "type": "flatrate",
+     "logo": "/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+    },
+    {
+     "name": "YouTube TV",
+     "type": "flatrate",
+     "logo": "/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
+    },
+    {
+     "name": "Peacock Premium Plus",
+     "type": "flatrate",
+     "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "free",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "NBC",
+     "type": "ads",
+     "logo": "/geRNAmvuPF6hOLExMHLKpt7bGBD.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:06:12.993Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2026-01-18",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 1,
+     "airDate": "2026-11-02",
+     "watched": false
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -26156,7 +26222,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": "2026-11-02"
   },
   {
    "id": "falling-skies",

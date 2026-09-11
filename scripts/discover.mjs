@@ -22,6 +22,13 @@ const MAX = arg("max", 25);
 /** Genres you would never sit down for, so they never reach the inbox. */
 const SKIP_GENRES = new Set([10764 /* reality */, 10767 /* talk */, 10763 /* news */, 10762 /* kids */]);
 
+/**
+ * Without a language filter the inbox fills with Turkish, Korean and Spanish
+ * premieres that are popular worldwide and of no use here — an inbox nobody
+ * opens is worse than no inbox.
+ */
+const LANGUAGE = process.env.TMDB_LANGUAGE ?? "en";
+
 async function main() {
   const key = process.env.TMDB_API_KEY;
   if (!key) throw new Error("Set TMDB_API_KEY.");
@@ -38,7 +45,10 @@ async function main() {
 
   const found = [];
   for (let page = 1; page <= 3 && found.length < MAX; page++) {
-    const { results = [], total_pages = 1 } = await tmdb.discover(window[0], window[1], page);
+    const { results = [], total_pages = 1 } = await tmdb.discover(window[0], window[1], page, {
+      with_original_language: LANGUAGE,
+      "vote_count.gte": 3,
+    });
     for (const hit of results) {
       if (known.has(hit.id) || queued.has(hit.id)) continue;
       if ((hit.genre_ids ?? []).some((g) => SKIP_GENRES.has(g))) continue;

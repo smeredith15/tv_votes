@@ -1,4 +1,5 @@
 import { IMAGE_BASE } from "../../scripts/tmdb.mjs";
+import { slugify } from "../lib/titles";
 import type { Store } from "../lib/store";
 import type { Dataset, InboxItem, Show } from "../lib/types";
 
@@ -57,13 +58,8 @@ export function InboxView({ store, data }: { store: Store; data: Dataset }) {
 }
 
 function toShow(item: InboxItem, data: Dataset): Show {
-  const id = item.title
-    .toLowerCase()
-    .replace(/^(the|a|an)\s+/, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
   return {
-    id,
+    id: slugify(item.title),
     title: item.title,
     runtime: item.runtime,
     format: "series",

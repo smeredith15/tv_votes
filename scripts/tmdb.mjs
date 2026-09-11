@@ -49,13 +49,14 @@ export function createClient({ key, region = "US", fetchImpl = fetch }) {
     details: (id) => get(`/tv/${id}`, { append_to_response: "external_ids" }),
     providers: (id) => get(`/tv/${id}/watch/providers`).then((r) => r.results?.[region] ?? null),
     /** Shows that premiered in a window, narrowed to first seasons. */
-    discover: (from, to, page = 1) =>
+    discover: (from, to, page = 1, options = {}) =>
       get("/discover/tv", {
         "first_air_date.gte": from,
         "first_air_date.lte": to,
         sort_by: "popularity.desc",
         watch_region: region,
         include_adult: false,
+        ...options,
         page,
       }),
   };

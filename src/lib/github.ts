@@ -28,6 +28,11 @@ async function request(config: RepoConfig, path: string, init?: RequestInit): Pr
   const base = `${API}/repos/${config.owner}/${config.repo}`;
   return fetch(path ? `${base}/${path}` : base, {
     ...init,
+    // GitHub answers with "private, max-age=60", so without this the browser
+    // can hand back a branch head it read a minute ago. Every commit built on
+    // that stale head is then rejected as not a fast-forward — and so is every
+    // retry, because they all read the same cached answer.
+    cache: "no-store",
     headers: {
       Accept: "application/vnd.github+json",
       // Tokens are pasted, and a pasted token often brings whitespace with it.

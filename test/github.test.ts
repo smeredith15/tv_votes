@@ -173,6 +173,26 @@ test("re-reading after a conflict lets the save go through", async (t) => {
   assert.equal(gh.files.get("data/shows.json"), '{"shows":["both"]}');
 });
 
+test("every call to GitHub bypasses the browser cache", async (t) => {
+  // GitHub answers with "private, max-age=60". A cached branch head means every
+  // commit is built on a stale parent and rejected as not a fast-forward —
+  // including the retries, which would read the same cached answer.
+  const gh = fakeGitHub();
+  const port = await listen(gh.server, t);
+
+  const seen: (RequestCache | undefined)[] = [];
+  globalThis.fetch = ((input: RequestInfo | URL, init?: RequestInit) => {
+    seen.push(init?.cache);
+    return realFetch(String(input).replace("https://api.github.com", `http://127.0.0.1:${port}`), init);
+  }) as typeof fetch;
+
+  const snapshot = await readRepo(config, ["data/shows.json"]);
+  await commitFiles(config, snapshot.headSha, { "data/shows.json": "{}" }, "m");
+
+  assert.ok(seen.length > 4, `only ${seen.length} requests seen`);
+  assert.deepEqual([...new Set(seen)], ["no-store"], "some request was left cacheable");
+});
+
 test("a file the repo does not have yet simply comes back absent", async (t) => {
   // Adding a data file must not break reading a repo written before it existed.
   const gh = fakeGitHub();

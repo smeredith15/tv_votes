@@ -14672,16 +14672,150 @@
   {
    "id": "cheers",
    "title": "Cheers",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 141,
+   "poster": "/nD1ZQBKbgKSmKcrAkWTofohsScj.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "Paramount Plus Premium",
+     "type": "flatrate",
+     "logo": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
+    },
+    {
+     "name": "Paramount Plus Essential",
+     "type": "flatrate",
+     "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Paramount Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/xu4LyKTwasTbta1Z0qWtZG48yZ3.png"
+    },
+    {
+     "name": "Paramount+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png"
+    },
+    {
+     "name": "Paramount+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T21:05:27.479Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 22,
+     "airDate": "1982-09-30",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 22,
+     "airDate": "1983-09-29",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 25,
+     "airDate": "1984-09-27",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 26,
+     "airDate": "1985-09-26",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 26,
+     "airDate": "1986-09-25",
+     "watched": true
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 25,
+     "airDate": "1987-09-24",
+     "watched": true
+    },
+    {
+     "number": 7,
+     "name": "Season 7",
+     "episodes": 22,
+     "airDate": "1988-10-27",
+     "watched": true
+    },
+    {
+     "number": 8,
+     "name": "Season 8",
+     "episodes": 26,
+     "airDate": "1989-09-21",
+     "watched": true
+    },
+    {
+     "number": 9,
+     "name": "Season 9",
+     "episodes": 25,
+     "airDate": "1990-09-20",
+     "watched": true
+    },
+    {
+     "number": 10,
+     "name": "Season 10",
+     "episodes": 25,
+     "airDate": "1991-09-19",
+     "watched": true
+    },
+    {
+     "number": 11,
+     "name": "Season 11",
+     "episodes": 25,
+     "airDate": "1992-09-24",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -14701,7 +14835,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "chernobyl",

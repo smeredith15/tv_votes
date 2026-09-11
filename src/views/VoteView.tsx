@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { DrawError, drawWinner, tickets, totalWeight } from "../lib/draw";
 import { LEDGERS, ballotFor, episodesPerWeek, isEligible, strandedPoints, totalSpent } from "../lib/ledgers";
-import type { Store } from "../lib/store";
+import { EVERYONE, type Store } from "../lib/store";
 import type { Dataset, Draw, LedgerId, Show } from "../lib/types";
 import { ProviderTags, StatusPill } from "./ShowBits";
 
@@ -15,7 +15,9 @@ export function VoteView({ store, data }: Props) {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<Draw | null>(null);
   const [drawError, setDrawError] = useState<string | null>(null);
-  const { me, sealed } = store.settings;
+  const { voter } = store.settings;
+  const sealed = voter !== EVERYONE;
+  const hidden = (person: string) => sealed && person !== voter;
 
   const ledgerInfo = LEDGERS.find((l) => l.id === ledger)!;
   const budget = data.budgets[ledger] ?? 0;
@@ -26,22 +28,30 @@ export function VoteView({ store, data }: Props) {
   }));
   const balanced = spends.every((s) => s.spent === spends[0].spent);
   const pool = tickets(data, ledger);
+  // Eligible only, so this count matches the rows actually listed below.
+  const ownBacked = data.shows.filter(
+    (show) => (show.votes[ledger]?.[voter] ?? 0) > 0 && isEligible(show, ledger),
+  );
 
   const candidates = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return data.shows
       .filter((show) => isEligible(show, ledger))
       .filter((show) => {
-        const weight = data.people.reduce((sum, p) => sum + (show.votes[ledger]?.[p] ?? 0), 0);
-        // With no search on, show only what someone is actually backing.
-        return needle ? show.title.toLowerCase().includes(needle) : weight > 0;
+        if (needle) return show.title.toLowerCase().includes(needle);
+        // With no search on, show what is being backed — but while a name is
+        // picked, only their own picks. Listing every backed show would say
+        // which ones the other person chose, even with the numbers hidden.
+        const backers = sealed ? [voter] : data.people;
+        return backers.reduce((sum, p) => sum + (show.votes[ledger]?.[p] ?? 0), 0) > 0;
       })
       .sort((a, b) => {
-        const weigh = (s: Show) => data.people.reduce((sum, p) => sum + (s.votes[ledger]?.[p] ?? 0), 0);
+        const backers = sealed ? [voter] : data.people;
+        const weigh = (s: Show) => backers.reduce((sum, p) => sum + (s.votes[ledger]?.[p] ?? 0), 0);
         return weigh(b) - weigh(a) || a.title.localeCompare(b.title);
       })
       .slice(0, query ? 60 : 500);
-  }, [data, ledger, query]);
+  }, [data, ledger, query, sealed, voter]);
 
   function setPoints(show: Show, person: string, value: string) {
     const points = Math.max(0, Math.round(Number(value) || 0));
@@ -62,6 +72,32 @@ export function VoteView({ store, data }: Props) {
 
   return (
     <>
+      <div className="panel" style={{ marginTop: 14, marginBottom: 0 }}>
+        <div className="row">
+          <strong className="small">Who's voting?</strong>
+          {data.people.map((person) => (
+            <button
+              key={person}
+              aria-current={voter === person}
+              onClick={() => store.setSettings({ ...store.settings, voter: person })}
+            >
+              {data.displayNames?.[person] ?? person}
+            </button>
+          ))}
+          <button
+            aria-current={voter === EVERYONE}
+            onClick={() => store.setSettings({ ...store.settings, voter: EVERYONE })}
+          >
+            Both
+          </button>
+          <span className="small muted">
+            {sealed
+              ? `Only ${data.displayNames?.[voter] ?? voter} can see and change points right now.`
+              : "Everything is visible — pick a name to hide the other's points."}
+          </span>
+        </div>
+      </div>
+
       <nav className="row" style={{ marginTop: 14 }}>
         {LEDGERS.map((l) => (
           <button key={l.id} aria-current={ledger === l.id} onClick={() => { setLedger(l.id); setResult(null); }}>
@@ -77,35 +113,42 @@ export function VoteView({ store, data }: Props) {
             <span className="muted small">{ledgerInfo.blurb}</span>
           </div>
           <div className="stack" style={{ alignItems: "flex-end" }}>
-            <span className="small muted">{pool.length} shows in the hat</span>
-            <span className="small muted">{totalWeight(data, ledger).toLocaleString()} total tickets</span>
+            {sealed ? (
+              // The combined total would give away the hidden one by subtraction.
+              <span className="small muted">{ownBacked.length} shows you are backing</span>
+            ) : (
+              <>
+                <span className="small muted">{pool.length} shows in the hat</span>
+                <span className="small muted">{totalWeight(data, ledger).toLocaleString()} total tickets</span>
+              </>
+            )}
           </div>
         </div>
 
         <div className="grid" style={{ marginTop: 12 }}>
           {spends.map(({ person, spent }) => {
-            const hidden = sealed && person !== me;
+            const concealed = hidden(person);
             const over = spent > budget;
             return (
               <div key={person} className="stack">
                 <div className="row" style={{ justifyContent: "space-between" }}>
                   <span>{data.displayNames?.[person] ?? person}</span>
                   <span className="small muted">
-                    {hidden ? "sealed" : `${spent.toLocaleString()} / ${budget.toLocaleString()}`}
+                    {concealed ? "hidden" : `${spent.toLocaleString()} / ${budget.toLocaleString()}`}
                   </span>
                 </div>
                 <div className={`meter${over ? " over" : ""}`}>
-                  <div style={{ width: `${hidden ? 0 : Math.min(100, (spent / (budget || 1)) * 100)}%` }} />
+                  <div style={{ width: `${concealed ? 0 : Math.min(100, (spent / (budget || 1)) * 100)}%` }} />
                 </div>
               </div>
             );
           })}
         </div>
 
-        {spends.some((s) => s.stranded > 0) && (
+        {spends.some((s) => s.stranded > 0 && !hidden(s.person)) && (
           <p className="small muted" style={{ marginTop: 10, marginBottom: 0 }}>
             {spends
-              .filter((s) => s.stranded > 0)
+              .filter((s) => s.stranded > 0 && !hidden(s.person))
               .map((s) => `${data.displayNames?.[s.person] ?? s.person} has ${s.stranded} points`)
               .join(", ")}{" "}
             on shows that can no longer win here — finished, or now watched inside a universe. Freeing
@@ -115,8 +158,14 @@ export function VoteView({ store, data }: Props) {
 
         {!balanced && (
           <p className="banner" style={{ marginTop: 12 }}>
-            Cheater — {spends.map((s) => `${data.displayNames?.[s.person] ?? s.person} ${s.spent}`).join(" vs ")}.
-            Nobody draws until those match.
+            {sealed ? (
+              <>You two have not spent the same number of points. Switch to Both to see where.</>
+            ) : (
+              <>
+                Cheater — {spends.map((s) => `${data.displayNames?.[s.person] ?? s.person} ${s.spent}`).join(" vs ")}.
+                Nobody draws until those match.
+              </>
+            )}
           </p>
         )}
 
@@ -169,7 +218,7 @@ export function VoteView({ store, data }: Props) {
                   </td>
                   {data.people.map((person) => (
                     <td key={person} className="num">
-                      {sealed && person !== me ? (
+                      {hidden(person) ? (
                         <span className="muted">—</span>
                       ) : (
                         <input

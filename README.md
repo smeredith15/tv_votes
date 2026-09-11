@@ -35,10 +35,12 @@ hour/half/mini sheets but were missing from Weekly, and 74 rows never got their
    own Settings tab is a separate thing, used only by the per-show refresh
    button. Set the repository variable `TMDB_REGION` for streaming data outside
    the US.
-3. **Give each of you a token.** In the app's Settings tab, paste a
+3. **Add a token.** In the app's Settings tab, paste a
    [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new)
    scoped to this repo with **Contents: read and write**. It is stored in that
    browser only. Without one you can still read the ledgers; you just can't save.
+   One token per computer is enough — you both vote from the same one, and the
+   *who's voting* switch on the Vote page keeps your picks apart.
 4. **Run the first refresh.** Actions → *Refresh metadata* → Run workflow, with
    "Refresh every show" ticked. That fills in seasons, streaming services and
    returning/ended status for all 1,015 shows. It takes a few minutes.
@@ -66,9 +68,11 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
 
 ## Day to day
 
-- **Vote** — spend your points. The meter shows what you have left, and it says
-  *cheater* until you have both spent the same amount, exactly like the
-  workbook's `IF(F8=G8, …)` check. Press draw when you are level.
+- **Vote** — pick who is voting at the top: with a name selected, the other
+  person's points, totals and picks are all hidden, so neither of you can
+  counter-bid from the same chair. Switch to *Both* when you are done. The meter
+  shows what you have left, and it says *cheater* until you have both spent the
+  same amount, exactly like the workbook's `IF(F8=G8, …)` check.
 - **Shows** — search and filter the whole list; open any show to tick off
   seasons, fix its runtime or format, or re-pull its details from TMDB.
 - **Universes** — the Arrowverse and MCU watch orders, as checklists with a

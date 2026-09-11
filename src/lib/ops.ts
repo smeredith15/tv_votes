@@ -1,3 +1,4 @@
+import { insertionIndex } from "./titles";
 import type { Dataset, Draw, InboxItem, LedgerId, Show } from "./types";
 
 /**
@@ -23,6 +24,15 @@ function findShow(data: Dataset, id: string): Show | undefined {
   return data.shows.find((s) => s.id === id);
 }
 
+/**
+ * Add a show where it belongs alphabetically. Appending instead would bury it
+ * at the end of a thousand-row list, which reads as the add having failed.
+ */
+function addShow(data: Dataset, show: Show): void {
+  if (findShow(data, show.id)) return;
+  data.shows.splice(insertionIndex(data.shows.map((s) => s.title), show.title), 0, show);
+}
+
 export function applyOp(data: Dataset, op: Op): Dataset {
   switch (op.type) {
     case "vote": {
@@ -43,7 +53,7 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       return data;
     }
     case "addShow": {
-      if (!findShow(data, op.show.id)) data.shows.push(op.show);
+      addShow(data, op.show);
       return data;
     }
     case "removeShow": {
@@ -61,7 +71,7 @@ export function applyOp(data: Dataset, op: Op): Dataset {
     }
     case "inbox": {
       data.inbox = data.inbox.filter((i) => i.tmdbId !== op.tmdbId);
-      if (op.accept && op.show && !findShow(data, op.show.id)) data.shows.push(op.show);
+      if (op.accept && op.show) addShow(data, op.show);
       return data;
     }
     case "inboxSuggest": {

@@ -12,9 +12,14 @@ export function RepoPanel({ store }: { store: Store }) {
 
   async function verify() {
     setTokenState("Checking…");
-    const result = await checkToken(settings.repo);
-    setTokenState(result.detail);
-    if (result.ok) await store.reload();
+    try {
+      const result = await checkToken(settings.repo);
+      setTokenState(result.detail);
+      if (result.ok) await store.reload();
+    } catch (e) {
+      // Nothing below should throw, but the button must never be left hanging.
+      setTokenState(e instanceof Error ? e.message : String(e));
+    }
   }
 
   return (

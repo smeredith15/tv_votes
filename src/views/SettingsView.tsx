@@ -8,31 +8,6 @@ export function SettingsView({ store, data }: { store: Store; data: Dataset }) {
 
   return (
     <>
-      <div className="panel">
-        <strong>Who is at this device?</strong>
-        <div className="row" style={{ marginTop: 8 }}>
-          {data.people.map((person) => (
-            <button
-              key={person}
-              aria-current={settings.me === person}
-              onClick={() => setSettings({ ...settings, me: person })}
-            >
-              {data.displayNames?.[person] ?? person}
-            </button>
-          ))}
-        </div>
-        <label className="row small" style={{ marginTop: 12, gap: 8 }}>
-          <input
-            type="checkbox"
-            checked={settings.sealed}
-            onChange={(e) => setSettings({ ...settings, sealed: e.target.checked })}
-          />
-          <span>
-            Sealed voting — hide the other person's points so neither of you can counter-bid.
-          </span>
-        </label>
-      </div>
-
       <RepoPanel store={store} />
 
       <div className="panel">

@@ -1,25 +1,30 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ConflictError, type RepoConfig, readFile, writeFile } from "./github";
 import { applyOps, compact, type Op } from "./ops";
+import { FILES, describe, filesTouched, intoDataset, outOfDataset, type ShowsFile } from "./sync";
 import type { Dataset, Draw, InboxItem, Universe } from "./types";
 
 const SETTINGS_KEY = "tv-votes.settings";
 const PENDING_KEY = "tv-votes.pending";
 
+/** Everyone votes from the one computer, so this is whose turn it is now. */
+export const EVERYONE = "both";
+
 export interface Settings {
   repo: RepoConfig;
-  /** Which of you is sitting at this device. */
-  me: string;
-  /** Keep your partner's points hidden until you have both locked in. */
-  sealed: boolean;
+  /**
+   * Who is entering points at this moment: one person, or EVERYONE once you
+   * are both done and want to see the whole ballot. While it names a person,
+   * the other's points and totals stay hidden so neither can counter-bid.
+   */
+  voter: string;
   tmdbKey: string;
   region: string;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
   repo: { owner: "smeredith15", repo: "tv_votes", branch: "main", token: "" },
-  me: "scotty",
-  sealed: false,
+  voter: EVERYONE,
   tmdbKey: "",
   region: "US",
 };
@@ -40,37 +45,6 @@ export function loadSettings(): Settings {
 
 export function saveSettings(settings: Settings): void {
   localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
-}
-
-/** Which repo file each kind of change lands in. */
-const FILES = {
-  shows: "data/shows.json",
-  universes: "data/universes.json",
-  history: "data/history.json",
-  inbox: "data/inbox.json",
-} as const;
-
-type FileKey = keyof typeof FILES;
-
-function filesTouched(ops: Op[]): Set<FileKey> {
-  const files = new Set<FileKey>();
-  for (const op of ops) {
-    if (op.type === "draw") files.add("history");
-    else if (op.type === "universeItem") files.add("universes");
-    else if (op.type === "inboxSuggest") files.add("inbox");
-    else if (op.type === "inbox") {
-      files.add("inbox");
-      if (op.accept) files.add("shows");
-    } else files.add("shows");
-  }
-  return files;
-}
-
-interface ShowsFile {
-  people: string[];
-  displayNames?: Record<string, string>;
-  budgets: Dataset["budgets"];
-  shows: Dataset["shows"];
 }
 
 /** Read the four ledger files straight off the published site — no token needed. */
@@ -217,31 +191,4 @@ async function push(repo: RepoConfig, ops: Op[], attempt = 0): Promise<void> {
       throw e;
     }
   }
-}
-
-/** Wrap a single file in a whole-Dataset shape so the op reducer can run on it. */
-function intoDataset(key: FileKey, raw: unknown): Dataset {
-  const empty: Dataset = { people: [], budgets: {} as Dataset["budgets"], shows: [], universes: [], history: [], inbox: [] };
-  if (key === "shows") return { ...empty, ...(raw as ShowsFile) };
-  if (key === "universes") return { ...empty, universes: raw as Universe[] };
-  if (key === "history") return { ...empty, history: raw as Draw[] };
-  return { ...empty, inbox: raw as InboxItem[] };
-}
-
-function outOfDataset(key: FileKey, data: Dataset): unknown {
-  if (key === "shows") {
-    return { people: data.people, displayNames: data.displayNames, budgets: data.budgets, shows: data.shows };
-  }
-  if (key === "universes") return data.universes;
-  if (key === "history") return data.history;
-  return data.inbox;
-}
-
-function describe(ops: Op[]): string {
-  const draw = ops.find((o) => o.type === "draw");
-  if (draw && draw.type === "draw") return `Draw: ${draw.draw.winnerTitle} (${draw.draw.ledger})`;
-  const kinds = new Set(ops.map((o) => o.type));
-  if (kinds.size === 1 && kinds.has("vote")) return `Update votes (${ops.length})`;
-  if (kinds.size === 1 && kinds.has("season")) return `Update watched seasons (${ops.length})`;
-  return `Update ledgers (${ops.length} changes)`;
 }

@@ -19,11 +19,14 @@ export interface FileContents<T> {
 }
 
 async function request(config: RepoConfig, path: string, init?: RequestInit): Promise<Response> {
-  return fetch(`${API}/repos/${config.owner}/${config.repo}/${path}`, {
+  const base = `${API}/repos/${config.owner}/${config.repo}`;
+  return fetch(path ? `${base}/${path}` : base, {
     ...init,
     headers: {
       Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${config.token}`,
+      // Tokens are pasted, and a pasted token often brings whitespace with it.
+      // A stray newline makes fetch reject outright on an invalid header.
+      Authorization: `Bearer ${config.token.trim()}`,
       "X-GitHub-Api-Version": "2022-11-28",
       ...init?.headers,
     },
@@ -75,15 +78,37 @@ export async function writeFile(
   return body.content.sha;
 }
 
+/**
+ * Report on a token without ever throwing. This backs a button that otherwise
+ * sits on "Checking…" forever: a rejected fetch — offline, blocked, or a
+ * malformed header from a bad paste — has to come back as an answer, not an
+ * unhandled rejection.
+ */
 export async function checkToken(config: RepoConfig): Promise<{ ok: boolean; detail: string }> {
-  const res = await request(config, "");
-  if (res.status === 401) return { ok: false, detail: "Token rejected — check it was pasted whole." };
+  if (!config.token.trim()) return { ok: false, detail: "Paste a token first." };
+
+  let res: Response;
+  try {
+    res = await request(config, "");
+  } catch (e) {
+    return {
+      ok: false,
+      detail: `Could not reach GitHub — ${e instanceof Error ? e.message : String(e)}. Check the connection, or a browser extension blocking api.github.com.`,
+    };
+  }
+
+  if (res.status === 401) return { ok: false, detail: "Token rejected — check it was pasted whole and has not expired." };
   if (res.status === 404) {
-    return { ok: false, detail: "Repo not visible to this token — grant it Contents access." };
+    return { ok: false, detail: "Repo not visible to this token — grant it Contents access on this repo." };
   }
   if (!res.ok) return { ok: false, detail: `GitHub said ${res.status}.` };
-  const repo = (await res.json()) as { permissions?: { push?: boolean } };
-  return repo.permissions?.push
-    ? { ok: true, detail: "Token can read and write this repo." }
-    : { ok: false, detail: "Token is read-only — it needs Contents: read and write." };
+
+  try {
+    const repo = (await res.json()) as { permissions?: { push?: boolean } };
+    return repo.permissions?.push
+      ? { ok: true, detail: "Token can read and write this repo." }
+      : { ok: false, detail: "Token is read-only — it needs Contents: read and write." };
+  } catch {
+    return { ok: false, detail: "GitHub replied with something unreadable." };
+  }
 }

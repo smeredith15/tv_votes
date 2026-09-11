@@ -1,7 +1,11 @@
 /**
- * Thin wrapper over the GitHub contents API. The repo is the database: the
- * ledger JSON lives in it, so every vote is a commit with a full history and
- * there is no server to run or pay for.
+ * The repo is the database, reached through GitHub's git data API.
+ *
+ * Not the contents API: that one stops returning a file's content once the
+ * file passes a megabyte, handing back an empty string instead of an error,
+ * and shows.json went past that the moment TMDB filled in every season and
+ * streaming service. Blobs have no such ceiling, and committing a tree lets a
+ * save touch several files in one commit instead of one commit apiece.
  */
 const API = "https://api.github.com";
 
@@ -12,11 +16,13 @@ export interface RepoConfig {
   token: string;
 }
 
-export interface FileContents<T> {
-  data: T;
-  /** Blob sha, required to write the file back without clobbering. */
-  sha: string;
+/** The repo at one moment: the commit it was read at, and the files read. */
+export interface Snapshot {
+  headSha: string;
+  files: Record<string, string>;
 }
+
+export class ConflictError extends Error {}
 
 async function request(config: RepoConfig, path: string, init?: RequestInit): Promise<Response> {
   const base = `${API}/repos/${config.owner}/${config.repo}`;
@@ -33,49 +39,103 @@ async function request(config: RepoConfig, path: string, init?: RequestInit): Pr
   });
 }
 
-function decode(base64: string): string {
-  const binary = atob(base64.replace(/\n/g, ""));
-  const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
-  return new TextDecoder().decode(bytes);
+async function json<T>(config: RepoConfig, path: string, init?: RequestInit): Promise<T> {
+  const res = await request(config, path, init);
+  if (!res.ok) throw new Error(`GitHub ${res.status} on ${path}: ${(await res.text()).slice(0, 200)}`);
+  return (await res.json()) as T;
 }
 
-function encode(text: string): string {
+/** Base64 for a UTF-8 string, in chunks so a megabyte does not crawl. */
+export function encodeBase64(text: string): string {
   const bytes = new TextEncoder().encode(text);
   let binary = "";
-  for (const byte of bytes) binary += String.fromCharCode(byte);
+  for (let i = 0; i < bytes.length; i += 0x8000) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  }
   return btoa(binary);
 }
 
-export async function readFile<T>(config: RepoConfig, path: string): Promise<FileContents<T>> {
-  const res = await request(config, `contents/${path}?ref=${encodeURIComponent(config.branch)}`);
-  if (!res.ok) throw new Error(`Could not read ${path}: ${res.status} ${await res.text()}`);
-  const body = (await res.json()) as { content: string; sha: string };
-  return { data: JSON.parse(decode(body.content)) as T, sha: body.sha };
+export async function headSha(config: RepoConfig): Promise<string> {
+  const ref = await json<{ object: { sha: string } }>(
+    config,
+    `git/ref/heads/${encodeURIComponent(config.branch)}`,
+  );
+  return ref.object.sha;
 }
 
-export class ConflictError extends Error {}
+/** Read the given paths at the branch's current commit. */
+export async function readRepo(config: RepoConfig, paths: string[]): Promise<Snapshot> {
+  const sha = await headSha(config);
+  const tree = await json<{ tree: { path: string; sha: string; type: string }[]; truncated?: boolean }>(
+    config,
+    `git/trees/${sha}?recursive=1`,
+  );
+  const bySha = new Map(tree.tree.filter((e) => e.type === "blob").map((e) => [e.path, e.sha]));
 
-export async function writeFile(
+  const entries = await Promise.all(
+    paths.map(async (path) => {
+      const blob = bySha.get(path);
+      if (!blob) {
+        throw new Error(
+          tree.truncated
+            ? `Could not find ${path}: the repo listing came back truncated.`
+            : `${path} is not in the repo.`,
+        );
+      }
+      const res = await request(config, `git/blobs/${blob}`, {
+        headers: { Accept: "application/vnd.github.raw" },
+      });
+      if (!res.ok) throw new Error(`Could not read ${path}: ${res.status}`);
+      return [path, await res.text()] as const;
+    }),
+  );
+
+  return { headSha: sha, files: Object.fromEntries(entries) };
+}
+
+/**
+ * Commit the given files on top of `parentSha`, in one commit.
+ *
+ * Fails with ConflictError when the branch has moved since — someone else
+ * saved first, and their work must be replayed onto rather than overwritten.
+ */
+export async function commitFiles(
   config: RepoConfig,
-  path: string,
-  value: unknown,
-  sha: string,
+  parentSha: string,
+  files: Record<string, string>,
   message: string,
 ): Promise<string> {
-  const res = await request(config, `contents/${path}`, {
-    method: "PUT",
-    body: JSON.stringify({
-      message,
-      content: encode(`${JSON.stringify(value, null, 1)}\n`),
-      sha,
-      branch: config.branch,
+  const parent = await json<{ tree: { sha: string } }>(config, `git/commits/${parentSha}`);
+
+  const blobs = await Promise.all(
+    Object.entries(files).map(async ([path, content]) => {
+      const blob = await json<{ sha: string }>(config, "git/blobs", {
+        method: "POST",
+        body: JSON.stringify({ content: encodeBase64(content), encoding: "base64" }),
+      });
+      return { path, mode: "100644", type: "blob", sha: blob.sha };
     }),
+  );
+
+  const tree = await json<{ sha: string }>(config, "git/trees", {
+    method: "POST",
+    body: JSON.stringify({ base_tree: parent.tree.sha, tree: blobs }),
   });
-  // Someone else wrote the file between our read and our write.
-  if (res.status === 409 || res.status === 422) throw new ConflictError(await res.text());
-  if (!res.ok) throw new Error(`Could not save ${path}: ${res.status} ${await res.text()}`);
-  const body = (await res.json()) as { content: { sha: string } };
-  return body.content.sha;
+
+  const commit = await json<{ sha: string }>(config, "git/commits", {
+    method: "POST",
+    body: JSON.stringify({ message, tree: tree.sha, parents: [parentSha] }),
+  });
+
+  // force stays off, so this only moves the branch if nobody else has.
+  const res = await request(config, `git/refs/heads/${encodeURIComponent(config.branch)}`, {
+    method: "PATCH",
+    body: JSON.stringify({ sha: commit.sha, force: false }),
+  });
+  if (res.status === 422) throw new ConflictError(await res.text());
+  if (!res.ok) throw new Error(`Could not update the branch: ${res.status} ${await res.text()}`);
+
+  return commit.sha;
 }
 
 /**

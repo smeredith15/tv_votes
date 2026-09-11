@@ -60867,16 +60867,70 @@
   {
    "id": "only-murders-in-the-building",
    "title": "Only Murders in the Building",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 107113,
+   "poster": "/1yjFVQZuW8aofZ5Cgol8iImsVFp.jpg",
+   "providers": [
+    {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:38:29.504Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2021-08-31",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2022-06-28",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 10,
+     "airDate": "2023-08-07",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 10,
+     "airDate": "2024-08-27",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 10,
+     "airDate": "2025-09-09",
+     "watched": true
+    },
+    {
+     "number": 6,
+     "name": "Season 6: Only Murders in London",
+     "episodes": 1,
+     "airDate": "2026-12-08",
+     "watched": false
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -60896,7 +60950,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": "2026-12-08"
   },
   {
    "id": "orange-is-the-new-black",

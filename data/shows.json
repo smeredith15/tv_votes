@@ -124,6 +124,39 @@
    "nextAirDate": null
   },
   {
+   "id": "11-22-63",
+   "title": "11.22.63",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "13-reasons-why",
    "title": "13 Reasons Why",
    "runtime": 60,
@@ -1912,6 +1945,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "adventure-time",
+   "title": "Adventure Time",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "after-life",
@@ -4041,6 +4107,39 @@
    "nextAirDate": null
   },
   {
+   "id": "andor",
+   "title": "Andor",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "angels-in-america",
    "title": "Angels in America",
    "runtime": 60,
@@ -5646,6 +5745,39 @@
    "nextAirDate": null
   },
   {
+   "id": "avatar-the-last-airbender",
+   "title": "Avatar: The Last Airbender",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "avenue-5",
    "title": "Avenue 5",
    "runtime": null,
@@ -6950,6 +7082,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "battlestar-galactica",
+   "title": "Battlestar Galactica",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "batwoman",
@@ -9675,6 +9840,39 @@
    "nextAirDate": null
   },
   {
+   "id": "bodies",
+   "title": "Bodies",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "bodkin",
    "title": "Bodkin",
    "runtime": 60,
@@ -12071,6 +12269,39 @@
    "nextAirDate": null
   },
   {
+   "id": "bureau",
+   "title": "The Bureau",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "burn-notice",
    "title": "Burn Notice",
    "runtime": 60,
@@ -12718,6 +12949,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "carniv-le",
+   "title": "Carniv\u00e0le",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "casey-anthony-an-american-murder-mystery",
@@ -13949,6 +14213,39 @@
    "providersUpdated": null,
    "seasons": [],
    "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "class-of-07",
+   "title": "Class of '07",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -15552,6 +15849,39 @@
    "nextAirDate": null
   },
   {
+   "id": "cowboy-bebop",
+   "title": "Cowboy Bebop",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "cowboy-cartel",
    "title": "Cowboy Cartel",
    "runtime": 60,
@@ -17014,6 +17344,39 @@
      "shelby": 0
     }
    }
+  },
+  {
+   "id": "dark",
+   "title": "Dark",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "dark-matter",
@@ -23916,6 +24279,39 @@
    "nextAirDate": null
   },
   {
+   "id": "extraordinary",
+   "title": "Extraordinary",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "extras",
    "title": "Extras",
    "runtime": 30,
@@ -25095,6 +25491,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "fisk",
+   "title": "Fisk",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "five-days-at-a-memorial",
@@ -27062,6 +27491,39 @@
    "nextAirDate": null
   },
   {
+   "id": "frieren",
+   "title": "Frieren",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "fringe",
    "title": "Fringe",
    "runtime": 60,
@@ -28832,6 +29294,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "giri-haji",
+   "title": "Giri/Haji",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "girlfriend",
@@ -31780,6 +32275,39 @@
    "nextAirDate": null
   },
   {
+   "id": "halt-and-catch-fire",
+   "title": "Halt and Catch Fire",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "handmaid-s-tale",
    "title": "The Handmaid's Tale",
    "runtime": 60,
@@ -32433,6 +32961,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "happy-valley",
+   "title": "Happy Valley",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "hardy-bucks",
@@ -44095,6 +44656,39 @@
    "nextAirDate": null
   },
   {
+   "id": "line-of-duty",
+   "title": "Line of Duty",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "lioness",
    "title": "Lioness",
    "runtime": 60,
@@ -51227,6 +51821,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "monsieur-spade",
+   "title": "Monsieur Spade",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "monsters-inside-the-24-faces-of-billy-milligan",
@@ -59783,6 +60410,39 @@
    "nextAirDate": null
   },
   {
+   "id": "person-of-interest",
+   "title": "Person of Interest",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "pharmacist",
    "title": "The Pharmacist",
    "runtime": 60,
@@ -60038,6 +60698,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "pitt",
+   "title": "The Pitt",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "planet-earth",
@@ -60358,6 +61051,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "pluribus",
+   "title": "Pluribus",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "poker-face",
@@ -62963,6 +63689,72 @@
    "nextAirDate": null
   },
   {
+   "id": "rectify",
+   "title": "Rectify",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "red-dwarf",
+   "title": "Red Dwarf",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "red-rose",
    "title": "Red Rose",
    "runtime": 60,
@@ -65472,6 +66264,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "sanditon",
+   "title": "Sanditon",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "sandman",
@@ -70437,6 +71262,39 @@
    "nextAirDate": null
   },
   {
+   "id": "somebody-somewhere",
+   "title": "Somebody Somewhere",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "something-very-bad-is-going-to-happen",
    "title": "Something Very Bad is Going to Happen",
    "runtime": 60,
@@ -70983,6 +71841,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "spaced",
+   "title": "Spaced",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "space-force",
@@ -71943,6 +72834,39 @@
    "nextAirDate": null
   },
   {
+   "id": "star-trek-strange-new-worlds",
+   "title": "Star Trek: Strange New Worlds",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "stateless",
    "title": "Stateless",
    "runtime": 60,
@@ -71982,6 +72906,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "stath-lets-flats",
+   "title": "Stath Lets Flats",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "station-19",
@@ -74688,6 +75645,39 @@
    "nextAirDate": null
   },
   {
+   "id": "taskmaster",
+   "title": "Taskmaster",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "tattooist-of-auschwitz",
    "title": "The Tattooist of Auschwitz",
    "runtime": 60,
@@ -75927,6 +76917,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "this-country",
+   "title": "This Country",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "this-is-going-to-hurt",
@@ -77446,6 +78469,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "trapped",
+   "title": "Trapped",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "travelers",
@@ -79276,6 +80332,39 @@
    "nextAirDate": null
   },
   {
+   "id": "unforgotten",
+   "title": "Unforgotten",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "unstable",
    "title": "Unstable",
    "runtime": 30,
@@ -79348,6 +80437,39 @@
    "providersUpdated": null,
    "seasons": [],
    "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "utopia",
+   "title": "Utopia",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -81473,6 +82595,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "we-own-this-city",
+   "title": "We Own This City",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "west-wing",

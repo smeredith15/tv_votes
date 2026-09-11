@@ -176,10 +176,14 @@ alone.
 
 - **History starts now.** The workbook was a snapshot with no record of past
   draws, so there was nothing to migrate. The first draw in the app is entry one.
-- **Shows finished before the workbook existed** were added with
-  `tools/add_shows.py`, flagged `assumeWatched`. The next refresh ticks off
-  every season that had already aired and clears the flag, so anything that airs
-  afterwards arrives unwatched — which is what makes the *auto* tick useful.
+- **Adding shows** is `tools/add_shows.py`, reading titles on stdin. By default
+  they go in as already watched — flagged `assumeWatched`, so the next refresh
+  ticks off every season that had aired and clears the flag, leaving anything
+  later unwatched, which is what makes the *auto* tick useful. Pass
+  `--unwatched` to add them the ordinary way, never seen and votable.
+- **A new show reaches the Weekly ballot first.** The hour and half-hour ballots
+  are decided by runtime, which nothing knows until the refresh asks TMDB. Until
+  then a new show is weekly-only. Running the refresh sorts it out.
 - **23 shows are marked started-but-unfinished** (the purple rows). Their
   seasons aren't ticked, because the workbook never recorded which ones you'd
   seen. The *Needs seasons ticked* filter on the Shows tab lists them.

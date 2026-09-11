@@ -171,6 +171,9 @@ export function useStore(baseUrl: string): Store {
  * every file they altered together. A conflict means the other of you saved
  * first, so we re-read and replay rather than overwrite.
  */
+/** Attempts before giving up, with a pause between each to let GitHub settle. */
+const PUSH_ATTEMPTS = 4;
+
 async function push(repo: RepoConfig, ops: Op[], attempt = 0): Promise<Dataset> {
   const snapshot = await readRepo(repo, ALL_FILES);
   const next = applyOps(datasetFrom(snapshot.files), ops);
@@ -180,8 +183,16 @@ async function push(repo: RepoConfig, ops: Op[], attempt = 0): Promise<Dataset> 
   try {
     await commitFiles(repo, snapshot.headSha, changed, describe(ops));
   } catch (e) {
-    if (e instanceof ConflictError && attempt < 2) return push(repo, ops, attempt + 1);
-    throw e;
+    if (!(e instanceof ConflictError)) throw e;
+    if (attempt + 1 >= PUSH_ATTEMPTS) {
+      throw new Error(
+        "The branch moved while this was saving, and it kept moving. Nothing has been lost — your " +
+          "changes are still queued, so press Save again in a moment.",
+      );
+    }
+    // Back off a little: a branch that has just moved may still be settling.
+    await new Promise((done) => setTimeout(done, 300 * 2 ** attempt));
+    return push(repo, ops, attempt + 1);
   }
   // What the repo now holds, without having to ask for it back.
   return next;

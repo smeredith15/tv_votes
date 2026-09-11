@@ -89100,21 +89100,21 @@
      "name": "Season 1",
      "episodes": 6,
      "airDate": "2021-07-11",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 7,
      "airDate": "2022-10-30",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
      "airDate": "2025-02-16",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {

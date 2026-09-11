@@ -57839,28 +57839,28 @@
      "name": "Season 1",
      "episodes": 8,
      "airDate": "2013-02-28",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
      "airDate": "2014-07-01",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
      "airDate": "2015-10-15",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 7,
      "airDate": "2017-09-28",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {

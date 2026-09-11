@@ -22,7 +22,6 @@ export function VoteView({ store, data }: Props) {
   const hidden = (person: string) => sealed && person !== voter;
 
   const ledgerInfo = LEDGERS.find((l) => l.id === ledger)!;
-  const budget = data.budgets[ledger] ?? 0;
   const spends = data.people.map((person) => ({
     person,
     // What the draw will use. Points on a finished show are not part of it.
@@ -30,6 +29,7 @@ export function VoteView({ store, data }: Props) {
     stranded: strandedPoints(data, ledger, person),
   }));
   const stuck = strandedShows(data, ledger);
+  const highest = Math.max(0, ...spends.map((s) => s.spent));
   const balanced = spends.every((s) => s.spent === spends[0].spent);
   const pool = tickets(data, ledger);
   // Eligible only, so this count matches the rows actually listed below.
@@ -141,17 +141,20 @@ export function VoteView({ store, data }: Props) {
         <div className="grid" style={{ marginTop: 12 }}>
           {spends.map(({ person, spent }) => {
             const concealed = hidden(person);
-            const over = spent > budget;
+            // There is no target to spend up to — the bars are drawn against
+            // whichever of you has spent more, because all that matters is
+            // that the two end up the same.
+            const share = highest > 0 ? (spent / highest) * 100 : 0;
             return (
               <div key={person} className="stack">
                 <div className="row" style={{ justifyContent: "space-between" }}>
                   <span>{data.displayNames?.[person] ?? person}</span>
                   <span className="small muted">
-                    {concealed ? "hidden" : `${spent.toLocaleString()} / ${budget.toLocaleString()}`}
+                    {concealed ? "hidden" : `${spent.toLocaleString()} points`}
                   </span>
                 </div>
-                <div className={`meter${over ? " over" : ""}`}>
-                  <div style={{ width: `${concealed ? 0 : Math.min(100, (spent / (budget || 1)) * 100)}%` }} />
+                <div className={`meter${!concealed && spent < highest ? " short" : ""}`}>
+                  <div style={{ width: `${concealed ? 0 : share}%` }} />
                 </div>
               </div>
             );
@@ -188,7 +191,12 @@ export function VoteView({ store, data }: Props) {
             ) : (
               <>
                 Cheater — {spends.map((s) => `${data.displayNames?.[s.person] ?? s.person} ${s.spent}`).join(" vs ")}.
-                Nobody draws until those match.
+                {" "}
+                {spends
+                  .filter((s) => s.spent < highest)
+                  .map((s) => `${data.displayNames?.[s.person] ?? s.person} has ${highest - s.spent} left to place`)
+                  .join(", ")}
+                .
               </>
             )}
           </p>

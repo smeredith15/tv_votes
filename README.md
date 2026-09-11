@@ -76,15 +76,21 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
   for whatever you are watching outside the voting altogether.
 - **Vote** — pick who is voting at the top: with a name selected, the other
   person's points, totals and picks are all hidden, so neither of you can
-  counter-bid from the same chair. Switch to *Both* when you are done. The meter
-  shows what you have left, and it says *cheater* until you have both spent the
-  same amount, exactly like the workbook's `IF(F8=G8, …)` check.
+  counter-bid from the same chair. Switch to *Both* when you are done. There is
+  no budget to spend up to: the bars are drawn against whichever of you has
+  placed more, and it says *cheater* until the two totals match, exactly like
+  the workbook's `IF(F8=G8, …)` check.
   Drawing spins through four other shows before it lands — each one a real
   weighted draw, so the near-misses are shows that genuinely could have come
   up. Nothing reaches the history until you press *Keep it*, so an idle
   "what would we get?" costs nothing.
 - **Shows** — search and filter the whole list; open any show to tick off
   seasons, fix its runtime or format, or re-pull its details from TMDB.
+  *Add a show* takes a TMDB id, a link to its TMDB page, or just a name —
+  handy when two shows share a title, since the search lets you pick the right
+  one. Everything the nightly refresh would work out comes down with it, so an
+  added show is on the right ballots immediately. Tick the box if you have
+  already watched all of it.
 - **Watched & Plex** — every show, each with two rows of seasons: the ones you
   have watched and the ones sitting on Plex. Filters narrow it to what you have
   started, what a draw has picked, or what is missing from the server, and the
@@ -181,9 +187,13 @@ alone.
   ticks off every season that had aired and clears the flag, leaving anything
   later unwatched, which is what makes the *auto* tick useful. Pass
   `--unwatched` to add them the ordinary way, never seen and votable.
-- **A new show reaches the Weekly ballot first.** The hour and half-hour ballots
-  are decided by runtime, which nothing knows until the refresh asks TMDB. Until
-  then a new show is weekly-only. Running the refresh sorts it out.
+- **A show added by hand needs a TMDB key.** Settings holds it, and the *Add a
+  show* panel uses it to fetch the details.
+- **A show added any other way reaches the Weekly ballot first.** The hour and
+  half-hour ballots are decided by runtime, which nothing knows until TMDB is
+  asked — so a title added by `tools/add_shows.py` is weekly-only until the next
+  refresh. Adding through the app avoids that, since it fetches the runtime then
+  and there.
 - **23 shows are marked started-but-unfinished** (the purple rows). Their
   seasons aren't ticked, because the workbook never recorded which ones you'd
   seen. The *Needs seasons ticked* filter on the Shows tab lists them.

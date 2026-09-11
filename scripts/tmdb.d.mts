@@ -3,6 +3,7 @@ import type { Provider, ReturningStatus, Runtime, Season, ShowFormat } from "../
 export const IMAGE_BASE: string;
 
 export interface TmdbSearchResult {
+  genre_ids?: number[];
   id: number;
   name: string;
   original_name?: string;

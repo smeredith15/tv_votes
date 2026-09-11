@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { LEDGERS, eligibleLedgers, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, LedgerId, Show } from "../lib/types";
+import { AddShow } from "./AddShow";
 import { Poster, ProviderTags, StatusPill } from "./ShowBits";
 import { ShowDetail } from "./ShowDetail";
 
@@ -21,6 +22,7 @@ export function ShowsView({ store, data }: { store: Store; data: Dataset }) {
   const [filter, setFilter] = useState<Filter>("all");
   const [service, setService] = useState("");
   const [selected, setSelected] = useState<string | null>(null);
+  const [adding, setAdding] = useState(false);
 
   const services = useMemo(() => {
     const names = new Set<string>();
@@ -71,6 +73,7 @@ export function ShowsView({ store, data }: { store: Store; data: Dataset }) {
             onChange={(e) => setQuery(e.target.value)}
             style={{ flex: "1 1 240px" }}
           />
+          <button onClick={() => setAdding(!adding)}>{adding ? "Done adding" : "Add a show"}</button>
           <select value={service} onChange={(e) => setService(e.target.value)}>
             <option value="">Any service</option>
             {services.map((name) => (
@@ -87,6 +90,17 @@ export function ShowsView({ store, data }: { store: Store; data: Dataset }) {
         </div>
         <p className="small muted" style={{ marginBottom: 0 }}>{shown.length.toLocaleString()} shows</p>
       </div>
+
+      {adding && (
+        <AddShow
+          store={store}
+          data={data}
+          onAdded={(id) => {
+            setSelected(id);
+            setQuery("");
+          }}
+        />
+      )}
 
       <div ref={detail}>
         {current && <ShowDetail store={store} data={data} show={current} onClose={() => setSelected(null)} />}

@@ -98,7 +98,7 @@ export function App() {
           {tab === "universes" && <UniverseView store={store} data={data} />}
           {tab === "history" && <HistoryView store={store} data={data} />}
           {tab === "inbox" && <InboxView store={store} data={data} />}
-          {tab === "settings" && <SettingsView store={store} data={data} />}
+          {tab === "settings" && <SettingsView store={store} />}
         </>
       )}
     </div>

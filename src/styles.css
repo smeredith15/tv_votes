@@ -122,7 +122,8 @@ nav button[aria-current="true"] { background: var(--accent-soft); color: var(--a
 /* Budget meter */
 .meter { height: 7px; border-radius: 999px; background: var(--line); overflow: hidden; }
 .meter > div { height: 100%; background: var(--accent); transition: width 0.2s; }
-.meter.over > div { background: var(--warn); }
+/* Behind the other person, so there are points still to place. */
+.meter.short > div { background: color-mix(in srgb, var(--accent) 45%, var(--line)); }
 
 table { width: 100%; border-collapse: collapse; }
 th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
@@ -192,8 +193,7 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
 .now-main { display: flex; flex-direction: column; }
 .now-side { position: sticky; top: 64px; margin-top: 14px; }
 .now-side-list { max-height: 55vh; overflow-y: auto; margin-top: 8px; gap: 2px; }
-.aside-row { gap: 6px; padding: 5px 0; border-bottom: 1px solid var(--line); }
-.aside-row:last-child { border-bottom: none; }
+.aside-row { gap: 6px; align-items: center; }
 .aside-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 @media (max-width: 820px) {
@@ -205,3 +205,18 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
 /* Two rows of seasons per show: watched, and on the server. */
 .season-row { align-items: flex-start; gap: 8px; margin-top: 6px; }
 .season-row-label { width: 62px; flex: 0 0 auto; padding-top: 6px; }
+
+/* Side-list rows: the title opens the seasons, the cross removes the show. */
+.aside-row-wrap { border-bottom: 1px solid var(--line); }
+.aside-row-wrap:last-child { border-bottom: none; }
+.aside-open {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 5px 0;
+  align-items: flex-start;
+}
+.aside-open:disabled { opacity: 1; cursor: default; }
+.now-side .season { padding: 3px 6px; font-size: 12px; }

@@ -220,6 +220,68 @@ function ShowPicker({ data, onPick }: { data: Dataset; onPick: (id: string) => v
   );
 }
 
+/**
+ * One show on the side, with its seasons a click away.
+ *
+ * Nothing here goes through a ballot, so this is the only place these seasons
+ * can be ticked off — collapsed by default, because the panel is narrow and a
+ * long-running show would otherwise fill it.
+ */
+function AsideRow({ store, show }: { store: Store; show: Show }) {
+  const [open, setOpen] = useState(false);
+  const left = unwatchedSeasons(show);
+  const watched = show.seasons.length - left.length;
+
+  return (
+    <div className="aside-row-wrap">
+      <div className="row aside-row">
+        <button
+          className="stack aside-open"
+          onClick={() => setOpen(!open)}
+          disabled={show.seasons.length === 0}
+          title={show.seasons.length ? "Show the seasons" : undefined}
+        >
+          <span className="small aside-title">{show.title}</span>
+          <span className="small muted">
+            {show.seasons.length === 0
+              ? describeProgress(show)
+              : `${watched}/${show.seasons.length} watched${left.length ? ` · S${left[0]} next` : ""}`}
+          </span>
+        </button>
+        <button
+          className="small"
+          title="Remove"
+          onClick={() => store.dispatch({ type: "aside", showId: show.id, add: false })}
+        >
+          ×
+        </button>
+      </div>
+
+      {open && show.seasons.length > 0 && (
+        <div className="seasons" style={{ paddingBottom: 6 }}>
+          {show.seasons.map((season) => (
+            <button
+              key={season.number}
+              className={`season${season.watched ? " watched" : ""}`}
+              onClick={() =>
+                store.dispatch({
+                  type: "season",
+                  showId: show.id,
+                  season: season.number,
+                  watched: !season.watched,
+                })
+              }
+            >
+              <span>{season.watched ? "✓" : "○"}</span>
+              <span>S{season.number}</span>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 /** Things being watched outside the voting: no ballot, no draw, just a list. */
 function AsidePanel({ store, data }: { store: Store; data: Dataset }) {
   const [adding, setAdding] = useState(false);
@@ -248,29 +310,10 @@ function AsidePanel({ store, data }: { store: Store; data: Dataset }) {
       )}
 
       <div className="stack now-side-list">
-        {shows.length === 0 && !adding && (
-          <span className="small muted">Nothing here yet.</span>
-        )}
-        {shows.map((show) => {
-          const left = unwatchedSeasons(show);
-          return (
-            <div key={show.id} className="row aside-row">
-              <span className="stack" style={{ flex: "1 1 auto", minWidth: 0 }}>
-                <span className="small aside-title">{show.title}</span>
-                <span className="small muted">
-                  {left.length === 0 ? describeProgress(show) : `S${left[0]} next`}
-                </span>
-              </span>
-              <button
-                className="small"
-                title="Remove"
-                onClick={() => store.dispatch({ type: "aside", showId: show.id, add: false })}
-              >
-                ×
-              </button>
-            </div>
-          );
-        })}
+        {shows.length === 0 && !adding && <span className="small muted">Nothing here yet.</span>}
+        {shows.map((show) => (
+          <AsideRow key={show.id} store={store} show={show} />
+        ))}
       </div>
     </aside>
   );

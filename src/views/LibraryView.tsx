@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import { LEDGERS, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, Show } from "../lib/types";
@@ -102,7 +102,14 @@ export function LibraryView({ store, data }: { store: Store; data: Dataset }) {
           <p className="small muted" style={{ margin: 0 }}>Nothing here.</p>
         ) : (
           shown.map((show) => (
-            <ShowSeasons key={show.id} store={store} data={data} show={show} mode={mode} />
+            <ShowSeasons
+              key={show.id}
+              show={show}
+              mode={mode}
+              onPlex={data.plex.shows[show.id]}
+              people={data.people}
+              dispatch={store.dispatch}
+            />
           ))
         )}
       </div>
@@ -110,36 +117,40 @@ export function LibraryView({ store, data }: { store: Store; data: Dataset }) {
   );
 }
 
-function ShowSeasons({
-  store,
-  data,
-  show,
-  mode,
-}: {
-  store: Store;
-  data: Dataset;
+interface SeasonsProps {
   show: Show;
   mode: Mode;
-}) {
-  const onPlex = new Set(data.plex.shows[show.id] ?? []);
+  /** Season numbers on the server, straight from the Plex file. */
+  onPlex?: number[];
+  people: string[];
+  dispatch: Store["dispatch"];
+}
+
+/**
+ * One show's seasons.
+ *
+ * Memoised on props that hold their identity between renders, so ticking one
+ * season redraws that show alone rather than every row on screen — with a
+ * thousand shows and their seasons, redrawing the lot made each click crawl.
+ */
+const ShowSeasons = memo(function ShowSeasons({ show, mode, onPlex, people, dispatch }: SeasonsProps) {
+  const present = new Set(onPlex ?? []);
   const watched = show.seasons.filter((s) => s.watched).length;
   const finished = show.seasons.length > 0 && watched === show.seasons.length;
   // Points still sitting on a show you have finished can never win again.
-  const held = LEDGERS.flatMap((l) =>
-    data.people.map((p) => show.votes[l.id]?.[p] ?? 0),
-  ).reduce((a, b) => a + b, 0);
+  const held = LEDGERS.flatMap((l) => people.map((p) => show.votes[l.id]?.[p] ?? 0)).reduce(
+    (a, b) => a + b,
+    0,
+  );
 
   function toggle(season: number, current: boolean) {
-    if (mode === "watched") {
-      store.dispatch({ type: "season", showId: show.id, season, watched: !current });
-    } else {
-      store.dispatch({ type: "plexSeason", showId: show.id, season, present: !current });
-    }
+    if (mode === "watched") dispatch({ type: "season", showId: show.id, season, watched: !current });
+    else dispatch({ type: "plexSeason", showId: show.id, season, present: !current });
   }
 
   /** Tick or untick the whole run in one go. */
   function setAll(value: boolean) {
-    store.dispatch(
+    dispatch(
       ...show.seasons.map((season) =>
         mode === "watched"
           ? ({ type: "season", showId: show.id, season: season.number, watched: value } as const)
@@ -155,7 +166,7 @@ function ShowSeasons({
         <span className="row small muted">
           {mode === "watched"
             ? `${watched}/${show.seasons.length || "?"} watched`
-            : `${onPlex.size}/${show.seasons.length || "?"} on Plex`}
+            : `${present.size}/${show.seasons.length || "?"} on Plex`}
           {show.seasons.length > 0 && (
             <>
               <button className="small" onClick={() => setAll(true)}>All</button>
@@ -170,7 +181,7 @@ function ShowSeasons({
           <span className="small">
             Finished, and still holding {held.toLocaleString()} points across the ballots.
           </span>
-          <button className="small" onClick={() => store.dispatch({ type: "freePoints", showId: show.id })}>
+          <button className="small" onClick={() => dispatch({ type: "freePoints", showId: show.id })}>
             Take the points back
           </button>
         </div>
@@ -183,8 +194,8 @@ function ShowSeasons({
       ) : (
         <div className="seasons" style={{ marginTop: 6 }}>
           {show.seasons.map((season) => {
-            const marked = mode === "watched" ? season.watched : onPlex.has(season.number);
-            const other = mode === "watched" ? onPlex.has(season.number) : season.watched;
+            const marked = mode === "watched" ? season.watched : present.has(season.number);
+            const other = mode === "watched" ? present.has(season.number) : season.watched;
             return (
               <button
                 key={season.number}
@@ -192,10 +203,10 @@ function ShowSeasons({
                 onClick={() => toggle(season.number, marked)}
                 title={other ? (mode === "watched" ? "On Plex" : "Already watched") : undefined}
               >
-                <span>{marked ? "✓" : "○"}</span>
+                <span>{marked ? "\u2713" : "\u25cb"}</span>
                 <span>S{season.number}</span>
                 <span className="muted">{season.episodes} ep</span>
-                {other && <span className="muted">{mode === "watched" ? "⛁" : "👁"}</span>}
+                {other && <span className="muted">{mode === "watched" ? "\u26c1" : "\ud83d\udc41"}</span>}
               </button>
             );
           })}
@@ -203,4 +214,4 @@ function ShowSeasons({
       )}
     </div>
   );
-}
+});

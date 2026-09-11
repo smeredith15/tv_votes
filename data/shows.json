@@ -126,16 +126,55 @@
   {
    "id": "11-22-63",
    "title": "11.22.63",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
+   "status": "ended",
    "tmdbId": 64464,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "poster": "/1fH41ccMKvgDTbbcCxWWH6fznah.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T21:40:03.503Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 8,
+     "airDate": "2016-02-15",
+     "watched": true
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -154,7 +193,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "13-reasons-why",

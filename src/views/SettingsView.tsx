@@ -1,10 +1,8 @@
-import { LEDGERS, totalSpent } from "../lib/ledgers";
 import { BUILT_AT, RUNNING_VERSION } from "../lib/version";
 import { RepoPanel } from "./RepoPanel";
 import type { Store } from "../lib/store";
-import type { Dataset } from "../lib/types";
 
-export function SettingsView({ store, data }: { store: Store; data: Dataset }) {
+export function SettingsView({ store }: { store: Store }) {
   const { settings, setSettings } = store;
 
   return (
@@ -50,42 +48,6 @@ export function SettingsView({ store, data }: { store: Store; data: Dataset }) {
         </div>
       </div>
 
-      <div className="panel">
-        <strong>Point budgets</strong>
-        <p className="small muted">How many points each of you gets to spend on each ballot.</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Ballot</th>
-              <th className="num">Budget</th>
-              {data.people.map((p) => (
-                <th key={p} className="num">{data.displayNames?.[p] ?? p}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {LEDGERS.map((l) => (
-              <tr key={l.id}>
-                <td>{l.name}</td>
-                <td className="num">
-                  <input
-                    className="points"
-                    type="number"
-                    min={0}
-                    value={data.budgets[l.id] ?? 0}
-                    onChange={(e) =>
-                      store.dispatch({ type: "budget", ledger: l.id, points: Number(e.target.value) || 0 })
-                    }
-                  />
-                </td>
-                {data.people.map((p) => (
-                  <td key={p} className="num small muted">{totalSpent(data, l.id, p).toLocaleString()}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
     </>
   );
 }

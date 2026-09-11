@@ -29,7 +29,6 @@ export function seasons(count: number, watched = 0) {
 export function makeData(shows: Show[]): Dataset {
   return {
     people: ["scotty", "shelby"],
-    budgets: { weekly: 1500, hour: 750, half: 1000, mini: 500 },
     shows,
     universes: [],
     history: [],

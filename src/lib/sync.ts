@@ -16,7 +16,6 @@ export const ALL_FILES = Object.values(FILES);
 export interface ShowsFile {
   people: string[];
   displayNames?: Record<string, string>;
-  budgets: Dataset["budgets"];
   shows: Dataset["shows"];
 }
 
@@ -53,7 +52,6 @@ export function serialize(data: Dataset): Record<string, string> {
     [FILES.shows]: format({
       people: data.people,
       displayNames: data.displayNames,
-      budgets: data.budgets,
       shows: data.shows,
     }),
     [FILES.universes]: format(data.universes),

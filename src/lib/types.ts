@@ -129,8 +129,6 @@ export interface Watching {
 export interface Dataset {
   people: PersonId[];
   displayNames?: Record<PersonId, string>;
-  /** Agreed point budget per person, per ballot. */
-  budgets: Record<LedgerId, number>;
   shows: Show[];
   universes: Universe[];
   history: Draw[];

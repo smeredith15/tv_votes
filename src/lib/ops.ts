@@ -18,7 +18,6 @@ export type Op =
   | { type: "universeItem"; universeId: string; index: number; watched: boolean }
   | { type: "inbox"; tmdbId: number; accept: boolean; show?: Show }
   | { type: "inboxSuggest"; item: InboxItem }
-  | { type: "budget"; ledger: LedgerId; points: number }
   | { type: "forgetDraw"; drawId: string }
   | { type: "clearHistory" }
   /** Take back the points on a show, on one ballot or on all of them. */
@@ -133,10 +132,6 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       data.watching = { ...data.watching, asides: op.add ? [...without, op.showId] : without };
       return data;
     }
-    case "budget": {
-      data.budgets = { ...data.budgets, [op.ledger]: op.points };
-      return data;
-    }
   }
 }
 
@@ -202,7 +197,6 @@ export function compact(ops: Op[]): Op[] {
     if (op.type === "vote") key = `vote:${op.showId}:${op.ledger}:${op.person}`;
     else if (op.type === "season") key = `season:${op.showId}:${op.season}`;
     else if (op.type === "universeItem") key = `uni:${op.universeId}:${op.index}`;
-    else if (op.type === "budget") key = `budget:${op.ledger}`;
     else if (op.type === "plexSeason") key = `plex:${op.showId}:${op.season}`;
     else if (op.type === "freePoints") key = `free:${op.showId}:${op.ledger ?? "all"}`;
     else if (op.type === "setPick") key = `pick:${op.ledger}`;

@@ -170,16 +170,10 @@ def main():
                 linked += 1
 
     ordered = sorted(shows.values(), key=lambda s: match_key(s["title"]))
-    budgets = {
-        ledger: max(sum(s["votes"][ledger][p] for s in ordered) for p in PEOPLE)
-        for ledger in SHEETS.values()
-    }
-
     DATA.mkdir(exist_ok=True)
     write(DATA / "shows.json", {
         "people": list(PEOPLE),
         "displayNames": DISPLAY_NAMES,
-        "budgets": budgets,
         "shows": ordered,
     })
     write(DATA / "universes.json", universes)
@@ -189,7 +183,6 @@ def main():
             write(path, [])
 
     print(f"{len(ordered)} shows, {linked} linked to a universe")
-    print(f"budgets: {budgets}")
     print(f"started but unfinished: {sum(1 for s in ordered if s.get('startedNotFinished'))}")
     return 0
 

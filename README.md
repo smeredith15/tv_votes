@@ -76,9 +76,10 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
   for whatever you are watching outside the voting altogether.
 - **Vote** — pick who is voting at the top: with a name selected, the other
   person's points, totals and picks are all hidden, so neither of you can
-  counter-bid from the same chair. Switch to *Both* when you are done. The meter
-  shows what you have left, and it says *cheater* until you have both spent the
-  same amount, exactly like the workbook's `IF(F8=G8, …)` check.
+  counter-bid from the same chair. Switch to *Both* when you are done. There is
+  no budget to spend up to: the bars are drawn against whichever of you has
+  placed more, and it says *cheater* until the two totals match, exactly like
+  the workbook's `IF(F8=G8, …)` check.
   Drawing spins through four other shows before it lands — each one a real
   weighted draw, so the near-misses are shows that genuinely could have come
   up. Nothing reaches the history until you press *Keep it*, so an idle

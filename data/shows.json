@@ -40704,12 +40704,77 @@
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 73375,
+   "poster": "/cO4py3L3q5GNPrA0qr1wVDrosK1.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Amazon Prime Video Free with Ads",
+     "type": "ads",
+     "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T23:03:19.469Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2018-08-30",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 8,
+     "airDate": "2019-10-31",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 8,
+     "airDate": "2022-12-20",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 6,
+     "airDate": "2023-06-29",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 5,
@@ -40728,7 +40793,8 @@
      "shelby": 0
     }
    },
-   "startedNotFinished": true
+   "startedNotFinished": true,
+   "nextAirDate": null
   },
   {
    "id": "jamie-foxx-show",

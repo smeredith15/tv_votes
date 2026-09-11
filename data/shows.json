@@ -61226,35 +61226,35 @@
      "name": "Season 1",
      "episodes": 10,
      "airDate": "2013-03-30",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
      "airDate": "2014-04-19",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
      "airDate": "2015-04-18",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
      "airDate": "2016-04-14",
-     "watched": false
+     "watched": true
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
      "airDate": "2017-06-10",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {

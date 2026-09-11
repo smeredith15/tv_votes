@@ -74342,16 +74342,35 @@
   {
    "id": "side-quest",
    "title": "Side Quest",
-   "runtime": null,
-   "format": "series",
+   "runtime": 30,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 216412,
+   "poster": "/1DGS6UQ063QLAjLlBAvKY5GcsM4.jpg",
+   "providers": [
+    {
+     "name": "Apple TV",
+     "type": "flatrate",
+     "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+    },
+    {
+     "name": "Apple TV Amazon Channel",
+     "type": "flatrate",
+     "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:56:37.780Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 4,
+     "airDate": "2025-03-25",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -74371,7 +74390,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "silicon-valley",

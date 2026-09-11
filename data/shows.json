@@ -56050,14 +56050,14 @@
      "name": "season_1.0",
      "episodes": 10,
      "airDate": "2015-06-24",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "season_2.0",
      "episodes": 12,
      "airDate": "2016-07-13",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,

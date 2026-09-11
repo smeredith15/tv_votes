@@ -4313,6 +4313,39 @@
    "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
+   "id": "animal-control",
+   "title": "Animal Control",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "animal-kingdom",
    "title": "Animal Kingdom",
    "runtime": 60,

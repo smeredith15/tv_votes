@@ -70,7 +70,10 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
 
 - **Now watching** — what you are in the middle of, one card per ballot: the
   season you are on, where it is streaming, how many episodes are left, and for
-  Friday nights how many Fridays that is. Tick a season off from here.
+  Friday nights how many Fridays that is. Tick a season off from here. Keeping a
+  draw puts that ballot on the show it landed on, and any ballot can also be
+  pointed at a show by hand, or cleared. Alongside it, **on the side** is a list
+  for whatever you are watching outside the voting altogether.
 - **Vote** — pick who is voting at the top: with a name selected, the other
   person's points, totals and picks are all hidden, so neither of you can
   counter-bid from the same chair. Switch to *Both* when you are done. The meter
@@ -82,10 +85,12 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
   "what would we get?" costs nothing.
 - **Shows** — search and filter the whole list; open any show to tick off
   seasons, fix its runtime or format, or re-pull its details from TMDB.
-- **Watched & Plex** — the fast way to tick seasons off: a worklist of what you
-  have started and not finished, with a switch between marking what you have
-  *watched* and what is *on the server*. Both are the same gesture over the same
-  grid, so they share a screen.
+- **Watched & Plex** — every show, each with two rows of seasons: the ones you
+  have watched and the ones sitting on Plex. Filters narrow it to what you have
+  started, what a draw has picked, or what is missing from the server, and the
+  search reaches the whole list. A show that is returning also carries an *auto*
+  tick: with it on, a new season turns up under Now watching instead of going
+  back to a vote, and the show stays off the ballots.
 - **Universes** — the Arrowverse and MCU watch orders, as checklists with a
   bookmark. Both were lifted straight out of the workbook's side columns, so
   your hand-built 818-entry Arrowverse interleave is intact.
@@ -112,8 +117,9 @@ Both commit to `main`, which republishes the site.
 
 ## Plex
 
-`data/plex.json` records which seasons are on the server. You can tick them by
-hand under *Watched & Plex*, or let the server tell you:
+`data/plex.json` records which seasons are on the server. Ticking them by hand
+under *Watched & Plex* is the intended way. There is also a script, if the
+library ever grows faster than the ticking:
 
 ```sh
 PLEX_URL=http://192.168.1.10:32400 PLEX_TOKEN=xxxx npm run plex
@@ -170,6 +176,10 @@ alone.
 
 - **History starts now.** The workbook was a snapshot with no record of past
   draws, so there was nothing to migrate. The first draw in the app is entry one.
+- **Shows finished before the workbook existed** were added with
+  `tools/add_shows.py`, flagged `assumeWatched`. The next refresh ticks off
+  every season that had already aired and clears the flag, so anything that airs
+  afterwards arrives unwatched — which is what makes the *auto* tick useful.
 - **23 shows are marked started-but-unfinished** (the purple rows). Their
   seasons aren't ticked, because the workbook never recorded which ones you'd
   seen. The *Needs seasons ticked* filter on the Shows tab lists them.

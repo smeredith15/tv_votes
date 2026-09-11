@@ -1678,6 +1678,40 @@
    "nextAirDate": null
   },
   {
+   "id": "abbott-elementary",
+   "title": "Abbott Elementary",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "accident",
    "title": "The Accident",
    "runtime": 60,
@@ -2574,7 +2608,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "ally-mcbeal",
@@ -4145,6 +4180,40 @@
    "nextAirDate": null
   },
   {
+   "id": "angie-tribeca",
+   "title": "Angie Tribeca",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "animal-kingdom",
    "title": "Animal Kingdom",
    "runtime": 60,
@@ -4426,6 +4495,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "a-p-bio",
+   "title": "A.P. Bio",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "apple-tree-yard",
@@ -4849,6 +4952,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "arrested-development",
+   "title": "Arrested Development",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "arrow",
@@ -5507,6 +5644,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "avenue-5",
+   "title": "Avenue 5",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "awkward",
@@ -6480,6 +6651,40 @@
    "nextAirDate": null
   },
   {
+   "id": "barry",
+   "title": "Barry",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "based-on-a-true-story",
    "title": "Based on a True Story",
    "runtime": 30,
@@ -6838,6 +7043,40 @@
    "nextAirDate": null
   },
   {
+   "id": "bear",
+   "title": "The Bear",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "beast-in-me",
    "title": "The Beast in Me",
    "runtime": 60,
@@ -6972,6 +7211,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "beckham",
+   "title": "Beckham",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "beef",
@@ -7422,6 +7695,40 @@
    "nextAirDate": null
   },
   {
+   "id": "better-off-ted",
+   "title": "Better Off Ted",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "better-things",
    "title": "Better Things",
    "runtime": 30,
@@ -7728,6 +8035,40 @@
    "nextAirDate": null
   },
   {
+   "id": "big-little-lies",
+   "title": "Big Little Lies",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "big-mistakes",
    "title": "Big Mistakes",
    "runtime": 30,
@@ -7778,6 +8119,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "big-mouth",
+   "title": "Big Mouth",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "big-sky",
@@ -7998,6 +8373,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "billy-on-the-street",
+   "title": "Billy on the Street",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "black-bird",
@@ -13297,6 +13706,74 @@
    "nextAirDate": null
   },
   {
+   "id": "cheers",
+   "title": "Cheers",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "chernobyl",
+   "title": "Chernobyl",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "chief-of-war",
    "title": "Chief of War",
    "runtime": 60,
@@ -13457,6 +13934,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "chuck",
+   "title": "Chuck",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "cleaning-lady",
@@ -13639,6 +14150,40 @@
      "shelby": 0
     }
    }
+  },
+  {
+   "id": "coach",
+   "title": "Coach",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "cobra-kai",
@@ -14366,6 +14911,40 @@
    "nextAirDate": null
   },
   {
+   "id": "community",
+   "title": "Community",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "completely-made-up-adventures-of-dick-turpin",
    "title": "The Completely Made-Up Adventures of Dick Turpin",
    "runtime": 30,
@@ -14676,7 +15255,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "corporate",
@@ -15054,6 +15634,40 @@
      "shelby": 0
     }
    }
+  },
+  {
+   "id": "crashing-us",
+   "title": "Crashing (US)",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "crazy-ex-girlfriend",
@@ -16164,6 +16778,40 @@
    }
   },
   {
+   "id": "daisy-jones-the-six",
+   "title": "Daisy Jones & the Six",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "damages",
    "title": "Damages",
    "runtime": 60,
@@ -17171,6 +17819,40 @@
    "nextAirDate": null
   },
   {
+   "id": "dead-to-me",
+   "title": "Dead to Me",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "dead-wives-club",
    "title": "The Dead Wives Club",
    "runtime": 60,
@@ -17525,6 +18207,40 @@
      "shelby": 0
     }
    }
+  },
+  {
+   "id": "defending-jacob",
+   "title": "Defending Jacob",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "defiant-ones",
@@ -19720,6 +20436,40 @@
    "nextAirDate": null
   },
   {
+   "id": "don-t-f-k-with-cats",
+   "title": "Don't F**k with Cats",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "doom-patrol",
    "title": "Doom Patrol",
    "runtime": 60,
@@ -20913,6 +21663,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "eastbound-down",
+   "title": "Eastbound & Down",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "echo",
@@ -23206,6 +23990,74 @@
    "nextAirDate": null
   },
   {
+   "id": "falcon-and-the-winter-soldier",
+   "title": "The Falcon and the Winter Soldier",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "fall-and-rise-of-reggie-dinkins",
+   "title": "The Fall and Rise of Reggie Dinkins",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "falling-skies",
    "title": "Falling Skies",
    "runtime": 60,
@@ -23553,6 +24405,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "fargo",
+   "title": "Fargo",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "fdr",
@@ -24469,7 +25355,42 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
+  },
+  {
+   "id": "fleabag",
+   "title": "Fleabag",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "fleishman-is-in-trouble",
@@ -25542,7 +26463,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "fresh-off-the-boat",
@@ -26414,6 +27336,40 @@
    "nextAirDate": null
   },
   {
+   "id": "fuller-house",
+   "title": "Fuller House",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "full-monty",
    "title": "The Full Monty",
    "runtime": 60,
@@ -26611,6 +27567,40 @@
     }
    },
    "nextAirDate": "2026-09-14"
+  },
+  {
+   "id": "game-of-thrones",
+   "title": "Game of Thrones",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "gangland-undercover",
@@ -27083,7 +28073,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "gentleman-in-moscow",
@@ -27445,6 +28436,74 @@
      "shelby": 0
     }
    }
+  },
+  {
+   "id": "ghosted",
+   "title": "Ghosted",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "ghosts",
+   "title": "Ghosts",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "ghosts-uk",
@@ -27934,6 +28993,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "girls5eva",
+   "title": "Girls5eva",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "glee",
@@ -28880,6 +29973,40 @@
    "nextAirDate": null
   },
   {
+   "id": "good-place",
+   "title": "The Good Place",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "good-wife",
    "title": "The Good Wife",
    "runtime": 60,
@@ -29129,6 +30256,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "gotham",
+   "title": "Gotham",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "gotham-knights",
@@ -31481,6 +32642,40 @@
    "nextAirDate": null
   },
   {
+   "id": "haunting-of-hill-house",
+   "title": "The Haunting of Hill House",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "hawkeye",
    "title": "Hawkeye",
    "runtime": 60,
@@ -32009,6 +33204,40 @@
    "nextAirDate": null
   },
   {
+   "id": "high-maintenance",
+   "title": "High Maintenance",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "hijack",
    "title": "Hijack",
    "runtime": 60,
@@ -32152,7 +33381,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "historical-roasts",
@@ -32586,6 +33816,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "homecoming",
+   "title": "Homecoming",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "homeland",
@@ -33081,6 +34345,40 @@
    "nextAirDate": null
   },
   {
+   "id": "house-of-cards",
+   "title": "House of Cards",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "house-of-the-dragon",
    "title": "House of the Dragon",
    "runtime": 60,
@@ -33165,6 +34463,74 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "how-i-met-your-father",
+   "title": "How I Met Your Father",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "how-i-met-your-mother",
+   "title": "How I Met Your Mother",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "how-the-earth-was-made",
@@ -33507,7 +34873,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "how-to-get-to-heaven-from-belfast",
@@ -33688,6 +35055,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "human-resources",
+   "title": "Human Resources",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "hung",
@@ -33951,7 +35352,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "i-know-this-much-is-true",
@@ -34026,6 +35428,40 @@
    "nextAirDate": null
   },
   {
+   "id": "i-ll-be-gone-in-the-dark",
+   "title": "I'll Be Gone in the Dark",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "i-may-destroy-you",
    "title": "I May Destroy You",
    "runtime": 60,
@@ -34096,6 +35532,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "important-things-with-demetri-martin",
+   "title": "Important Things with Demetri Martin",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "i-m-sorry",
@@ -35171,7 +36641,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "iron-fist",
@@ -35322,6 +36793,74 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "i-think-you-should-leave",
+   "title": "I Think You Should Leave",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "it-s-always-sunny-in-philadelphia",
+   "title": "It's Always Sunny in Philadelphia",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "it-s-bruno",
@@ -36843,6 +38382,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "john-adams",
+   "title": "John Adams",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "john-wayne-gacy-the-devil-in-disguise",
@@ -38606,6 +40179,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "kroll-show",
+   "title": "Kroll Show",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "lady-and-the-dale",
@@ -41031,6 +42638,40 @@
    "nextAirDate": "2026-10-08"
   },
   {
+   "id": "league",
+   "title": "The League",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "league-of-their-own",
    "title": "A League of Their Own",
    "runtime": 60,
@@ -42112,6 +43753,40 @@
    "nextAirDate": null
   },
   {
+   "id": "life-larry-and-the-pursuit-of-unhappiness",
+   "title": "Life, Larry, and the Pursuit of Unhappiness",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "life-on-our-planet",
    "title": "Life on Our Planet",
    "runtime": 60,
@@ -42588,6 +44263,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "little-fires-everywhere",
+   "title": "Little Fires Everywhere",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "little-things",
@@ -43781,7 +45490,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "lost-symbol",
@@ -46069,7 +47779,7 @@
   },
   {
    "id": "married-with-children",
-   "title": "Married… With Children",
+   "title": "Married\u2026 With Children",
    "runtime": 30,
    "format": "series",
    "franchise": null,
@@ -46530,7 +48240,7 @@
   },
   {
    "id": "marvel-s-what-if",
-   "title": "Marvel's What If…?",
+   "title": "Marvel's What If\u2026?",
    "runtime": 30,
    "format": "anthology",
    "franchise": null,
@@ -48201,6 +49911,40 @@
    "nextAirDate": null
   },
   {
+   "id": "middleditch-schwartz",
+   "title": "Middleditch & Schwartz",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "midnight-mass",
    "title": "Midnight Mass",
    "runtime": 60,
@@ -48422,7 +50166,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "mindy-project",
@@ -49068,7 +50813,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "modern-love",
@@ -49718,6 +51464,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "morning-show",
+   "title": "The Morning Show",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "mosaic",
@@ -50384,7 +52164,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "mrs-america",
@@ -51430,6 +53211,40 @@
    "nextAirDate": null
   },
   {
+   "id": "mythic-quest",
+   "title": "Mythic Quest",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "my-wife-and-kids",
    "title": "My Wife and Kids",
    "runtime": 30,
@@ -52096,7 +53911,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "ncis",
@@ -53150,6 +54966,40 @@
    "nextAirDate": null
   },
   {
+   "id": "night-of",
+   "title": "The Night Of",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "night-on-earth",
    "title": "Night on Earth",
    "runtime": 60,
@@ -53994,6 +55844,74 @@
    "nextAirDate": null
   },
   {
+   "id": "office-uk",
+   "title": "The Office (UK)",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "office-us",
+   "title": "The Office (US)",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "old-man",
    "title": "The Old Man",
    "runtime": 60,
@@ -54759,6 +56677,40 @@
    "nextAirDate": null
   },
   {
+   "id": "only-murders-in-the-building",
+   "title": "Only Murders in the Building",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "orange-is-the-new-black",
    "title": "Orange is the New Black",
    "runtime": 60,
@@ -55080,7 +57032,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "orphan-black-echoes",
@@ -55551,6 +57504,40 @@
    "nextAirDate": null
   },
   {
+   "id": "outer-banks",
+   "title": "Outer Banks",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "outer-range",
    "title": "Outer Range",
    "runtime": 60,
@@ -55764,6 +57751,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "outsider",
+   "title": "The Outsider",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "outsiders",
@@ -56336,6 +58357,40 @@
    }
   },
   {
+   "id": "paper",
+   "title": "The Paper",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "paradise",
    "title": "Paradise",
    "runtime": 60,
@@ -56515,6 +58570,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "parks-and-recreation",
+   "title": "Parks and Recreation",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "party-down",
@@ -59119,6 +61208,40 @@
    "nextAirDate": null
   },
   {
+   "id": "prodigal-son",
+   "title": "Prodigal Son",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "project-blue-book",
    "title": "Project Blue Book",
    "runtime": 60,
@@ -59797,7 +61920,7 @@
   },
   {
    "id": "queen-s-gambit",
-   "title": "The Queen’s Gambit",
+   "title": "The Queen\u2019s Gambit",
    "runtime": 60,
    "format": "mini",
    "franchise": null,
@@ -60107,6 +62230,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "ranch",
+   "title": "The Ranch",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "ratched",
@@ -61655,6 +63812,40 @@
    "nextAirDate": null
   },
   {
+   "id": "review",
+   "title": "Review",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "rick-and-morty",
    "title": "Rick and Morty",
    "runtime": 30,
@@ -62590,7 +64781,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "royal-pains",
@@ -62704,6 +64896,40 @@
    "nextAirDate": null
   },
   {
+   "id": "rules-of-engagement",
+   "title": "Rules of Engagement",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "runarounds",
    "title": "The Runarounds",
    "runtime": 60,
@@ -62811,6 +65037,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "russian-doll",
+   "title": "Russian Doll",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "rutherford-falls",
@@ -63459,6 +65719,40 @@
    "nextAirDate": null
   },
   {
+   "id": "scandal",
+   "title": "Scandal",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "schitt-s-creek",
    "title": "Schitt's Creek",
    "runtime": 30,
@@ -63911,6 +66205,74 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "scrubs",
+   "title": "Scrubs",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "scrubs-2026",
+   "title": "Scrubs (2026)",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "search-party",
@@ -64605,6 +66967,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "seinfeld",
+   "title": "Seinfeld",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "self-made-inspired-by-the-life-of-madam-c-j-walker",
@@ -65684,6 +68080,40 @@
    "nextAirDate": null
   },
   {
+   "id": "shameless",
+   "title": "Shameless",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "shantaram",
    "title": "Shantaram",
    "runtime": 60,
@@ -65786,6 +68216,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "sharp-objects",
+   "title": "Sharp Objects",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "sherlock",
@@ -66365,7 +68829,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "shrink-next-door",
@@ -66418,6 +68883,108 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "sick-note",
+   "title": "Sick Note",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "side-quest",
+   "title": "Side Quest",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "silicon-valley",
+   "title": "Silicon Valley",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "silo",
@@ -68418,6 +70985,40 @@
    "nextAirDate": null
   },
   {
+   "id": "space-force",
+   "title": "Space Force",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "special",
    "title": "Special",
    "runtime": 30,
@@ -68608,6 +71209,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "splitting-up-together",
+   "title": "Splitting Up Together",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "spongebob-squarepants",
@@ -68849,6 +71484,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "spy",
+   "title": "The Spy",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "spy-master",
@@ -69476,6 +72145,40 @@
    "nextAirDate": null
   },
   {
+   "id": "st-denis-medical",
+   "title": "St. Denis Medical",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "steal",
    "title": "Steal",
    "runtime": 60,
@@ -70076,6 +72779,108 @@
    "nextAirDate": null
   },
   {
+   "id": "stranger-things",
+   "title": "Stranger Things",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "studio",
+   "title": "The Studio",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
+   "id": "stumptown",
+   "title": "Stumptown",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "succession",
    "title": "Succession",
    "runtime": 60,
@@ -70221,6 +73026,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "sugar",
+   "title": "Sugar",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "suits",
@@ -72011,6 +74850,40 @@
    "nextAirDate": null
   },
   {
+   "id": "teacher",
+   "title": "A Teacher",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "ted",
    "title": "Ted",
    "runtime": 30,
@@ -72088,6 +74961,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "ted-lasso",
+   "title": "Ted Lasso",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "teen-wolf",
@@ -72563,7 +75470,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "that-70s-show",
@@ -72669,7 +75577,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "that-90s-show",
@@ -72728,7 +75637,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "that-damn-michael-che",
@@ -76002,6 +78912,40 @@
    "nextAirDate": null
   },
   {
+   "id": "unbreakable-kimmy-schmidt",
+   "title": "Unbreakable Kimmy Schmidt",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "under-pressure-the-u-s-women-s-world-cup-team",
    "title": "Under Pressure: The U.S. Women's World Cup Team",
    "runtime": 60,
@@ -76234,6 +79178,40 @@
    "nextAirDate": null
   },
   {
+   "id": "undoing",
+   "title": "The Undoing",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "undone",
    "title": "Undone",
    "runtime": 30,
@@ -76355,6 +79333,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "upload",
+   "title": "Upload",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "vampire-diaries",
@@ -76623,6 +79635,40 @@
    "nextAirDate": null
   },
   {
+   "id": "veep",
+   "title": "Veep",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
+  },
+  {
    "id": "verified-stand-up",
    "title": "Verified Stand-Up",
    "runtime": 30,
@@ -76874,6 +79920,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "vice-principals",
+   "title": "Vice Principals",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "vietnam-war",
@@ -77169,6 +80249,40 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "waco",
+   "title": "Waco",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "unknown",
+   "tmdbId": null,
+   "poster": null,
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "assumeWatched": true,
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-11T00:00:00.000Z"
   },
   {
    "id": "waco-american-apocalypse",
@@ -78566,7 +81680,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "wet-hot-american-summer-first-day-of-camp",
@@ -79450,7 +82565,8 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "white-princess",
@@ -80757,7 +83873,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "witcher",
@@ -80831,7 +83948,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "without-a-trace",
@@ -81313,7 +84431,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "workin-moms",
@@ -82080,7 +85199,8 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null
+   "nextAirDate": null,
+   "assumeWatched": true
   },
   {
    "id": "yogi-bear-show",

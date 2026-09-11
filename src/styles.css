@@ -185,3 +185,23 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
 }
 
 .draw-actions { justify-content: center; margin-top: 14px; }
+
+/* Now watching: the picks, with the side list beside them — or under them
+   once there is no room for a column. */
+.now { display: grid; gap: 14px; grid-template-columns: minmax(0, 1fr) 260px; align-items: start; }
+.now-main { display: flex; flex-direction: column; }
+.now-side { position: sticky; top: 64px; margin-top: 14px; }
+.now-side-list { max-height: 55vh; overflow-y: auto; margin-top: 8px; gap: 2px; }
+.aside-row { gap: 6px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+.aside-row:last-child { border-bottom: none; }
+.aside-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+@media (max-width: 820px) {
+  .now { grid-template-columns: minmax(0, 1fr); }
+  .now-side { position: static; }
+  .now-side-list { max-height: 40vh; }
+}
+
+/* Two rows of seasons per show: watched, and on the server. */
+.season-row { align-items: flex-start; gap: 8px; margin-top: 6px; }
+.season-row-label { width: 62px; flex: 0 0 auto; padding-top: 6px; }

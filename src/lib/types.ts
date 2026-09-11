@@ -40,6 +40,13 @@ export interface Show {
   universeEntry?: boolean;
   /** Carried over from the workbook as started-but-unfinished, seasons unticked. */
   startedNotFinished?: boolean;
+  /**
+   * When a new season turns up, start watching it rather than putting it back
+   * to a vote. A show set this way stays off the ballots.
+   */
+  autoResume?: boolean;
+  /** Added as already finished; the next refresh ticks off what had aired. */
+  assumeWatched?: boolean;
   status: ReturningStatus;
   /** Premiere date of the next season, when one is scheduled. */
   nextAirDate?: string | null;
@@ -111,6 +118,14 @@ export interface PlexLibrary {
   shows: Record<string, number[]>;
 }
 
+/** What is being watched right now, and what is queued outside the voting. */
+export interface Watching {
+  /** The show each ballot is on. Set by keeping a draw, or chosen by hand. */
+  picks: Partial<Record<LedgerId, string | null>>;
+  /** Shows being watched outside the voting framework, in the order added. */
+  asides: string[];
+}
+
 export interface Dataset {
   people: PersonId[];
   displayNames?: Record<PersonId, string>;
@@ -121,5 +136,6 @@ export interface Dataset {
   history: Draw[];
   inbox: InboxItem[];
   plex: PlexLibrary;
+  watching: Watching;
   updatedAt?: string;
 }

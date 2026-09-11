@@ -61749,16 +61749,63 @@
   {
    "id": "outer-banks",
    "title": "Outer Banks",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 100757,
+   "poster": "/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:41:03.849Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2020-04-15",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2021-07-30",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 10,
+     "airDate": "2023-02-23",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 10,
+     "airDate": "2024-10-10",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 10,
+     "airDate": "2026-08-20",
+     "watched": false
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -61778,7 +61825,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "outer-range",

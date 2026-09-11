@@ -90937,49 +90937,49 @@
      "name": "Season 1",
      "episodes": 10,
      "airDate": "2011-04-06",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
      "airDate": "2011-09-20",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 20,
      "airDate": "2012-05-29",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
      "airDate": "2014-01-22",
-     "watched": false
+     "watched": true
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
      "airDate": "2015-01-14",
-     "watched": false
+     "watched": true
     },
     {
      "number": 6,
      "name": "Season 6",
      "episodes": 10,
      "airDate": "2016-01-14",
-     "watched": false
+     "watched": true
     },
     {
      "number": 7,
      "name": "Season 7",
      "episodes": 10,
      "airDate": "2017-01-11",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {
@@ -91719,7 +91719,7 @@
      "name": "Season 1",
      "episodes": 9,
      "airDate": "2018-06-20",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,

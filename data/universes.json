@@ -1,0 +1,3648 @@
+[
+ {
+  "id": "arrowverse",
+  "name": "Arrowverse",
+  "entryShowId": "arrowverse",
+  "order": [
+   {
+    "label": "Arrow S01E01 Pilot",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E02 Honor Thy Father",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E03 Lone Gunmen",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E04 An Innocent Man",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E05 Damaged",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E06 Legacies",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E07 Muse of Fire",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E08 Vendetta",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E09 Year's End",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E10 Burned",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E11 Trust but Verify",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E12 Vertigo",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E13 Betrayal",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E14 The Odyssey",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E15 Dodger",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E16 Dead to Rights",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E17 The Huntress Returns",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E18 Salvation",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E19 Unfinished Business",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E20 Home Invasion",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E21 The Undertaking",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E22 Darkness on the Edge of Town",
+    "watched": false
+   },
+   {
+    "label": "Arrow S01E23 Sacrifice",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E01 City of Heroes",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E02 Identity",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E03 Broken Dolls",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E04 Crucible",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E05 League of Assassins",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E06 Keep Your Enemies Closer",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E07 State v. Queen",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E08 The Scientist",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E09 Three Ghosts",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E10 Blast Radius",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E11 Blind Spot",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E12 Tremors",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E13 Heir to the Demon",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E14 Time of Death",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E15 The Promise",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E16 Suicide Squad",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E17 Birds of Prey",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E18 Deathstroke",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E19 The Man Under the Hood",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E20 Seeing Red",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E21 City of Blood",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E22 Streets of Fire",
+    "watched": false
+   },
+   {
+    "label": "Arrow S02E23 Unthinkable",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E01 Pilot",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E01 The Calm",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E02 Fastest Man Alive",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E02 Sara",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E03 Things You Can't Outrun",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E03 Corto Maltese",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E01 Non Est Asylum",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E04 Going Rogue",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E04 The Magician",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E02 The Darkness Beneath",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E05 The Secret Origin of Felicity Smoak",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E03 The Devil's Vinyl",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E05 Plastique",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E06 Guilty",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E04 A Feast of Friends",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E06 The Flash is Born",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E07 Draw Back Your Bow",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E05 Danse Vaudou",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E07 Power Outage",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E06 Rage of Caliban",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E08 Flash vs. Arrow",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E08 The Brave and the Bold",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E07 Blessed Are the Damned",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E09 The Man in the Yellow Suit",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E09 The Climb",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E08 The Saint of Last Resorts",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E09 The Saint of Last Resorts: Part 2",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E10 Revenge of the Rogues",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E10 Left Behind",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E10 Quid Pro Quo",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E11 The Sound and the Fury",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E11 Midnight City",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E11 A Whole World Out There",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E12 Crazy for You",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E12 Uprising",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E12 Angels and Ministers of Grace",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E13 The Nuclear Man",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E13 Canaries",
+    "watched": false
+   },
+   {
+    "label": "Constantine S01E13 Waiting for the Man",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E14 Fallout",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E14 The Return",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E15 Nanda Parbat",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E15 Out of Time",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E16 The Offer",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E16 Rogue Time",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E17 Suicidal Tendencies",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E17 Tricksters",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E18 Public Enemy",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E18 All Star Team Up",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E19 Broken Arrow",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E19 Who is Harrison Wells?",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E20 The Fallen",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E20 The Trap",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E21 Al Sah-him",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E21 Grodd Lives",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E22 This Is Your Sword",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E22 Rogue Air",
+    "watched": false
+   },
+   {
+    "label": "Arrow S03E23 My Name Is Oliver Queen",
+    "watched": false
+   },
+   {
+    "label": "The Flash S01E23 Fast Enough",
+    "watched": false
+   },
+   {
+    "label": "Vixen S01E01 Episode 1",
+    "watched": false
+   },
+   {
+    "label": "Vixen S01E02 Episode 2",
+    "watched": false
+   },
+   {
+    "label": "Vixen S01E03 Episode 3",
+    "watched": false
+   },
+   {
+    "label": "Vixen S01E04 Episode 4",
+    "watched": false
+   },
+   {
+    "label": "Vixen S01E05 Episode 5",
+    "watched": false
+   },
+   {
+    "label": "Vixen S01E06 Episode 6",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E01 The Man Who Saved Central City",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E01 Green Arrow",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E02 Flash of Two Worlds",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E02 The Candidate",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E03 Family of Rogues",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E03 Restoration",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E01 Pilot",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E04 The Fury of Firestorm",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E04 Beyond Redemption",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E02 Stronger Together",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E05 The Darkness and the Light",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E05 Haunted",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E03 Fight or Flight",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E06 Enter Zoom",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E06 Lost Souls",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E04 Livewire",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E07 Gorilla Warfare",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E07 Brotherhood",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E05 How Does She Do It?",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E06 Red Faced",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E08 Legends of Today",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E08 Legends of Yesterday",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E07 Human For a Day",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E09 Running to Stand Still",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E09 Dark Waters",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E08 Hostile Takeover",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E09 Blood Bonds",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E10 Childish Things",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E10 Potential Energy",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E10 Blood Debts",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E01 Pilot, Part 1",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E11 Strange Visitor From Another Planet",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E11 The Reverse-Flash Returns",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E11 A.W.O.L.",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E02 Pilot, Part 2",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E12 Bizarro",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E12 Fast Lane",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E12 Unchained",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E03 Blood Ties",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E13 For the Girl Who Has Everything",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E13 Welcome to Earth-2",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E13 Sins of the Father",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E04 White Knights",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E14 Escape from Earth-2",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E14 Code of Silence",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E05 Fail-Safe",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E14 Truth, Justice and the American Way",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E15 King Shark",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E15 Taken",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E06 Star City 2046",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E15 Solitude",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E07 Marooned",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E08 Night of the Hawk",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E16 Falling",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E17 Manhunter",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E16 Trajectory",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E16 Broken Hearts",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E18 Worlds Finest",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E17 Flash Back",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E17 Beacon of Hope",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E09 Left Behind",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E18 Eleven-Fifty-Nine",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E10 Progeny",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E19 Myriad",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E11 The Magnificent Eight",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S01E20 Better Angels",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E18 Versus Zoom",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E12 Last Refuge",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E19 Back to Normal",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E19 Canary Cry",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E13 Leviathan",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E20 Rupture",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E20 Genesis",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E14 River of Time",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E21 The Runaway Dinosaur",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E21 Monument Point",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E15 Destiny",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E22 Invincible",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E22 Lost in the Flood",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S01E16 Legendary",
+    "watched": false
+   },
+   {
+    "label": "The Flash S02E23 The Race of His Life",
+    "watched": false
+   },
+   {
+    "label": "Arrow S04E23 Schism",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E01 Flashpoint",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E01 Legacy",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E01 The Adventures of Supergirl",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E02 Paradox",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E02 The Recruits",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E01 Out of Time",
+    "watched": false
+   },
+   {
+    "label": "Vixen S02E01 Episode 1",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E02 The Last Children of Krypton",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E03 Magenta",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E03 A Matter of Trust",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E02 The Justice Society of America",
+    "watched": false
+   },
+   {
+    "label": "Vixen S02E02 Episode 2",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E03 Welcome to Earth",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E04 The New Rogues",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E04 Penance",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E03 Shogun",
+    "watched": false
+   },
+   {
+    "label": "Vixen S02E03 Episode 3",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E04 Survivors",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E05 Monster",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E05 Human Target",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E04 Abominations",
+    "watched": false
+   },
+   {
+    "label": "Vixen S02E04 Episode 4",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E05 Crossfire",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E06 So It Begins",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E05 Compromised",
+    "watched": false
+   },
+   {
+    "label": "Vixen S02E05 Episode 5",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E06 Changing",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E06 Shade",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E07 Vigilante",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E06 Outlaw Country",
+    "watched": false
+   },
+   {
+    "label": "Vixen S02E06 Episode 6",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E07 The Darkest Place",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E07 Killer Frost",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E08 Medusa",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E08 Invasion!",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E08 Invasion!",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E07 Invasion!",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E09 The Present",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E09 What We Leave Behind",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E08 The Chicago Way",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E09 Supergirl Lives",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E10 Borrowing Problems from the Future",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E09 Raiders of the Lost Art",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E10 Who Are You?",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E10 We Can Be Heroes",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E11 Dead or Alive",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E10 The Legion of Doom",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E11 Second Chances",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E11 The Martian Chronicles",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E12 Untouchable",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E11 Turncoat",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E12 Bratva",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E12 Luthors",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E13 Spectre of the Gun",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E13 Mr. & Mrs. Mxyzptlk",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E13 Attack on Gorilla City",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E12 Camelot/3000",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E14 The Sin-Eater",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E14 Homecoming",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E14 Attack on Central City",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E15 Fighting Fire With Fire",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E15 Exodus",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E15 The Wrath of Savitar",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E13 Land of the Lost",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E16 Into the Speed Force",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E14 Moonshot",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E16 Checkmate",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E16 Star-Crossed",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E17 Duet",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E15 Fellowship of the Spear",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E17 Kapiushon",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E17 Distant Sun",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E18 Abra Kadabra",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E16 Doomworld",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E18 Disbanded",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S02E17 Aruba",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E18 Ace Reporter",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E19 The Once and Future Flash",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E19 Dangerous Liaisons",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E19 Alex",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E20 I Know Who You Are",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E20 Underneath",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E20 City of Lost Children",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E21 Cause and Effect",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E21 Honor Thy Fathers",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E21 Resist",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E22 Infantino Street",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E22 Missing",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S02E22 Nevertheless, She Persisted",
+    "watched": false
+   },
+   {
+    "label": "The Flash S03E23 Finish Line",
+    "watched": false
+   },
+   {
+    "label": "Arrow S05E23 Lian Yu",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E01 Girl of Steel",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E01 The Flash Reborn",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E01 Aruba-Con",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E01 Fallout",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E02 Triggers",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E02 Mixed Signals",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E02 Freakshow",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E02 Tribute",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E03 Far From the Tree",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E03 Luck Be a Lady",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E03 Zari",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E03 Next of Kin",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E04 The Faithful",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E04 Elongated Journey Into Night",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E04 Phone Home",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E04 Reversal",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E05 Damage",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E05 Girls Night Out",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E05 Return of the Mack",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E05 Deathstroke Returns",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E06 Midvale",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E06 When Harry Met Harry...",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E06 Helen Hunt",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E06 Promises Kept",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E07 Wake Up",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E07 Therefore I Am",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E07 Welcome to the Jungle",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E07 Thanksgiving",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E08 Crisis on Earth-X, Part 1",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E08 Crisis on Earth-X, Part 2",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E08 Crisis on Earth-X, Part 3",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E08 Crisis on Earth-X, Part 4",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E09 Reign",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E09 Don't Run",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E09 Beebo the God of War",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E09 Irreconcilable Differences",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S01E01 Episode One",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S01E02 Episode Two",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S01E03 Episode Three",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S01E04 Episode Four",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S01E05 Episode Five",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S01E06 Episode Six",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E10 Legion of Super-Heroes",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E10 The Trial of The Flash",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E01 The Resurrection",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E10 Divided",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E11 Fort Rozz",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E11 The Elongated Knight Rises",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E02 Lawanda: The Book of Hope",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E11 We Fall",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E12 For Good",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E12 Honey, I Shrunk Team Flash",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E03 Lawanda: The Book of Burial",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E12 All for Nothing",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E13 Both Sides Now",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E13 True Colors",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E04 Black Jesus",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E13 The Devil's Greatest Trick",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E10 Daddy Darhkest",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E05 And Then the Devil Brought the Plague: The Book of Green Light",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E11 Here I Go Again",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E12 The Curse of the Earth Totem",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E14 Subject 9",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E06 Three Sevens: The Book of Thunder",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E14 Collision Course",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E13 No Country for Old Dads",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E15 Enter Flashtime",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E07 Equinox: The Book of Fate",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E15 Doppelganger",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E14 Amazing Grace",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E16 Run, Iris, Run",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E08 The Book of Revelations",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E15 Necromancing the Stone",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E09 The Book of Little Black Lies",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E16 I, Ava",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E10 Sins of the Father: The Book of Redemption",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E16 The Thanatos Guild",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E17 Guest Starring John Noble",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E11 Black Jesus: The Book of Crucifixion",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E17 Brothers in Arms",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S03E18 The Good, The Bad and The Cuddly",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E17 Null and Annoyed",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E12 The Resurrection and the Light: The Book of Pain",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E18 Fundamentals",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E14 Schott Through the Heart",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E18 Lose Yourself",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S01E13 Shadow of Death: The Book of War",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E19 The Dragon",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E15 In Search of Lost Time",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E19 Fury Rogue",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E20 Shifting Allegiances",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E16 Of Two Minds",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E20 Therefore She Is",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E21 Docket No. 11-19-41-73",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E17 Trinity",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E21 Harry and the Harrisons",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E22 The Ties That Bind",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E18 Shelter from the Storm",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E22 Think Fast",
+    "watched": false
+   },
+   {
+    "label": "Arrow S06E23 Life Sentence",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E19 The Fanatical",
+    "watched": false
+   },
+   {
+    "label": "The Flash S04E23 We Are The Flash",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E20 Dark Side of the Moon",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E21 Not Kansas",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E22 Make it Reign",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S03E23 Battles Lost and Won",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S02E01 Episode One",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S02E02 Episode Two",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S02E03 Episode Three",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S02E04 Episode Four",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S02E05 Episode Five",
+    "watched": false
+   },
+   {
+    "label": "Freedom Fighters: The Ray S02E06 Episode Six",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E01 Nora",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E01 The Book of Consequences: Chapter One: Rise of the Green Light Babies",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E01 American Alien",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E01 Inmate 4587",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E02 Blocked",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E02 The Book of Consequences: Chapter Two: Black Jesus Blues",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E02 Fallout",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E02 The Longbow Hunters",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E01 The Virgin Gary",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E03 The Death of Vibe",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E03 The Book of Consequences: Chapter Three: Master Lowry",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E03 Man of Steel",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E03 Crossing Lines",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E02 Witch Hunt",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E04 News Flash",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E04 The Book of Consequences: Chapter Four: Translucent Freak",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E04 Ahimsa",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E04 Level Two",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E03 Dancing Queen",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E05 Parasite Lost",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E05 The Demon",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E04 Wet Hot American Bummer",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E05 All Doll'd Up",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E05 The Book of Blood: Chapter One: Requiem",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E06 Call to Action",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E06 Due Process",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E05 Tagumo Attacks!!!",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E06 The Icicle Cometh",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E06 The Book of Blood: Chapter Two: The Perdi",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E07 Rather the Fallen Angel",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E07 The Slabside Redemption",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E06 Tender is the Nate",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E07 O Come, All Ye Thankful",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E07 The Book of Blood: Chapter Three: The Sange",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E08 Bunker Hill",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E08 Unmasked",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E07 Hell No, Dolly!",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E08 What's Past is Prologue",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E08 The Book of Rebellion: Chapter One: Exodus",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E09 Elseworlds, Part 1",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E09 Elseworlds, Part 2",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E08 Legends of To-Meow-Meow",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E09 Elseworlds, Part 3",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E09 The Book of Rebellion: Chapter Two: Gift of the Magi",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E10 The Flash & The Furious",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E10 Suspicious Minds",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E10 My Name is Emiko Queen",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E10 The Book of Rebellion: Chapter Three: Angelitos Negros",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E11 Seeing Red",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E11 Blood Memory",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E11 Past Sins",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E11 The Book of Secrets: Chapter One: Prodigal Son",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E12 Memorabilia",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E12 Emerald Archer",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E12 The Book of Secrets: Chapter Two: Just and Unjust",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E13 Goldfaced",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E13 Star City Slayer",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E13 The Book of Secrets: Chapter Three: Pillar of Fire",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E14 Cause and XS",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E12 Menagerie",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E13 What's So Funny About Truth, Justice, and the American Way?",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E14 Brothers & Sisters",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E14 The Book of Secrets: Chapter Four: Original Sin",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E15 King Shark vs. Gorilla Grodd",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E14 Stand and Deliver",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E15 Training Day",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E15 The Book of the Apocalypse: Chapter One: The Alpha",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E16 Failure is an Orphan",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E15 O Brother, Where Art Thou?",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E16 Star City 2040",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S02E16 The Book of the Apocalypse: Chapter Two: The Omega",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E17 Time Bomb",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E16 The House of L",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E17 Inheritance",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E17 All About Eve",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E09 Lucha De Apuestas",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E10 The Getaway",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E11 S\u00e9ance and Sensibility",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E18 Lost Canary",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E18 Godspeed",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E18 Crime and Punishment",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E12 The Eggplant, The Witch & The Wardrobe",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E19 Spartan",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E19 Snow Pack",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E19 American Dreamer",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E13 Egg MacGuffin",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E20 Confessions",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E20 Gone Rogue",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E20 Will The Real Miss Tessmacher Please Stand Up?",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E14 Nip/Stuck",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E21 Living Proof",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E21 The Girl With The Red Lightning",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E21 Red Dawn",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E15 Terms of Service",
+    "watched": false
+   },
+   {
+    "label": "Arrow S07E22 You Have Saved This City",
+    "watched": false
+   },
+   {
+    "label": "The Flash S05E22 Legacy",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S04E22 The Quest for Peace",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S04E16 Hey, World!",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E01 Pilot",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E01 Event Horizon",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E01 The Book of Occupation: Chapter One: Birth of Blackbird",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E01 Into the Void",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E02 The Rabbit Hole",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E02 Stranger Beside Me",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E02 The Book of Occupation: Chapter Two: Maryam's Tasbih",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E02 A Flash of the Lightning",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E01 Starling City",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E03 Down Down Down",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E03 Blurred Lines",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E03 The Book of Occupation: Chapter Three: Agent Odell's Pipe-Dream",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E03 Dead Man Running",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E02 Welcome to Hong Kong",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E04 Who Are You?",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E04 In Plain Sight",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E04 The Book of Occupation: Chapter Four: Lynn's Ouroboros",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E04 There Will Be Blood",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E03 Leap of Faith",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E05 Mine Is a Long And a Sad Tale",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E05 Dangerous Liaisons",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E05 Kiss Kiss Breach Breach",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E04 Present Tense",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E06 I'll Be Judge, I'll Be Jury",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E06 Confidence Women",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E05 The Book of Occupation: Chapter Five: Requiem for Tavon",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E07 Tell Me the Truth",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E07 Tremors",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E06 The Book of Resistance: Chapter One: Knocking on Heaven's Door",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E06 License to Elongate",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E05 Prochnost",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E07 The Book of Resistance: Chapter Two: Henderson's Opus",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E07 The Last Temptation of Barry Allen, Pt. 1",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E06 Reset",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E08 A Mad Tea-Party",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E08 The Wrath of Rama Khan",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E08 The Book of Resistance: Chapter Three: The Battle of Franklin Terrace",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E08 The Last Temptation of Barry Allen, Pt. 2",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E07 Purgatory",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E09 Crisis on Infinite Earths: Part One",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E09 Crisis on Infinite Earths: Part Two",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E09 The Book of Resistance: Chapter Four: Earth Crisis",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E09 Crisis on Infinite Earths: Part Three",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E08 Crisis on Infinite Earths: Part Four",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E0\u2014 Crisis on Infinite Earths: Part Five",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E10 How Queer Everything Is Today!",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E10 The Bottle Episode",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E10 The Book of Markovia: Chapter One: Blessings and Curses Reborn",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E09 Green Arrow & The Canaries",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E01 Meet the Legends",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E11 An Un-Birthday Present",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E11 Back From the Future - Part One",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E11 The Book of Markovia: Chapter Two: Lynn's Addiction",
+    "watched": false
+   },
+   {
+    "label": "Arrow S08E10 Fadeout",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E12 The Book of Markovia: Chapter Three: Motherless ID",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E10 Marathon",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E02 Miss Me, Kiss Me, Love Me",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E13 The Book of Markovia: Chapter Four: Grab the Strap",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E11 Love Is A Battlefield",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E03 Slay Anything",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E12 Take Your Choice",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E12 Back From the Future - Part Two",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E12 A Girl Named Sue",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E04 A Head of Her Time",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E13 Drink Me",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E13 It's a Super Life",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E14 The Book of War: Chapter One: Homecoming",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E13 Grodd Friended Me",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E05 Mortal Khanbat",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E15 The Book of War: Chapter Two: Freedom Ain't Free",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E14 Grinning From Ear to Ear",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E14 The Bodyguard",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S03E16 The Book of War: Chapter Three: Liberation",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E14 Death of the Speed Force",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E06 Mr. Parker's Cul-De-Sac",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E15 Off With Her Head",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E15 Reality Bytes",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E15 The Exorcism of Nash Wells",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E07 Romeo V. Juliet: Dawn of Justness",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E16 Through the Looking-Glass",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E16 Alex in Wonderland",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E16 So Long and Goodnight",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E08 Zari, Not Zari",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E17 A Narrow Escape",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E17 Liberation",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E09 The Great British Fake Off",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E18 If You Believe In Me, I'll Believe In You",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E17 Deus Lex Machina",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E18 Pay the Piper",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E10 Ship Broken",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E19 A Secret Kept From All the Rest",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E18 The Missing Link",
+    "watched": false
+   },
+   {
+    "label": "The Flash S06E19 Success Is Assured",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E11 Freaks and Greeks",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S01E20 O, Mouse!",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S05E19 Immortal Kombat",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E01 Pilot",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E12 I Am Legends",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E02 S.T.R.I.P.E.",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E13 The One Where We're Trapped On TV",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E03 Icicle",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S05E14 Swan Thong",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E04 Wildcat",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E05 Hourman and Dr. Mid-Nite",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E06 The Justice Society",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E07 Shiv: Part 1",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E08 Shiv: Part 2",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E08 Shiv Part Two",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E09 Brainwave",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E10 Brainwave Jr.",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E12 Stars & S.T.R.I.P.E.: Part 1",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S01E13 Stars & S.T.R.I.P.E.: Part 2",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E01 Whatever Happened to Kate Kane?",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E02 Prior Criminal History",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E03 Bat Girl Magic!",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E01 The Book of Reconstruction: Chapter One: Collateral Damage",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E04 Fair Skin, Blue Eyes",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E02 The Book of Reconstruction: Chapter Two: Unacceptable Losses",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E05 Gore on Canvas",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E03 The Book of Reconstruction: Chapter Three: Despite All My Rage...",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E01 Pilot",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E06 Do Not Resuscitate",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E04 The Book of Reconstruction: Chapter Four: A Light in the Darkness",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E01 All's Wells That Ends Wells",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E02 Heritage",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E05 The Book of Ruin: Chapter One: Picking Up the Pieces",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E02 The Speed of Thought",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E03 The Perks of Not Being a Wallflower",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E07 It's Best You Stop Digging",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E06 The Book of Ruin: Chapter Two: Theseus's Ship",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E03 Mother",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E04 Haywire",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E08 Survived Much Worse",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E04 Central City Strong",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E05 The Best of Smallville",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E09 Rule #1",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E05 Fear Me",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E01 Rebirth",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E06 The One With The Nineties",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E02 A Few Good Women",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E10 Time Off for Good Behavior",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E07 Painkiller",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E07 Growing Pains",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E03 Phantom Menaces",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E11 Arrive Alive",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E08 The Book of Ruin: Chapter Three: Things Fall Apart",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E04 Lost Souls",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E09 The Book of Ruin: Chapter Four: Lyding",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E05 Prom Night!",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E12 Initiate Self-Destruct",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E01 Ground Control to Sara Lance",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E10 The Book of Reunification: Chapter One: Revelations",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E08 The People v. Killer Frost",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E06 Prom Again!",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E13 I'll Give You a Clue",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E02 Meat: The Legends",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E11 The Book of Reunification: Chapter Two: Trial and Errors",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E09 Timeless",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E07 Fear Knot",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E14 And Justice For All",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E03 The Ex-Factor",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E12 The Book of Resurrection: Chapter One: Crossroads",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E10 Family Matters, Part 1",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E06 Broken Trust",
+    "watched": false
+   },
+   {
+    "label": "Black Lightning S04E13 The Book of Resurrection: Chapter Two: Closure",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E11 Family Matters, Part 2",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E04 Bay of Squids",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E07 Man of Steel",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E08 Holding the Wrench",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E15 Armed and Dangerous",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E05 The Satanist's Apprentice",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E12 Good-Bye Vibrations",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E09 Loyal Subjekts",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E16 Rebirth",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E06 Bishop's Gambit",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E13 Masquerade",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E10 O Mother, Where Art Thou?",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E17 Kane, Kate",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E07 Back to the Finale: Part II",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E14 Rayo de Luz",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E11 A Brief Reminiscence In-Between Cataclysmic Events",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S02E18 Power",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E08 Stressed Western",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E15 Enemy At the Gates",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E16 P.O.W.",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E09 This is Gus",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E17 Heart of the Matter, Part 1",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E12 Through the Valley of Death",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E10 Bad Blood",
+    "watched": false
+   },
+   {
+    "label": "The Flash S07E18 Heart of the Matter, Part 2",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E13 Fail Safe",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E11 The Final Frame",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E01 Summer School: Chapter One",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E14 The Eradicator",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E12 Bored On Board Onboard",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E02 Summer School: Chapter Two",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S01E15 Last Sons of Krypton",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E13 Silence of the Sonograms",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E08 Welcome Back, Kara!",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E03 Summer School: Chapter Three",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E14 There Will Be Brood",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E09 Dream Weaver",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E04 Summer School: Chapter Four",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S06E15 The Fungus Amongus",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E10 Still I Rise",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E05 Summer School: Chapter Five",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E11 Mxy in the Middle",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E06 Summer School: Chapter Six",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E12 Blind Spots",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E07 Summer School: Chapter Seven",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E13 The Gauntlet",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E08 Summer School: Chapter Eight",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E14 Magical Thinking",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E09 Summer School: Chapter Nine",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E15 Hope for Tomorrow",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E10 Summer School: Chapter Ten",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E01 Mad As a Hatter",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E01 The Bullet Blondes",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E16 Nightmare in National City",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E11 Summer School: Chapter Eleven",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E02 Loose Tooth",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E02 The Need for Speed",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E17 I Believe in a thing Called Love",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E12 Summer School: Chapter Twelve",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E03 Freeze",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E03 wvrdr_error_100 not found",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E18 Truth or Consequences",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S02E13 Summer School: Chapter Thirteen",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E04 Antifreeze",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E04 Speakeasy Does It",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E19 The Last Gauntlet",
+    "watched": false
+   },
+   {
+    "label": "Supergirl S06E20 Kara",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E05 A Lesson From Professor Pyg",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E05 It's a Mad, Mad, Mad, Mad Scientist",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E01 Armageddon, Part 1",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E06 How Does Your Garden Grow?",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E06 Deus Ex Latrina",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E02 Armageddon, Part 2",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E07 Pick Your Poison",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E07 A Woman's Place is in the War Effort!",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E03 Armageddon, Part 3",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E04 Armageddon, Part 4",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E05 Armageddon, Part 5",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E01 What Lies Beneath",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E08 Trust Destiny",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E08 Paranoid Android",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E02 The Ties That Bind",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E09 Meet Your Maker",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E09 Lowest Common Demoninator",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E03 The Thing in the Mines",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E10 Toxic",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E10 The Fixed Point",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E04 The Inverse Method",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E11 Broken Toys",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E11 Rage Against the Machines",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E05 Girl... You'll Be a Woman, Soon",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E12 We're All Mad Here",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E12 Too Legit to Quit",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E06 Tried and True",
+    "watched": false
+   },
+   {
+    "label": "Batwoman S03E13 We Having Fun Yet?",
+    "watched": false
+   },
+   {
+    "label": "DC's Legends of Tomorrow S07E13 Knocked Down, Knocked Up",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E07 Anti-Hero",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E06 Impulsive Excessive Disorder",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E07 Lockdown",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E08 Into Oblivion",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E08 The Fire Next Time",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E09 30 Days and 30 Nights",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E09 Phantoms",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E10 Reckless",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E11 Resurrection",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E10 Bizarros in a Bizarro World",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E12 Death Rises",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E11 Truth and Consequences",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E13 Death Falls",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E14 Funeral for a Friend",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E15 Into the Still Force",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E16 The Curious Case of Bartholomew Allen",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E12 Lies That Bind",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E13 All Is Lost",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E17 Keep It Dark",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E18 The Man in the Yellow Tie",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E14 Worlds War Bizarre",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E19 Negative, Part One",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S02E15 Waiting for Superman",
+    "watched": false
+   },
+   {
+    "label": "The Flash S08E20 Negative, Part Two",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E01 Frenemies \u2013 Chapter One: The Murder",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E02 Frenemies \u2013 Chapter Two: The Suspects",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E03 Frenemies \u2013 Chapter Three: The Blackmail",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E04 Frenemies \u2013 Chapter Four: The Evidence",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E05 Frenemies \u2013 Chapter Five: The Thief",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E06 Frenemies \u2013 Chapter Six: The Betrayal",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E07 Frenemies \u2013 Chapter Seven: Infinity Inc. Part One",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E08 Frenemies \u2013 Chapter Eight: Infinity Inc. Part Two",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E09 Frenemies \u2013 Chapter Nine: The Monsters",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E10 Frenemies \u2013 Chapter Ten: The Killer",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E11 Frenemies \u2013 Chapter Eleven: The Haunting",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E12 Frenemies \u2013 Chapter Twelve: The Last Will and Testament of Sylvester Pemberton",
+    "watched": false
+   },
+   {
+    "label": "Stargirl S03E13 Frenemies \u2013 Chapter Thirteen: The Reckoning",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E01 Wednesday Ever After",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E02 Hear No Evil",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E03 Rogues of War",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E04 The Mask of the Red Death, Part 1",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E05 The Mask of the Red Death, Part 2",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E01 Closer",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E06 The Good, the Bad, and the Lucky",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E02 Uncontrollable Forces",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E03 In Cold Blood",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E07 Wildest Dreams",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E04 Too Close to Home",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E08 Partners in Time",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E05 Head On",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E06 Of Sound Mind",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E09 It's My Party and I'll Die If I Want To",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E07 Forever and Always",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E10 A New World, Part One",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E08 Guess Who's Coming to Dinner",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E11 A New World, Part Two",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E12 A New World, Part Three",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E09 The Dress",
+    "watched": false
+   },
+   {
+    "label": "The Flash S09E13 A New World, Part Four",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E10 Collision Course",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E11 Complications",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E12 Injustice",
+    "watched": false
+   },
+   {
+    "label": "Superman & Lois S03E13 What Kills You Only Makes You Stronger",
+    "watched": false
+   }
+  ]
+ },
+ {
+  "id": "mcu",
+  "name": "MCU",
+  "entryShowId": "mcu",
+  "order": [
+   {
+    "label": "Iron Man",
+    "watched": false
+   },
+   {
+    "label": "The Incredible Hulk",
+    "watched": false
+   },
+   {
+    "label": "Iron Man 2",
+    "watched": false
+   },
+   {
+    "label": "Thor",
+    "watched": false
+   },
+   {
+    "label": "Captain America: The First Avenger",
+    "watched": false
+   },
+   {
+    "label": "The Avengers",
+    "watched": false
+   },
+   {
+    "label": "Iron Man 3",
+    "watched": false
+   },
+   {
+    "label": "Agents of SHIELD S01",
+    "watched": false
+   },
+   {
+    "label": "Thor: The Dark World",
+    "watched": false
+   },
+   {
+    "label": "Captain America: The Winter Soldier",
+    "watched": false
+   },
+   {
+    "label": "Guardians of the Galaxy",
+    "watched": false
+   },
+   {
+    "label": "Agents of SHIELD S02",
+    "watched": false
+   },
+   {
+    "label": "Agent Carter S01",
+    "watched": false
+   },
+   {
+    "label": "Daredevil S01",
+    "watched": false
+   },
+   {
+    "label": "Avengers: Age of Ultron",
+    "watched": false
+   },
+   {
+    "label": "Ant-Man",
+    "watched": false
+   },
+   {
+    "label": "Agents of SHIELD S03",
+    "watched": false
+   },
+   {
+    "label": "Jessica Jones S01",
+    "watched": false
+   },
+   {
+    "label": "Agent Carter S02",
+    "watched": false
+   },
+   {
+    "label": "Daredevil S02",
+    "watched": false
+   },
+   {
+    "label": "Captain America: Civil War",
+    "watched": false
+   },
+   {
+    "label": "Agents of SHIELD S04",
+    "watched": false
+   },
+   {
+    "label": "Luke Cage S01",
+    "watched": false
+   },
+   {
+    "label": "Doctor Strange",
+    "watched": false
+   },
+   {
+    "label": "Iron Fist S01",
+    "watched": false
+   },
+   {
+    "label": "Guardians of the Galaxy Vol. 2",
+    "watched": false
+   },
+   {
+    "label": "Spider-Man: Homecoming",
+    "watched": false
+   },
+   {
+    "label": "The Defenders S01",
+    "watched": false
+   },
+   {
+    "label": "Inhumans S01",
+    "watched": false
+   },
+   {
+    "label": "Thor: Ragnarok",
+    "watched": false
+   },
+   {
+    "label": "The Punisher S01",
+    "watched": false
+   },
+   {
+    "label": "Runaways S01",
+    "watched": false
+   },
+   {
+    "label": "Agents of SHIELD S05",
+    "watched": false
+   },
+   {
+    "label": "Black Panther",
+    "watched": false
+   },
+   {
+    "label": "Jessica Jones S02",
+    "watched": false
+   },
+   {
+    "label": "Avengers: Infinity War",
+    "watched": false
+   },
+   {
+    "label": "Cloak & Dagger S01",
+    "watched": false
+   },
+   {
+    "label": "Luke Cage S02",
+    "watched": false
+   },
+   {
+    "label": "Ant-Man and the Wasp",
+    "watched": false
+   },
+   {
+    "label": "Iron Fist S02",
+    "watched": false
+   },
+   {
+    "label": "Daredevil S03",
+    "watched": false
+   },
+   {
+    "label": "Runaways S02",
+    "watched": false
+   },
+   {
+    "label": "The Punisher S02",
+    "watched": false
+   },
+   {
+    "label": "Captain Marvel",
+    "watched": false
+   },
+   {
+    "label": "Cloak & Dagger S02",
+    "watched": false
+   },
+   {
+    "label": "Avengers: Endgame",
+    "watched": false
+   },
+   {
+    "label": "Agents of SHIELD S06",
+    "watched": false
+   },
+   {
+    "label": "Jessica Jones S03",
+    "watched": false
+   },
+   {
+    "label": "Spider-Man: Far From Home",
+    "watched": false
+   },
+   {
+    "label": "Runaways S03",
+    "watched": false
+   },
+   {
+    "label": "Agents of SHIELD S07",
+    "watched": false
+   },
+   {
+    "label": "Helstrom S01",
+    "watched": false
+   },
+   {
+    "label": "WandaVision S01",
+    "watched": false
+   },
+   {
+    "label": "The Falcon and Winter Soldier S01",
+    "watched": false
+   },
+   {
+    "label": "Loki S01",
+    "watched": false
+   },
+   {
+    "label": "Black Widow",
+    "watched": false
+   },
+   {
+    "label": "What If\u2026? S01",
+    "watched": false
+   },
+   {
+    "label": "Shang-Chi and the Legend of the Ten Rings",
+    "watched": false
+   },
+   {
+    "label": "Eternals",
+    "watched": false
+   },
+   {
+    "label": "Hawkeye S01",
+    "watched": false
+   },
+   {
+    "label": "Spider-Man: No Way Home",
+    "watched": false
+   },
+   {
+    "label": "Moon Knight S01",
+    "watched": false
+   },
+   {
+    "label": "Doctor Strange in the Multiverse of Madness",
+    "watched": false
+   },
+   {
+    "label": "Ms. Marvel S01",
+    "watched": false
+   },
+   {
+    "label": "Thor: Love and Thunder",
+    "watched": false
+   },
+   {
+    "label": "I Am Groot S01",
+    "watched": false
+   },
+   {
+    "label": "She-Hulk: Attorney at Law S01",
+    "watched": false
+   },
+   {
+    "label": "Werewolf By Night S01",
+    "watched": false
+   },
+   {
+    "label": "Black Panther: Wakanda Forever",
+    "watched": false
+   },
+   {
+    "label": "The Guardians of the Galaxy Holiday Special",
+    "watched": false
+   },
+   {
+    "label": "Ant-Man and the Wasp: Quantumania",
+    "watched": false
+   },
+   {
+    "label": "Guardians of the Galaxy Vol. 3",
+    "watched": false
+   },
+   {
+    "label": "Secret Invasion S01",
+    "watched": false
+   },
+   {
+    "label": "I Am Groot S02",
+    "watched": false
+   },
+   {
+    "label": "Loki S02",
+    "watched": false
+   },
+   {
+    "label": "The Marvels",
+    "watched": false
+   },
+   {
+    "label": "What If\u2026? S02",
+    "watched": false
+   },
+   {
+    "label": "Echo S01",
+    "watched": false
+   },
+   {
+    "label": "Deadpool & Wolverine",
+    "watched": false
+   },
+   {
+    "label": "Agatha All Along S01",
+    "watched": false
+   },
+   {
+    "label": "What If\u2026? S03",
+    "watched": false
+   },
+   {
+    "label": "Your Friendly Neighborhood Spider-Man S01",
+    "watched": false
+   },
+   {
+    "label": "Captain America: Brave New World",
+    "watched": false
+   },
+   {
+    "label": "Daredevil: Born Again S01",
+    "watched": false
+   },
+   {
+    "label": "Thunderbolts*",
+    "watched": false
+   },
+   {
+    "label": "Ironheart S01",
+    "watched": false
+   },
+   {
+    "label": "The Fantastic Four: First Steps",
+    "watched": false
+   },
+   {
+    "label": "Eyes of Wakanda S01",
+    "watched": false
+   },
+   {
+    "label": "Marvel Zombies S01",
+    "watched": false
+   },
+   {
+    "label": "Wonder Man S01",
+    "watched": false
+   }
+  ]
+ }
+]

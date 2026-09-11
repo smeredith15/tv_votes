@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ConflictError, type RepoConfig, readFile, writeFile } from "./github";
+import { ConflictError, commitFiles, readRepo, type RepoConfig } from "./github";
 import { applyOps, compact, type Op } from "./ops";
 import { loadList, loadRecord, save } from "./persist";
-import { FILES, describe, filesTouched, intoDataset, outOfDataset, type ShowsFile } from "./sync";
+import { ALL_FILES, changedFiles, datasetFrom, describe, serialize, type ShowsFile } from "./sync";
 import type { Dataset, Draw, InboxItem, Universe } from "./types";
 
 const SETTINGS_KEY = "tv-votes.settings";
@@ -56,13 +56,8 @@ async function fetchPublished(base: string): Promise<Dataset> {
  * seem to vanish — and the other person's votes would show up a build late.
  */
 async function fetchFromRepo(repo: RepoConfig): Promise<Dataset> {
-  const [shows, universes, history, inbox] = await Promise.all([
-    readFile<ShowsFile>(repo, FILES.shows),
-    readFile<Universe[]>(repo, FILES.universes),
-    readFile<Draw[]>(repo, FILES.history),
-    readFile<InboxItem[]>(repo, FILES.inbox),
-  ]);
-  return { ...shows.data, universes: universes.data, history: history.data, inbox: inbox.data };
+  const snapshot = await readRepo(repo, ALL_FILES);
+  return datasetFrom(snapshot.files);
 }
 
 export interface Store {
@@ -164,23 +159,20 @@ export function useStore(baseUrl: string): Store {
 }
 
 /**
- * Replay the queued changes onto whatever the repo holds right now and write
- * each touched file back. A conflict means the other of you saved first, so we
- * re-read and replay rather than overwrite.
+ * Replay the queued changes onto whatever the repo holds right now, and commit
+ * every file they altered together. A conflict means the other of you saved
+ * first, so we re-read and replay rather than overwrite.
  */
 async function push(repo: RepoConfig, ops: Op[], attempt = 0): Promise<void> {
-  const touched = filesTouched(ops);
-  const message = describe(ops);
+  const snapshot = await readRepo(repo, ALL_FILES);
+  const next = applyOps(datasetFrom(snapshot.files), ops);
+  const changed = changedFiles(snapshot.files, serialize(next));
+  if (Object.keys(changed).length === 0) return;
 
-  for (const key of touched) {
-    const current = await readFile<unknown>(repo, FILES[key]);
-    const scratch = intoDataset(key, current.data);
-    const next = applyOps(scratch, ops);
-    try {
-      await writeFile(repo, FILES[key], outOfDataset(key, next), current.sha, message);
-    } catch (e) {
-      if (e instanceof ConflictError && attempt < 2) return push(repo, ops, attempt + 1);
-      throw e;
-    }
+  try {
+    await commitFiles(repo, snapshot.headSha, changed, describe(ops));
+  } catch (e) {
+    if (e instanceof ConflictError && attempt < 2) return push(repo, ops, attempt + 1);
+    throw e;
   }
 }

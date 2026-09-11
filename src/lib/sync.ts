@@ -9,7 +9,7 @@ export const FILES = {
   inbox: "data/inbox.json",
 } as const;
 
-export type FileKey = keyof typeof FILES;
+export const ALL_FILES = Object.values(FILES);
 
 export interface ShowsFile {
   people: string[];
@@ -18,44 +18,40 @@ export interface ShowsFile {
   shows: Dataset["shows"];
 }
 
-export function filesTouched(ops: Op[]): Set<FileKey> {
-  const files = new Set<FileKey>();
-  for (const op of ops) {
-    if (op.type === "draw") files.add("history");
-    else if (op.type === "universeItem") files.add("universes");
-    else if (op.type === "inboxSuggest") files.add("inbox");
-    else if (op.type === "inbox") {
-      files.add("inbox");
-      // Accepting a suggestion adds a show, which lives in the other file.
-      if (op.accept) files.add("shows");
-    } else files.add("shows");
-  }
-  return files;
+/** How the JSON files are formatted, matching what the import script writes. */
+function format(value: unknown): string {
+  return `${JSON.stringify(value, null, 1)}\n`;
 }
 
-/** Wrap a single file in a whole-Dataset shape so the op reducer can run on it. */
-export function intoDataset(key: FileKey, raw: unknown): Dataset {
-  const empty: Dataset = {
-    people: [],
-    budgets: {} as Dataset["budgets"],
-    shows: [],
-    universes: [],
-    history: [],
-    inbox: [],
+/** Assemble the four files into the one dataset the app works with. */
+export function datasetFrom(files: Record<string, string>): Dataset {
+  const shows = JSON.parse(files[FILES.shows]) as ShowsFile;
+  return {
+    ...shows,
+    universes: JSON.parse(files[FILES.universes]) as Universe[],
+    history: JSON.parse(files[FILES.history]) as Draw[],
+    inbox: JSON.parse(files[FILES.inbox]) as InboxItem[],
   };
-  if (key === "shows") return { ...empty, ...(raw as ShowsFile) };
-  if (key === "universes") return { ...empty, universes: raw as Universe[] };
-  if (key === "history") return { ...empty, history: raw as Draw[] };
-  return { ...empty, inbox: raw as InboxItem[] };
 }
 
-export function outOfDataset(key: FileKey, data: Dataset): unknown {
-  if (key === "shows") {
-    return { people: data.people, displayNames: data.displayNames, budgets: data.budgets, shows: data.shows };
-  }
-  if (key === "universes") return data.universes;
-  if (key === "history") return data.history;
-  return data.inbox;
+/** And split it back out, ready to commit. */
+export function serialize(data: Dataset): Record<string, string> {
+  return {
+    [FILES.shows]: format({
+      people: data.people,
+      displayNames: data.displayNames,
+      budgets: data.budgets,
+      shows: data.shows,
+    }),
+    [FILES.universes]: format(data.universes),
+    [FILES.history]: format(data.history),
+    [FILES.inbox]: format(data.inbox),
+  };
+}
+
+/** Only the files a save actually altered, so untouched ones stay out of it. */
+export function changedFiles(before: Record<string, string>, after: Record<string, string>): Record<string, string> {
+  return Object.fromEntries(Object.entries(after).filter(([path, text]) => text !== before[path]));
 }
 
 export function describe(ops: Op[]): string {

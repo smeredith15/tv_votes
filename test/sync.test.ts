@@ -1,80 +1,90 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { encodeBase64 } from "../src/lib/github";
 import { applyOps, type Op } from "../src/lib/ops";
-import { describe, filesTouched, intoDataset, outOfDataset, type ShowsFile } from "../src/lib/sync";
-import type { InboxItem, Show } from "../src/lib/types";
-import { makeShow } from "./helpers";
+import { ALL_FILES, FILES, changedFiles, datasetFrom, describe, serialize } from "../src/lib/sync";
+import type { Show } from "../src/lib/types";
+import { makeData, makeShow } from "./helpers";
 
-const item = (tmdbId: number, title: string): InboxItem => ({
-  tmdbId,
-  title,
-  runtime: 60,
-  suggestedAt: "2026-09-11T07:00:00.000Z",
-});
-
-/** Run ops through the same shaping the sync does, one file at a time. */
-function saveAs(key: "shows" | "inbox", raw: unknown, ops: Op[]): unknown {
-  return outOfDataset(key, applyOps(intoDataset(key, raw), ops));
+function filesFor(shows: Show[], inbox: unknown[] = []): Record<string, string> {
+  const data = makeData(shows);
+  return serialize({ ...data, inbox: inbox as never });
 }
 
-test("accepting a suggestion writes to both files", () => {
-  const ops: Op[] = [{ type: "inbox", tmdbId: 7, accept: true, show: makeShow({ id: "new-show" }) }];
-  assert.deepEqual([...filesTouched(ops)], ["inbox", "shows"]);
+/** What a save does: read the files, replay the ops, write back what changed. */
+function saveThrough(files: Record<string, string>, ops: Op[]): Record<string, string> {
+  return changedFiles(files, serialize(applyOps(datasetFrom(files), ops)));
+}
+
+test("the four files round-trip through a save unchanged when nothing happened", () => {
+  const files = filesFor([makeShow({ id: "a", title: "A" })]);
+  assert.deepEqual(Object.keys(files).sort(), [...ALL_FILES].sort());
+  assert.deepEqual(saveThrough(files, []), {});
 });
 
-test("dismissing one only touches the inbox", () => {
-  const ops: Op[] = [{ type: "inbox", tmdbId: 7, accept: false }];
-  assert.deepEqual([...filesTouched(ops)], ["inbox"]);
+test("a vote rewrites only shows.json", () => {
+  const files = filesFor([makeShow({ id: "a", title: "A" })]);
+  const changed = saveThrough(files, [{ type: "vote", showId: "a", ledger: "hour", person: "scotty", points: 30 }]);
+
+  assert.deepEqual(Object.keys(changed), [FILES.shows]);
+  assert.equal(datasetFrom({ ...files, ...changed }).shows[0].votes.hour.scotty, 30);
 });
 
-test("an accepted show really does land in shows.json", () => {
-  const showsFile: ShowsFile = { people: ["scotty", "shelby"], budgets: {} as never, shows: [makeShow({ id: "a", title: "A" })] };
-  const ops: Op[] = [
+test("accepting a suggestion rewrites both files in one go", () => {
+  const files = filesFor([makeShow({ id: "a", title: "A" })], [{ tmdbId: 7, title: "Collision", runtime: 60, suggestedAt: "x" }]);
+  const changed = saveThrough(files, [
     { type: "inbox", tmdbId: 7, accept: true, show: makeShow({ id: "collision", title: "Collision" }) },
-  ];
+  ]);
 
-  const saved = saveAs("shows", showsFile, ops) as ShowsFile;
-  assert.deepEqual(saved.shows.map((s) => s.id), ["a", "collision"]);
-  // and the same ops clear it from the inbox file
-  assert.deepEqual(saveAs("inbox", [item(7, "Collision")], ops), []);
+  // One commit covering both, rather than a commit each.
+  assert.deepEqual(Object.keys(changed).sort(), [FILES.inbox, FILES.shows].sort());
+  const after = datasetFrom({ ...files, ...changed });
+  assert.deepEqual(after.shows.map((s) => s.id), ["a", "collision"]);
+  assert.deepEqual(after.inbox, []);
 });
 
-test("a mix of accepts and dismissals keeps only the accepted ones", () => {
-  const showsFile: ShowsFile = { people: [], budgets: {} as never, shows: [] };
-  const ops: Op[] = [
-    { type: "inbox", tmdbId: 1, accept: false },
-    { type: "inbox", tmdbId: 2, accept: true, show: makeShow({ id: "kept", title: "Kept" }) },
-    { type: "inbox", tmdbId: 3, accept: false },
-  ];
-
-  assert.deepEqual((saveAs("shows", showsFile, ops) as ShowsFile).shows.map((s) => s.id), ["kept"]);
-  assert.deepEqual(saveAs("inbox", [item(1, "a"), item(2, "Kept"), item(3, "c")], ops), []);
+test("dismissing leaves shows.json alone", () => {
+  const files = filesFor([makeShow({ id: "a", title: "A" })], [{ tmdbId: 7, title: "No", runtime: 60, suggestedAt: "x" }]);
+  assert.deepEqual(Object.keys(saveThrough(files, [{ type: "inbox", tmdbId: 7, accept: false }])), [FILES.inbox]);
 });
 
-test("a suggestion for a show already on the list clears without duplicating it", () => {
-  const existing = makeShow({ id: "collision", title: "Collision" });
-  const showsFile: ShowsFile = { people: [], budgets: {} as never, shows: [existing] };
-  const ops: Op[] = [
-    { type: "inbox", tmdbId: 7, accept: true, show: makeShow({ id: "collision", title: "Collision" }) },
-  ];
-  assert.deepEqual((saveAs("shows", showsFile, ops) as ShowsFile).shows.length, 1);
+test("everything the ops did not touch survives the round trip", () => {
+  const data = makeData([makeShow({ id: "a", title: "A" })]);
+  data.displayNames = { scotty: "Scotty", shelby: "Shelby" };
+  const files = serialize(data);
+  const after = datasetFrom({ ...files, ...saveThrough(files, [{ type: "vote", showId: "a", ledger: "hour", person: "scotty", points: 1 }]) });
+
+  assert.deepEqual(after.people, ["scotty", "shelby"]);
+  assert.deepEqual(after.displayNames, { scotty: "Scotty", shelby: "Shelby" });
+  assert.deepEqual(after.budgets, data.budgets);
 });
 
-test("saving preserves the parts of shows.json no op touched", () => {
-  const showsFile: ShowsFile = {
-    people: ["scotty", "shelby"],
-    displayNames: { scotty: "Scotty", shelby: "Shelby" },
-    budgets: { weekly: 1500, hour: 750, half: 1000, mini: 500 },
-    shows: [makeShow({ id: "a" })],
-  };
-  const saved = saveAs("shows", showsFile, [{ type: "vote", showId: "a", ledger: "hour", person: "scotty", points: 5 }]) as ShowsFile;
-  assert.deepEqual(saved.people, ["scotty", "shelby"]);
-  assert.deepEqual(saved.displayNames, { scotty: "Scotty", shelby: "Shelby" });
-  assert.deepEqual(saved.budgets, { weekly: 1500, hour: 750, half: 1000, mini: 500 });
+test("a shows file past a megabyte still round-trips", () => {
+  // The contents API silently returns nothing above 1 MB, which is what broke
+  // reading once TMDB filled in every season and provider. Blobs do not care.
+  const many = Array.from({ length: 1200 }, (_, i) =>
+    makeShow({
+      id: `show-${i}`,
+      title: `Show Number ${i}`,
+      seasons: Array.from({ length: 6 }, (_, n) => ({ number: n + 1, episodes: 10, watched: false })),
+      providers: [{ name: "A Streaming Service", type: "flatrate" as const, logo: "/logo.jpg" }],
+    }),
+  );
+  const files = filesFor(many);
+  assert.ok(files[FILES.shows].length > 1_048_576, `only ${files[FILES.shows].length} bytes`);
+
+  const changed = saveThrough(files, [{ type: "vote", showId: "show-900", ledger: "hour", person: "shelby", points: 12 }]);
+  assert.equal(datasetFrom({ ...files, ...changed }).shows[900].votes.hour.shelby, 12);
+});
+
+test("base64 encoding survives a large payload and non-ASCII titles", () => {
+  const text = `${"x".repeat(2_000_000)} Alıkara — Señor`;
+  const round = new TextDecoder().decode(Uint8Array.from(atob(encodeBase64(text)), (c) => c.charCodeAt(0)));
+  assert.equal(round, text);
 });
 
 test("the commit message says which way the inbox went", () => {
-  const show = makeShow({ id: "x" }) as Show;
+  const show = makeShow({ id: "x" });
   assert.equal(describe([{ type: "inbox", tmdbId: 1, accept: false }]), "Inbox: dismissed 1");
   assert.equal(
     describe([

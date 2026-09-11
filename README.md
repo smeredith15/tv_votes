@@ -24,8 +24,9 @@ hour/half/mini sheets but were missing from Weekly, and 74 rows never got their
 
 ## Getting set up
 
-1. **Put the app somewhere.** See [Hosting](#hosting) — GitHub Pages does not
-   serve private repos on a free plan, so this repo needs one of the other two.
+1. **Turn on Pages.** Settings → Pages → Source: *GitHub Actions*. Pushing to
+   `main` then publishes to `https://smeredith15.github.io/tv_votes/`. See
+   [Hosting](#hosting) for why the repo is public.
 2. **Add a TMDB key.** Create a free one at
    [themoviedb.org](https://www.themoviedb.org/settings/api), then add it under
    Settings → Secrets and variables → Actions → **Repository secrets** → New
@@ -44,30 +45,24 @@ hour/half/mini sheets but were missing from Weekly, and 74 rows never got their
 
 ## Hosting
 
-The ledgers are JSON files in this repo, and this repo is private. That leaves
-three ways to get at the app, and they differ mainly in what becomes public:
+The app is served by **GitHub Pages** from this repo: Settings → Pages →
+Source: *GitHub Actions*, after which `.github/workflows/deploy.yml` publishes
+to `https://smeredith15.github.io/tv_votes/` on every push to `main`. That
+build sets `PUBLISH_DATA=1`, so the ledgers ship alongside the app and it opens
+read-only without anyone pasting a token in.
 
-| | What it costs | What is public |
-| --- | --- | --- |
-| **Cloudflare Pages** | a free account, no card | nothing — only the app's code is served |
-| **Make the repo public** | nothing | the whole ledger: shows, points, watch history |
-| **Run it locally** | nothing | nothing, but it is laptop-only |
+Pages will not serve a **private** repo without a paid plan, which is why this
+one is public. Everything in `data/` — the show list, both point allocations,
+the draw history — is world-readable as a result. No tokens or API keys are in
+the repo, and none ever were.
 
-**Cloudflare Pages** (or Netlify, or Vercel — any of them work). Connect the
-repo, build command `npm run build`, output directory `dist`. The default build
-deliberately ships **no data**: the deployed site is only code, and the app
-reads and writes this private repo through the GitHub API using the token you
-paste into Settings. So the public URL gives away nothing, even to someone who
-finds it.
+If you would rather it were private again, the build already supports it: the
+default `npm run build` ships **no data at all**, so the site can go on any free
+static host (Cloudflare Pages, Netlify, Vercel — all accept private repos) while
+the app reads and writes the private repo through the GitHub API with the token
+in Settings. The deployed files would then be nothing but code.
 
-**GitHub Pages** needs the repo to be public (or a paid plan). If you make it
-public, `.github/workflows/deploy.yml` publishes to
-`https://<you>.github.io/tv_votes/` on every push, and builds with
-`PUBLISH_DATA=1` so the ledgers ship alongside the app and it works read-only
-without a token. Everything in `data/` is then world-readable.
-
-**Locally**, `npm run dev` serves it at `localhost:5173` with the data read
-straight off disk.
+Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
 
 ## Day to day
 

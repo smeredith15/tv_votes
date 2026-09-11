@@ -81530,56 +81530,56 @@
      "name": "Season 1",
      "episodes": 25,
      "airDate": "1998-08-23",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 26,
      "airDate": "1999-09-28",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 25,
      "airDate": "2000-10-03",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 27,
      "airDate": "2001-09-25",
-     "watched": false
+     "watched": true
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 25,
      "airDate": "2002-09-17",
-     "watched": false
+     "watched": true
     },
     {
      "number": 6,
      "name": "Season 6",
      "episodes": 25,
      "airDate": "2003-10-29",
-     "watched": false
+     "watched": true
     },
     {
      "number": 7,
      "name": "Season 7",
      "episodes": 25,
      "airDate": "2004-09-08",
-     "watched": false
+     "watched": true
     },
     {
      "number": 8,
      "name": "Season 8",
      "episodes": 22,
      "airDate": "2005-11-02",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {

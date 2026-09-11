@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { DrawError, drawWinner, spinTitles, tickets, totalWeight } from "../lib/draw";
-import { LEDGERS, ballotFor, episodesPerWeek, isEligible, strandedPoints, totalSpent } from "../lib/ledgers";
+import { LEDGERS, ballotFor, effectiveSpent, episodesPerWeek, isEligible, strandedPoints, strandedShows } from "../lib/ledgers";
 import { EVERYONE, type Store } from "../lib/store";
 import type { Dataset, Draw, LedgerId, Show } from "../lib/types";
 import { DrawWheel } from "./DrawWheel";
@@ -25,9 +25,11 @@ export function VoteView({ store, data }: Props) {
   const budget = data.budgets[ledger] ?? 0;
   const spends = data.people.map((person) => ({
     person,
-    spent: totalSpent(data, ledger, person),
+    // What the draw will use. Points on a finished show are not part of it.
+    spent: effectiveSpent(data, ledger, person),
     stranded: strandedPoints(data, ledger, person),
   }));
+  const stuck = strandedShows(data, ledger);
   const balanced = spends.every((s) => s.spent === spends[0].spent);
   const pool = tickets(data, ledger);
   // Eligible only, so this count matches the rows actually listed below.
@@ -156,15 +158,27 @@ export function VoteView({ store, data }: Props) {
           })}
         </div>
 
-        {spends.some((s) => s.stranded > 0 && !hidden(s.person)) && (
-          <p className="small muted" style={{ marginTop: 10, marginBottom: 0 }}>
-            {spends
-              .filter((s) => s.stranded > 0 && !hidden(s.person))
-              .map((s) => `${data.displayNames?.[s.person] ?? s.person} has ${s.stranded} points`)
-              .join(", ")}{" "}
-            on shows that can no longer win here — finished, or now watched inside a universe. Freeing
-            those up gives you that much more pull on the next draw.
-          </p>
+        {stuck.length > 0 && spends.some((s) => s.stranded > 0 && !hidden(s.person)) && (
+          <div className="row" style={{ marginTop: 10, justifyContent: "space-between" }}>
+            <p className="small muted" style={{ margin: 0, flex: "1 1 300px" }}>
+              {spends
+                .filter((s) => s.stranded > 0 && !hidden(s.person))
+                .map((s) => `${data.displayNames?.[s.person] ?? s.person} has ${s.stranded} points`)
+                .join(", ")}{" "}
+              on {stuck.length === 1 ? stuck[0].title : `${stuck.length} finished shows`}. Those points
+              are already out of the draw — taking them back lets you spend them on something that can win.
+            </p>
+            <button
+              className="small"
+              onClick={() =>
+                store.dispatch(
+                  ...stuck.map((show) => ({ type: "freePoints" as const, showId: show.id, ledger })),
+                )
+              }
+            >
+              Take them back
+            </button>
+          </div>
         )}
 
         {!balanced && (

@@ -21,6 +21,8 @@ export type Op =
   | { type: "budget"; ledger: LedgerId; points: number }
   | { type: "forgetDraw"; drawId: string }
   | { type: "clearHistory" }
+  /** Take back the points on a show, on one ballot or on all of them. */
+  | { type: "freePoints"; showId: string; ledger?: LedgerId }
   /** Mark a season as present on, or missing from, the Plex server. */
   | { type: "plexSeason"; showId: string; season: number; present: boolean };
 
@@ -84,6 +86,18 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       if (!known && !queued) data.inbox.push(op.item);
       return data;
     }
+    case "freePoints": {
+      const show = findShow(data, op.showId);
+      if (show) {
+        const ledgers = op.ledger ? [op.ledger] : (Object.keys(show.votes) as LedgerId[]);
+        for (const ledger of ledgers) {
+          show.votes[ledger] = Object.fromEntries(
+            Object.keys(show.votes[ledger] ?? {}).map((person) => [person, 0]),
+          );
+        }
+      }
+      return data;
+    }
     case "forgetDraw": {
       data.history = data.history.filter((d) => d.id !== op.drawId);
       return data;
@@ -123,6 +137,7 @@ export function compact(ops: Op[]): Op[] {
     else if (op.type === "universeItem") key = `uni:${op.universeId}:${op.index}`;
     else if (op.type === "budget") key = `budget:${op.ledger}`;
     else if (op.type === "plexSeason") key = `plex:${op.showId}:${op.season}`;
+    else if (op.type === "freePoints") key = `free:${op.showId}:${op.ledger ?? "all"}`;
 
     if (key) keyed.set(key, op);
     else rest.push(op);

@@ -68,6 +68,9 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
 
 ## Day to day
 
+- **Now watching** — what you are in the middle of, one card per ballot: the
+  season you are on, where it is streaming, how many episodes are left, and for
+  Friday nights how many Fridays that is. Tick a season off from here.
 - **Vote** — pick who is voting at the top: with a name selected, the other
   person's points, totals and picks are all hidden, so neither of you can
   counter-bid from the same chair. Switch to *Both* when you are done. The meter
@@ -86,8 +89,9 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
 - **Universes** — the Arrowverse and MCU watch orders, as checklists with a
   bookmark. Both were lifted straight out of the workbook's side columns, so
   your hand-built 818-entry Arrowverse interleave is intact.
-- **History** — every draw you kept, with both allocations and the odds each
-  show had. The *always a bridesmaid* table is the shows you keep backing that
+- **History** — the numbers (who is running hot, how much television this has
+  amounted to, the longest wait), then every draw you kept, with both
+  allocations and the odds each show had. The *always a bridesmaid* table is the shows you keep backing that
   never win. Any single draw can be deleted, or the lot cleared, each behind a
   confirmation.
 - **Inbox** — newly premiered shows waiting on a yes or no.
@@ -163,6 +167,14 @@ alone.
 - **TMDB status lags reality.** A show cancelled this week may say *Returning*
   for a while. Streaming data comes from JustWatch via TMDB and churns, which is
   why it is refreshed rather than stored once.
-- **Points can strand.** Points left on a show that has finished, or that moved
-  into a universe, still count against your budget but can never win. The vote
-  screen now says so; the workbook never did.
+- **Points on a finished show are already out of the draw.** The cheater check
+  measures what the draw will actually use, not the raw column total — the two
+  were the same in the workbook, which had no way for a show to drop off, but
+  here a finished show stops being drawable while its points sit there. The vote
+  screen offers to take those back so you can spend them on something that can
+  win, and doing so does not move the balance, because they were not counting
+  toward it.
+- **Win share splits the credit.** A show you both backed is not a whole win for
+  either of you: each draw is divided by how much of the winner's tickets each
+  of you paid for. Over a handful of draws it is mostly luck, which is why the
+  panel shows it against what each of you spent.

@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { watchState } from "../lib/ledgers";
+import { LEDGERS, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, Show } from "../lib/types";
 
@@ -123,6 +123,11 @@ function ShowSeasons({
 }) {
   const onPlex = new Set(data.plex.shows[show.id] ?? []);
   const watched = show.seasons.filter((s) => s.watched).length;
+  const finished = show.seasons.length > 0 && watched === show.seasons.length;
+  // Points still sitting on a show you have finished can never win again.
+  const held = LEDGERS.flatMap((l) =>
+    data.people.map((p) => show.votes[l.id]?.[p] ?? 0),
+  ).reduce((a, b) => a + b, 0);
 
   function toggle(season: number, current: boolean) {
     if (mode === "watched") {
@@ -159,6 +164,17 @@ function ShowSeasons({
           )}
         </span>
       </div>
+
+      {finished && held > 0 && (
+        <div className="row" style={{ marginTop: 6 }}>
+          <span className="small">
+            Finished, and still holding {held.toLocaleString()} points across the ballots.
+          </span>
+          <button className="small" onClick={() => store.dispatch({ type: "freePoints", showId: show.id })}>
+            Take the points back
+          </button>
+        </div>
+      )}
 
       {show.seasons.length === 0 ? (
         <p className="small muted" style={{ margin: "4px 0 0" }}>

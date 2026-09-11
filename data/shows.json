@@ -57142,16 +57142,56 @@
   {
    "id": "mythic-quest",
    "title": "Mythic Quest",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 94951,
+   "poster": "/7QxQlpqEjx3vRpEtuh6Y0R6eY9O.jpg",
+   "providers": [
+    {
+     "name": "Apple TV",
+     "type": "flatrate",
+     "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+    },
+    {
+     "name": "Apple TV Amazon Channel",
+     "type": "flatrate",
+     "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:32:38.444Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 11,
+     "airDate": "2020-02-07",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 9,
+     "airDate": "2021-05-07",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 10,
+     "airDate": "2022-11-10",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 10,
+     "airDate": "2025-01-28",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -57171,7 +57211,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "my-wife-and-kids",

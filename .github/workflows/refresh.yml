@@ -65,6 +65,36 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Keep the files as checked out, and as this job left them. If the
+          # branch moves under us, those two are what a three-way merge needs.
+          base=$(git rev-parse HEAD)
+          mkdir -p /tmp/base /tmp/ours
+          cp data/*.json /tmp/ours/
+          git show "$base:data/shows.json" > /tmp/base/shows.json
+          git show "$base:data/inbox.json" > /tmp/base/inbox.json
+
           git add data
           git commit -m "Refresh show metadata from TMDB"
-          git push
+
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            # Someone saved a vote from the app while we were talking to TMDB.
+            # Take the branch as it now stands and lay our metadata back over
+            # it, rather than clobbering their vote or losing the refresh.
+            echo "Push rejected — merging onto the moved branch (attempt $attempt)."
+            git fetch origin "$GITHUB_REF_NAME"
+            git reset --hard "origin/$GITHUB_REF_NAME"
+            node scripts/merge_refresh.mjs /tmp/base /tmp/ours
+            if [ -z "$(git status --porcelain data)" ]; then
+              echo "Nothing left to add once merged."
+              exit 0
+            fi
+            git add data
+            git commit -m "Refresh show metadata from TMDB"
+          done
+
+          echo "::error::Could not push after three attempts."
+          exit 1

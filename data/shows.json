@@ -38040,14 +38040,14 @@
      "name": "Season 1",
      "episodes": 15,
      "airDate": "2014-09-25",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 15,
      "airDate": "2015-09-24",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,

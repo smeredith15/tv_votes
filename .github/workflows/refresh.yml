@@ -1,0 +1,48 @@
+name: Refresh metadata
+
+on:
+  schedule:
+    # 07:00 UTC — small hours in the US, so the site is fresh by morning.
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Refresh every show rather than just the stale ones
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Pull seasons, streaming and status from TMDB
+        run: node scripts/refresh.mjs ${{ inputs.all && '--all' || '--limit 250' }}
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_REGION: ${{ vars.TMDB_REGION || 'US' }}
+
+      - name: Queue newly premiered shows for approval
+        run: node scripts/discover.mjs
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_REGION: ${{ vars.TMDB_REGION || 'US' }}
+
+      - name: Commit whatever changed
+        run: |
+          if [ -z "$(git status --porcelain data)" ]; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Refresh show metadata from TMDB"
+          git push

@@ -2,10 +2,12 @@ import { useMemo, useState } from "react";
 import { verifyDraw } from "../lib/draw";
 import { neverPicked, showRecords } from "../lib/history";
 import { LEDGERS } from "../lib/ledgers";
+import type { Store } from "../lib/store";
 import type { Dataset, Draw, LedgerId } from "../lib/types";
 
-export function HistoryView({ data }: { data: Dataset }) {
+export function HistoryView({ store, data }: { store: Store; data: Dataset }) {
   const [ledger, setLedger] = useState<LedgerId | "all">("all");
+  const [confirmingClear, setConfirmingClear] = useState(false);
 
   const draws = useMemo(
     () => [...data.history].filter((d) => ledger === "all" || d.ledger === ledger).reverse(),
@@ -28,11 +30,32 @@ export function HistoryView({ data }: { data: Dataset }) {
             </button>
           ))}
         </div>
-        <p className="small muted" style={{ marginBottom: 0 }}>
-          {data.history.length === 0
-            ? "No draws recorded yet — the workbook kept no history, so this starts with your first draw in the app."
-            : `${data.history.length} draw${data.history.length === 1 ? "" : "s"} recorded across ${records.size} shows.`}
-        </p>
+        <div className="row" style={{ justifyContent: "space-between" }}>
+          <p className="small muted" style={{ marginBottom: 0 }}>
+            {data.history.length === 0
+              ? "No draws recorded yet — the workbook kept no history, so this starts with your first draw in the app."
+              : `${data.history.length} draw${data.history.length === 1 ? "" : "s"} recorded across ${records.size} shows.`}
+          </p>
+          {data.history.length > 0 &&
+            (confirmingClear ? (
+              <span className="row small">
+                <span className="muted">Erase all {data.history.length}?</span>
+                <button
+                  onClick={() => {
+                    store.dispatch({ type: "clearHistory" });
+                    setConfirmingClear(false);
+                  }}
+                >
+                  Yes, clear it
+                </button>
+                <button onClick={() => setConfirmingClear(false)}>Cancel</button>
+              </span>
+            ) : (
+              <button className="small" onClick={() => setConfirmingClear(true)}>
+                Clear all history
+              </button>
+            ))}
+        </div>
       </div>
 
       {bridesmaids.length > 0 && (
@@ -63,14 +86,20 @@ export function HistoryView({ data }: { data: Dataset }) {
       )}
 
       {draws.map((draw) => (
-        <DrawCard key={draw.id} data={data} draw={draw} />
+        <DrawCard
+          key={draw.id}
+          data={data}
+          draw={draw}
+          onForget={() => store.dispatch({ type: "forgetDraw", drawId: draw.id })}
+        />
       ))}
     </>
   );
 }
 
-function DrawCard({ data, draw }: { data: Dataset; draw: Draw }) {
+function DrawCard({ data, draw, onForget }: { data: Dataset; draw: Draw; onForget: () => void }) {
   const [open, setOpen] = useState(false);
+  const [confirming, setConfirming] = useState(false);
   const ledgerName = LEDGERS.find((l) => l.id === draw.ledger)?.name ?? draw.ledger;
   const honest = verifyDraw(draw);
 
@@ -93,9 +122,20 @@ function DrawCard({ data, draw }: { data: Dataset; draw: Draw }) {
         </div>
       </div>
 
-      <button className="small" style={{ marginTop: 10 }} onClick={() => setOpen(!open)}>
-        {open ? "Hide" : "Show"} the {draw.standings.length} shows in that draw
-      </button>
+      <div className="row" style={{ marginTop: 10 }}>
+        <button className="small" onClick={() => setOpen(!open)}>
+          {open ? "Hide" : "Show"} the {draw.standings.length} shows in that draw
+        </button>
+        {confirming ? (
+          <span className="row small">
+            <span className="muted">Delete this draw?</span>
+            <button onClick={onForget}>Yes</button>
+            <button onClick={() => setConfirming(false)}>Cancel</button>
+          </span>
+        ) : (
+          <button className="small" onClick={() => setConfirming(true)}>Delete</button>
+        )}
+      </div>
 
       {open && (
         <table style={{ marginTop: 10 }}>

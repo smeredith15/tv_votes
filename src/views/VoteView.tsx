@@ -1,8 +1,9 @@
 import { useMemo, useState } from "react";
-import { DrawError, drawWinner, tickets, totalWeight } from "../lib/draw";
+import { DrawError, drawWinner, spinTitles, tickets, totalWeight } from "../lib/draw";
 import { LEDGERS, ballotFor, episodesPerWeek, isEligible, strandedPoints, totalSpent } from "../lib/ledgers";
 import { EVERYONE, type Store } from "../lib/store";
 import type { Dataset, Draw, LedgerId, Show } from "../lib/types";
+import { DrawWheel } from "./DrawWheel";
 import { ProviderTags, StatusPill } from "./ShowBits";
 
 interface Props {
@@ -14,6 +15,7 @@ export function VoteView({ store, data }: Props) {
   const [ledger, setLedger] = useState<LedgerId>("half");
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<Draw | null>(null);
+  const [spin, setSpin] = useState<{ teasers: string[]; draw: Draw } | null>(null);
   const [drawError, setDrawError] = useState<string | null>(null);
   const { voter } = store.settings;
   const sealed = voter !== EVERYONE;
@@ -58,16 +60,25 @@ export function VoteView({ store, data }: Props) {
     store.dispatch({ type: "vote", showId: show.id, ledger, person, points });
   }
 
+  /**
+   * Settle the draw first, then spin. Nothing is written to history until one
+   * of you says to keep it, so a curiosity draw costs nothing.
+   */
   function roll() {
     setDrawError(null);
+    setResult(null);
     try {
       const draw = drawWinner(data, ledger);
-      setResult(draw);
-      store.dispatch({ type: "draw", draw });
+      setSpin({ teasers: spinTitles(data, ledger, 4), draw });
     } catch (e) {
-      setResult(null);
+      setSpin(null);
       setDrawError(e instanceof DrawError ? e.message : String(e));
     }
+  }
+
+  function keep(draw: Draw) {
+    store.dispatch({ type: "draw", draw });
+    setResult(null);
   }
 
   return (
@@ -170,8 +181,8 @@ export function VoteView({ store, data }: Props) {
         )}
 
         <div className="row" style={{ marginTop: 12 }}>
-          <button className="primary" onClick={roll} disabled={!balanced || pool.length === 0}>
-            Draw a winner
+          <button className="primary" onClick={roll} disabled={!balanced || pool.length === 0 || spin !== null}>
+            {spin ? "Drawing…" : "Draw a winner"}
           </button>
           <input
             placeholder="Search every eligible show…"
@@ -183,7 +194,26 @@ export function VoteView({ store, data }: Props) {
         {drawError && <p className="banner" style={{ marginTop: 10 }}>{drawError}</p>}
       </div>
 
-      {result && <WinnerCard data={data} draw={result} />}
+      {spin && (
+        <DrawWheel
+          teasers={spin.teasers}
+          winner={spin.draw.winnerTitle}
+          onSettled={() => {
+            setResult(spin.draw);
+            setSpin(null);
+          }}
+        />
+      )}
+
+      {result && (
+        <WinnerCard
+          data={data}
+          draw={result}
+          recorded={data.history.some((d) => d.id === result.id)}
+          onKeep={() => keep(result)}
+          onDiscard={() => setResult(null)}
+        />
+      )}
 
       <div className="panel">
         <table>
@@ -249,7 +279,15 @@ export function VoteView({ store, data }: Props) {
   );
 }
 
-function WinnerCard({ data, draw }: { data: Dataset; draw: Draw }) {
+interface WinnerProps {
+  data: Dataset;
+  draw: Draw;
+  recorded: boolean;
+  onKeep: () => void;
+  onDiscard: () => void;
+}
+
+function WinnerCard({ data, draw, recorded, onKeep, onDiscard }: WinnerProps) {
   const show = data.shows.find((s) => s.id === draw.winnerId);
   const odds = ((draw.standings.find((s) => s.id === draw.winnerId)?.weight ?? 0) / draw.totalWeight) * 100;
   return (
@@ -262,6 +300,20 @@ function WinnerCard({ data, draw }: { data: Dataset; draw: Draw }) {
           <StatusPill show={show} />
           <ProviderTags show={show} />
         </div>
+      )}
+
+      {recorded ? (
+        <p className="small muted" style={{ marginBottom: 0 }}>Kept — it is in the history.</p>
+      ) : (
+        <>
+          <div className="row draw-actions">
+            <button className="primary" onClick={onKeep}>Keep it</button>
+            <button onClick={onDiscard}>Just curious — forget it</button>
+          </div>
+          <p className="small muted" style={{ marginBottom: 0 }}>
+            Nothing is written down until you keep it.
+          </p>
+        </>
       )}
     </div>
   );

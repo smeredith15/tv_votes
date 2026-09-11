@@ -73,13 +73,23 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
   counter-bid from the same chair. Switch to *Both* when you are done. The meter
   shows what you have left, and it says *cheater* until you have both spent the
   same amount, exactly like the workbook's `IF(F8=G8, …)` check.
+  Drawing spins through four other shows before it lands — each one a real
+  weighted draw, so the near-misses are shows that genuinely could have come
+  up. Nothing reaches the history until you press *Keep it*, so an idle
+  "what would we get?" costs nothing.
 - **Shows** — search and filter the whole list; open any show to tick off
   seasons, fix its runtime or format, or re-pull its details from TMDB.
+- **Watched & Plex** — the fast way to tick seasons off: a worklist of what you
+  have started and not finished, with a switch between marking what you have
+  *watched* and what is *on the server*. Both are the same gesture over the same
+  grid, so they share a screen.
 - **Universes** — the Arrowverse and MCU watch orders, as checklists with a
   bookmark. Both were lifted straight out of the workbook's side columns, so
   your hand-built 818-entry Arrowverse interleave is intact.
-- **History** — every draw, with both allocations and the odds each show had.
-  The *always a bridesmaid* table is the shows you keep backing that never win.
+- **History** — every draw you kept, with both allocations and the odds each
+  show had. The *always a bridesmaid* table is the shows you keep backing that
+  never win. Any single draw can be deleted, or the lot cleared, each behind a
+  confirmation.
 - **Inbox** — newly premiered shows waiting on a yes or no.
 
 ## What runs on its own
@@ -95,6 +105,28 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
   a ballot without one of you accepting it.
 
 Both commit to `main`, which republishes the site.
+
+## Plex
+
+`data/plex.json` records which seasons are on the server. You can tick them by
+hand under *Watched & Plex*, or let the server tell you:
+
+```sh
+PLEX_URL=http://192.168.1.10:32400 PLEX_TOKEN=xxxx npm run plex
+```
+
+That reads every TV section, matches it against the show list — by the TMDB id
+Plex recorded where there is one, by title otherwise — and rewrites
+`data/plex.json` for you to commit. Add `--dry-run` to see what it would write
+first. It also prints anything on the server that is not on the ledger.
+
+This one cannot run in the nightly job: that runs on GitHub's machines, which
+cannot reach a server on your home network. Run it on a machine that can, when
+the library has changed enough to be worth it. Re-running replaces the file, so
+anything ticked by hand is overwritten.
+
+The token is the `X-Plex-Token` on any request the Plex web app makes. It is
+only ever sent to your own server, and nothing puts it in the repo.
 
 ## Fairness
 

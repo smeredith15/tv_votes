@@ -172,3 +172,16 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
   .hide-sm { display: none; }
   header.bar h1 { width: 100%; }
 }
+
+/* The draw: each title drops in as it flashes past, the last one lands. */
+@keyframes flash-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
+.winner .spin { animation: flash-in 180ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .winner .spin { animation: none; }
+}
+
+.draw-actions { justify-content: center; margin-top: 14px; }

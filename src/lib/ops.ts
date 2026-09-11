@@ -18,7 +18,11 @@ export type Op =
   | { type: "universeItem"; universeId: string; index: number; watched: boolean }
   | { type: "inbox"; tmdbId: number; accept: boolean; show?: Show }
   | { type: "inboxSuggest"; item: InboxItem }
-  | { type: "budget"; ledger: LedgerId; points: number };
+  | { type: "budget"; ledger: LedgerId; points: number }
+  | { type: "forgetDraw"; drawId: string }
+  | { type: "clearHistory" }
+  /** Mark a season as present on, or missing from, the Plex server. */
+  | { type: "plexSeason"; showId: string; season: number; present: boolean };
 
 function findShow(data: Dataset, id: string): Show | undefined {
   return data.shows.find((s) => s.id === id);
@@ -80,6 +84,23 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       if (!known && !queued) data.inbox.push(op.item);
       return data;
     }
+    case "forgetDraw": {
+      data.history = data.history.filter((d) => d.id !== op.drawId);
+      return data;
+    }
+    case "clearHistory": {
+      data.history = [];
+      return data;
+    }
+    case "plexSeason": {
+      const present = new Set(data.plex.shows[op.showId] ?? []);
+      if (op.present) present.add(op.season);
+      else present.delete(op.season);
+      const seasons = [...present].sort((a, b) => a - b);
+      data.plex = { ...data.plex, shows: { ...data.plex.shows, [op.showId]: seasons } };
+      if (seasons.length === 0) delete data.plex.shows[op.showId];
+      return data;
+    }
     case "budget": {
       data.budgets = { ...data.budgets, [op.ledger]: op.points };
       return data;
@@ -101,6 +122,7 @@ export function compact(ops: Op[]): Op[] {
     else if (op.type === "season") key = `season:${op.showId}:${op.season}`;
     else if (op.type === "universeItem") key = `uni:${op.universeId}:${op.index}`;
     else if (op.type === "budget") key = `budget:${op.ledger}`;
+    else if (op.type === "plexSeason") key = `plex:${op.showId}:${op.season}`;
 
     if (key) keyed.set(key, op);
     else rest.push(op);

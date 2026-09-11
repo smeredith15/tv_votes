@@ -102,6 +102,21 @@ export function drawWinner(data: Dataset, ledger: LedgerId, seed = newSeed()): D
   };
 }
 
+/**
+ * A handful of titles for the spin, each a genuine weighted draw. They are
+ * near-misses rather than decoration: a show only flashes past if it really
+ * could have won.
+ */
+export function spinTitles(data: Dataset, ledger: LedgerId, count: number): string[] {
+  const pool = tickets(data, ledger);
+  if (pool.length === 0) return [];
+  return Array.from({ length: count }, () => {
+    const total = pool[pool.length - 1].cumulative;
+    const roll = 1 + Math.floor(mulberry32(seedToInt(newSeed()))() * total);
+    return (pool.find((t) => roll <= t.cumulative) ?? pool[pool.length - 1]).show.title;
+  });
+}
+
 /** Re-run a recorded draw from its seed to confirm the winner was not fudged. */
 export function verifyDraw(draw: Draw): boolean {
   const roll = 1 + Math.floor(mulberry32(seedToInt(draw.seed))() * draw.totalWeight);

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useStore } from "./lib/store";
 import { HistoryView } from "./views/HistoryView";
 import { InboxView } from "./views/InboxView";
+import { LibraryView } from "./views/LibraryView";
 import { RepoPanel } from "./views/RepoPanel";
 import { SettingsView } from "./views/SettingsView";
 import { ShowsView } from "./views/ShowsView";
@@ -11,6 +12,7 @@ import { VoteView } from "./views/VoteView";
 const TABS = [
   { id: "vote", label: "Vote" },
   { id: "shows", label: "Shows" },
+  { id: "library", label: "Watched & Plex" },
   { id: "universes", label: "Universes" },
   { id: "history", label: "History" },
   { id: "inbox", label: "Inbox" },
@@ -63,8 +65,9 @@ export function App() {
         <>
           {tab === "vote" && <VoteView store={store} data={data} />}
           {tab === "shows" && <ShowsView store={store} data={data} />}
+          {tab === "library" && <LibraryView store={store} data={data} />}
           {tab === "universes" && <UniverseView store={store} data={data} />}
-          {tab === "history" && <HistoryView data={data} />}
+          {tab === "history" && <HistoryView store={store} data={data} />}
           {tab === "inbox" && <InboxView store={store} data={data} />}
           {tab === "settings" && <SettingsView store={store} data={data} />}
         </>

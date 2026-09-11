@@ -173,8 +173,11 @@ test("re-reading after a conflict lets the save go through", async (t) => {
   assert.equal(gh.files.get("data/shows.json"), '{"shows":["both"]}');
 });
 
-test("a missing file is reported by name", async (t) => {
+test("a file the repo does not have yet simply comes back absent", async (t) => {
+  // Adding a data file must not break reading a repo written before it existed.
   const gh = fakeGitHub();
   route(await listen(gh.server, t));
-  await assert.rejects(() => readRepo(config, ["data/nope.json"]), /data\/nope\.json is not in the repo/);
+  const snapshot = await readRepo(config, ["data/shows.json", "data/plex.json"]);
+  assert.equal(snapshot.files["data/plex.json"], undefined);
+  assert.equal(snapshot.files["data/shows.json"], '{"shows":[]}');
 });

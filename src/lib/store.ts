@@ -2,8 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { ConflictError, commitFiles, readRepo, type RepoConfig } from "./github";
 import { applyOps, compact, type Op } from "./ops";
 import { loadList, loadRecord, save } from "./persist";
-import { ALL_FILES, changedFiles, datasetFrom, describe, serialize, type ShowsFile } from "./sync";
-import type { Dataset, Draw, InboxItem, Universe } from "./types";
+import { ALL_FILES, changedFiles, datasetFrom, describe, serialize } from "./sync";
+import type { Dataset } from "./types";
 
 const SETTINGS_KEY = "tv-votes.settings";
 const PENDING_KEY = "tv-votes.pending";
@@ -39,15 +39,15 @@ export function saveSettings(settings: Settings): void {
   save(localStorage, SETTINGS_KEY, settings);
 }
 
-/** Read the four ledger files straight off the published site — no token needed. */
+/** Read the ledger files straight off the published site — no token needed. */
 async function fetchPublished(base: string): Promise<Dataset> {
-  const [shows, universes, history, inbox] = await Promise.all([
-    fetch(`${base}data/shows.json`).then((r) => r.json() as Promise<ShowsFile>),
-    fetch(`${base}data/universes.json`).then((r) => r.json() as Promise<Universe[]>),
-    fetch(`${base}data/history.json`).then((r) => r.json() as Promise<Draw[]>),
-    fetch(`${base}data/inbox.json`).then((r) => r.json() as Promise<InboxItem[]>),
-  ]);
-  return { ...shows, universes, history, inbox };
+  const text = async (name: string): Promise<string | undefined> => {
+    const res = await fetch(`${base}${name}`);
+    // A file added after the last deploy simply is not there yet.
+    return res.ok ? await res.text() : undefined;
+  };
+  const contents = await Promise.all(ALL_FILES.map(async (path) => [path, await text(path)] as const));
+  return datasetFrom(Object.fromEntries(contents.filter(([, body]) => body !== undefined)) as Record<string, string>);
 }
 
 /**

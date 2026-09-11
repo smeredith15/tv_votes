@@ -65784,16 +65784,67 @@
   {
    "id": "prodigal-son",
    "title": "Prodigal Son",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 91875,
+   "poster": "/sp5BL7O4SnnTnXf9ECNrXbJQyqt.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:41:51.702Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 20,
+     "airDate": "2019-09-23",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 13,
+     "airDate": "2021-01-12",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -65813,7 +65864,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "project-blue-book",
@@ -66808,16 +66860,56 @@
   {
    "id": "ranch",
    "title": "The Ranch",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 65493,
+   "poster": "/jHP0TNVkTi0zEA73yHal8jct39.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:43:10.226Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 20,
+     "airDate": "2016-04-01",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 20,
+     "airDate": "2017-06-14",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 20,
+     "airDate": "2018-06-15",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 20,
+     "airDate": "2019-09-13",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -66837,7 +66929,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "ratched",

@@ -109,6 +109,8 @@ export interface Store {
   sync: () => Promise<void>;
   syncing: boolean;
   error: string | null;
+  /** No ledgers are reachable without a token — show the setup panel. */
+  needsToken: boolean;
   reload: () => Promise<void>;
 }
 
@@ -118,19 +120,32 @@ export function useStore(baseUrl: string): Store {
   const [pending, setPending] = useState<Op[]>(() => load<Op[]>(PENDING_KEY, []));
   const [syncing, setSyncing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [needsToken, setNeedsToken] = useState(false);
 
   const { repo } = settings;
   const reload = useCallback(async () => {
     try {
       setBase(repo.token ? await fetchFromRepo(repo) : await fetchPublished(baseUrl));
       setError(null);
-    } catch (e) {
-      // A bad token should not lock you out of reading the ledgers.
+      setNeedsToken(false);
+      return;
+    } catch (first) {
+      // A bad token should not lock you out of reading the ledgers, so fall
+      // back to whatever the site published alongside the app.
       try {
         setBase(await fetchPublished(baseUrl));
-        setError(e instanceof Error ? `Reading from GitHub failed (${e.message}); showing the published copy.` : String(e));
-      } catch (fallback) {
-        setError(fallback instanceof Error ? fallback.message : String(fallback));
+        setError(
+          repo.token && first instanceof Error
+            ? `Reading from GitHub failed (${first.message}); showing the published copy.`
+            : null,
+        );
+        setNeedsToken(false);
+      } catch {
+        // Nothing published either: this is a public host serving only the app,
+        // with the ledgers kept in the private repo. Nothing to show until a
+        // token is pasted in.
+        setNeedsToken(!repo.token);
+        setError(repo.token && first instanceof Error ? first.message : null);
       }
     }
   }, [baseUrl, repo.owner, repo.repo, repo.branch, repo.token]);
@@ -179,7 +194,7 @@ export function useStore(baseUrl: string): Store {
     }
   }, [pending, reload, settings.repo]);
 
-  return { data, settings, setSettings, dispatch, pending: pending.length, sync, syncing, error, reload };
+  return { data, settings, setSettings, dispatch, pending: pending.length, sync, syncing, error, needsToken, reload };
 }
 
 /**

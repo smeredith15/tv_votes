@@ -23,6 +23,22 @@ jobs:
         with:
           node-version: 22
 
+      # Without this, a missing key surfaces as a bare "Set TMDB_API_KEY" from
+      # deep in the script, which says nothing about where it was looked for.
+      - name: Check the TMDB key is where the job can see it
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          if [ -n "$TMDB_API_KEY" ]; then
+            echo "Found a repository secret named TMDB_API_KEY (${#TMDB_API_KEY} characters)."
+            exit 0
+          fi
+          echo "::error::No repository secret named TMDB_API_KEY is visible to this job."
+          echo "Add it at https://github.com/${{ github.repository }}/settings/secrets/actions"
+          echo "under 'Repository secrets' — not 'Variables', not an environment secret,"
+          echo "and not the TMDB field in the app's own Settings tab, which is separate."
+          exit 1
+
       - name: Pull seasons, streaming and status from TMDB
         run: node scripts/refresh.mjs ${{ inputs.all && '--all' || '--limit 250' }}
         env:

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useStore } from "./lib/store";
 import { HistoryView } from "./views/HistoryView";
 import { InboxView } from "./views/InboxView";
+import { RepoPanel } from "./views/RepoPanel";
 import { SettingsView } from "./views/SettingsView";
 import { ShowsView } from "./views/ShowsView";
 import { UniverseView } from "./views/UniverseView";
@@ -21,7 +22,7 @@ type TabId = (typeof TABS)[number]["id"];
 export function App() {
   const store = useStore(import.meta.env.BASE_URL);
   const [tab, setTab] = useState<TabId>("vote");
-  const { data, pending, sync, syncing, error } = store;
+  const { data, needsToken, pending, sync, syncing, error } = store;
 
   return (
     <div className="app">
@@ -45,7 +46,18 @@ export function App() {
 
       {error && <div className="banner" role="alert">{error}</div>}
 
-      {!data ? (
+      {needsToken ? (
+        <>
+          <div className="panel">
+            <strong>One thing first</strong>
+            <p className="small muted" style={{ marginBottom: 0 }}>
+              This copy of the app carries no ledgers of its own — they live in your private repo. Paste a
+              token below and everything loads.
+            </p>
+          </div>
+          <RepoPanel store={store} />
+        </>
+      ) : !data ? (
         <p className="muted">Loading the ledgers…</p>
       ) : (
         <>

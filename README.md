@@ -24,12 +24,16 @@ hour/half/mini sheets but were missing from Weekly, and 74 rows never got their
 
 ## Getting set up
 
-1. **Turn on Pages.** Settings → Pages → Source: *GitHub Actions*. Pushing to
-   `main` builds and publishes to `https://<you>.github.io/tv_votes/`.
+1. **Put the app somewhere.** See [Hosting](#hosting) — GitHub Pages does not
+   serve private repos on a free plan, so this repo needs one of the other two.
 2. **Add a TMDB key.** Create a free one at
-   [themoviedb.org](https://www.themoviedb.org/settings/api), then add it as a
-   repository secret named `TMDB_API_KEY`. Set the repository variable
-   `TMDB_REGION` if you want streaming data for somewhere other than the US.
+   [themoviedb.org](https://www.themoviedb.org/settings/api), then add it under
+   Settings → Secrets and variables → Actions → **Repository secrets** → New
+   repository secret, named exactly `TMDB_API_KEY`. It has to be a *secret*, not
+   a variable, and not an environment secret — and the TMDB field in the app's
+   own Settings tab is a separate thing, used only by the per-show refresh
+   button. Set the repository variable `TMDB_REGION` for streaming data outside
+   the US.
 3. **Give each of you a token.** In the app's Settings tab, paste a
    [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new)
    scoped to this repo with **Contents: read and write**. It is stored in that
@@ -37,6 +41,33 @@ hour/half/mini sheets but were missing from Weekly, and 74 rows never got their
 4. **Run the first refresh.** Actions → *Refresh metadata* → Run workflow, with
    "Refresh every show" ticked. That fills in seasons, streaming services and
    returning/ended status for all 1,015 shows. It takes a few minutes.
+
+## Hosting
+
+The ledgers are JSON files in this repo, and this repo is private. That leaves
+three ways to get at the app, and they differ mainly in what becomes public:
+
+| | What it costs | What is public |
+| --- | --- | --- |
+| **Cloudflare Pages** | a free account, no card | nothing — only the app's code is served |
+| **Make the repo public** | nothing | the whole ledger: shows, points, watch history |
+| **Run it locally** | nothing | nothing, but it is laptop-only |
+
+**Cloudflare Pages** (or Netlify, or Vercel — any of them work). Connect the
+repo, build command `npm run build`, output directory `dist`. The default build
+deliberately ships **no data**: the deployed site is only code, and the app
+reads and writes this private repo through the GitHub API using the token you
+paste into Settings. So the public URL gives away nothing, even to someone who
+finds it.
+
+**GitHub Pages** needs the repo to be public (or a paid plan). If you make it
+public, `.github/workflows/deploy.yml` publishes to
+`https://<you>.github.io/tv_votes/` on every push, and builds with
+`PUBLISH_DATA=1` so the ledgers ship alongside the app and it works read-only
+without a token. Everything in `data/` is then world-readable.
+
+**Locally**, `npm run dev` serves it at `localhost:5173` with the data read
+straight off disk.
 
 ## Day to day
 

@@ -37573,16 +37573,37 @@
   {
    "id": "how-i-met-your-father",
    "title": "How I Met Your Father",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 124010,
+   "poster": "/8psLGtFzTMYCXxUNMpMOCB6doPn.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:17:56.506Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2022-01-18",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 20,
+     "airDate": "2023-01-24",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -37602,7 +37623,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "how-i-met-your-mother",

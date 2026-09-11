@@ -1,1 +1,592 @@
-[]
+[
+ {
+  "id": "hour-1789153271277",
+  "ledger": "hour",
+  "drawnAt": "2026-09-11T19:01:11.277Z",
+  "allocations": {
+   "scotty": {
+    "alienist": 5,
+    "american-horror-story": 3,
+    "arrowverse": 10,
+    "bad-monkey": 45,
+    "band-of-brothers": 3,
+    "bates-motel": 5,
+    "black-mirror": 20,
+    "boardwalk-empire": 15,
+    "bones": 5,
+    "boys": 105,
+    "burn-notice": 5,
+    "catch-22": 3,
+    "clickbait": 2,
+    "crown": 2,
+    "dahmer": 4,
+    "deadwood": 1,
+    "dexter": 1,
+    "diplomat": 2,
+    "dispatches-from-elsewhere": 1,
+    "dropout": 5,
+    "english-game": 2,
+    "escape-at-dannemora": 1,
+    "evil": 4,
+    "expanse": 12,
+    "flight-attendant": 2,
+    "for-all-mankind": 5,
+    "freaks-and-geeks": 2,
+    "from": 5,
+    "genius": 15,
+    "gentleman-in-moscow": 5,
+    "gentlemen": 5,
+    "great": 3,
+    "hell-on-wheels": 1,
+    "hollywood": 2,
+    "hunters": 3,
+    "inventing-anna": 1,
+    "jack-ryan": 10,
+    "justified": 1,
+    "lady-in-the-lake": 5,
+    "looming-tower": 3,
+    "lost-ollie": 1,
+    "lucifer": 4,
+    "mad-men": 8,
+    "magicians": 2,
+    "mare-of-easttown": 8,
+    "marvelous-mrs-maisel": 10,
+    "mcu": 30,
+    "mindhunter": 15,
+    "monarch-legacy-of-monsters": 8,
+    "monk": 1,
+    "mosquito-coast": 3,
+    "mr-robot": 20,
+    "northern-exposure": 2,
+    "one-of-us-is-lying": 1,
+    "orange-is-the-new-black": 1,
+    "orphan-black-echoes": 20,
+    "outer-range": 2,
+    "ozark": 1,
+    "pam-and-tommy": 2,
+    "pennyworth": 3,
+    "poker-face": 7,
+    "rabbit-hole": 1,
+    "resident-alien": 1,
+    "riverdale": 1,
+    "see": 1,
+    "serpent-queen": 1,
+    "severance": 2,
+    "sherlock": 1,
+    "shining-girls": 1,
+    "shogun": 9,
+    "show-me-a-hero": 1,
+    "shrink-next-door": 1,
+    "silo": 2,
+    "small-light": 1,
+    "sunderland-til-i-die": 1,
+    "sympathizer": 9,
+    "them": 2,
+    "tiger-king-murder-mayhem-and-madness": 1,
+    "titans": 1,
+    "tokyo-vice": 1,
+    "tulsa-king": 1,
+    "under-the-banner-of-heaven": 1,
+    "veronica-mars": 5,
+    "watcher": 6,
+    "wednesday": 2,
+    "westworld": 15,
+    "white-house-plumbers": 5,
+    "white-lotus": 13,
+    "will-trent": 2,
+    "winning-time-the-rise-of-the-lakers-dynasty": 1,
+    "wire": 15,
+    "witcher": 150,
+    "yellowjackets": 16,
+    "yellowstone": 1,
+    "you": 1
+   },
+   "shelby": {
+    "witcher": 750
+   }
+  },
+  "totalWeight": 1500,
+  "roll": 1182,
+  "seed": "6b760f524f0c2d3f",
+  "winnerId": "witcher",
+  "winnerTitle": "The Witcher",
+  "ballot": "Season 1",
+  "standings": [
+   {
+    "id": "witcher",
+    "title": "The Witcher",
+    "weight": 900
+   },
+   {
+    "id": "boys",
+    "title": "The Boys",
+    "weight": 105
+   },
+   {
+    "id": "bad-monkey",
+    "title": "Bad Monkey",
+    "weight": 45
+   },
+   {
+    "id": "mcu",
+    "title": "MCU",
+    "weight": 30
+   },
+   {
+    "id": "black-mirror",
+    "title": "Black Mirror",
+    "weight": 20
+   },
+   {
+    "id": "mr-robot",
+    "title": "Mr. Robot",
+    "weight": 20
+   },
+   {
+    "id": "orphan-black-echoes",
+    "title": "Orphan Black: Echoes",
+    "weight": 20
+   },
+   {
+    "id": "yellowjackets",
+    "title": "Yellowjackets",
+    "weight": 16
+   },
+   {
+    "id": "boardwalk-empire",
+    "title": "Boardwalk Empire",
+    "weight": 15
+   },
+   {
+    "id": "genius",
+    "title": "Genius",
+    "weight": 15
+   },
+   {
+    "id": "mindhunter",
+    "title": "MINDHUNTER",
+    "weight": 15
+   },
+   {
+    "id": "westworld",
+    "title": "Westworld",
+    "weight": 15
+   },
+   {
+    "id": "wire",
+    "title": "The Wire",
+    "weight": 15
+   },
+   {
+    "id": "white-lotus",
+    "title": "The White Lotus",
+    "weight": 13
+   },
+   {
+    "id": "expanse",
+    "title": "The Expanse",
+    "weight": 12
+   },
+   {
+    "id": "arrowverse",
+    "title": "Arrowverse",
+    "weight": 10
+   },
+   {
+    "id": "jack-ryan",
+    "title": "Jack Ryan",
+    "weight": 10
+   },
+   {
+    "id": "marvelous-mrs-maisel",
+    "title": "The Marvelous Mrs. Maisel",
+    "weight": 10
+   },
+   {
+    "id": "shogun",
+    "title": "Shogun",
+    "weight": 9
+   },
+   {
+    "id": "sympathizer",
+    "title": "The Sympathizer",
+    "weight": 9
+   },
+   {
+    "id": "mad-men",
+    "title": "Mad Men",
+    "weight": 8
+   },
+   {
+    "id": "mare-of-easttown",
+    "title": "Mare of Easttown",
+    "weight": 8
+   },
+   {
+    "id": "monarch-legacy-of-monsters",
+    "title": "Monarch: Legacy of Monsters",
+    "weight": 8
+   },
+   {
+    "id": "poker-face",
+    "title": "Poker Face",
+    "weight": 7
+   },
+   {
+    "id": "watcher",
+    "title": "The Watcher",
+    "weight": 6
+   },
+   {
+    "id": "alienist",
+    "title": "The Alienist",
+    "weight": 5
+   },
+   {
+    "id": "bates-motel",
+    "title": "Bates Motel",
+    "weight": 5
+   },
+   {
+    "id": "bones",
+    "title": "Bones",
+    "weight": 5
+   },
+   {
+    "id": "burn-notice",
+    "title": "Burn Notice",
+    "weight": 5
+   },
+   {
+    "id": "dropout",
+    "title": "The Dropout",
+    "weight": 5
+   },
+   {
+    "id": "for-all-mankind",
+    "title": "For All Mankind",
+    "weight": 5
+   },
+   {
+    "id": "from",
+    "title": "From",
+    "weight": 5
+   },
+   {
+    "id": "gentleman-in-moscow",
+    "title": "A Gentleman in Moscow",
+    "weight": 5
+   },
+   {
+    "id": "gentlemen",
+    "title": "The Gentlemen",
+    "weight": 5
+   },
+   {
+    "id": "lady-in-the-lake",
+    "title": "Lady in the Lake",
+    "weight": 5
+   },
+   {
+    "id": "veronica-mars",
+    "title": "Veronica Mars",
+    "weight": 5
+   },
+   {
+    "id": "white-house-plumbers",
+    "title": "White House Plumbers",
+    "weight": 5
+   },
+   {
+    "id": "dahmer",
+    "title": "Dahmer",
+    "weight": 4
+   },
+   {
+    "id": "evil",
+    "title": "Evil",
+    "weight": 4
+   },
+   {
+    "id": "lucifer",
+    "title": "Lucifer",
+    "weight": 4
+   },
+   {
+    "id": "american-horror-story",
+    "title": "American Horror Story",
+    "weight": 3
+   },
+   {
+    "id": "band-of-brothers",
+    "title": "Band of Brothers",
+    "weight": 3
+   },
+   {
+    "id": "catch-22",
+    "title": "Catch-22",
+    "weight": 3
+   },
+   {
+    "id": "great",
+    "title": "The Great",
+    "weight": 3
+   },
+   {
+    "id": "hunters",
+    "title": "Hunters",
+    "weight": 3
+   },
+   {
+    "id": "looming-tower",
+    "title": "The Looming Tower",
+    "weight": 3
+   },
+   {
+    "id": "mosquito-coast",
+    "title": "The Mosquito Coast",
+    "weight": 3
+   },
+   {
+    "id": "pennyworth",
+    "title": "Pennyworth",
+    "weight": 3
+   },
+   {
+    "id": "clickbait",
+    "title": "Clickbait",
+    "weight": 2
+   },
+   {
+    "id": "crown",
+    "title": "The Crown",
+    "weight": 2
+   },
+   {
+    "id": "diplomat",
+    "title": "The Diplomat",
+    "weight": 2
+   },
+   {
+    "id": "english-game",
+    "title": "The English Game",
+    "weight": 2
+   },
+   {
+    "id": "flight-attendant",
+    "title": "The Flight Attendant",
+    "weight": 2
+   },
+   {
+    "id": "freaks-and-geeks",
+    "title": "Freaks and Geeks",
+    "weight": 2
+   },
+   {
+    "id": "hollywood",
+    "title": "Hollywood",
+    "weight": 2
+   },
+   {
+    "id": "magicians",
+    "title": "The Magicians",
+    "weight": 2
+   },
+   {
+    "id": "northern-exposure",
+    "title": "Northern Exposure",
+    "weight": 2
+   },
+   {
+    "id": "outer-range",
+    "title": "Outer Range",
+    "weight": 2
+   },
+   {
+    "id": "pam-and-tommy",
+    "title": "Pam and Tommy",
+    "weight": 2
+   },
+   {
+    "id": "severance",
+    "title": "Severance",
+    "weight": 2
+   },
+   {
+    "id": "silo",
+    "title": "Silo",
+    "weight": 2
+   },
+   {
+    "id": "them",
+    "title": "Them",
+    "weight": 2
+   },
+   {
+    "id": "wednesday",
+    "title": "Wednesday",
+    "weight": 2
+   },
+   {
+    "id": "will-trent",
+    "title": "Will Trent",
+    "weight": 2
+   },
+   {
+    "id": "deadwood",
+    "title": "Deadwood",
+    "weight": 1
+   },
+   {
+    "id": "dexter",
+    "title": "Dexter",
+    "weight": 1
+   },
+   {
+    "id": "dispatches-from-elsewhere",
+    "title": "Dispatches from Elsewhere",
+    "weight": 1
+   },
+   {
+    "id": "escape-at-dannemora",
+    "title": "Escape at Dannemora",
+    "weight": 1
+   },
+   {
+    "id": "hell-on-wheels",
+    "title": "Hell on Wheels",
+    "weight": 1
+   },
+   {
+    "id": "inventing-anna",
+    "title": "Inventing Anna",
+    "weight": 1
+   },
+   {
+    "id": "justified",
+    "title": "Justified",
+    "weight": 1
+   },
+   {
+    "id": "lost-ollie",
+    "title": "Lost Ollie",
+    "weight": 1
+   },
+   {
+    "id": "monk",
+    "title": "Monk",
+    "weight": 1
+   },
+   {
+    "id": "one-of-us-is-lying",
+    "title": "One of Us is Lying",
+    "weight": 1
+   },
+   {
+    "id": "orange-is-the-new-black",
+    "title": "Orange is the New Black",
+    "weight": 1
+   },
+   {
+    "id": "ozark",
+    "title": "Ozark",
+    "weight": 1
+   },
+   {
+    "id": "rabbit-hole",
+    "title": "Rabbit Hole",
+    "weight": 1
+   },
+   {
+    "id": "resident-alien",
+    "title": "Resident Alien",
+    "weight": 1
+   },
+   {
+    "id": "riverdale",
+    "title": "Riverdale",
+    "weight": 1
+   },
+   {
+    "id": "see",
+    "title": "See",
+    "weight": 1
+   },
+   {
+    "id": "serpent-queen",
+    "title": "The Serpent Queen",
+    "weight": 1
+   },
+   {
+    "id": "sherlock",
+    "title": "Sherlock",
+    "weight": 1
+   },
+   {
+    "id": "shining-girls",
+    "title": "Shining Girls",
+    "weight": 1
+   },
+   {
+    "id": "show-me-a-hero",
+    "title": "Show Me a Hero",
+    "weight": 1
+   },
+   {
+    "id": "shrink-next-door",
+    "title": "The Shrink Next Door",
+    "weight": 1
+   },
+   {
+    "id": "small-light",
+    "title": "A Small Light",
+    "weight": 1
+   },
+   {
+    "id": "sunderland-til-i-die",
+    "title": "Sunderland 'Til I Die",
+    "weight": 1
+   },
+   {
+    "id": "tiger-king-murder-mayhem-and-madness",
+    "title": "Tiger King: Murder, Mayhem and Madness",
+    "weight": 1
+   },
+   {
+    "id": "titans",
+    "title": "Titans",
+    "weight": 1
+   },
+   {
+    "id": "tokyo-vice",
+    "title": "Tokyo Vice",
+    "weight": 1
+   },
+   {
+    "id": "tulsa-king",
+    "title": "Tulsa King",
+    "weight": 1
+   },
+   {
+    "id": "under-the-banner-of-heaven",
+    "title": "Under the Banner of Heaven",
+    "weight": 1
+   },
+   {
+    "id": "winning-time-the-rise-of-the-lakers-dynasty",
+    "title": "Winning Time: The Rise of the Lakers Dynasty",
+    "weight": 1
+   },
+   {
+    "id": "yellowstone",
+    "title": "Yellowstone",
+    "weight": 1
+   },
+   {
+    "id": "you",
+    "title": "You",
+    "weight": 1
+   }
+  ]
+ }
+]

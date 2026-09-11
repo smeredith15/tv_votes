@@ -34,9 +34,15 @@ jobs:
             exit 0
           fi
           echo "::error::No repository secret named TMDB_API_KEY is visible to this job."
-          echo "Add it at https://github.com/${{ github.repository }}/settings/secrets/actions"
-          echo "under 'Repository secrets' — not 'Variables', not an environment secret,"
-          echo "and not the TMDB field in the app's own Settings tab, which is separate."
+          echo "Secrets this job CAN see (values are masked by the runner):"
+          echo '${{ toJSON(secrets) }}'
+          echo
+          echo "If TMDB_API_KEY is absent from that list, it was saved somewhere this"
+          echo "job cannot read. The Actions secrets page has separate tabs for Actions,"
+          echo "Codespaces and Dependabot, and only the Actions one counts:"
+          echo "  https://github.com/${{ github.repository }}/settings/secrets/actions"
+          echo "Environment secrets are also invisible here, since this job declares no"
+          echo "environment. The TMDB field in the app's own Settings tab is separate again."
           exit 1
 
       - name: Pull seasons, streaming and status from TMDB

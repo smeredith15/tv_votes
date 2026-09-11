@@ -24,7 +24,11 @@ export type Op =
   /** Take back the points on a show, on one ballot or on all of them. */
   | { type: "freePoints"; showId: string; ledger?: LedgerId }
   /** Mark a season as present on, or missing from, the Plex server. */
-  | { type: "plexSeason"; showId: string; season: number; present: boolean };
+  | { type: "plexSeason"; showId: string; season: number; present: boolean }
+  /** Put a ballot on a show by hand, or clear what it is on. */
+  | { type: "setPick"; ledger: LedgerId; showId: string | null }
+  /** Add or drop a show from the list watched outside the voting. */
+  | { type: "aside"; showId: string; add: boolean };
 
 function findShow(data: Dataset, id: string): Show | undefined {
   return data.shows.find((s) => s.id === id);
@@ -68,6 +72,11 @@ export function applyOp(data: Dataset, op: Op): Dataset {
     }
     case "draw": {
       if (!data.history.some((d) => d.id === op.draw.id)) data.history.push(op.draw);
+      // Keeping a draw is what puts that ballot on a show.
+      data.watching = {
+        ...data.watching,
+        picks: { ...data.watching.picks, [op.draw.ledger]: op.draw.winnerId },
+      };
       return data;
     }
     case "universeItem": {
@@ -113,6 +122,15 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       const seasons = [...present].sort((a, b) => a - b);
       data.plex = { ...data.plex, shows: { ...data.plex.shows, [op.showId]: seasons } };
       if (seasons.length === 0) delete data.plex.shows[op.showId];
+      return data;
+    }
+    case "setPick": {
+      data.watching = { ...data.watching, picks: { ...data.watching.picks, [op.ledger]: op.showId } };
+      return data;
+    }
+    case "aside": {
+      const without = data.watching.asides.filter((id) => id !== op.showId);
+      data.watching = { ...data.watching, asides: op.add ? [...without, op.showId] : without };
       return data;
     }
     case "budget": {
@@ -171,6 +189,7 @@ export function cloneForOps(data: Dataset, ops: Op[]): Dataset {
     history: [...data.history],
     inbox: [...data.inbox],
     plex: { ...data.plex, shows: { ...data.plex.shows } },
+    watching: { picks: { ...data.watching.picks }, asides: [...data.watching.asides] },
   };
 }
 
@@ -186,6 +205,8 @@ export function compact(ops: Op[]): Op[] {
     else if (op.type === "budget") key = `budget:${op.ledger}`;
     else if (op.type === "plexSeason") key = `plex:${op.showId}:${op.season}`;
     else if (op.type === "freePoints") key = `free:${op.showId}:${op.ledger ?? "all"}`;
+    else if (op.type === "setPick") key = `pick:${op.ledger}`;
+    else if (op.type === "aside") key = `aside:${op.showId}`;
 
     if (key) keyed.set(key, op);
     else rest.push(op);

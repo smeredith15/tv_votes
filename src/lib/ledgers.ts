@@ -34,6 +34,8 @@ export function eligibleLedgers(show: Show): LedgerId[] {
   // A show watched inside a universe is voted on under the universe's own entry.
   if (show.universe && !show.universeEntry) return ledgers;
   if (watchState(show) === "complete" && show.status !== "returning") return ledgers;
+  // Set to pick itself back up when a season lands, so there is nothing to vote on.
+  if (show.autoResume) return ledgers;
 
   ledgers.push("weekly");
   // A universe spans both runtimes and never ends, so it sits on the long ballots.

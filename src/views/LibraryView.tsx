@@ -3,16 +3,15 @@ import { LEDGERS, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, Show } from "../lib/types";
 
-type Mode = "watched" | "plex";
 type Filter = "in_progress" | "started" | "won" | "plex" | "missing" | "all";
 
 const FILTERS: { id: Filter; label: string; blurb: string }[] = [
+  { id: "all", label: "Everything", blurb: "Every show on the list" },
   { id: "in_progress", label: "Part-watched", blurb: "Started and not finished" },
   { id: "started", label: "Never ticked", blurb: "Marked as started in the workbook, with no seasons ticked yet" },
   { id: "won", label: "Won a draw", blurb: "Shows a draw has picked" },
   { id: "plex", label: "On Plex", blurb: "Anything with a season on the server" },
   { id: "missing", label: "Not on Plex", blurb: "Part-watched shows with nothing on the server" },
-  { id: "all", label: "Everything", blurb: "" },
 ];
 
 /**
@@ -21,10 +20,12 @@ const FILTERS: { id: Filter; label: string; blurb: string }[] = [
  * Both are the same gesture over the same grid of seasons, so they share a
  * screen and a switch rather than two near-identical pages.
  */
+const PAGE = 60;
+
 export function LibraryView({ store, data }: { store: Store; data: Dataset }) {
-  const [mode, setMode] = useState<Mode>("watched");
-  const [filter, setFilter] = useState<Filter>("in_progress");
+  const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
+  const [limit, setLimit] = useState(PAGE);
 
   const won = useMemo(() => new Set(data.history.map((d) => d.winnerId)), [data.history]);
 
@@ -52,48 +53,49 @@ export function LibraryView({ store, data }: { store: Store; data: Dataset }) {
         }
       })
       // Shows with a season list first: those are the ones you can act on.
-      .sort((a, b) => Number(b.seasons.length > 0) - Number(a.seasons.length > 0))
-      .slice(0, needle ? 80 : 200);
+      .sort((a, b) => Number(b.seasons.length > 0) - Number(a.seasons.length > 0));
   }, [data.plex.shows, data.shows, filter, query, won]);
 
   const plexCount = Object.keys(data.plex.shows).length;
+  const visible = shown.slice(0, limit);
 
   return (
     <>
       <div className="panel">
         <div className="row" style={{ justifyContent: "space-between" }}>
-          <div className="row">
-            <strong className="small">Ticking off</strong>
-            <button aria-current={mode === "watched"} onClick={() => setMode("watched")}>
-              Seasons we have watched
-            </button>
-            <button aria-current={mode === "plex"} onClick={() => setMode("plex")}>
-              Seasons on Plex
-            </button>
-          </div>
+          <strong className="small">Ticking off what we have watched, and what is on Plex</strong>
           <span className="small muted">
-            {plexCount ? `${plexCount} shows on the server` : "Nothing recorded on Plex yet"}
-            {data.plex.updatedAt && ` · synced ${new Date(data.plex.updatedAt).toLocaleDateString()}`}
+            {plexCount ? `${plexCount} shows on the server` : "Nothing marked on Plex yet"}
           </span>
         </div>
 
         <div className="row" style={{ marginTop: 10 }}>
           {FILTERS.map((f) => (
-            <button key={f.id} aria-current={filter === f.id} title={f.blurb} onClick={() => setFilter(f.id)}>
+            <button
+              key={f.id}
+              aria-current={filter === f.id}
+              title={f.blurb}
+              onClick={() => {
+                setFilter(f.id);
+                setLimit(PAGE);
+              }}
+            >
               {f.label}
             </button>
           ))}
           <input
             placeholder="or search every show…"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setLimit(PAGE);
+            }}
             style={{ flex: "1 1 180px" }}
           />
         </div>
         <p className="small muted" style={{ marginBottom: 0 }}>
-          {mode === "watched"
-            ? "Click a season to mark it watched. A show drops off the ballots once every season is ticked."
-            : "Click a season to record that it is on the server."}
+          {shown.length.toLocaleString()} shows. Each has a row for the seasons you have watched and a
+          row for the ones sitting on Plex.
         </p>
       </div>
 
@@ -101,16 +103,20 @@ export function LibraryView({ store, data }: { store: Store; data: Dataset }) {
         {shown.length === 0 ? (
           <p className="small muted" style={{ margin: 0 }}>Nothing here.</p>
         ) : (
-          shown.map((show) => (
+          visible.map((show) => (
             <ShowSeasons
               key={show.id}
               show={show}
-              mode={mode}
               onPlex={data.plex.shows[show.id]}
               people={data.people}
               dispatch={store.dispatch}
             />
           ))
+        )}
+        {shown.length > visible.length && (
+          <button className="small" style={{ marginTop: 10 }} onClick={() => setLimit(limit + PAGE * 2)}>
+            Show more ({(shown.length - visible.length).toLocaleString()} to go)
+          </button>
         )}
       </div>
     </>
@@ -119,7 +125,6 @@ export function LibraryView({ store, data }: { store: Store; data: Dataset }) {
 
 interface SeasonsProps {
   show: Show;
-  mode: Mode;
   /** Season numbers on the server, straight from the Plex file. */
   onPlex?: number[];
   people: string[];
@@ -127,13 +132,14 @@ interface SeasonsProps {
 }
 
 /**
- * One show's seasons.
+ * One show, with a row of seasons for each thing worth recording: the ones you
+ * have watched, and the ones on the server. Both are on screen together —
+ * hiding one behind a switch made marking Plex hard to find at all.
  *
  * Memoised on props that hold their identity between renders, so ticking one
- * season redraws that show alone rather than every row on screen — with a
- * thousand shows and their seasons, redrawing the lot made each click crawl.
+ * season redraws that show alone rather than every row on screen.
  */
-const ShowSeasons = memo(function ShowSeasons({ show, mode, onPlex, people, dispatch }: SeasonsProps) {
+const ShowSeasons = memo(function ShowSeasons({ show, onPlex, people, dispatch }: SeasonsProps) {
   const present = new Set(onPlex ?? []);
   const watched = show.seasons.filter((s) => s.watched).length;
   const finished = show.seasons.length > 0 && watched === show.seasons.length;
@@ -143,16 +149,10 @@ const ShowSeasons = memo(function ShowSeasons({ show, mode, onPlex, people, disp
     0,
   );
 
-  function toggle(season: number, current: boolean) {
-    if (mode === "watched") dispatch({ type: "season", showId: show.id, season, watched: !current });
-    else dispatch({ type: "plexSeason", showId: show.id, season, present: !current });
-  }
-
-  /** Tick or untick the whole run in one go. */
-  function setAll(value: boolean) {
+  function setAll(row: "watched" | "plex", value: boolean) {
     dispatch(
       ...show.seasons.map((season) =>
-        mode === "watched"
+        row === "watched"
           ? ({ type: "season", showId: show.id, season: season.number, watched: value } as const)
           : ({ type: "plexSeason", showId: show.id, season: season.number, present: value } as const),
       ),
@@ -164,15 +164,19 @@ const ShowSeasons = memo(function ShowSeasons({ show, mode, onPlex, people, disp
       <div className="row" style={{ justifyContent: "space-between" }}>
         <strong className="small">{show.title}</strong>
         <span className="row small muted">
-          {mode === "watched"
-            ? `${watched}/${show.seasons.length || "?"} watched`
-            : `${present.size}/${show.seasons.length || "?"} on Plex`}
-          {show.seasons.length > 0 && (
-            <>
-              <button className="small" onClick={() => setAll(true)}>All</button>
-              <button className="small" onClick={() => setAll(false)}>None</button>
-            </>
+          {show.status === "returning" && (
+            <label className="row small" style={{ gap: 5 }} title="Start a new season rather than voting on it">
+              <input
+                type="checkbox"
+                checked={show.autoResume === true}
+                onChange={(e) =>
+                  dispatch({ type: "field", showId: show.id, patch: { autoResume: e.target.checked } })
+                }
+              />
+              <span>auto</span>
+            </label>
           )}
+          {show.seasons.length > 0 && `${watched}/${show.seasons.length} watched`}
         </span>
       </div>
 
@@ -192,26 +196,60 @@ const ShowSeasons = memo(function ShowSeasons({ show, mode, onPlex, people, disp
           No season list yet — the nightly refresh fills these in from TMDB.
         </p>
       ) : (
-        <div className="seasons" style={{ marginTop: 6 }}>
-          {show.seasons.map((season) => {
-            const marked = mode === "watched" ? season.watched : present.has(season.number);
-            const other = mode === "watched" ? present.has(season.number) : season.watched;
-            return (
-              <button
-                key={season.number}
-                className={`season${marked ? " watched" : ""}`}
-                onClick={() => toggle(season.number, marked)}
-                title={other ? (mode === "watched" ? "On Plex" : "Already watched") : undefined}
-              >
-                <span>{marked ? "\u2713" : "\u25cb"}</span>
-                <span>S{season.number}</span>
-                <span className="muted">{season.episodes} ep</span>
-                {other && <span className="muted">{mode === "watched" ? "\u26c1" : "\ud83d\udc41"}</span>}
-              </button>
-            );
-          })}
-        </div>
+        <>
+          <SeasonRow
+            label="Watched"
+            seasons={show.seasons.map((s) => ({ number: s.number, episodes: s.episodes, on: s.watched }))}
+            onToggle={(number, on) => dispatch({ type: "season", showId: show.id, season: number, watched: !on })}
+            onAll={(value) => setAll("watched", value)}
+          />
+          <SeasonRow
+            label="On Plex"
+            seasons={show.seasons.map((s) => ({
+              number: s.number,
+              episodes: s.episodes,
+              on: present.has(s.number),
+            }))}
+            onToggle={(number, on) =>
+              dispatch({ type: "plexSeason", showId: show.id, season: number, present: !on })
+            }
+            onAll={(value) => setAll("plex", value)}
+          />
+        </>
       )}
     </div>
   );
 });
+
+function SeasonRow({
+  label,
+  seasons,
+  onToggle,
+  onAll,
+}: {
+  label: string;
+  seasons: { number: number; episodes: number; on: boolean }[];
+  onToggle: (number: number, on: boolean) => void;
+  onAll: (value: boolean) => void;
+}) {
+  return (
+    <div className="row season-row">
+      <span className="small muted season-row-label">{label}</span>
+      <div className="seasons" style={{ flex: "1 1 auto" }}>
+        {seasons.map((season) => (
+          <button
+            key={season.number}
+            className={`season${season.on ? " watched" : ""}`}
+            onClick={() => onToggle(season.number, season.on)}
+          >
+            <span>{season.on ? "\u2713" : "\u25cb"}</span>
+            <span>S{season.number}</span>
+            <span className="muted">{season.episodes} ep</span>
+          </button>
+        ))}
+        <button className="small" onClick={() => onAll(true)}>All</button>
+        <button className="small" onClick={() => onAll(false)}>None</button>
+      </div>
+    </div>
+  );
+}

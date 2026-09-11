@@ -54,7 +54,7 @@ async function main() {
 
   console.log(`Refreshing ${queue.length} of ${file.shows.length} shows.`);
   let matched = 0;
-  let unmatched = 0;
+  const unmatched = [];
   let failed = 0;
 
   await mapLimit(queue, 8, async (show) => {
@@ -64,7 +64,7 @@ async function main() {
         if (!hit) {
           // Leave it alone; a human can paste the right TMDB id in the app.
           show.providersUpdated = new Date(now).toISOString();
-          unmatched++;
+          unmatched.push(show.title);
           return;
         }
         show.tmdbId = hit.id;
@@ -81,7 +81,14 @@ async function main() {
       show.nextAirDate = details.next_episode_to_air?.air_date ?? null;
       show.runtime = show.runtime ?? toRuntime(details);
       show.format = toFormat(details, show.format);
-      show.seasons = toSeasons(details, show.seasons);
+      if (show.assumeWatched) {
+        // Added as a show they had already finished: everything aired by now
+        // counts as seen, and anything that airs later will not.
+        show.seasons = toSeasons(details, show.seasons).map((season) => ({ ...season, watched: true }));
+        delete show.assumeWatched;
+      } else {
+        show.seasons = toSeasons(details, show.seasons);
+      }
       show.providers = toProviders(providers);
       show.poster = show.poster ?? details.poster_path ?? null;
       show.providersUpdated = new Date(now).toISOString();
@@ -92,7 +99,12 @@ async function main() {
   });
 
   writeFileSync(SHOWS, `${JSON.stringify(file, null, 1)}\n`);
-  console.log(`Newly matched ${matched}, no TMDB match ${unmatched}, errors ${failed}.`);
+  console.log(`Newly matched ${matched}, no TMDB match ${unmatched.length}, errors ${failed}.`);
+  if (unmatched.length) {
+    // Titles carrying a disambiguator, mostly. Paste the id in the app's show
+    // panel and the next run fills the rest in.
+    console.log(`Needs a TMDB id by hand: ${unmatched.slice(0, 30).join(", ")}`);
+  }
 }
 
 await main();

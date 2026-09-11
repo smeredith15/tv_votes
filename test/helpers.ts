@@ -35,5 +35,6 @@ export function makeData(shows: Show[]): Dataset {
     history: [],
     inbox: [],
     plex: { updatedAt: null, shows: {} },
+    watching: { picks: {}, asides: [] },
   };
 }

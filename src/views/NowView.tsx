@@ -1,88 +1,144 @@
-import { LEDGERS, ballotFor, episodesPerWeek, watchState } from "../lib/ledgers";
+import { useMemo, useState } from "react";
+import { LEDGERS, ballotFor, episodesPerWeek, unwatchedSeasons, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
-import type { Dataset, Draw, LedgerId, Show } from "../lib/types";
+import type { Dataset, LedgerId, Show } from "../lib/types";
 import { Poster, ProviderTags, StatusPill } from "./ShowBits";
 
-/** The show a ballot last landed on, unless you have since finished it. */
-function currentPick(data: Dataset, ledger: LedgerId): { draw: Draw; show: Show } | null {
+/**
+ * What a ballot is currently on: whatever was chosen by hand, otherwise the
+ * last draw it kept. An explicit null means the ballot was cleared on purpose.
+ */
+function pickFor(data: Dataset, ledger: LedgerId): Show | null {
+  const chosen = data.watching.picks[ledger];
+  if (chosen === null) return null;
+  if (chosen) return data.shows.find((s) => s.id === chosen) ?? null;
+
   for (let i = data.history.length - 1; i >= 0; i--) {
     const draw = data.history[i];
     if (draw.ledger !== ledger) continue;
     const show = data.shows.find((s) => s.id === draw.winnerId);
     if (!show) continue;
-    return watchState(show) === "complete" ? null : { draw, show };
+    return watchState(show) === "complete" ? null : show;
   }
   return null;
 }
 
-/**
- * What you are in the middle of: one card per ballot, with the season you are
- * on, where it is streaming, and — for Friday nights — how many of them are
- * left before this pick runs out.
- */
 export function NowView({ store, data }: { store: Store; data: Dataset }) {
-  const anyPick = LEDGERS.some((l) => currentPick(data, l.id) !== null);
+  /** Shows set to pick themselves back up, with something waiting. */
+  const resuming = useMemo(
+    () => data.shows.filter((s) => s.autoResume && unwatchedSeasons(s).length > 0),
+    [data.shows],
+  );
 
   return (
-    <>
-      {!anyPick && (
-        <div className="panel">
-          <strong>Nothing on the go</strong>
-          <p className="small muted" style={{ marginBottom: 0 }}>
-            Once a draw is kept, whatever it landed on shows up here until you have finished it.
-          </p>
-        </div>
-      )}
+    <div className="now">
+      <div className="now-main">
+        {LEDGERS.map((ledger) => (
+          <PickCard key={ledger.id} store={store} data={data} ledger={ledger.id} />
+        ))}
 
-      {LEDGERS.map((ledger) => {
-        const pick = currentPick(data, ledger.id);
-        if (!pick) return null;
-        return <PickCard key={ledger.id} store={store} data={data} ledger={ledger.id} pick={pick} />;
-      })}
-    </>
+        {resuming.length > 0 && (
+          <div className="panel">
+            <strong>Picks itself back up</strong>
+            <p className="small muted">
+              New seasons of shows you told the app not to put to a vote again.
+            </p>
+            {resuming.map((show) => (
+              <div key={show.id} className="row" style={{ justifyContent: "space-between", padding: "6px 0" }}>
+                <span className="stack">
+                  <strong className="small">{show.title}</strong>
+                  <span className="small muted">
+                    Season{unwatchedSeasons(show).length > 1 ? "s" : ""} {unwatchedSeasons(show).join(", ")} waiting
+                  </span>
+                </span>
+                <span className="row small">
+                  <ProviderTags show={show} limit={2} />
+                  <button className="small" onClick={() => store.dispatch({ type: "aside", showId: show.id, add: true })}>
+                    Add to the side list
+                  </button>
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <AsidePanel store={store} data={data} />
+    </div>
   );
 }
 
-function PickCard({
+function PickCard({ store, data, ledger }: { store: Store; data: Dataset; ledger: LedgerId }) {
+  const [choosing, setChoosing] = useState(false);
+  const show = pickFor(data, ledger);
+  const ledgerName = LEDGERS.find((l) => l.id === ledger)!.name;
+
+  return (
+    <div className="panel">
+      <div className="row" style={{ justifyContent: "space-between" }}>
+        <span className="small muted">{ledgerName}</span>
+        <span className="row small">
+          <button className="small" onClick={() => setChoosing(!choosing)}>
+            {show ? "Pick something else" : "Choose a show"}
+          </button>
+          {show && (
+            <button className="small" onClick={() => store.dispatch({ type: "setPick", ledger, showId: null })}>
+              Clear
+            </button>
+          )}
+        </span>
+      </div>
+
+      {choosing && (
+        <ShowPicker
+          data={data}
+          onPick={(id) => {
+            store.dispatch({ type: "setPick", ledger, showId: id });
+            setChoosing(false);
+          }}
+        />
+      )}
+
+      {show ? <PickBody store={store} data={data} ledger={ledger} show={show} /> : (
+        <p className="small muted" style={{ marginBottom: 0 }}>
+          Nothing on the go. Draw one, or choose it yourself.
+        </p>
+      )}
+    </div>
+  );
+}
+
+function PickBody({
   store,
   data,
   ledger,
-  pick,
+  show,
 }: {
   store: Store;
   data: Dataset;
   ledger: LedgerId;
-  pick: { draw: Draw; show: Show };
+  show: Show;
 }) {
-  const { show, draw } = pick;
-  const ledgerName = LEDGERS.find((l) => l.id === ledger)!.name;
   const ballot = ballotFor(show, ledger);
   const onDeck = show.seasons.filter((s) => ballot.seasons.includes(s.number) && !s.watched);
   const episodesLeft = onDeck.reduce((sum, s) => sum + s.episodes, 0);
-  const perWeek = episodesPerWeek(show);
-  const weeksLeft = episodesLeft > 0 ? Math.ceil(episodesLeft / perWeek) : 0;
+  const weeksLeft = Math.ceil(episodesLeft / episodesPerWeek(show));
   const universe = data.universes.find((u) => u.id === show.universe);
   const nextUp = universe?.order.find((i) => !i.watched);
 
   return (
-    <div className="panel">
-      <div className="row" style={{ alignItems: "flex-start" }}>
+    <>
+      <div className="row" style={{ alignItems: "flex-start", marginTop: 8 }}>
         <Poster show={show} size={64} />
-        <div className="stack" style={{ flex: "1 1 260px" }}>
-          <span className="small muted">{ledgerName}</span>
+        <div className="stack" style={{ flex: "1 1 220px" }}>
           <strong style={{ fontSize: 19 }}>{show.title}</strong>
-          <span className="small">
-            {nextUp ? `Up next: ${nextUp.label}` : ballot.label}
-            {" · drawn "}
-            {new Date(draw.drawnAt).toLocaleDateString()}
-          </span>
+          <span className="small">{nextUp ? `Up next: ${nextUp.label}` : ballot.label}</span>
           <span className="row small" style={{ gap: 6 }}>
             <StatusPill show={show} />
             <ProviderTags show={show} limit={3} />
             {(data.plex.shows[show.id] ?? []).length > 0 && <span className="pill flat">On Plex</span>}
           </span>
         </div>
-
         {episodesLeft > 0 && (
           <div className="stack" style={{ alignItems: "flex-end" }}>
             <strong style={{ fontSize: 22 }}>{episodesLeft}</strong>
@@ -113,11 +169,109 @@ function PickCard({
         </div>
       )}
 
-      {onDeck.length === 0 && !nextUp && (
-        <p className="small muted" style={{ marginBottom: 0 }}>
-          Everything this draw covered is ticked off — draw again when you are ready.
-        </p>
+      {show.status === "returning" && (
+        <label className="row small muted" style={{ marginTop: 10, gap: 8 }}>
+          <input
+            type="checkbox"
+            checked={show.autoResume === true}
+            onChange={(e) =>
+              store.dispatch({ type: "field", showId: show.id, patch: { autoResume: e.target.checked } })
+            }
+          />
+          <span>When a new season lands, start it rather than putting it to a vote.</span>
+        </label>
+      )}
+    </>
+  );
+}
+
+/**
+ * Where a show stands, in a few words. A show with no season list yet is not
+ * finished — TMDB simply has not filled it in.
+ */
+function describeProgress(show: Show): string {
+  if (show.seasons.length === 0) return "seasons not known yet";
+  const left = unwatchedSeasons(show).length;
+  return left === 0 ? "finished" : `${left} season${left === 1 ? "" : "s"} left`;
+}
+
+/** Search the whole list to put a ballot on something by hand. */
+function ShowPicker({ data, onPick }: { data: Dataset; onPick: (id: string) => void }) {
+  const [query, setQuery] = useState("");
+  const matches = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    if (needle.length < 2) return [];
+    return data.shows.filter((s) => s.title.toLowerCase().includes(needle)).slice(0, 12);
+  }, [data.shows, query]);
+
+  return (
+    <div className="stack" style={{ marginTop: 10 }}>
+      <input autoFocus placeholder="Search every show…" value={query} onChange={(e) => setQuery(e.target.value)} />
+      {matches.map((show) => (
+        <button key={show.id} className="small" style={{ textAlign: "left" }} onClick={() => onPick(show.id)}>
+          {show.title}
+          <span className="muted"> · {describeProgress(show)}</span>
+        </button>
+      ))}
+      {query.trim().length >= 2 && matches.length === 0 && (
+        <span className="small muted">Nothing matches.</span>
       )}
     </div>
+  );
+}
+
+/** Things being watched outside the voting: no ballot, no draw, just a list. */
+function AsidePanel({ store, data }: { store: Store; data: Dataset }) {
+  const [adding, setAdding] = useState(false);
+  const shows = data.watching.asides
+    .map((id) => data.shows.find((s) => s.id === id))
+    .filter((s): s is Show => s !== undefined);
+
+  return (
+    <aside className="now-side panel">
+      <div className="row" style={{ justifyContent: "space-between" }}>
+        <strong className="small">On the side</strong>
+        <button className="small" onClick={() => setAdding(!adding)}>
+          {adding ? "Done" : "Add"}
+        </button>
+      </div>
+      <p className="small muted">Watched outside the voting.</p>
+
+      {adding && (
+        <ShowPicker
+          data={data}
+          onPick={(id) => {
+            store.dispatch({ type: "aside", showId: id, add: true });
+            setAdding(false);
+          }}
+        />
+      )}
+
+      <div className="stack now-side-list">
+        {shows.length === 0 && !adding && (
+          <span className="small muted">Nothing here yet.</span>
+        )}
+        {shows.map((show) => {
+          const left = unwatchedSeasons(show);
+          return (
+            <div key={show.id} className="row aside-row">
+              <span className="stack" style={{ flex: "1 1 auto", minWidth: 0 }}>
+                <span className="small aside-title">{show.title}</span>
+                <span className="small muted">
+                  {left.length === 0 ? describeProgress(show) : `S${left[0]} next`}
+                </span>
+              </span>
+              <button
+                className="small"
+                title="Remove"
+                onClick={() => store.dispatch({ type: "aside", showId: show.id, add: false })}
+              >
+                ×
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    </aside>
   );
 }

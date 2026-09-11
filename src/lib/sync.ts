@@ -1,5 +1,5 @@
 import type { Op } from "./ops";
-import type { Dataset, Draw, InboxItem, PlexLibrary, Universe } from "./types";
+import type { Dataset, Draw, InboxItem, PlexLibrary, Universe, Watching } from "./types";
 
 /** Which repo file each kind of change lands in. */
 export const FILES = {
@@ -8,6 +8,7 @@ export const FILES = {
   history: "data/history.json",
   inbox: "data/inbox.json",
   plex: "data/plex.json",
+  watching: "data/watching.json",
 } as const;
 
 export const ALL_FILES = Object.values(FILES);
@@ -25,6 +26,7 @@ function format(value: unknown): string {
 }
 
 export const EMPTY_PLEX: PlexLibrary = { updatedAt: null, shows: {} };
+export const EMPTY_WATCHING: Watching = { picks: {}, asides: [] };
 
 /**
  * Assemble the data files into the one dataset the app works with. A file
@@ -41,6 +43,7 @@ export function datasetFrom(files: Record<string, string>): Dataset {
     history: read<Draw[]>(FILES.history, []),
     inbox: read<InboxItem[]>(FILES.inbox, []),
     plex: read<PlexLibrary>(FILES.plex, EMPTY_PLEX),
+    watching: read<Watching>(FILES.watching, EMPTY_WATCHING),
   };
 }
 
@@ -57,6 +60,7 @@ export function serialize(data: Dataset): Record<string, string> {
     [FILES.history]: format(data.history),
     [FILES.inbox]: format(data.inbox),
     [FILES.plex]: format(data.plex),
+    [FILES.watching]: format(data.watching),
   };
 }
 

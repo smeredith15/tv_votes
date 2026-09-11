@@ -2677,7 +2677,7 @@
      "name": "Limited Series",
      "episodes": 4,
      "airDate": "2023-11-02",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {
@@ -4642,21 +4642,21 @@
      "name": "Season 2",
      "episodes": 13,
      "airDate": "2019-03-07",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
      "airDate": "2020-09-02",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 8,
      "airDate": "2021-09-01",
-     "watched": false
+     "watched": true
     }
    ],
    "assumeWatched": true,
@@ -58510,16 +58510,77 @@
   {
    "id": "paper",
    "title": "The Paper",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 253941,
+   "poster": "/ySA5MvhoxTdezNUMe0ifPmhxH4w.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Peacock Premium",
+     "type": "flatrate",
+     "logo": "/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Peacock Premium Plus",
+     "type": "flatrate",
+     "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
+    },
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T20:56:16.794Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2025-09-04",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2026-09-09",
+     "watched": false
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -58539,7 +58600,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "paradise",

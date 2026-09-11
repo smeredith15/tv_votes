@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ConflictError, type RepoConfig, readFile, writeFile } from "./github";
 import { applyOps, compact, type Op } from "./ops";
+import { loadList, loadRecord, save } from "./persist";
 import { FILES, describe, filesTouched, intoDataset, outOfDataset, type ShowsFile } from "./sync";
 import type { Dataset, Draw, InboxItem, Universe } from "./types";
 
@@ -29,22 +30,13 @@ export const DEFAULT_SETTINGS: Settings = {
   region: "US",
 };
 
-function load<T>(key: string, fallback: T): T {
-  try {
-    const raw = localStorage.getItem(key);
-    return raw ? ({ ...fallback, ...JSON.parse(raw) } as T) : fallback;
-  } catch {
-    return fallback;
-  }
-}
-
 export function loadSettings(): Settings {
-  const stored = load<Settings>(SETTINGS_KEY, DEFAULT_SETTINGS);
+  const stored = loadRecord(localStorage, SETTINGS_KEY, DEFAULT_SETTINGS);
   return { ...stored, repo: { ...DEFAULT_SETTINGS.repo, ...stored.repo } };
 }
 
 export function saveSettings(settings: Settings): void {
-  localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+  save(localStorage, SETTINGS_KEY, settings);
 }
 
 /** Read the four ledger files straight off the published site — no token needed. */
@@ -91,7 +83,7 @@ export interface Store {
 export function useStore(baseUrl: string): Store {
   const [settings, setSettingsState] = useState<Settings>(() => loadSettings());
   const [base, setBase] = useState<Dataset | null>(null);
-  const [pending, setPending] = useState<Op[]>(() => load<Op[]>(PENDING_KEY, []));
+  const [pending, setPending] = useState<Op[]>(() => loadList<Op>(localStorage, PENDING_KEY));
   const [syncing, setSyncing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [needsToken, setNeedsToken] = useState(false);
@@ -129,7 +121,7 @@ export function useStore(baseUrl: string): Store {
   }, [reload]);
 
   useEffect(() => {
-    localStorage.setItem(PENDING_KEY, JSON.stringify(pending));
+    save(localStorage, PENDING_KEY, pending);
   }, [pending]);
 
   const setSettings = useCallback((next: Settings) => {

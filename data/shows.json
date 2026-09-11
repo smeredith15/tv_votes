@@ -1286,7 +1286,7 @@
      "name": "Season 1",
      "episodes": 21,
      "airDate": "2006-10-11",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
@@ -1680,16 +1680,105 @@
   {
    "id": "abbott-elementary",
    "title": "Abbott Elementary",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 125935,
+   "poster": "/nBe1e3JJEZ6veGrVXNF0fRoLu56.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "fuboTV",
+     "type": "flatrate",
+     "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+    },
+    {
+     "name": "YouTube TV",
+     "type": "flatrate",
+     "logo": "/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "free",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T20:54:00.601Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 13,
+     "airDate": "2021-12-07",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 22,
+     "airDate": "2022-09-21",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 13,
+     "airDate": "2024-02-07",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 22,
+     "airDate": "2024-10-09",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 22,
+     "airDate": "2025-10-01",
+     "watched": true
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 1,
+     "airDate": "2026-10-07",
+     "watched": false
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -1709,7 +1798,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": "2026-10-07"
   },
   {
    "id": "accident",
@@ -4499,16 +4589,76 @@
   {
    "id": "a-p-bio",
    "title": "A.P. Bio",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 71737,
+   "poster": "/8GwiuZazRFNrmvSkagZlEDH7qSS.jpg",
+   "providers": [
+    {
+     "name": "Peacock Premium",
+     "type": "flatrate",
+     "logo": "/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+    },
+    {
+     "name": "Peacock Premium Plus",
+     "type": "flatrate",
+     "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T20:53:50.610Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 13,
+     "airDate": "2018-02-01",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 13,
+     "airDate": "2019-03-07",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 8,
+     "airDate": "2020-09-02",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 8,
+     "airDate": "2021-09-01",
+     "watched": false
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -4528,7 +4678,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "apple-tree-yard",
@@ -22657,14 +22808,14 @@
      "name": "Season 1",
      "episodes": 8,
      "airDate": "2004-07-18",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 14,
      "airDate": "2005-06-05",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
@@ -47779,7 +47930,7 @@
   },
   {
    "id": "married-with-children",
-   "title": "Married\u2026 With Children",
+   "title": "Married… With Children",
    "runtime": 30,
    "format": "series",
    "franchise": null,
@@ -48240,7 +48391,7 @@
   },
   {
    "id": "marvel-s-what-if",
-   "title": "Marvel's What If\u2026?",
+   "title": "Marvel's What If…?",
    "runtime": 30,
    "format": "anthology",
    "franchise": null,
@@ -61920,7 +62071,7 @@
   },
   {
    "id": "queen-s-gambit",
-   "title": "The Queen\u2019s Gambit",
+   "title": "The Queen’s Gambit",
    "runtime": 60,
    "format": "mini",
    "franchise": null,
@@ -83823,14 +83974,14 @@
      "name": "Season 1",
      "episodes": 13,
      "airDate": "2002-06-02",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 12,
      "airDate": "2003-06-01",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,

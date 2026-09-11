@@ -3285,115 +3285,115 @@
   "order": [
    {
     "label": "Iron Man",
-    "watched": false
+    "watched": true
    },
    {
     "label": "The Incredible Hulk",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Iron Man 2",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Thor",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Captain America: The First Avenger",
-    "watched": false
+    "watched": true
    },
    {
     "label": "The Avengers",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Iron Man 3",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agents of SHIELD S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Thor: The Dark World",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Captain America: The Winter Soldier",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Guardians of the Galaxy",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agents of SHIELD S02",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agent Carter S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Daredevil S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Avengers: Age of Ultron",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Ant-Man",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agents of SHIELD S03",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Jessica Jones S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agent Carter S02",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Daredevil S02",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Captain America: Civil War",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agents of SHIELD S04",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Luke Cage S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Doctor Strange",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Iron Fist S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Guardians of the Galaxy Vol. 2",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Spider-Man: Homecoming",
-    "watched": false
+    "watched": true
    },
    {
     "label": "The Defenders S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Inhumans S01",
@@ -3401,7 +3401,7 @@
    },
    {
     "label": "Thor: Ragnarok",
-    "watched": false
+    "watched": true
    },
    {
     "label": "The Punisher S01",
@@ -3413,11 +3413,11 @@
    },
    {
     "label": "Agents of SHIELD S05",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Black Panther",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Jessica Jones S02",
@@ -3425,7 +3425,7 @@
    },
    {
     "label": "Avengers: Infinity War",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Cloak & Dagger S01",
@@ -3437,7 +3437,7 @@
    },
    {
     "label": "Ant-Man and the Wasp",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Iron Fist S02",
@@ -3445,7 +3445,7 @@
    },
    {
     "label": "Daredevil S03",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Runaways S02",
@@ -3457,7 +3457,7 @@
    },
    {
     "label": "Captain Marvel",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Cloak & Dagger S02",
@@ -3465,11 +3465,11 @@
    },
    {
     "label": "Avengers: Endgame",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agents of SHIELD S06",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Jessica Jones S03",
@@ -3477,7 +3477,7 @@
    },
    {
     "label": "Spider-Man: Far From Home",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Runaways S03",
@@ -3485,7 +3485,7 @@
    },
    {
     "label": "Agents of SHIELD S07",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Helstrom S01",
@@ -3493,11 +3493,11 @@
    },
    {
     "label": "WandaVision S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "The Falcon and Winter Soldier S01",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Loki S01",
@@ -3505,7 +3505,7 @@
    },
    {
     "label": "Black Widow",
-    "watched": false
+    "watched": true
    },
    {
     "label": "What If…? S01",
@@ -3513,11 +3513,11 @@
    },
    {
     "label": "Shang-Chi and the Legend of the Ten Rings",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Eternals",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Hawkeye S01",
@@ -3525,7 +3525,7 @@
    },
    {
     "label": "Spider-Man: No Way Home",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Moon Knight S01",
@@ -3533,7 +3533,7 @@
    },
    {
     "label": "Doctor Strange in the Multiverse of Madness",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Ms. Marvel S01",
@@ -3541,7 +3541,7 @@
    },
    {
     "label": "Thor: Love and Thunder",
-    "watched": false
+    "watched": true
    },
    {
     "label": "I Am Groot S01",
@@ -3557,7 +3557,7 @@
    },
    {
     "label": "Black Panther: Wakanda Forever",
-    "watched": false
+    "watched": true
    },
    {
     "label": "The Guardians of the Galaxy Holiday Special",
@@ -3565,11 +3565,11 @@
    },
    {
     "label": "Ant-Man and the Wasp: Quantumania",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Guardians of the Galaxy Vol. 3",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Secret Invasion S01",
@@ -3585,7 +3585,7 @@
    },
    {
     "label": "The Marvels",
-    "watched": false
+    "watched": true
    },
    {
     "label": "What If…? S02",
@@ -3597,7 +3597,7 @@
    },
    {
     "label": "Deadpool & Wolverine",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Agatha All Along S01",
@@ -3613,7 +3613,7 @@
    },
    {
     "label": "Captain America: Brave New World",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Daredevil: Born Again S01",
@@ -3621,7 +3621,7 @@
    },
    {
     "label": "Thunderbolts*",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Ironheart S01",
@@ -3629,7 +3629,7 @@
    },
    {
     "label": "The Fantastic Four: First Steps",
-    "watched": false
+    "watched": true
    },
    {
     "label": "Eyes of Wakanda S01",

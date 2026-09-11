@@ -67796,14 +67796,14 @@
      "name": "Season 1",
      "episodes": 6,
      "airDate": "2022-07-15",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
      "airDate": "2025-04-20",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {

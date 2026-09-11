@@ -77097,16 +77097,40 @@
   {
    "id": "spy",
    "title": "The Spy",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 91725,
+   "poster": "/bCGC6cAEKzm45J7SPsApAnp9mNx.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "PBS Masterpiece Amazon Channel",
+     "type": "flatrate",
+     "logo": "/aZASQOdPFvGnXiJ015OVGVJ9vt7.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T22:57:38.028Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Limited Series",
+     "episodes": 6,
+     "airDate": "2019-09-06",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -77126,7 +77150,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "spy-master",

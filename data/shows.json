@@ -86735,16 +86735,70 @@
   {
    "id": "waco",
    "title": "Waco",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 74140,
+   "poster": "/14q24aBfJPrjumuWjKKA6Bwml2A.jpg",
+   "providers": [
+    {
+     "name": "Paramount Plus Premium",
+     "type": "flatrate",
+     "logo": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
+    },
+    {
+     "name": "Paramount Plus Essential",
+     "type": "flatrate",
+     "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Paramount Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/xu4LyKTwasTbta1Z0qWtZG48yZ3.png"
+    },
+    {
+     "name": "Paramount+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png"
+    },
+    {
+     "name": "Paramount+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-11T23:07:13.632Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 6,
+     "airDate": "2018-01-24",
+     "watched": true
+    }
+   ],
    "assumeWatched": true,
    "votes": {
     "weekly": {
@@ -86764,7 +86818,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "waco-american-apocalypse",

@@ -169,6 +169,9 @@
    8,
    9,
    10
+  ],
+  "blacklist-redemption": [
+   1
   ]
  }
 }

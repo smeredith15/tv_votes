@@ -21554,6 +21554,95 @@
    "nextAirDate": null
   },
   {
+   "id": "dexter-s-laboratory",
+   "title": "Dexter's Laboratory",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 4229,
+   "poster": "/inJJn8lUPWdvdy2h259UnoHWVqC.jpg",
+   "providers": [
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:36:38.876Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 38,
+     "airDate": "1996-04-28",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 108,
+     "airDate": "1997-07-16",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 36,
+     "airDate": "2001-11-16",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 38,
+     "airDate": "2002-11-22",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-12T02:36:38.877Z"
+  },
+  {
    "id": "dian-fossey-secrets-in-the-mist",
    "title": "Dian Fossey: Secrets in the Mist",
    "runtime": 60,

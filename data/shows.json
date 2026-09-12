@@ -17218,6 +17218,61 @@
    "nextAirDate": null
   },
   {
+   "id": "counterpart",
+   "title": "Counterpart",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 63646,
+   "poster": "/fVTpkoTkl7LJSoVCnuoHRPJvS4o.jpg",
+   "providers": [
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:33:51.496Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2017-12-10",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2018-12-09",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-12T02:33:51.496Z"
+  },
+  {
    "id": "covert-affairs",
    "title": "Covert Affairs",
    "runtime": 60,

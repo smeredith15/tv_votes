@@ -7878,15 +7878,29 @@
    "id": "beatles-the-get-back",
    "title": "Beatles, The: Get Back",
    "runtime": 60,
-   "format": "documentary",
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 128876,
+   "poster": "/nxy9fg1rT853P7zP7ZQGqRimiCS.jpg",
+   "providers": [
+    {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:19:29.441Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 3,
+     "airDate": "2021-11-25",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -7904,7 +7918,8 @@
      "scotty": 5,
      "shelby": 0
     }
-   }
+   },
+   "nextAirDate": null
   },
   {
    "id": "beauty",

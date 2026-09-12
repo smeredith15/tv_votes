@@ -8700,84 +8700,84 @@
      "name": "Season 1",
      "episodes": 17,
      "airDate": "2007-09-24",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 23,
      "airDate": "2008-09-22",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 23,
      "airDate": "2009-09-21",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
      "airDate": "2010-09-23",
-     "watched": false
+     "watched": true
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 24,
      "airDate": "2011-09-22",
-     "watched": false
+     "watched": true
     },
     {
      "number": 6,
      "name": "Season 6",
      "episodes": 24,
      "airDate": "2012-09-27",
-     "watched": false
+     "watched": true
     },
     {
      "number": 7,
      "name": "Season 7",
      "episodes": 24,
      "airDate": "2013-09-26",
-     "watched": false
+     "watched": true
     },
     {
      "number": 8,
      "name": "Season 8",
      "episodes": 24,
      "airDate": "2014-09-22",
-     "watched": false
+     "watched": true
     },
     {
      "number": 9,
      "name": "Season 9",
      "episodes": 24,
      "airDate": "2015-09-21",
-     "watched": false
+     "watched": true
     },
     {
      "number": 10,
      "name": "Season 10",
      "episodes": 24,
      "airDate": "2016-09-19",
-     "watched": false
+     "watched": true
     },
     {
      "number": 11,
      "name": "Season 11",
      "episodes": 24,
      "airDate": "2017-09-25",
-     "watched": false
+     "watched": true
     },
     {
      "number": 12,
      "name": "Season 12",
      "episodes": 24,
      "airDate": "2018-09-24",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {

@@ -31133,6 +31133,69 @@
    "nextAirDate": null
   },
   {
+   "id": "gaslit",
+   "title": "Gaslit",
+   "runtime": 60,
+   "format": "mini",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 107407,
+   "poster": "/6B1EgOGOR5VPR1UK4ERlot1H5yM.jpg",
+   "providers": [
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:47:08.848Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 8,
+     "airDate": "2022-04-24",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-12T02:47:08.848Z"
+  },
+  {
    "id": "generation-kill",
    "title": "Generation Kill",
    "runtime": 60,

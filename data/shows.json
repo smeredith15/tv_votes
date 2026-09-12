@@ -23836,6 +23836,86 @@
    "nextAirDate": null
   },
   {
+   "id": "dune-prophecy",
+   "title": "Dune: Prophecy",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "nextAirDate": null,
+   "tmdbId": 90228,
+   "poster": "/oWVohNsxkxA3u92EzRo8fTuXIS0.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:38:39.626Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 6,
+     "airDate": "2024-11-17",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 8,
+     "airDate": null,
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-12T02:38:39.626Z"
+  },
+  {
    "id": "duster",
    "title": "Duster",
    "runtime": 60,

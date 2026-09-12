@@ -10247,6 +10247,89 @@
    "nextAirDate": null
   },
   {
+   "id": "blacklist-redemption",
+   "title": "The Blacklist: Redemption",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 68018,
+   "poster": "/cEyPdB8KFolsfhXJYZHI9fIV86H.jpg",
+   "providers": [
+    {
+     "name": "Howdy Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dI7GHS1st3jWH8eW21x5YnJdUFN.png"
+    },
+    {
+     "name": "The CW",
+     "type": "free",
+     "logo": "/6fcYLKQIjGnrswtH7WxjjoSiyy3.png"
+    },
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:22:21.472Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2017-02-23",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-12T02:22:21.472Z"
+  },
+  {
    "id": "blue-mountain-state",
    "title": "Blue Mountain State",
    "runtime": 30,

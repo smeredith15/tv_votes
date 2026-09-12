@@ -4759,28 +4759,28 @@
      "name": "Season 1",
      "episodes": 172,
      "airDate": "1993-09-13",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 12,
      "airDate": "1994-09-10",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 46,
      "airDate": "1995-09-09",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
      "airDate": "1996-09-07",
-     "watched": false
+     "watched": true
     },
     {
      "number": 5,

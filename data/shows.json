@@ -24266,6 +24266,109 @@
    "nextAirDate": null
   },
   {
+   "id": "ed-edd-n-eddy",
+   "title": "Ed, Edd n Eddy",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 606,
+   "poster": "/nfKenwmfmdtoXGhaYiDIftrBchw.jpg",
+   "providers": [
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:39:40.656Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 26,
+     "airDate": "1999-01-04",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 26,
+     "airDate": "1999-11-26",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 25,
+     "airDate": "2001-04-06",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 25,
+     "airDate": "2002-09-27",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 22,
+     "airDate": "2005-11-04",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 2,
+     "airDate": "2008-06-29",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-12T02:39:40.656Z"
+  },
+  {
    "id": "eddy",
    "title": "The Eddy",
    "runtime": 60,

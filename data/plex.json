@@ -172,6 +172,13 @@
   ],
   "blacklist-redemption": [
    1
+  ],
+  "blindspot": [
+   1,
+   2,
+   3,
+   4,
+   5
   ]
  }
 }

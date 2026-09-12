@@ -37936,6 +37936,111 @@
    "nextAirDate": null
   },
   {
+   "id": "homicide-life-on-the-street",
+   "title": "Homicide: Life on the Street",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 4464,
+   "poster": "/nb5310xlFjx5r9TnpKoaOTQsAlP.jpg",
+   "providers": [
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T02:52:37.973Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 9,
+     "airDate": "1993-01-31",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 4,
+     "airDate": "1994-01-06",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 20,
+     "airDate": "1994-10-14",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 22,
+     "airDate": "1995-10-20",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 22,
+     "airDate": "1996-09-20",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 23,
+     "airDate": "1997-10-17",
+     "watched": false
+    },
+    {
+     "number": 7,
+     "name": "Season 7",
+     "episodes": 22,
+     "airDate": "1998-09-25",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-12T02:52:37.973Z"
+  },
+  {
    "id": "hong-kong-phooey",
    "title": "Hong Kong Phooey",
    "runtime": 30,

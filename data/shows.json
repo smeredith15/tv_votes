@@ -2073,16 +2073,128 @@
   {
    "id": "adventure-time",
    "title": "Adventure Time",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 15260,
+   "poster": "/qk3eQ8jW4opJ48gFWYUXWaMT4l.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Cartoon Network Amazon Channel",
+     "type": "flatrate",
+     "logo": "/cCrds5zk6NV8LBu6D00YkJ8sQ3s.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 26,
+     "airDate": "2010-04-05",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 26,
+     "airDate": "2010-10-11",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 26,
+     "airDate": "2011-07-11",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 26,
+     "airDate": "2012-04-02",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 52,
+     "airDate": "2012-11-12",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 43,
+     "airDate": "2014-04-21",
+     "watched": false
+    },
+    {
+     "number": 7,
+     "name": "Season 7",
+     "episodes": 26,
+     "airDate": "2015-11-02",
+     "watched": false
+    },
+    {
+     "number": 8,
+     "name": "Season 8",
+     "episodes": 27,
+     "airDate": "2016-03-26",
+     "watched": false
+    },
+    {
+     "number": 9,
+     "name": "Season 9",
+     "episodes": 14,
+     "airDate": "2017-04-21",
+     "watched": false
+    },
+    {
+     "number": 10,
+     "name": "Season 10",
+     "episodes": 13,
+     "airDate": "2017-09-17",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -2101,7 +2213,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "after-life",
@@ -4233,16 +4346,37 @@
   {
    "id": "andor",
    "title": "Andor",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 83867,
+   "poster": "/khZqmwHQicTYoS7Flreb9EddFZC.jpg",
+   "providers": [
+    {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 12,
+     "airDate": "2022-09-21",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 12,
+     "airDate": "2025-04-22",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -4261,7 +4395,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "angels-in-america",
@@ -5628,7 +5763,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -6162,16 +6297,42 @@
   {
    "id": "avatar-the-last-airbender",
    "title": "Avatar: The Last Airbender",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 82452,
+   "poster": "/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2024-02-22",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 7,
+     "airDate": "2026-06-25",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -6190,7 +6351,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "avenue-5",
@@ -7609,16 +7771,96 @@
   {
    "id": "battlestar-galactica",
    "title": "Battlestar Galactica",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 1972,
+   "poster": "/99PJSbcO2LeM10uOGWeFihNp77j.jpg",
+   "providers": [
+    {
+     "name": "Paramount Plus Premium",
+     "type": "flatrate",
+     "logo": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
+    },
+    {
+     "name": "Paramount Plus Essential",
+     "type": "flatrate",
+     "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Paramount Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/xu4LyKTwasTbta1Z0qWtZG48yZ3.png"
+    },
+    {
+     "name": "Paramount+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png"
+    },
+    {
+     "name": "Paramount+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 13,
+     "airDate": "2004-10-18",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 20,
+     "airDate": "2005-07-15",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 20,
+     "airDate": "2006-10-06",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 20,
+     "airDate": "2008-04-04",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -7637,7 +7879,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "batwoman",
@@ -10858,16 +11101,35 @@
   {
    "id": "bodies",
    "title": "Bodies",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 233629,
+   "poster": "/qWX71nLvoLsBNPEjddZMC75lq6I.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Limited Series",
+     "episodes": 8,
+     "airDate": "2023-10-19",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -10886,7 +11148,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "bodkin",
@@ -13287,16 +13550,98 @@
   {
    "id": "bureau",
    "title": "The Bureau",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 62476,
+   "poster": "/pWd0ajqIsd92tcQEgYBC7nMpOrk.jpg",
+   "providers": [
+    {
+     "name": "Paramount Plus Premium",
+     "type": "flatrate",
+     "logo": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
+    },
+    {
+     "name": "Paramount Plus Essential",
+     "type": "flatrate",
+     "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Paramount+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png"
+    },
+    {
+     "name": "AMC+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/tg5ufQ1GkYDCMxSSxemfeKWcvRe.png"
+    },
+    {
+     "name": "Paramount+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "flatrate",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2015-04-27",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2016-05-09",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 10,
+     "airDate": "2017-05-22",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 10,
+     "airDate": "2018-10-22",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 10,
+     "airDate": "2020-04-06",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -13315,7 +13660,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "burn-notice",
@@ -13886,7 +14232,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -13969,16 +14315,62 @@
   {
    "id": "carniv-le",
    "title": "Carnivàle",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 185,
+   "poster": "/5pKvfZ3qLuKJd8PQfKcPxN9jTO9.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "rent",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 12,
+     "airDate": "2003-09-14",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 12,
+     "airDate": "2005-01-09",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -13997,7 +14389,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "casey-anthony-an-american-murder-mystery",
@@ -15480,16 +15873,35 @@
   {
    "id": "class-of-07",
    "title": "Class of '07",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 207374,
+   "poster": "/cA678fpae4Qz1IWoWh8lRQ5F1DM.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2023-03-16",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -15508,7 +15920,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "cleaning-lady",
@@ -15671,7 +16084,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -17365,16 +17778,50 @@
   {
    "id": "cowboy-bebop",
    "title": "Cowboy Bebop",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 30991,
+   "poster": "/xDiXDfZwC6XYC6fxHI1jl3A3Ill.jpg",
+   "providers": [
+    {
+     "name": "Crunchyroll",
+     "type": "flatrate",
+     "logo": "/uFL3c4Cq8M6WoLymlC5Y8bmGytV.png"
+    },
+    {
+     "name": "Crunchyroll Amazon Channel",
+     "type": "flatrate",
+     "logo": "/qHLLmKo7udRgiSnIASVTwP2IxfJ.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 26,
+     "airDate": "1998-04-03",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -17393,7 +17840,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "cowboy-cartel",
@@ -17458,7 +17906,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -18804,7 +19252,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19062,7 +19510,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19086,16 +19534,49 @@
   {
    "id": "dark",
    "title": "Dark",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 70523,
+   "poster": "/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2017-12-01",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 8,
+     "airDate": "2019-06-21",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 8,
+     "airDate": "2020-06-27",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -19114,7 +19595,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "dark-matter",
@@ -20332,7 +20814,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -25794,7 +26276,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -26541,16 +27023,37 @@
   {
    "id": "extraordinary",
    "title": "Extraordinary",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 47907,
+   "poster": "/uyDIWMAwfLqiIz0QQm0MPDE0085.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2023-01-25",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 8,
+     "airDate": "2024-03-06",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -26569,7 +27072,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "extras",
@@ -26648,17 +27152,30 @@
   {
    "id": "falcon-and-the-winter-soldier",
    "title": "The Falcon and the Winter Soldier",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
-   "assumeWatched": true,
+   "status": "ended",
+   "tmdbId": 88396,
+   "poster": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+   "providers": [
+    {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 6,
+     "airDate": "2021-03-19",
+     "watched": true
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -26677,7 +27194,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "fall",
@@ -28057,16 +28575,64 @@
   {
    "id": "fisk",
    "title": "Fisk",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 121040,
+   "poster": "/6KM6EDVSjqABv1xN6NGtUBrRN6C.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 6,
+     "airDate": "2021-03-17",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 6,
+     "airDate": "2022-10-26",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 6,
+     "airDate": "2024-10-20",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -28085,7 +28651,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "five-days-at-a-memorial",
@@ -28098,7 +28665,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -30105,7 +30672,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": null,
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -31702,7 +32269,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -31937,7 +32504,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32257,16 +32824,35 @@
   {
    "id": "giri-haji",
    "title": "Giri/Haji",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 94659,
+   "poster": "/mOeqBvuGOcq0eN1ssGCcRtWA7XW.jpg",
+   "providers": [
+    {
+     "name": "Netflix",
+     "type": "flatrate",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Netflix Standard with Ads",
+     "type": "flatrate",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2019-10-17",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -32285,7 +32871,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "girlfriend",
@@ -35551,16 +36138,101 @@
   {
    "id": "halt-and-catch-fire",
    "title": "Halt and Catch Fire",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 59659,
+   "poster": "/AtKo2gANo2QBgZN9ebTAa8hXnvv.jpg",
+   "providers": [
+    {
+     "name": "Philo",
+     "type": "flatrate",
+     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+    },
+    {
+     "name": "AMC Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/wLl5LRLVC6UOSaUlsmuzY0H9LS1.png"
+    },
+    {
+     "name": "AMC+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/tg5ufQ1GkYDCMxSSxemfeKWcvRe.png"
+    },
+    {
+     "name": "AMC+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/xMyod7PSWlER7Q8FLDqVckKeyyB.png"
+    },
+    {
+     "name": "AMC+",
+     "type": "flatrate",
+     "logo": "/wsCUflcmL4dCkzBUaGP8cj1cTkh.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "flatrate",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2014-06-01",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2015-05-31",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 10,
+     "airDate": "2016-08-21",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 10,
+     "airDate": "2017-08-19",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -35579,7 +36251,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "handmaid-s-tale",
@@ -36239,16 +36912,94 @@
   {
    "id": "happy-valley",
    "title": "Happy Valley",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 61244,
+   "poster": "/xZK5iQSrn2mouZEk2PwyLPCwa4u.jpg",
+   "providers": [
+    {
+     "name": "fuboTV",
+     "type": "flatrate",
+     "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+    },
+    {
+     "name": "Philo",
+     "type": "flatrate",
+     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+    },
+    {
+     "name": "Britbox Apple TV channel",
+     "type": "flatrate",
+     "logo": "/r5LXOt96llVEmgwAQeheJuxUaMR.png"
+    },
+    {
+     "name": "BritBox",
+     "type": "flatrate",
+     "logo": "/eZeWGG6DDIi4Kmu1z9RfTeZtqZX.png"
+    },
+    {
+     "name": "BritBox Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dneArfNvYnCY0LQwDs6n0wVLpPh.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "flatrate",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "Hoopla",
+     "type": "free",
+     "logo": "/gtjNBzAoGgUtYzt0UKXmwG34WWL.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 6,
+     "airDate": "2014-04-29",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series 2",
+     "episodes": 6,
+     "airDate": "2016-02-09",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series 3",
+     "episodes": 6,
+     "airDate": "2023-01-01",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -36267,7 +37018,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "hardy-bucks",
@@ -36985,7 +37737,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -41010,7 +41762,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -42417,7 +43169,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -42895,7 +43647,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -43092,7 +43844,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -48541,7 +49293,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -49030,16 +49782,197 @@
   {
    "id": "line-of-duty",
    "title": "Line of Duty",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 43982,
+   "poster": "/pBAp7VfKVQKQIiLRJHZSMGtyXAB.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "fuboTV",
+     "type": "flatrate",
+     "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+    },
+    {
+     "name": "Peacock Premium",
+     "type": "flatrate",
+     "logo": "/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+    },
+    {
+     "name": "Britbox Apple TV channel",
+     "type": "flatrate",
+     "logo": "/r5LXOt96llVEmgwAQeheJuxUaMR.png"
+    },
+    {
+     "name": "Acorn TV",
+     "type": "flatrate",
+     "logo": "/3aWmgZsNAqdOt8ClxIFT4pnmHrM.png"
+    },
+    {
+     "name": "BritBox",
+     "type": "flatrate",
+     "logo": "/eZeWGG6DDIi4Kmu1z9RfTeZtqZX.png"
+    },
+    {
+     "name": "AcornTV Amazon Channel",
+     "type": "flatrate",
+     "logo": "/7BBOk6Av1TFqWqEhxBYyTJucGuL.png"
+    },
+    {
+     "name": "BritBox Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dneArfNvYnCY0LQwDs6n0wVLpPh.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "flatrate",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "Acorn TV Apple TV channel",
+     "type": "flatrate",
+     "logo": "/1MRjoHouZAWsBCdXjjkPWEDtyV0.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Peacock Premium Plus",
+     "type": "flatrate",
+     "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
+    },
+    {
+     "name": "Howdy Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dI7GHS1st3jWH8eW21x5YnJdUFN.png"
+    },
+    {
+     "name": "The CW",
+     "type": "free",
+     "logo": "/6fcYLKQIjGnrswtH7WxjjoSiyy3.png"
+    },
+    {
+     "name": "Hoopla",
+     "type": "free",
+     "logo": "/gtjNBzAoGgUtYzt0UKXmwG34WWL.png"
+    },
+    {
+     "name": "Fawesome",
+     "type": "free",
+     "logo": "/dNF4vWhF3TduWvOyfVxEyTqSNRl.png"
+    },
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Plex",
+     "type": "ads",
+     "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
+    },
+    {
+     "name": "Plex Channel",
+     "type": "ads",
+     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
+    },
+    {
+     "name": "Amazon Prime Video Free with Ads",
+     "type": "ads",
+     "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
+    },
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "rent",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 5,
+     "airDate": "2012-06-26",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series 2",
+     "episodes": 6,
+     "airDate": "2014-02-12",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series 3",
+     "episodes": 6,
+     "airDate": "2016-03-24",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Series 4",
+     "episodes": 6,
+     "airDate": "2017-03-26",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Series 5",
+     "episodes": 6,
+     "airDate": "2019-03-31",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Series 6",
+     "episodes": 7,
+     "airDate": "2021-03-21",
+     "watched": false
+    },
+    {
+     "number": 7,
+     "name": "Series 7",
+     "episodes": 6,
+     "airDate": null,
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -49058,7 +49991,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "lioness",
@@ -50059,7 +50993,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -50505,7 +51439,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -50917,7 +51851,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -50949,7 +51883,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -51312,7 +52246,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52382,7 +53316,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52559,7 +53493,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -53250,7 +54184,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -53915,7 +54849,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -53947,7 +54881,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54038,7 +54972,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55917,7 +56851,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -56252,16 +57186,95 @@
   {
    "id": "monsieur-spade",
    "title": "Monsieur Spade",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 209479,
+   "poster": "/5B0fvoxRPT7mhZMgMSAM27j6QZb.jpg",
+   "providers": [
+    {
+     "name": "Philo",
+     "type": "flatrate",
+     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+    },
+    {
+     "name": "AMC Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/wLl5LRLVC6UOSaUlsmuzY0H9LS1.png"
+    },
+    {
+     "name": "AMC+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/tg5ufQ1GkYDCMxSSxemfeKWcvRe.png"
+    },
+    {
+     "name": "AMC+",
+     "type": "flatrate",
+     "logo": "/wsCUflcmL4dCkzBUaGP8cj1cTkh.png"
+    },
+    {
+     "name": "Acorn TV",
+     "type": "flatrate",
+     "logo": "/3aWmgZsNAqdOt8ClxIFT4pnmHrM.png"
+    },
+    {
+     "name": "AcornTV Amazon Channel",
+     "type": "flatrate",
+     "logo": "/7BBOk6Av1TFqWqEhxBYyTJucGuL.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "flatrate",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "Acorn TV Apple TV channel",
+     "type": "flatrate",
+     "logo": "/1MRjoHouZAWsBCdXjjkPWEDtyV0.png"
+    },
+    {
+     "name": "Amazon Prime Video",
+     "type": "free",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Kanopy",
+     "type": "free",
+     "logo": "/cltb8XKan9ierp23ItPmCOcVLRa.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 6,
+     "airDate": "2024-01-14",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -56280,7 +57293,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "monsters-inside-the-24-faces-of-billy-milligan",
@@ -57340,7 +58354,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -57439,7 +58453,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -57811,7 +58825,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -60429,7 +61443,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -63832,7 +64846,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -64982,7 +65996,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -65145,7 +66159,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -65426,16 +66440,93 @@
   {
    "id": "person-of-interest",
    "title": "Person of Interest",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 1411,
+   "poster": "/f8aIvYk5h7Z8EP3dinCmVgQFYow.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Peacock Premium",
+     "type": "flatrate",
+     "logo": "/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Peacock Premium Plus",
+     "type": "flatrate",
+     "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 23,
+     "airDate": "2011-09-22",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 22,
+     "airDate": "2012-09-27",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 23,
+     "airDate": "2013-09-24",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 22,
+     "airDate": "2014-09-23",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 13,
+     "airDate": "2016-05-03",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -65454,7 +66545,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "pharmacist",
@@ -65716,16 +66808,42 @@
   {
    "id": "pitt",
    "title": "The Pitt",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 250307,
+   "poster": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 15,
+     "airDate": "2025-01-09",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 15,
+     "airDate": "2026-01-08",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -65744,7 +66862,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "planet-earth",
@@ -66069,16 +67188,35 @@
   {
    "id": "pluribus",
    "title": "Pluribus",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 225171,
+   "poster": "/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
+   "providers": [
+    {
+     "name": "Apple TV",
+     "type": "flatrate",
+     "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+    },
+    {
+     "name": "Apple TV Amazon Channel",
+     "type": "flatrate",
+     "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 9,
+     "airDate": "2025-11-06",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -66097,7 +67235,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "poker-face",
@@ -67295,7 +68434,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -68403,7 +69542,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -68798,16 +69937,111 @@
   {
    "id": "rectify",
    "title": "Rectify",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 46619,
+   "poster": "/tm9nQe9165cyjnTz8NB50izwcpJ.jpg",
+   "providers": [
+    {
+     "name": "Philo",
+     "type": "flatrate",
+     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+    },
+    {
+     "name": "AMC Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/wLl5LRLVC6UOSaUlsmuzY0H9LS1.png"
+    },
+    {
+     "name": "AMC+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/tg5ufQ1GkYDCMxSSxemfeKWcvRe.png"
+    },
+    {
+     "name": "AMC+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/xMyod7PSWlER7Q8FLDqVckKeyyB.png"
+    },
+    {
+     "name": "AMC+",
+     "type": "flatrate",
+     "logo": "/wsCUflcmL4dCkzBUaGP8cj1cTkh.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "flatrate",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "Hoopla",
+     "type": "free",
+     "logo": "/gtjNBzAoGgUtYzt0UKXmwG34WWL.png"
+    },
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 6,
+     "airDate": "2013-04-22",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2014-06-19",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 6,
+     "airDate": "2015-07-09",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 8,
+     "airDate": "2016-10-26",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -68826,21 +70060,148 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "red-dwarf",
    "title": "Red Dwarf",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 326,
+   "poster": "/cU9RFlyvJXbzyCzCGRqRmZrTDZU.jpg",
+   "providers": [
+    {
+     "name": "Britbox Apple TV channel",
+     "type": "flatrate",
+     "logo": "/r5LXOt96llVEmgwAQeheJuxUaMR.png"
+    },
+    {
+     "name": "BritBox",
+     "type": "flatrate",
+     "logo": "/eZeWGG6DDIi4Kmu1z9RfTeZtqZX.png"
+    },
+    {
+     "name": "BritBox Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dneArfNvYnCY0LQwDs6n0wVLpPh.png"
+    },
+    {
+     "name": "Hoopla",
+     "type": "free",
+     "logo": "/gtjNBzAoGgUtYzt0UKXmwG34WWL.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series I",
+     "episodes": 6,
+     "airDate": "1988-02-15",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series II",
+     "episodes": 6,
+     "airDate": "1988-09-06",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series III",
+     "episodes": 6,
+     "airDate": "1989-11-14",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Series IV",
+     "episodes": 6,
+     "airDate": "1991-02-14",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Series V",
+     "episodes": 6,
+     "airDate": "1992-02-20",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Series VI",
+     "episodes": 6,
+     "airDate": "1993-10-07",
+     "watched": false
+    },
+    {
+     "number": 7,
+     "name": "Series VII",
+     "episodes": 8,
+     "airDate": "1997-01-17",
+     "watched": false
+    },
+    {
+     "number": 8,
+     "name": "Series VIII",
+     "episodes": 8,
+     "airDate": "1999-02-18",
+     "watched": false
+    },
+    {
+     "number": 9,
+     "name": "Back to Earth",
+     "episodes": 3,
+     "airDate": "2009-04-10",
+     "watched": false
+    },
+    {
+     "number": 10,
+     "name": "Series X",
+     "episodes": 6,
+     "airDate": "2012-10-04",
+     "watched": false
+    },
+    {
+     "number": 11,
+     "name": "Series XI",
+     "episodes": 6,
+     "airDate": "2016-09-22",
+     "watched": false
+    },
+    {
+     "number": 12,
+     "name": "Series XII",
+     "episodes": 6,
+     "airDate": "2017-10-12",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -68859,7 +70220,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "red-rose",
@@ -71533,16 +72895,79 @@
   {
    "id": "sanditon",
    "title": "Sanditon",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 92875,
+   "poster": "/iKMCbTAkEgvA97M8Isdqp4t12Cf.jpg",
+   "providers": [
+    {
+     "name": "PBS",
+     "type": "flatrate",
+     "logo": "/kwKCUFjKjq1GlZeIjImBV62IypB.png"
+    },
+    {
+     "name": "PBS Masterpiece Amazon Channel",
+     "type": "flatrate",
+     "logo": "/aZASQOdPFvGnXiJ015OVGVJ9vt7.png"
+    },
+    {
+     "name": "Thirteen",
+     "type": "flatrate",
+     "logo": "/dQKjAyrGlA3HPbDs4hp8RyaXUiK.png"
+    },
+    {
+     "name": "WETA+",
+     "type": "flatrate",
+     "logo": "/fwzxYZXp5T57T2WaazFhzArAmYd.png"
+    },
+    {
+     "name": "KQED",
+     "type": "ads",
+     "logo": "/gq031DkuykfuuHVoLPx9BFNyfPU.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 8,
+     "airDate": "2019-08-25",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series 2",
+     "episodes": 6,
+     "airDate": "2022-03-20",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series 3",
+     "episodes": 6,
+     "airDate": "2023-03-19",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -71561,7 +72986,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "sandman",
@@ -73882,7 +75308,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -75152,7 +76578,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -77121,16 +78547,49 @@
   {
    "id": "somebody-somewhere",
    "title": "Somebody Somewhere",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 106308,
+   "poster": "/1GkoExnlnyTcyGWIoHA4YG8mysc.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 7,
+     "airDate": "2022-01-16",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 7,
+     "airDate": "2023-04-23",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 7,
+     "airDate": "2024-10-27",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -77149,7 +78608,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "something-very-bad-is-going-to-happen",
@@ -77380,7 +78840,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -77702,16 +79162,52 @@
   {
    "id": "spaced",
    "title": "Spaced",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 745,
+   "poster": "/igZWEYUohDxlLodq8RkeJa7jBna.jpg",
+   "providers": [
+    {
+     "name": "Fawesome",
+     "type": "free",
+     "logo": "/dNF4vWhF3TduWvOyfVxEyTqSNRl.png"
+    },
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
+     "name": "Amazon Prime Video Free with Ads",
+     "type": "ads",
+     "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
+    },
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 7,
+     "airDate": "1999-09-24",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series  2",
+     "episodes": 7,
+     "airDate": "2001-02-23",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -77730,7 +79226,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "space-force",
@@ -77988,17 +79485,37 @@
   {
    "id": "splitting-up-together",
    "title": "Splitting Up Together",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
-   "assumeWatched": true,
+   "status": "ended",
+   "tmdbId": 71764,
+   "poster": "/jMxlolm8TcNKNNMRyjxWqvpiIQ8.jpg",
+   "providers": [
+    {
+     "name": "Howdy Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dI7GHS1st3jWH8eW21x5YnJdUFN.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2018-03-27",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 18,
+     "airDate": "2018-10-16",
+     "watched": true
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -78017,7 +79534,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "spongebob-squarepants",
@@ -78448,7 +79966,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -78480,7 +79998,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -78655,7 +80173,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -78745,16 +80263,91 @@
   {
    "id": "star-trek-strange-new-worlds",
    "title": "Star Trek: Strange New Worlds",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 103516,
+   "poster": "/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
+   "providers": [
+    {
+     "name": "Paramount Plus Premium",
+     "type": "flatrate",
+     "logo": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
+    },
+    {
+     "name": "Paramount Plus Essential",
+     "type": "flatrate",
+     "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Paramount Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/xu4LyKTwasTbta1Z0qWtZG48yZ3.png"
+    },
+    {
+     "name": "Paramount+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png"
+    },
+    {
+     "name": "Paramount+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2022-05-05",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2023-06-15",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 10,
+     "airDate": "2025-07-17",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 10,
+     "airDate": "2026-07-23",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -78773,7 +80366,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": "2026-09-17"
   },
   {
    "id": "stateless",
@@ -78819,16 +80413,54 @@
   {
    "id": "stath-lets-flats",
    "title": "Stath Lets Flats",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 80459,
+   "poster": "/6jsY1d4IfHa9ytsgWn1lxSMdMAb.jpg",
+   "providers": [
+    {
+     "name": "Britbox Apple TV channel",
+     "type": "flatrate",
+     "logo": "/r5LXOt96llVEmgwAQeheJuxUaMR.png"
+    },
+    {
+     "name": "BritBox",
+     "type": "flatrate",
+     "logo": "/eZeWGG6DDIi4Kmu1z9RfTeZtqZX.png"
+    },
+    {
+     "name": "BritBox Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dneArfNvYnCY0LQwDs6n0wVLpPh.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 6,
+     "airDate": "2018-06-27",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series 2",
+     "episodes": 6,
+     "airDate": "2019-08-19",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series 3",
+     "episodes": 6,
+     "airDate": "2021-10-26",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -78847,7 +80479,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "station-19",
@@ -81770,16 +83403,192 @@
   {
    "id": "taskmaster",
    "title": "Taskmaster",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 63404,
+   "poster": "/oHLZyN7G7EpXCHxYdpMcuUNCUgS.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 6,
+     "airDate": "2015-07-27",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series 2",
+     "episodes": 5,
+     "airDate": "2016-06-20",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series 3",
+     "episodes": 5,
+     "airDate": "2016-10-04",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Series 4",
+     "episodes": 8,
+     "airDate": "2017-04-25",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Series 5",
+     "episodes": 8,
+     "airDate": "2017-09-12",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Series 6",
+     "episodes": 10,
+     "airDate": "2018-05-02",
+     "watched": false
+    },
+    {
+     "number": 7,
+     "name": "Series 7",
+     "episodes": 10,
+     "airDate": "2018-09-04",
+     "watched": false
+    },
+    {
+     "number": 8,
+     "name": "Series 8",
+     "episodes": 10,
+     "airDate": "2019-05-07",
+     "watched": false
+    },
+    {
+     "number": 9,
+     "name": "Series 9",
+     "episodes": 10,
+     "airDate": "2019-09-03",
+     "watched": false
+    },
+    {
+     "number": 10,
+     "name": "Series 10",
+     "episodes": 10,
+     "airDate": "2020-10-14",
+     "watched": false
+    },
+    {
+     "number": 11,
+     "name": "Series 11",
+     "episodes": 10,
+     "airDate": "2021-03-18",
+     "watched": false
+    },
+    {
+     "number": 12,
+     "name": "Series 12",
+     "episodes": 10,
+     "airDate": "2021-09-23",
+     "watched": false
+    },
+    {
+     "number": 13,
+     "name": "Series 13",
+     "episodes": 10,
+     "airDate": "2022-04-13",
+     "watched": false
+    },
+    {
+     "number": 14,
+     "name": "Series 14",
+     "episodes": 10,
+     "airDate": "2022-09-28",
+     "watched": false
+    },
+    {
+     "number": 15,
+     "name": "Series 15",
+     "episodes": 10,
+     "airDate": "2023-03-30",
+     "watched": false
+    },
+    {
+     "number": 16,
+     "name": "Series 16",
+     "episodes": 10,
+     "airDate": "2023-09-21",
+     "watched": false
+    },
+    {
+     "number": 17,
+     "name": "Series 17",
+     "episodes": 10,
+     "airDate": "2024-03-28",
+     "watched": false
+    },
+    {
+     "number": 18,
+     "name": "Series 18",
+     "episodes": 10,
+     "airDate": "2024-09-12",
+     "watched": false
+    },
+    {
+     "number": 19,
+     "name": "Series 19",
+     "episodes": 10,
+     "airDate": "2025-05-01",
+     "watched": false
+    },
+    {
+     "number": 20,
+     "name": "Series 20",
+     "episodes": 10,
+     "airDate": "2025-09-11",
+     "watched": false
+    },
+    {
+     "number": 21,
+     "name": "Series 21",
+     "episodes": 10,
+     "airDate": "2026-04-09",
+     "watched": false
+    },
+    {
+     "number": 22,
+     "name": "Series 22",
+     "episodes": 10,
+     "airDate": "2026-09-03",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -81798,7 +83607,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": "2026-09-17"
   },
   {
    "id": "tattooist-of-auschwitz",
@@ -83120,16 +84930,44 @@
   {
    "id": "this-country",
    "title": "This Country",
-   "runtime": null,
+   "runtime": 30,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 70596,
+   "poster": "/iUjzx6qCPFBCoMA0YtEONew9NUE.jpg",
+   "providers": [
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 6,
+     "airDate": "2017-02-08",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series 2",
+     "episodes": 6,
+     "airDate": "2018-02-26",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series 3",
+     "episodes": 6,
+     "airDate": "2020-02-17",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -83148,7 +84986,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "this-is-going-to-hurt",
@@ -83484,7 +85323,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -83516,7 +85355,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -84672,16 +86511,44 @@
   {
    "id": "trapped",
    "title": "Trapped",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 64852,
+   "poster": "/bTpSWcEqeTXH7Ipr2XUfGW36n02.jpg",
+   "providers": [
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2015-12-27",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2018-12-26",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Entrapped",
+     "episodes": 8,
+     "airDate": "2021-10-17",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -84700,7 +86567,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "travelers",
@@ -86614,16 +88482,115 @@
   {
    "id": "unforgotten",
    "title": "Unforgotten",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 62505,
+   "poster": "/bfysfq7JDBWKLpkKPaOU2FpfmB.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "PBS",
+     "type": "flatrate",
+     "logo": "/kwKCUFjKjq1GlZeIjImBV62IypB.png"
+    },
+    {
+     "name": "PBS Masterpiece Amazon Channel",
+     "type": "flatrate",
+     "logo": "/aZASQOdPFvGnXiJ015OVGVJ9vt7.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Thirteen",
+     "type": "flatrate",
+     "logo": "/dQKjAyrGlA3HPbDs4hp8RyaXUiK.png"
+    },
+    {
+     "name": "WETA+",
+     "type": "flatrate",
+     "logo": "/fwzxYZXp5T57T2WaazFhzArAmYd.png"
+    },
+    {
+     "name": "KQED",
+     "type": "ads",
+     "logo": "/gq031DkuykfuuHVoLPx9BFNyfPU.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 6,
+     "airDate": "2015-10-08",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 6,
+     "airDate": "2017-01-05",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 6,
+     "airDate": "2018-07-15",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 6,
+     "airDate": "2021-02-22",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 6,
+     "airDate": "2023-02-27",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 6,
+     "airDate": "2025-02-09",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -86642,7 +88609,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "unstable",
@@ -86791,16 +88759,49 @@
   {
    "id": "utopia",
    "title": "Utopia",
-   "runtime": null,
+   "runtime": 60,
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "returning",
+   "tmdbId": 61806,
+   "poster": "/u2Jq02W659PauuH9W0Dp9Z7ssb.jpg",
+   "providers": [
+    {
+     "name": "DocuramaFilms Amazon Channel",
+     "type": "flatrate",
+     "logo": "/5iNTjBNb8SyqNBpJ5vviJAF37Fa.png"
+    },
+    {
+     "name": "Cineverse Amazon Channel",
+     "type": "flatrate",
+     "logo": "/mkikn40hHk3K3Xis19dnzyRnHBB.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 258,
+     "airDate": "2014-01-06",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 27,
+     "airDate": "2015-01-01",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 3,
+     "airDate": "2016-01-04",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -86819,7 +88820,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "vampire-diaries",
@@ -88476,7 +90478,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -89114,16 +91116,55 @@
   {
    "id": "we-own-this-city",
    "title": "We Own This City",
-   "runtime": null,
-   "format": "series",
+   "runtime": 60,
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "unknown",
-   "tmdbId": null,
-   "poster": null,
-   "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "status": "ended",
+   "tmdbId": 125949,
+   "poster": "/qNOYmU6JYMeu2I0xOX9pgCBOBXi.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 6,
+     "airDate": "2022-04-25",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -89142,7 +91183,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-09-11T00:00:00.000Z"
+   "addedAt": "2026-09-11T00:00:00.000Z",
+   "nextAirDate": null
   },
   {
    "id": "west-wing",
@@ -93712,7 +95754,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-12T11:27:48.156Z",
    "seasons": [],
    "votes": {
     "weekly": {

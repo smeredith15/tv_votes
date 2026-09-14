@@ -59946,6 +59946,127 @@
    "nextAirDate": null
   },
   {
+   "id": "mxc",
+   "title": "MXC",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 2995,
+   "poster": "/132ZYuUqZ26Hw7LNMVfJ44RQotO.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Midnight Pulp",
+     "type": "flatrate",
+     "logo": "/c1dWUx3AwvoZ13meOTQSDEBonZD.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Midnight Pulp Amazon Channel",
+     "type": "flatrate",
+     "logo": "/uqAgFY1AoqdcsDVLzMCpoQqzJ2u.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Amazon Prime Video Free with Ads",
+     "type": "ads",
+     "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
+    },
+    {
+     "name": "Cineverse",
+     "type": "ads",
+     "logo": "/rqCIpmrCBpnL6oliak6E1mrq5DD.png"
+    },
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    }
+   ],
+   "providersUpdated": "2026-09-14T14:57:17.886Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 13,
+     "airDate": "2003-04-13",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 13,
+     "airDate": "2003-07-31",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 27,
+     "airDate": "2004-04-22",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 15,
+     "airDate": "2005-10-20",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 13,
+     "airDate": "2006-11-09",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T14:57:17.886Z"
+  },
+  {
    "id": "my-brilliant-friend",
    "title": "My Brilliant Friend",
    "runtime": 60,

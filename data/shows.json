@@ -9758,6 +9758,86 @@
    "nextAirDate": null
   },
   {
+   "id": "black-dynamite",
+   "title": "Black Dynamite",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 40064,
+   "poster": "/o1E5J4QQ3ATBpns69LR5FQy1QJI.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "Adult Swim",
+     "type": "flatrate",
+     "logo": "/lEboSJfLzmtWaoLsms0jYBxYqka.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-14T03:05:54.476Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2012-07-15",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 9,
+     "airDate": "2014-10-18",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T03:05:54.477Z"
+  },
+  {
    "id": "black-ish",
    "title": "Black-ish",
    "runtime": 30,

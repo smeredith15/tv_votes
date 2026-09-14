@@ -54563,6 +54563,116 @@
    "addedAt": "2026-09-14T14:50:51.357Z"
   },
   {
+   "id": "marvel-s-agents-of-s-h-i-e-l-d",
+   "title": "Marvel's Agents of S.H.I.E.L.D.",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 1403,
+   "poster": "/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg",
+   "providers": [
+    {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-14T14:51:27.197Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 22,
+     "airDate": "2013-09-24",
+     "watched": true
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 22,
+     "airDate": "2014-09-23",
+     "watched": true
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 22,
+     "airDate": "2015-09-29",
+     "watched": true
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 22,
+     "airDate": "2016-09-20",
+     "watched": true
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 22,
+     "airDate": "2017-12-01",
+     "watched": true
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 13,
+     "airDate": "2019-05-10",
+     "watched": true
+    },
+    {
+     "number": 7,
+     "name": "Season 7",
+     "episodes": 13,
+     "airDate": "2020-05-27",
+     "watched": true
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T14:51:27.197Z"
+  },
+  {
    "id": "marvelous-mrs-maisel",
    "title": "The Marvelous Mrs. Maisel",
    "runtime": 60,

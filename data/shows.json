@@ -19580,6 +19580,39 @@
    "nextAirDate": null
   },
   {
+   "id": "dang",
+   "title": "DANG!",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 314478,
+   "poster": "/wSDM4tIC5praLH9GxZisiIBIkz.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T03:06:58.414Z"
+  },
+  {
    "id": "daredevil",
    "title": "Daredevil",
    "runtime": 60,
@@ -24088,6 +24121,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "drop-a-snowfall-saga",
+   "title": "The Drop: A Snowfall Saga",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 304842,
+   "poster": "/tiLqDZQdVILCIt00MLwDvnXAttr.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T03:06:50.501Z"
   },
   {
    "id": "dropout",
@@ -47240,6 +47306,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "last-seen",
+   "title": "Last Seen",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 258230,
+   "poster": "/vozJZjHv0Yyv4PjoOxF5tVMUGFI.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T03:06:43.274Z"
   },
   {
    "id": "last-ship",
@@ -83402,6 +83501,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "tale-of-two-cities",
+   "title": "A Tale of Two Cities",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 301626,
+   "poster": "/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T03:06:52.371Z"
   },
   {
    "id": "task",

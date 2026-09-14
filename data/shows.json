@@ -46501,6 +46501,101 @@
    "nextAirDate": null
   },
   {
+   "id": "landman",
+   "title": "Landman",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "nextAirDate": null,
+   "tmdbId": 157741,
+   "poster": "/hYthRgS1nvQkGILn9YmqsF8kSk6.jpg",
+   "providers": [
+    {
+     "name": "Paramount Plus Premium",
+     "type": "flatrate",
+     "logo": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
+    },
+    {
+     "name": "Paramount Plus Essential",
+     "type": "flatrate",
+     "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Paramount Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/xu4LyKTwasTbta1Z0qWtZG48yZ3.png"
+    },
+    {
+     "name": "Paramount+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png"
+    },
+    {
+     "name": "Paramount+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-14T03:11:14.114Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "2024-11-17",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 10,
+     "airDate": "2025-11-16",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-14T03:11:14.114Z"
+  },
+  {
    "id": "landscapers",
    "title": "Landscapers",
    "runtime": 30,

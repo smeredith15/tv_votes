@@ -647,7 +647,7 @@
      "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -1248,7 +1248,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -1440,7 +1440,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -1589,7 +1589,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -1801,7 +1801,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T20:54:00.601Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -1843,10 +1843,9 @@
      "name": "Season 6",
      "episodes": 1,
      "airDate": "2026-10-07",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -2619,7 +2618,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -2696,7 +2695,7 @@
      "shelby": 0
     }
    },
-   "nextAirDate": "2026-09-14"
+   "nextAirDate": "2026-09-21"
   },
   {
    "id": "all-her-fault",
@@ -3395,7 +3394,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -4166,7 +4165,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -4674,7 +4673,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T21:44:15.210Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -5763,7 +5762,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -6212,7 +6211,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -6789,7 +6788,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -7016,7 +7015,7 @@
      "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -8292,7 +8291,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -9198,7 +9197,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -10311,7 +10310,7 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -11042,7 +11041,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -12614,7 +12613,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -12627,21 +12626,28 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
-     "airDate": "2022-03-24",
+     "airDate": "2022-03-25",
      "watched": false
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
-     "airDate": "2024-05-15",
+     "airDate": "2024-05-16",
      "watched": false
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 8,
-     "airDate": "2026-01-28",
+     "airDate": "2026-01-29",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 2,
+     "airDate": null,
      "watched": false
     }
    ],
@@ -13597,7 +13603,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -13976,7 +13982,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -14312,7 +14318,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -14961,7 +14967,7 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -15097,7 +15103,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -16164,7 +16170,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -16429,7 +16435,7 @@
      "logo": "/dneArfNvYnCY0LQwDs6n0wVLpPh.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -17986,7 +17992,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -18260,7 +18266,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -19200,7 +19206,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -19332,7 +19338,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19643,7 +19649,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19763,7 +19769,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -20623,7 +20629,7 @@
    "tmdbId": 114813,
    "poster": "/3EYY7kk8zZ1igUDYVaEFN6qeG3F.jpg",
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -20947,7 +20953,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -21224,7 +21230,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -21494,7 +21500,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -22493,7 +22499,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -23071,7 +23077,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -23671,7 +23677,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -24279,7 +24285,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -24307,7 +24313,7 @@
      "shelby": 0
     }
    },
-   "nextAirDate": "2026-09-11"
+   "nextAirDate": "2026-09-18"
   },
   {
    "id": "drunk-history",
@@ -25320,7 +25326,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -25393,7 +25399,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -26457,7 +26463,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -27612,7 +27618,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:06:12.993Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -27626,10 +27632,9 @@
      "name": "Season 2",
      "episodes": 1,
      "airDate": "2026-11-02",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -27830,7 +27835,7 @@
      "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -28846,7 +28851,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -29653,7 +29658,7 @@
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -29874,7 +29879,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -29940,7 +29945,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -30853,7 +30858,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -31032,7 +31037,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -31350,7 +31355,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -31448,7 +31453,7 @@
      "shelby": 0
     }
    },
-   "nextAirDate": "2026-09-14"
+   "nextAirDate": "2026-09-21"
   },
   {
    "id": "game-of-thrones",
@@ -31729,7 +31734,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -32219,7 +32224,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -32450,7 +32455,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32607,7 +32612,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:13:30.624Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -32652,7 +32657,6 @@
      "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -32685,7 +32689,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32827,7 +32831,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -34154,7 +34158,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -35319,7 +35323,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -35338,14 +35342,14 @@
     {
      "number": 3,
      "name": "Season 3",
-     "episodes": 25,
+     "episodes": 24,
      "airDate": "2006-09-21",
      "watched": false
     },
     {
      "number": 4,
      "name": "Season 4",
-     "episodes": 17,
+     "episodes": 16,
      "airDate": "2007-09-27",
      "watched": false
     },
@@ -35359,7 +35363,7 @@
     {
      "number": 6,
      "name": "Season 6",
-     "episodes": 24,
+     "episodes": 22,
      "airDate": "2009-09-24",
      "watched": false
     },
@@ -35373,7 +35377,7 @@
     {
      "number": 8,
      "name": "Season 8",
-     "episodes": 24,
+     "episodes": 23,
      "airDate": "2011-09-22",
      "watched": false
     },
@@ -37562,7 +37566,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -37918,7 +37922,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -38108,7 +38112,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -39491,7 +39495,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -41057,7 +41061,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -42244,7 +42248,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:25:09.442Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -42370,10 +42374,9 @@
      "name": "Season 18",
      "episodes": 10,
      "airDate": "2026-08-17",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -42393,7 +42396,7 @@
     }
    },
    "addedAt": "2026-09-11T00:00:00.000Z",
-   "nextAirDate": "2026-09-14"
+   "nextAirDate": "2026-09-21"
   },
   {
    "id": "it-s-bruno",
@@ -42478,7 +42481,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -43099,7 +43102,7 @@
    "format": "series",
    "franchise": null,
    "universe": null,
-   "status": "returning",
+   "status": "ended",
    "tmdbId": 67260,
    "poster": "/jIkgDzgkVNm7ygNnv2AXfPUpQq8.jpg",
    "providers": [
@@ -43154,7 +43157,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -43883,7 +43886,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -43924,7 +43927,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -44121,7 +44124,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -45262,7 +45265,7 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -45502,7 +45505,7 @@
      "logo": "/a7ZF6Ng3d6KDMylLUMH1OjAeTqW.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -45825,7 +45828,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -47566,7 +47569,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -47778,7 +47781,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -47974,7 +47977,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -48486,7 +48489,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -49788,7 +49791,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -50223,7 +50226,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -50556,7 +50559,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -50598,7 +50601,7 @@
      "shelby": 0
     }
    },
-   "nextAirDate": "2026-09-13"
+   "nextAirDate": "2026-09-20"
   },
   {
    "id": "little-america",
@@ -51262,7 +51265,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -51381,7 +51384,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -51488,7 +51491,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -51934,7 +51937,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52305,7 +52308,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -52346,7 +52349,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52378,7 +52381,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52517,7 +52520,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -52693,7 +52696,7 @@
      "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -52728,7 +52731,7 @@
      "shelby": 0
     }
    },
-   "nextAirDate": "2026-09-17"
+   "nextAirDate": null
   },
   {
    "id": "luke-cage",
@@ -53058,7 +53061,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -53689,7 +53692,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -53853,7 +53856,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54030,7 +54033,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54219,7 +54222,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -54906,7 +54909,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55437,7 +55440,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -55624,7 +55627,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -55686,7 +55689,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55718,7 +55721,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55809,7 +55812,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -57292,7 +57295,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -57688,7 +57691,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -57857,7 +57860,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -58392,7 +58395,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:31:44.959Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -58423,7 +58426,6 @@
      "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -58998,7 +59000,7 @@
      "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -59285,7 +59287,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -59384,7 +59386,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -59715,7 +59717,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -59756,7 +59758,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -61208,7 +61210,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -62039,7 +62041,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -62130,7 +62132,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -62495,7 +62497,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -64118,7 +64120,7 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:38:29.504Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -64160,10 +64162,9 @@
      "name": "Season 6: Only Murders in London",
      "episodes": 1,
      "airDate": "2026-12-08",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -65435,7 +65436,7 @@
      "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -65898,7 +65899,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -65976,7 +65977,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T20:56:16.794Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -65990,10 +65991,9 @@
      "name": "Season 2",
      "episodes": 10,
      "airDate": "2026-09-09",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -66032,7 +66032,7 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -67048,7 +67048,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -67211,7 +67211,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -68128,7 +68128,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -68853,7 +68853,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -69445,7 +69445,7 @@
    "tmdbId": 278177,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -69486,7 +69486,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -69643,7 +69643,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -70532,7 +70532,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -70594,7 +70594,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -71369,7 +71369,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -72259,7 +72259,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -72475,7 +72475,7 @@
      "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -72893,7 +72893,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -73109,7 +73109,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -73138,8 +73138,7 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null,
-   "assumeWatched": true
+   "nextAirDate": null
   },
   {
    "id": "royal-pains",
@@ -74208,7 +74207,7 @@
      "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -74256,7 +74255,7 @@
    "tmdbId": 223294,
    "poster": "/m1FqyejRCjwad0JHwibnaBMWd28.jpg",
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -75038,7 +75037,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:53:17.347Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -75052,10 +75051,9 @@
      "name": "Season 2",
      "episodes": 3,
      "airDate": "2026-09-30",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -75279,7 +75277,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -75612,7 +75610,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -76360,7 +76358,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -76537,7 +76535,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -77630,7 +77628,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -77836,7 +77834,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -77878,8 +77876,7 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null,
-   "assumeWatched": true
+   "nextAirDate": null
   },
   {
    "id": "shrink-next-door",
@@ -78168,7 +78165,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -78738,7 +78735,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -79892,7 +79889,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -80681,7 +80678,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -80708,7 +80705,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 40,
-     "airDate": "2005-05-05",
+     "airDate": "2005-05-06",
      "watched": false
     },
     {
@@ -80729,14 +80726,14 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 52,
-     "airDate": "2009-07-18",
+     "airDate": "2009-07-19",
      "watched": false
     },
     {
      "number": 8,
      "name": "Season 8",
      "episodes": 52,
-     "airDate": "2011-03-25",
+     "airDate": "2011-03-26",
      "watched": false
     },
     {
@@ -81018,7 +81015,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -81050,7 +81047,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -81184,7 +81181,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -81225,7 +81222,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -81767,7 +81764,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:58:05.753Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -81788,10 +81785,9 @@
      "name": "Season 3",
      "episodes": 1,
      "airDate": "2026-11-02",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -82517,7 +82513,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:58:40.117Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -82527,7 +82523,6 @@
      "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -82728,7 +82723,7 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -82787,7 +82782,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:59:07.036Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -82801,10 +82796,9 @@
      "name": "Season 2",
      "episodes": 8,
      "airDate": "2026-06-18",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -83104,7 +83098,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -84480,7 +84474,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -85052,7 +85046,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T22:59:32.136Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -85080,10 +85074,9 @@
      "name": "Season 4",
      "episodes": 10,
      "airDate": "2026-08-04",
-     "watched": false
+     "watched": true
     }
    ],
-   "assumeWatched": true,
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -85279,7 +85272,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -86433,7 +86426,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -86465,7 +86458,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -86660,7 +86653,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -87250,7 +87243,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -88141,7 +88134,7 @@
      "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -88339,7 +88332,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -88484,7 +88477,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -88599,7 +88592,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -91588,7 +91581,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -91814,7 +91807,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -92096,7 +92089,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -92165,7 +92158,7 @@
    "tmdbId": 80475,
    "poster": "/eaGpAP4bKMjVlMIoGqKzMRJ2OIG.jpg",
    "providers": [],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -93345,7 +93338,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -93387,8 +93380,7 @@
      "shelby": 0
     }
    },
-   "nextAirDate": null,
-   "assumeWatched": true
+   "nextAirDate": null
   },
   {
    "id": "white-princess",
@@ -93985,7 +93977,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -94345,7 +94337,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -94720,7 +94712,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -94741,14 +94733,14 @@
      "name": "Season 3",
      "episodes": 8,
      "airDate": "2023-06-29",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 8,
      "airDate": "2025-10-30",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {
@@ -94770,8 +94762,7 @@
     }
    },
    "startedNotFinished": true,
-   "nextAirDate": null,
-   "assumeWatched": true
+   "nextAirDate": null
   },
   {
    "id": "without-a-trace",
@@ -95861,7 +95852,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -96511,7 +96502,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -96767,7 +96758,7 @@
      "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
     }
    ],
-   "providersUpdated": "2026-09-11T15:37:40.612Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [
     {
      "number": 1,
@@ -96864,7 +96855,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-15T12:27:36.742Z",
    "seasons": [],
    "votes": {
     "weekly": {

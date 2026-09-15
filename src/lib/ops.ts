@@ -27,7 +27,9 @@ export type Op =
   /** Put a ballot on a show by hand, or clear what it is on. */
   | { type: "setPick"; ledger: LedgerId; showId: string | null }
   /** Add or drop a show from the list watched outside the voting. */
-  | { type: "aside"; showId: string; add: boolean };
+  | { type: "aside"; showId: string; add: boolean }
+  /** Forget every refusal, so the suggestions can come round again. */
+  | { type: "clearDismissed" };
 
 function findShow(data: Dataset, id: string): Show | undefined {
   return data.shows.find((s) => s.id === id);
@@ -86,12 +88,16 @@ export function applyOp(data: Dataset, op: Op): Dataset {
     case "inbox": {
       data.inbox = data.inbox.filter((i) => i.tmdbId !== op.tmdbId);
       if (op.accept && op.show) addShow(data, op.show);
+      // Remember a refusal, or the next nightly run suggests it all over again.
+      if (!op.accept && !data.dismissed.includes(op.tmdbId)) {
+        data.dismissed = [...data.dismissed, op.tmdbId];
+      }
       return data;
     }
     case "inboxSuggest": {
       const known = data.shows.some((s) => s.tmdbId === op.item.tmdbId);
       const queued = data.inbox.some((i) => i.tmdbId === op.item.tmdbId);
-      if (!known && !queued) data.inbox.push(op.item);
+      if (!known && !queued && !data.dismissed.includes(op.item.tmdbId)) data.inbox.push(op.item);
       return data;
     }
     case "freePoints": {
@@ -108,6 +114,10 @@ export function applyOp(data: Dataset, op: Op): Dataset {
     }
     case "forgetDraw": {
       data.history = data.history.filter((d) => d.id !== op.drawId);
+      return data;
+    }
+    case "clearDismissed": {
+      data.dismissed = [];
       return data;
     }
     case "clearHistory": {
@@ -183,6 +193,7 @@ export function cloneForOps(data: Dataset, ops: Op[]): Dataset {
     ),
     history: [...data.history],
     inbox: [...data.inbox],
+    dismissed: [...data.dismissed],
     plex: { ...data.plex, shows: { ...data.plex.shows } },
     watching: { picks: { ...data.watching.picks }, asides: [...data.watching.asides] },
   };

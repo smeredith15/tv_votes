@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "test": "esbuild test/*.test.ts --bundle --platform=node --format=esm --outdir=.test-build --out-extension:.js=.mjs --define:__APP_VERSION__='\"testbuild\"' --define:__BUILT_AT__='\"2026-01-01T00:00:00.000Z\"' --log-level=warning && node --test '.test-build/*.mjs' 'test/*.test.mjs'",
+    "test": "esbuild test/*.test.ts --bundle --platform=node --format=esm --outdir=.test-build --out-extension:.js=.mjs --log-level=warning && node --test '.test-build/*.mjs' 'test/*.test.mjs'",
     "refresh": "node scripts/refresh.mjs",
     "discover": "node scripts/discover.mjs",
     "plex": "node scripts/plex.mjs"

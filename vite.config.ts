@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { execSync } from "node:child_process";
-import { cpSync, existsSync, readFileSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import type { ViteDevServer } from "vite";
+import type { Plugin, ViteDevServer } from "vite";
 
 /** Which build this is: the commit in CI, the working tree locally. */
 function buildVersion(): string {
@@ -19,16 +19,27 @@ const VERSION = buildVersion();
 const BUILT_AT = new Date().toISOString();
 
 /**
- * A copy of the version the page can fetch without going through the cache.
+ * What the published app is, fetchable without going through the cache.
  *
  * Pages serves index.html with ten minutes of caching, so a browser can sit on
  * the old app long after a deploy — which looks exactly like the deploy having
  * failed. The running app compares itself against this and offers a reload.
+ *
+ * The name of the bundle, not the commit: every vote saved from the app is a
+ * commit of its own, and each one redeploys. Keyed on the commit, the running
+ * app looked out of date the moment anyone saved anything, while being byte
+ * for byte the same. Vite already content-hashes the bundle, so its name
+ * changes exactly when the app does.
  */
-const stampVersion = {
+const stampVersion: Plugin = {
   name: "stamp-version",
-  closeBundle() {
-    writeFileSync("dist/version.json", `${JSON.stringify({ version: VERSION, builtAt: BUILT_AT })}\n`);
+  generateBundle(_options, bundle) {
+    const entry = Object.values(bundle).find((file) => file.type === "chunk" && file.isEntry);
+    this.emitFile({
+      type: "asset",
+      fileName: "version.json",
+      source: `${JSON.stringify({ bundle: entry?.fileName ?? "", commit: VERSION, builtAt: BUILT_AT })}\n`,
+    });
   },
 };
 
@@ -60,9 +71,5 @@ const copyData = {
 export default defineConfig({
   base: process.env.BASE_PATH ?? "/",
   plugins: [react(), copyData, stampVersion],
-  define: {
-    __APP_VERSION__: JSON.stringify(VERSION),
-    __BUILT_AT__: JSON.stringify(BUILT_AT),
-  },
   server: { port: 5173 },
 });

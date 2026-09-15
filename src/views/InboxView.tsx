@@ -10,12 +10,15 @@ import type { Dataset, InboxItem, Show } from "../lib/types";
 export function InboxView({ store, data }: { store: Store; data: Dataset }) {
   if (data.inbox.length === 0) {
     return (
-      <div className="panel">
-        <strong>Nothing waiting</strong>
-        <p className="small muted" style={{ marginBottom: 0 }}>
-          The nightly job queues newly premiered shows here for you to accept or dismiss.
-        </p>
-      </div>
+      <>
+        <div className="panel">
+          <strong>Nothing waiting</strong>
+          <p className="small muted" style={{ marginBottom: 0 }}>
+            The nightly job queues newly premiered shows here for you to accept or dismiss.
+          </p>
+        </div>
+        <Dismissed store={store} data={data} />
+      </>
     );
   }
 
@@ -31,6 +34,8 @@ export function InboxView({ store, data }: { store: Store; data: Dataset }) {
   return (
     <>
       <p className="small muted">{data.inbox.length} shows waiting on a yes or no.</p>
+      <Dismissed store={store} data={data} />
+
       {data.inbox.map((item) => (
         <div className="panel" key={item.tmdbId}>
           <div className="row" style={{ alignItems: "flex-start" }}>
@@ -54,6 +59,22 @@ export function InboxView({ store, data }: { store: Store; data: Dataset }) {
         </div>
       ))}
     </>
+  );
+}
+
+/** What has been turned down, and a way back if you change your mind. */
+function Dismissed({ store, data }: { store: Store; data: Dataset }) {
+  if (data.dismissed.length === 0) return null;
+  return (
+    <p className="small muted row" style={{ justifyContent: "space-between" }}>
+      <span>
+        {data.dismissed.length} suggestion{data.dismissed.length === 1 ? "" : "s"} turned down. The
+        nightly job will not offer {data.dismissed.length === 1 ? "it" : "them"} again.
+      </span>
+      <button className="small" onClick={() => store.dispatch({ type: "clearDismissed" })}>
+        Offer them again
+      </button>
+    </p>
   );
 }
 

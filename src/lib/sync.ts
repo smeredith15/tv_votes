@@ -25,6 +25,20 @@ function format(value: unknown): string {
 }
 
 export const EMPTY_PLEX: PlexLibrary = { updatedAt: null, shows: {} };
+
+/** The inbox file: suggestions waiting, and the ids already turned down. */
+interface InboxFile {
+  pending: InboxItem[];
+  dismissed: number[];
+}
+
+/** Older files were a bare array of suggestions, with no memory of refusals. */
+function readInbox(raw: string | undefined): InboxFile {
+  if (raw === undefined) return { pending: [], dismissed: [] };
+  const parsed = JSON.parse(raw) as InboxItem[] | Partial<InboxFile>;
+  if (Array.isArray(parsed)) return { pending: parsed, dismissed: [] };
+  return { pending: parsed.pending ?? [], dismissed: parsed.dismissed ?? [] };
+}
 export const EMPTY_WATCHING: Watching = { picks: {}, asides: [] };
 
 /**
@@ -40,7 +54,8 @@ export function datasetFrom(files: Record<string, string>): Dataset {
     ...(JSON.parse(files[FILES.shows]) as ShowsFile),
     universes: read<Universe[]>(FILES.universes, []),
     history: read<Draw[]>(FILES.history, []),
-    inbox: read<InboxItem[]>(FILES.inbox, []),
+    inbox: readInbox(files[FILES.inbox]).pending,
+    dismissed: readInbox(files[FILES.inbox]).dismissed,
     plex: read<PlexLibrary>(FILES.plex, EMPTY_PLEX),
     watching: read<Watching>(FILES.watching, EMPTY_WATCHING),
   };
@@ -56,7 +71,7 @@ export function serialize(data: Dataset): Record<string, string> {
     }),
     [FILES.universes]: format(data.universes),
     [FILES.history]: format(data.history),
-    [FILES.inbox]: format(data.inbox),
+    [FILES.inbox]: format({ pending: data.inbox, dismissed: data.dismissed }),
     [FILES.plex]: format(data.plex),
     [FILES.watching]: format(data.watching),
   };
@@ -83,6 +98,7 @@ export function describe(ops: Op[]): string {
 
   const kinds = new Set(ops.map((o) => o.type));
   if (kinds.has("clearHistory")) return "Clear the draw history";
+  if (kinds.has("clearDismissed")) return "Offer the dismissed suggestions again";
   if (kinds.size === 1 && kinds.has("forgetDraw")) return `Delete ${ops.length} draw${ops.length === 1 ? "" : "s"}`;
   if (kinds.size === 1 && kinds.has("vote")) return `Update votes (${ops.length})`;
   if (kinds.size === 1 && kinds.has("season")) return `Update watched seasons (${ops.length})`;

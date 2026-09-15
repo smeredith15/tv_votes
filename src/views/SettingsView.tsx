@@ -1,8 +1,8 @@
-import { BUILT_AT, RUNNING_VERSION } from "../lib/version";
+import { RUNNING_BUNDLE, type VersionInfo } from "../lib/version";
 import { RepoPanel } from "./RepoPanel";
 import type { Store } from "../lib/store";
 
-export function SettingsView({ store }: { store: Store }) {
+export function SettingsView({ store, published }: { store: Store; published: VersionInfo | null }) {
   const { settings, setSettings } = store;
 
   return (
@@ -11,13 +11,13 @@ export function SettingsView({ store }: { store: Store }) {
         <div className="row" style={{ justifyContent: "space-between" }}>
           <strong className="small">This app</strong>
           <span className="small muted">
-            build <code>{RUNNING_VERSION}</code>
-            {BUILT_AT && ` · ${new Date(BUILT_AT).toLocaleString()}`}
+            running <code>{RUNNING_BUNDLE}</code>
+            {published && ` · published ${published.commit}, ${new Date(published.builtAt).toLocaleString()}`}
           </span>
         </div>
         <p className="small muted" style={{ marginBottom: 0 }}>
-          If that does not match the newest commit on main, the browser is still holding an older copy —
-          a hard refresh replaces it.
+          Saving a vote commits to the repo and redeploys, so the commit moves often while the app
+          itself does not. It is the bundle name that says whether this is the current app.
         </p>
       </div>
 

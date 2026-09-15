@@ -1,50 +1,57 @@
 import assert from "node:assert/strict";
 import { after, test } from "node:test";
-import { RUNNING_VERSION, publishedVersion } from "../src/lib/version";
+import { fetchVersion } from "../src/lib/version";
 
 const realFetch = globalThis.fetch;
 after(() => {
   globalThis.fetch = realFetch;
 });
 
-function serving(handler: () => Response | Promise<Response>) {
+function serving(handler: () => Response) {
   globalThis.fetch = (() => Promise.resolve(handler())) as unknown as typeof fetch;
 }
 
-test("the published version is read back", async () => {
-  serving(() => new Response(JSON.stringify({ version: "abc1234", builtAt: "x" })));
-  assert.equal(await publishedVersion("/tv_votes/"), "abc1234");
+const payload = (extra: Record<string, unknown> = {}) =>
+  JSON.stringify({ bundle: "assets/index-ABC123.js", commit: "5a70bed", builtAt: "2026-09-15T00:00:00.000Z", ...extra });
+
+test("the published bundle is read back by name, without its directory", () => {
+  serving(() => new Response(payload()));
+  return fetchVersion("/tv_votes/").then((info) => {
+    assert.equal(info?.bundle, "index-ABC123.js");
+    assert.equal(info?.commit, "5a70bed");
+  });
 });
 
 test("the check is made past the browser cache", async () => {
-  // The whole point is catching a deploy the cached HTML is hiding, so a
-  // cached answer would defeat it.
   let init: RequestInit | undefined;
   globalThis.fetch = ((_url: string, options?: RequestInit) => {
     init = options;
-    return Promise.resolve(new Response(JSON.stringify({ version: "abc" })));
+    return Promise.resolve(new Response(payload()));
   }) as unknown as typeof fetch;
 
-  await publishedVersion("/");
+  await fetchVersion("/");
   assert.equal(init?.cache, "no-store");
+});
+
+test("a new commit over the same app is not a new version", async () => {
+  // Every vote saved commits and redeploys. Keyed on the commit, the running
+  // app would look out of date the moment anyone saved anything.
+  serving(() => new Response(payload({ commit: "deadbee" })));
+  const info = await fetchVersion("/");
+  assert.equal(info?.bundle, "index-ABC123.js", "the bundle is what decides");
 });
 
 test("a missing or unreadable version file says nothing rather than nagging", async () => {
   serving(() => new Response("not found", { status: 404 }));
-  assert.equal(await publishedVersion("/"), null);
+  assert.equal(await fetchVersion("/"), null);
 
   serving(() => new Response("<html>", { status: 200 }));
-  assert.equal(await publishedVersion("/"), null);
+  assert.equal(await fetchVersion("/"), null);
+
+  // No bundle recorded: nothing to compare, so do not claim staleness.
+  serving(() => new Response(JSON.stringify({ commit: "abc" })));
+  assert.equal(await fetchVersion("/"), null);
 
   globalThis.fetch = (() => Promise.reject(new Error("offline"))) as unknown as typeof fetch;
-  assert.equal(await publishedVersion("/"), null);
-});
-
-test("a build with no version stamped in does not claim to be stale", async () => {
-  serving(() => new Response(JSON.stringify({ builtAt: "x" })));
-  assert.equal(await publishedVersion("/"), null);
-});
-
-test("the running build reports the version it was stamped with", () => {
-  assert.equal(RUNNING_VERSION, "testbuild");
+  assert.equal(await fetchVersion("/"), null);
 });

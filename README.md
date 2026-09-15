@@ -80,6 +80,9 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
   no budget to spend up to: the bars are drawn against whichever of you has
   placed more, and it says *cheater* until the two totals match, exactly like
   the workbook's `IF(F8=G8, …)` check.
+  Every show the ballot could land on is listed, the ones you are backing first,
+  fifty at a time — so points can be placed by browsing rather than having to
+  know a title to search for.
   Drawing spins through four other shows before it lands — each one a real
   weighted draw, so the near-misses are shows that genuinely could have come
   up. Nothing reaches the history until you press *Keep it*, so an idle
@@ -105,7 +108,9 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
   allocations and the odds each show had. The *always a bridesmaid* table is the shows you keep backing that
   never win. Any single draw can be deleted, or the lot cleared, each behind a
   confirmation.
-- **Inbox** — newly premiered shows waiting on a yes or no.
+- **Inbox** — newly premiered shows waiting on a yes or no. A show turned down
+  is remembered, so the nightly job does not offer it again; the count of those
+  is shown, with a button to put them all back in circulation.
 
 ## What runs on its own
 
@@ -150,11 +155,16 @@ GitHub Pages serves `index.html` with ten minutes of caching, so a browser can
 keep running the previous bundle well after a deploy — which looks exactly like
 the deploy having failed.
 
-The app now checks for this itself: each build is stamped with its commit, and
-the running page compares that against `version.json` (fetched past the cache)
-on open and whenever you come back to the tab. If a newer one is out, a banner
-offers to load it. Settings shows which build you are on, so it can always be
-checked against the newest commit on `main`.
+The app checks for this itself: `version.json` records the bundle's file name,
+and the running page compares it against its own (`import.meta.url`) on open and
+whenever you come back to the tab. If a newer one is out, a banner offers to
+load it.
+
+The bundle, not the commit. Every vote saved from the app is a commit, and each
+one redeploys — so a commit-based check called the app stale the moment anyone
+saved anything, while it was byte for byte the same. Vite content-hashes the
+bundle, and nothing about the build is compiled into it, so its name changes
+when the app changes and not otherwise.
 
 A hard refresh (Ctrl/Cmd-Shift-R) does the same thing by hand.
 

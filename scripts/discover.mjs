@@ -35,7 +35,10 @@ async function main() {
   const tmdb = createClient({ key, region: process.env.TMDB_REGION ?? "US" });
 
   const file = JSON.parse(readFileSync(SHOWS, "utf8"));
-  const inbox = JSON.parse(readFileSync(INBOX, "utf8"));
+  // Older files were a bare array, before refusals were remembered.
+  const stored = JSON.parse(readFileSync(INBOX, "utf8"));
+  const inbox = Array.isArray(stored) ? stored : (stored.pending ?? []);
+  const dismissed = new Set(Array.isArray(stored) ? [] : (stored.dismissed ?? []));
   const known = new Set(file.shows.map((s) => s.tmdbId).filter(Boolean));
   const queued = new Set(inbox.map((i) => i.tmdbId));
 
@@ -50,7 +53,8 @@ async function main() {
       "vote_count.gte": 3,
     });
     for (const hit of results) {
-      if (known.has(hit.id) || queued.has(hit.id)) continue;
+      // Already on the list, already waiting, or already turned down once.
+      if (known.has(hit.id) || queued.has(hit.id) || dismissed.has(hit.id)) continue;
       if ((hit.genre_ids ?? []).some((g) => SKIP_GENRES.has(g))) continue;
       if ((hit.vote_count ?? 0) < 5 && (hit.popularity ?? 0) < 20) continue;
       found.push(hit);
@@ -74,8 +78,10 @@ async function main() {
     });
   }
 
-  writeFileSync(INBOX, `${JSON.stringify(inbox, null, 1)}\n`);
-  console.log(`Queued ${found.length} new shows for approval (${inbox.length} waiting).`);
+  writeFileSync(INBOX, `${JSON.stringify({ pending: inbox, dismissed: [...dismissed] }, null, 1)}\n`);
+  console.log(
+    `Queued ${found.length} new shows for approval (${inbox.length} waiting, ${dismissed.size} turned down before).`,
+  );
 }
 
 await main();

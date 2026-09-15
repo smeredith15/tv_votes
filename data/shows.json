@@ -62633,6 +62633,78 @@
    }
   },
   {
+   "id": "norm-show",
+   "title": "The Norm Show",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 1320,
+   "poster": "/wP6ZoZQ7d14vY50UqnV1VNhwF2I.jpg",
+   "providers": [
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-15T23:53:59.270Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 10,
+     "airDate": "1999-03-24",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 20,
+     "airDate": "1999-09-22",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 24,
+     "airDate": "2000-10-03",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-15T23:53:59.270Z"
+  },
+  {
    "id": "normal-people",
    "title": "Normal People",
    "runtime": 60,

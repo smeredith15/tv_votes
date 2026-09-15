@@ -63,13 +63,27 @@ export function mergeShows(base, ours, theirs) {
   return { ...theirs, shows };
 }
 
-export function mergeInbox(base, ours, theirs) {
-  const baseIds = new Set(base.map((i) => i.tmdbId));
-  const theirIds = new Set(theirs.map((i) => i.tmdbId));
-  // Only suggestions this run turned up. Anything the base already had and the
-  // branch no longer does was dismissed while we ran — leave it dismissed.
-  const fresh = ours.filter((i) => !baseIds.has(i.tmdbId) && !theirIds.has(i.tmdbId));
-  return [...theirs, ...fresh];
+/** Older files were a bare array; newer ones carry the refusals alongside. */
+function inboxParts(value) {
+  return Array.isArray(value)
+    ? { pending: value, dismissed: [] }
+    : { pending: value.pending ?? [], dismissed: value.dismissed ?? [] };
+}
+
+export function mergeInbox(baseRaw, oursRaw, theirsRaw) {
+  const base = inboxParts(baseRaw);
+  const ours = inboxParts(oursRaw);
+  const theirs = inboxParts(theirsRaw);
+
+  const baseIds = new Set(base.pending.map((i) => i.tmdbId));
+  const theirIds = new Set(theirs.pending.map((i) => i.tmdbId));
+  const dismissed = new Set([...theirs.dismissed, ...ours.dismissed]);
+
+  // Only suggestions this run turned up, and only ones not since turned down.
+  const fresh = ours.pending.filter(
+    (i) => !baseIds.has(i.tmdbId) && !theirIds.has(i.tmdbId) && !dismissed.has(i.tmdbId),
+  );
+  return { pending: [...theirs.pending, ...fresh], dismissed: [...dismissed] };
 }
 
 function main() {

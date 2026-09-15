@@ -81,16 +81,33 @@ test("a show deleted mid-run stays deleted", () => {
   assert.deepEqual(mergeShows(base, ours, theirs).shows.map((s) => s.id), ["a"]);
 });
 
-test("new suggestions are kept and dismissed ones stay dismissed", () => {
-  const item = (tmdbId) => ({ tmdbId, title: `show ${tmdbId}`, runtime: 60, suggestedAt: "2026-01-01T00:00:00.000Z" });
-  const base = [item(1), item(2)];
-  const ours = [item(1), item(2), item(3)]; // this run found 3
-  const theirs = [item(1)]; // meanwhile 2 was dismissed in the app
+const item = (tmdbId) => ({ tmdbId, title: `show ${tmdbId}`, runtime: 60, suggestedAt: "2026-01-01T00:00:00.000Z" });
 
-  assert.deepEqual(mergeInbox(base, ours, theirs).map((i) => i.tmdbId), [1, 3]);
+test("new suggestions are kept and dismissed ones stay dismissed", () => {
+  const base = { pending: [item(1), item(2)], dismissed: [] };
+  const ours = { pending: [item(1), item(2), item(3)], dismissed: [] }; // this run found 3
+  const theirs = { pending: [item(1)], dismissed: [2] }; // meanwhile 2 was turned down
+
+  const merged = mergeInbox(base, ours, theirs);
+  assert.deepEqual(merged.pending.map((i) => i.tmdbId), [1, 3]);
+  assert.deepEqual(merged.dismissed, [2]);
+});
+
+test("a run does not re-queue something turned down while it was running", () => {
+  const base = { pending: [], dismissed: [] };
+  const ours = { pending: [item(5)], dismissed: [] }; // this run just found 5
+  const theirs = { pending: [], dismissed: [5] }; // and it was turned down meanwhile
+
+  assert.deepEqual(mergeInbox(base, ours, theirs).pending, []);
 });
 
 test("a suggestion accepted mid-run is not re-queued", () => {
-  const item = (tmdbId) => ({ tmdbId, title: `show ${tmdbId}`, runtime: 60, suggestedAt: "2026-01-01T00:00:00.000Z" });
-  assert.deepEqual(mergeInbox([], [item(9)], [item(9)]).map((i) => i.tmdbId), [9]);
+  const merged = mergeInbox({ pending: [], dismissed: [] }, { pending: [item(9)], dismissed: [] }, { pending: [item(9)], dismissed: [] });
+  assert.deepEqual(merged.pending.map((i) => i.tmdbId), [9]);
+});
+
+test("an older bare-array inbox merges without losing anything", () => {
+  const merged = mergeInbox([], [item(3)], [item(1)]);
+  assert.deepEqual(merged.pending.map((i) => i.tmdbId), [1, 3]);
+  assert.deepEqual(merged.dismissed, []);
 });

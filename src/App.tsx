@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { useStore } from "./lib/store";
-import { RUNNING_VERSION, publishedVersion, reloadTo } from "./lib/version";
+import { RUNNING_BUNDLE, fetchVersion, reloadTo, type VersionInfo } from "./lib/version";
 import { HistoryView } from "./views/HistoryView";
 import { InboxView } from "./views/InboxView";
 import { LibraryView } from "./views/LibraryView";
@@ -27,12 +27,11 @@ type TabId = (typeof TABS)[number]["id"];
 export function App() {
   const store = useStore(import.meta.env.BASE_URL);
   const [tab, setTab] = useState<TabId>("now");
-  const [newVersion, setNewVersion] = useState<string | null>(null);
+  const [published, setPublished] = useState<VersionInfo | null>(null);
 
   // Check on open, and whenever you come back to the tab.
   const checkVersion = useCallback(async () => {
-    const published = await publishedVersion(import.meta.env.BASE_URL);
-    setNewVersion(published && published !== RUNNING_VERSION ? published : null);
+    setPublished(await fetchVersion(import.meta.env.BASE_URL));
   }, []);
 
   useEffect(() => {
@@ -63,11 +62,11 @@ export function App() {
         )}
       </header>
 
-      {newVersion && (
+      {published && published.bundle !== RUNNING_BUNDLE && (
         <div className="banner ok" role="status">
           <div className="row" style={{ justifyContent: "space-between" }}>
             <span>A newer version of the app has been published.</span>
-            <button className="primary" onClick={() => reloadTo(newVersion)}>
+            <button className="primary" onClick={() => reloadTo(published.bundle)}>
               Load it
             </button>
           </div>
@@ -98,7 +97,7 @@ export function App() {
           {tab === "universes" && <UniverseView store={store} data={data} />}
           {tab === "history" && <HistoryView store={store} data={data} />}
           {tab === "inbox" && <InboxView store={store} data={data} />}
-          {tab === "settings" && <SettingsView store={store} />}
+          {tab === "settings" && <SettingsView store={store} published={published} />}
         </>
       )}
     </div>

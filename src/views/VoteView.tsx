@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import { DrawError, drawWinner, spinTitles, tickets, totalWeight } from "../lib/draw";
 import { LEDGERS, ballotFor, effectiveSpent, episodesPerWeek, isEligible, strandedPoints, strandedShows } from "../lib/ledgers";
 import { EVERYONE, type Store } from "../lib/store";
@@ -11,9 +11,13 @@ interface Props {
   data: Dataset;
 }
 
+/** Rows drawn at once. The rest are a click away rather than all at once. */
+const PAGE = 50;
+
 export function VoteView({ store, data }: Props) {
   const [ledger, setLedger] = useState<LedgerId>("half");
   const [query, setQuery] = useState("");
+  const [limit, setLimit] = useState(PAGE);
   const [result, setResult] = useState<Draw | null>(null);
   const [spin, setSpin] = useState<{ teasers: string[]; draw: Draw } | null>(null);
   const [drawError, setDrawError] = useState<string | null>(null);
@@ -39,28 +43,19 @@ export function VoteView({ store, data }: Props) {
 
   const candidates = useMemo(() => {
     const needle = query.trim().toLowerCase();
+    const backers = sealed ? [voter] : data.people;
+    const weigh = (show: Show) => backers.reduce((sum, p) => sum + (show.votes[ledger]?.[p] ?? 0), 0);
+
+    // Every show this ballot could land on, backed ones first. It used to list
+    // only what already had points, which meant nothing could be found without
+    // knowing its name first.
     return data.shows
       .filter((show) => isEligible(show, ledger))
-      .filter((show) => {
-        if (needle) return show.title.toLowerCase().includes(needle);
-        // With no search on, show what is being backed — but while a name is
-        // picked, only their own picks. Listing every backed show would say
-        // which ones the other person chose, even with the numbers hidden.
-        const backers = sealed ? [voter] : data.people;
-        return backers.reduce((sum, p) => sum + (show.votes[ledger]?.[p] ?? 0), 0) > 0;
-      })
-      .sort((a, b) => {
-        const backers = sealed ? [voter] : data.people;
-        const weigh = (s: Show) => backers.reduce((sum, p) => sum + (s.votes[ledger]?.[p] ?? 0), 0);
-        return weigh(b) - weigh(a) || a.title.localeCompare(b.title);
-      })
-      .slice(0, query ? 60 : 500);
-  }, [data, ledger, query, sealed, voter]);
+      .filter((show) => !needle || show.title.toLowerCase().includes(needle))
+      .sort((a, b) => weigh(b) - weigh(a) || a.title.localeCompare(b.title));
+  }, [data.people, data.shows, ledger, query, sealed, voter]);
 
-  function setPoints(show: Show, person: string, value: string) {
-    const points = Math.max(0, Math.round(Number(value) || 0));
-    store.dispatch({ type: "vote", showId: show.id, ledger, person, points });
-  }
+  const visible = candidates.slice(0, limit);
 
   /**
    * Settle the draw first, then spin. Nothing is written to history until one
@@ -207,9 +202,12 @@ export function VoteView({ store, data }: Props) {
             {spin ? "Drawing…" : "Draw a winner"}
           </button>
           <input
-            placeholder="Search every eligible show…"
+            placeholder={`Search the ${candidates.length.toLocaleString()} shows on this ballot…`}
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setLimit(PAGE);
+            }}
             style={{ flex: "1 1 220px" }}
           />
         </div>
@@ -250,56 +248,100 @@ export function VoteView({ store, data }: Props) {
             </tr>
           </thead>
           <tbody>
-            {candidates.map((show) => {
-              const weight = data.people.reduce((sum, p) => sum + (show.votes[ledger]?.[p] ?? 0), 0);
-              const ballot = ballotFor(show, ledger);
-              return (
-                <tr key={show.id} className={weight > 0 ? "voted" : undefined}>
-                  <td>
-                    <div className="stack">
-                      <span>{show.title}</span>
-                      <span className="row small" style={{ gap: 6 }}>
-                        <StatusPill show={show} />
-                        <ProviderTags show={show} limit={2} />
-                      </span>
-                    </div>
-                  </td>
-                  <td className="hide-sm small muted">
-                    {ballot.label}
-                    {ledger === "weekly" && ` · ${episodesPerWeek(show)} ep/week`}
-                  </td>
-                  {data.people.map((person) => (
-                    <td key={person} className="num">
-                      {hidden(person) ? (
-                        <span className="muted">—</span>
-                      ) : (
-                        <input
-                          className="points"
-                          type="number"
-                          min={0}
-                          value={show.votes[ledger]?.[person] ?? 0}
-                          onChange={(e) => setPoints(show, person, e.target.value)}
-                        />
-                      )}
-                    </td>
-                  ))}
-                  <td className="num">{sealed ? "—" : weight.toLocaleString()}</td>
-                </tr>
-              );
-            })}
+            {visible.map((show) => (
+              <VoteRow
+                key={show.id}
+                show={show}
+                ledger={ledger}
+                people={data.people}
+                displayNames={data.displayNames}
+                hidden={hidden}
+                sealed={sealed}
+                dispatch={store.dispatch}
+              />
+            ))}
             {candidates.length === 0 && (
               <tr>
                 <td colSpan={data.people.length + 3} className="muted">
-                  {query ? "Nothing matches." : "No points spent yet — search to start backing shows."}
+                  {query ? "Nothing matches." : "Nothing is eligible for this ballot yet."}
                 </td>
               </tr>
             )}
           </tbody>
         </table>
+        {candidates.length > visible.length && (
+          <button className="small" style={{ marginTop: 10 }} onClick={() => setLimit(limit + PAGE * 3)}>
+            Show more ({(candidates.length - visible.length).toLocaleString()} to go)
+          </button>
+        )}
       </div>
     </>
   );
 }
+
+interface RowProps {
+  show: Show;
+  ledger: LedgerId;
+  people: string[];
+  displayNames?: Record<string, string>;
+  hidden: (person: string) => boolean;
+  sealed: boolean;
+  dispatch: Store["dispatch"];
+}
+
+const VoteRow = memo(function VoteRow({
+  show,
+  ledger,
+  people,
+  hidden,
+  sealed,
+  dispatch,
+}: RowProps) {
+  const weight = people.reduce((sum, p) => sum + (show.votes[ledger]?.[p] ?? 0), 0);
+  const ballot = ballotFor(show, ledger);
+
+  return (
+    <tr className={weight > 0 ? "voted" : undefined}>
+      <td>
+        <div className="stack">
+          <span>{show.title}</span>
+          <span className="row small" style={{ gap: 6 }}>
+            <StatusPill show={show} />
+            <ProviderTags show={show} limit={2} />
+          </span>
+        </div>
+      </td>
+      <td className="hide-sm small muted">
+        {ballot.label}
+        {ledger === "weekly" && ` · ${episodesPerWeek(show)} ep/week`}
+      </td>
+      {people.map((person) => (
+        <td key={person} className="num">
+          {hidden(person) ? (
+            <span className="muted">—</span>
+          ) : (
+            <input
+              className="points"
+              type="number"
+              min={0}
+              value={show.votes[ledger]?.[person] ?? 0}
+              onChange={(e) =>
+                dispatch({
+                  type: "vote",
+                  showId: show.id,
+                  ledger,
+                  person,
+                  points: Math.max(0, Math.round(Number(e.target.value) || 0)),
+                })
+              }
+            />
+          )}
+        </td>
+      ))}
+      <td className="num">{sealed ? "—" : weight.toLocaleString()}</td>
+    </tr>
+  );
+});
 
 interface WinnerProps {
   data: Dataset;

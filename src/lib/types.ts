@@ -133,6 +133,8 @@ export interface Dataset {
   universes: Universe[];
   history: Draw[];
   inbox: InboxItem[];
+  /** TMDB ids turned down, so nothing suggests them again. */
+  dismissed: number[];
   plex: PlexLibrary;
   watching: Watching;
   updatedAt?: string;

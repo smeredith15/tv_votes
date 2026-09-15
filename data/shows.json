@@ -66075,6 +66075,74 @@
    "nextAirDate": null
   },
   {
+   "id": "pam-tommy",
+   "title": "Pam & Tommy",
+   "runtime": 60,
+   "format": "mini",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 114925,
+   "poster": "/u6Hfb3EsnvlPChr01jErXDTsdan.jpg",
+   "providers": [
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-15T23:55:59.829Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 8,
+     "airDate": "2022-02-02",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-15T23:55:59.829Z"
+  },
+  {
    "id": "pam-and-tommy",
    "title": "Pam and Tommy",
    "runtime": 60,

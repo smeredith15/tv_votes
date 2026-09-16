@@ -1843,7 +1843,7 @@
      "name": "Season 6",
      "episodes": 1,
      "airDate": "2026-10-07",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -27632,7 +27632,7 @@
      "name": "Season 2",
      "episodes": 1,
      "airDate": "2026-11-02",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -42488,7 +42488,7 @@
      "name": "Season 18",
      "episodes": 10,
      "airDate": "2026-08-17",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -66245,7 +66245,7 @@
      "name": "Season 2",
      "episodes": 10,
      "airDate": "2026-09-09",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -75688,7 +75688,7 @@
      "name": "Season 2",
      "episodes": 3,
      "airDate": "2026-09-30",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -83908,7 +83908,7 @@
      "name": "Season 2",
      "episodes": 8,
      "airDate": "2026-06-18",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -86331,7 +86331,7 @@
      "name": "Season 4",
      "episodes": 10,
      "airDate": "2026-08-04",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {

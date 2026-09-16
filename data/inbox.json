@@ -1,4 +1,35 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 300507,
+   "title": "Crew Girl",
+   "firstAirDate": "2026-09-10",
+   "overview": "After a family scandal, teen rower Teagan Tao moves to a small town and joins an elite prep school's all-boys crew, sparking rivalry and attraction.",
+   "poster": "/jkPZW1iHNvlI6077NxSxwITa1tj.jpg",
+   "network": "Netflix",
+   "runtime": 60,
+   "suggestedAt": "2026-09-16T12:25:17.365Z"
+  },
+  {
+   "tmdbId": 273207,
+   "title": "Neagley",
+   "firstAirDate": "2026-09-16",
+   "overview": "Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Army's 110th Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice.",
+   "poster": "/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg",
+   "network": "Prime Video",
+   "runtime": null,
+   "suggestedAt": "2026-09-16T12:25:17.365Z"
+  },
+  {
+   "tmdbId": 318312,
+   "title": "Tommy & Tuppence",
+   "firstAirDate": "2026-09-15",
+   "overview": "A detective duo for the ages, Tommy and Tuppence fall in love, fall out of it, and tumble back in, all while solving some thrilling and entertaining mysteries along the way.",
+   "poster": "/yotuQ5vEjtLdT3YeYVpmsg8UD6k.jpg",
+   "network": "BritBox",
+   "runtime": 60,
+   "suggestedAt": "2026-09-16T12:25:17.365Z"
+  }
+ ],
  "dismissed": []
 }

@@ -1500,6 +1500,28 @@
    3,
    4,
    5
+  ],
+  "star-trek": [
+   1,
+   2,
+   3
+  ],
+  "star-trek-picard": [
+   1,
+   2,
+   3
+  ],
+  "star-trek-the-next-generation": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "star-trek-strange-new-worlds": [
+   1
   ]
  }
 }

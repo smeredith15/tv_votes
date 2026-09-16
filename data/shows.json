@@ -84296,21 +84296,21 @@
      "name": "Season 1",
      "episodes": 20,
      "airDate": "2015-10-26",
-     "watched": false
+     "watched": true
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
      "airDate": "2016-10-10",
-     "watched": false
+     "watched": true
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 23,
      "airDate": "2017-10-09",
-     "watched": false
+     "watched": true
     },
     {
      "number": 4,
@@ -85538,6 +85538,151 @@
    },
    "addedAt": "2026-09-14T03:06:52.371Z",
    "nextAirDate": "2026-09-20"
+  },
+  {
+   "id": "tales-from-the-crypt",
+   "title": "Tales from the Crypt",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 2391,
+   "poster": "/owrglhGpuB5eJVT3nED6U40NzmM.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Philo",
+     "type": "flatrate",
+     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+    },
+    {
+     "name": "AMC Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/wLl5LRLVC6UOSaUlsmuzY0H9LS1.png"
+    },
+    {
+     "name": "AMC+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/tg5ufQ1GkYDCMxSSxemfeKWcvRe.png"
+    },
+    {
+     "name": "AMC+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/xMyod7PSWlER7Q8FLDqVckKeyyB.png"
+    },
+    {
+     "name": "Shudder",
+     "type": "flatrate",
+     "logo": "/58O6yqUFM6qoOiBNAddJs7xNKc.png"
+    },
+    {
+     "name": "Spectrum On Demand",
+     "type": "flatrate",
+     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Tubi TV",
+     "type": "free",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-16T00:10:47.450Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 4,
+     "airDate": "1989-06-10",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 16,
+     "airDate": "1990-04-21",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 12,
+     "airDate": "1991-06-15",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 12,
+     "airDate": "1992-06-27",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 11,
+     "airDate": "1993-10-02",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Season 6",
+     "episodes": 13,
+     "airDate": "1994-10-31",
+     "watched": false
+    },
+    {
+     "number": 7,
+     "name": "Season 7",
+     "episodes": 13,
+     "airDate": "1996-04-19",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-16T00:10:47.450Z"
   },
   {
    "id": "task",

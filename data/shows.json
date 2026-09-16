@@ -95663,6 +95663,117 @@
    "nextAirDate": null
   },
   {
+   "id": "wild-thornberrys",
+   "title": "The Wild Thornberrys",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 2408,
+   "poster": "/6SHAvvwmOFJwFhbkAqa6MjsiO7P.jpg",
+   "providers": [
+    {
+     "name": "Paramount Plus Premium",
+     "type": "flatrate",
+     "logo": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
+    },
+    {
+     "name": "Paramount Plus Essential",
+     "type": "flatrate",
+     "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Paramount Plus Apple TV channel",
+     "type": "flatrate",
+     "logo": "/xu4LyKTwasTbta1Z0qWtZG48yZ3.png"
+    },
+    {
+     "name": "Paramount+ Amazon Channel",
+     "type": "flatrate",
+     "logo": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png"
+    },
+    {
+     "name": "Paramount+ Roku Premium Channel",
+     "type": "flatrate",
+     "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+    }
+   ],
+   "providersUpdated": "2026-09-16T00:19:29.254Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 20,
+     "airDate": "1998-09-01",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Season 2",
+     "episodes": 37,
+     "airDate": "1999-08-16",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Season 3",
+     "episodes": 20,
+     "airDate": "2000-09-12",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Season 4",
+     "episodes": 6,
+     "airDate": "2001-08-18",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Season 5",
+     "episodes": 8,
+     "airDate": "2003-02-03",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-16T00:19:29.254Z"
+  },
+  {
    "id": "wilds",
    "title": "The Wilds",
    "runtime": 60,

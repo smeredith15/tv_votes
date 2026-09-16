@@ -74433,6 +74433,48 @@
    "nextAirDate": null
   },
   {
+   "id": "salem-s-lot",
+   "title": "Salem's Lot",
+   "runtime": 60,
+   "format": "mini",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 16118,
+   "poster": "/yaztNZUErjSmrVsuXEZiuIVyVj2.jpg",
+   "providers": [],
+   "providersUpdated": "2026-09-16T00:02:32.079Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 2,
+     "airDate": "1979-11-17",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-16T00:02:32.079Z"
+  },
+  {
    "id": "sanditon",
    "title": "Sanditon",
    "runtime": 60,

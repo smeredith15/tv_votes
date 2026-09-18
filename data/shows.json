@@ -5762,7 +5762,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -14318,7 +14318,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -16170,7 +16170,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -17992,7 +17992,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19338,7 +19338,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19607,7 +19607,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [
     {
      "number": 1,
@@ -19649,7 +19649,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -20953,7 +20953,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -24163,9 +24163,14 @@
      "name": "Hulu",
      "type": "flatrate",
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "fuboTV",
+     "type": "flatrate",
+     "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
     }
    ],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [
     {
      "number": 1,
@@ -24194,7 +24199,7 @@
     }
    },
    "addedAt": "2026-09-14T03:06:50.501Z",
-   "nextAirDate": "2026-09-15"
+   "nextAirDate": "2026-09-22"
   },
   {
    "id": "dropout",
@@ -26463,7 +26468,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -28851,7 +28856,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -30858,7 +30863,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32455,7 +32460,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32689,7 +32694,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -38036,7 +38041,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -44041,7 +44046,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -44238,7 +44243,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -46806,7 +46811,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-14T03:11:14.114Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [
     {
      "number": 1,
@@ -47742,7 +47747,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [
     {
      "number": 1,
@@ -47771,7 +47776,7 @@
     }
    },
    "addedAt": "2026-09-14T03:06:43.274Z",
-   "nextAirDate": "2026-09-16"
+   "nextAirDate": "2026-09-23"
   },
   {
    "id": "last-ship",
@@ -49905,7 +49910,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -51605,7 +51610,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52051,7 +52056,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52463,7 +52468,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52495,7 +52500,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -53970,7 +53975,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54147,7 +54152,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55023,7 +55028,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55495,7 +55500,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-09-14T14:54:54.724Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [
     {
      "number": 1,
@@ -55803,7 +55808,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55835,7 +55840,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55926,7 +55931,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -57805,7 +57810,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -59401,7 +59406,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -59500,7 +59505,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -59872,7 +59877,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -62611,7 +62616,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -66153,7 +66158,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -67620,7 +67625,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -69975,7 +69980,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -71083,7 +71088,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -76995,7 +77000,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -78265,7 +78270,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -80526,7 +80531,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -81783,7 +81788,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -81815,7 +81820,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -82334,7 +82339,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -85493,6 +85498,11 @@
    "poster": "/ht3OVVRBTrTeVtUVQiKSekjIFVH.jpg",
    "providers": [
     {
+     "name": "fuboTV",
+     "type": "flatrate",
+     "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+    },
+    {
      "name": "Philo",
      "type": "flatrate",
      "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
@@ -85508,7 +85518,7 @@
      "logo": "/q63Uzpu7JAs566vA2G23Lk7LcID.png"
     }
    ],
-   "providersUpdated": "2026-09-14T13:38:20.138Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [
     {
      "number": 1,
@@ -87825,7 +87835,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -93236,7 +93246,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -98621,7 +98631,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-09-17T12:25:13.972Z",
+   "providersUpdated": "2026-09-18T12:04:04.960Z",
    "seasons": [],
    "votes": {
     "weekly": {

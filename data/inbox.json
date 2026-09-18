@@ -39,6 +39,26 @@
    "network": "Paramount+",
    "runtime": 30,
    "suggestedAt": "2026-09-17T12:25:16.521Z"
+  },
+  {
+   "tmdbId": 299939,
+   "title": "Monster: The Lizzie Borden Story",
+   "firstAirDate": "2026-09-17",
+   "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
+   "poster": "/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
+   "network": "Netflix",
+   "runtime": 60,
+   "suggestedAt": "2026-09-18T12:04:07.825Z"
+  },
+  {
+   "tmdbId": 252105,
+   "title": "Golden Axe",
+   "firstAirDate": "2026-09-16",
+   "overview": "Legendary warriors Ax Battler, Tyris Flare, and Gilius Thunderhead reunite to save Yuria from the evil giant Death Adder, who just won't seem to stay dead. Their quest is complicated by Hampton Squib, an inexperienced and wildly underprepared adventurer whose dream of heroism far exceeds his abilities. Forced to work together despite their flaws, they must find a way to stop Death Adder once and for all.",
+   "poster": "/toEwR5VTFzHmxW1pX1HjtTXH6QH.jpg",
+   "network": "Paramount+",
+   "runtime": 30,
+   "suggestedAt": "2026-09-18T12:04:07.825Z"
   }
  ],
  "dismissed": []

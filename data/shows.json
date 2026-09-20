@@ -58274,6 +58274,39 @@
    "nextAirDate": null
   },
   {
+   "id": "monster-the-lizzie-borden-story",
+   "title": "Monster: The Lizzie Borden Story",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 299939,
+   "poster": "/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-20T23:31:22.352Z"
+  },
+  {
    "id": "monsters-inside-the-24-faces-of-billy-milligan",
    "title": "Monsters Inside: The 24 Faces of Billy Milligan",
    "runtime": 60,
@@ -61537,6 +61570,39 @@
     }
    },
    "nextAirDate": "2026-10-06"
+  },
+  {
+   "id": "neagley",
+   "title": "Neagley",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 273207,
+   "poster": "/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-20T23:30:59.158Z"
   },
   {
    "id": "necessary-roughness",

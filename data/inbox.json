@@ -1,5 +1,26 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 239618,
+   "title": "American Hostage",
+   "firstAirDate": "2026-09-20",
+   "overview": "A psychological thriller anthology series focusing on a different hostage case every season.",
+   "poster": "/kVXkBIJw4eW9KC8VZvYvoS6Qg0j.jpg",
+   "network": "MGM+",
+   "runtime": 60,
+   "suggestedAt": "2026-09-21T13:37:17.215Z"
+  },
+  {
+   "tmdbId": 319851,
+   "title": "The Blame",
+   "firstAirDate": "2026-09-20",
+   "overview": "Detectives Tom Radley and Emma Crane fall in love while investigating the small-town murder of a figure skater, until one becomes a suspect.",
+   "poster": "/5ZeHhMqi7tDTgKvfUdy9rs7VKUt.jpg",
+   "network": "ITVX",
+   "runtime": 60,
+   "suggestedAt": "2026-09-21T13:37:17.215Z"
+  }
+ ],
  "dismissed": [
   300507,
   318312,

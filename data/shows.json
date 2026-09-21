@@ -96713,14 +96713,14 @@
      "name": "Season 3",
      "episodes": 8,
      "airDate": "2023-06-29",
-     "watched": true
+     "watched": false
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 8,
      "airDate": "2025-10-30",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {

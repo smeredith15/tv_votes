@@ -1,3 +1,4 @@
+import { InstallPanel } from "./InstallPanel";
 import { RUNNING_BUNDLE, type VersionInfo } from "../lib/version";
 import { RepoPanel } from "./RepoPanel";
 import type { Store } from "../lib/store";
@@ -7,6 +8,8 @@ export function SettingsView({ store, published }: { store: Store; published: Ve
 
   return (
     <>
+      <InstallPanel />
+
       <div className="panel">
         <div className="row" style={{ justifyContent: "space-between" }}>
           <strong className="small">This app</strong>

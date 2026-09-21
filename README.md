@@ -149,6 +149,22 @@ anything ticked by hand is overwritten.
 The token is the `X-Plex-Token` on any request the Plex web app makes. It is
 only ever sent to your own server, and nothing puts it in the repo.
 
+## Installing it
+
+The site is a progressive web app: Chrome and Edge offer an *Install* button
+under Settings, and Safari does it through Share → Add to Home Screen. Installed,
+it opens in its own window with its own icon.
+
+A service worker keeps it working without a connection — the ledgers show as
+they were last loaded, and votes queue up until there is a connection to save
+them through. The caching is deliberately narrow: only files whose names already
+contain a hash of their contents are served from the cache first. Pages and data
+go to the network and fall back to the cache only when the network cannot
+answer, and anything off this origin — GitHub, TMDB, posters — the worker never
+touches at all, so a save is never answered out of a cache.
+
+`tools/make_icons.py` draws the icons; run it if the artwork should change.
+
 ## When a deploy does not seem to have landed
 
 GitHub Pages serves `index.html` with ten minutes of caching, so a browser can
@@ -166,7 +182,9 @@ saved anything, while it was byte for byte the same. Vite content-hashes the
 bundle, and nothing about the build is compiled into it, so its name changes
 when the app changes and not otherwise.
 
-A hard refresh (Ctrl/Cmd-Shift-R) does the same thing by hand.
+A hard refresh (Ctrl/Cmd-Shift-R) does the same thing by hand. The service
+worker does not get in the way of this: `version.json` is left to reach the
+network, and the reload pulls the new bundle even when the worker is in charge.
 
 ## Fairness
 

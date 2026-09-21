@@ -3518,6 +3518,39 @@
    "nextAirDate": "2026-09-24"
   },
   {
+   "id": "american-hostage",
+   "title": "American Hostage",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 239618,
+   "poster": "/kVXkBIJw4eW9KC8VZvYvoS6Qg0j.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-21T13:57:52.662Z"
+  },
+  {
    "id": "american-nightmare",
    "title": "American Nightmare",
    "runtime": 60,

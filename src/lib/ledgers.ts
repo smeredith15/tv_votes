@@ -19,6 +19,18 @@ export function watchState(show: Show): WatchState {
   return watched === show.seasons.length ? "complete" : "in_progress";
 }
 
+/**
+ * Nothing left to watch of what has aired.
+ *
+ * Not the same as finished: a show can be caught up and still coming back.
+ * Either way there is nothing to vote for today, and when a new season lands
+ * the refresh adds it unwatched and the show is votable again — or picks itself
+ * back up, if it is set to.
+ */
+export function caughtUp(show: Show): boolean {
+  return show.seasons.length > 0 && show.seasons.every((season) => season.watched);
+}
+
 export function unwatchedSeasons(show: Show): number[] {
   return show.seasons.filter((s) => !s.watched).map((s) => s.number);
 }
@@ -33,7 +45,7 @@ export function eligibleLedgers(show: Show): LedgerId[] {
   const ledgers: LedgerId[] = [];
   // A show watched inside a universe is voted on under the universe's own entry.
   if (show.universe && !show.universeEntry) return ledgers;
-  if (watchState(show) === "complete" && show.status !== "returning") return ledgers;
+  if (caughtUp(show)) return ledgers;
   // Set to pick itself back up when a season lands, so there is nothing to vote on.
   if (show.autoResume) return ledgers;
 

@@ -16,8 +16,13 @@ whole ledger has a history and there is no server to run or pay for.
 | Weekly | Friday nights: 2 episodes if it's a half-hour show, 1 if it's an hour |
 | Mini / anthology | One season at a time |
 
-Which ballots a show appears on is **derived** from its runtime and format, not
-maintained by hand. That is the main thing that changed: the workbook kept the
+A show with every aired season ticked off is on no ballot at all — there is
+nothing to vote for. It is not gone: when a season airs, the refresh adds it
+unwatched and the show is back on the ballots, or picks itself up if its *auto*
+tick is set.
+
+Which ballots a show appears on is otherwise **derived** from its runtime and
+format, not maintained by hand. That is the main thing that changed: the workbook kept the
 same list on four sheets, and they had drifted — 39 shows existed on the
 hour/half/mini sheets but were missing from Weekly, and 74 rows never got their
 30/60 flag typed in, which quietly kept them off the ballot they belonged on.

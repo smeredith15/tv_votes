@@ -161,10 +161,11 @@ export function VoteView({ store, data }: Props) {
             <p className="small muted" style={{ margin: 0, flex: "1 1 300px" }}>
               {spends
                 .filter((s) => s.stranded > 0 && !hidden(s.person))
-                .map((s) => `${data.displayNames?.[s.person] ?? s.person} has ${s.stranded} points`)
-                .join(", ")}{" "}
-              on {stuck.length === 1 ? stuck[0].title : `${stuck.length} finished shows`}. Those points
-              are already out of the draw — taking them back lets you spend them on something that can win.
+                .map((s) => `${data.displayNames?.[s.person] ?? s.person} has ${s.stranded}`)
+                .join(" and ")}{" "}
+              points on {stuck.length === 1 ? stuck[0].title : `${stuck.length} shows`} with nothing left
+              to watch. Those points are already out of the draw — taking them back lets you place them
+              on something that can still win.
             </p>
             <button
               className="small"

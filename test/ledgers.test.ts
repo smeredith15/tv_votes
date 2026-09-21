@@ -33,12 +33,17 @@ test("the universe itself carries the votes", () => {
   assert.deepEqual(eligibleLedgers(show), ["weekly", "hour"]);
 });
 
-test("a finished show drops off unless it is coming back", () => {
+test("being caught up takes a show off the ballots, coming back or not", () => {
+  // Returning used to keep it votable, which offered shows with nothing to
+  // watch. It comes back when a season does, not before.
   const done = makeShow({ id: "done", seasons: seasons(3, 3) });
   assert.deepEqual(eligibleLedgers(done), []);
 
   const returning = makeShow({ id: "more", seasons: seasons(3, 3), status: "returning" });
-  assert.deepEqual(eligibleLedgers(returning), ["weekly", "hour"]);
+  assert.deepEqual(eligibleLedgers(returning), []);
+
+  const newSeason = makeShow({ id: "aired", seasons: seasons(4, 3), status: "returning" });
+  assert.deepEqual(eligibleLedgers(newSeason), ["weekly", "hour"]);
 });
 
 test("an explicit exclusion is honoured", () => {

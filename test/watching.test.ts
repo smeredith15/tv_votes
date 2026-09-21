@@ -68,7 +68,8 @@ test("the side list adds, drops, and never doubles up", () => {
 });
 
 test("a show set to resume on its own is not put to a vote", () => {
-  const normal = makeShow({ id: "a", runtime: 60, status: "returning", seasons: seasons(3, 3) });
+  // A season is waiting, so this would otherwise be votable.
+  const normal = makeShow({ id: "a", runtime: 60, status: "returning", seasons: seasons(4, 3) });
   assert.deepEqual(eligibleLedgers(normal), ["weekly", "hour"]);
 
   const auto = makeShow({ ...normal, autoResume: true });

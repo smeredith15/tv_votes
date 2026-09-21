@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { LEDGERS, ballotFor, episodesPerWeek, unwatchedSeasons, watchState } from "../lib/ledgers";
+import { LEDGERS, ballotFor, caughtUp, episodesPerWeek, unwatchedSeasons } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, LedgerId, Show } from "../lib/types";
 import { Poster, ProviderTags, StatusPill } from "./ShowBits";
@@ -18,7 +18,7 @@ function pickFor(data: Dataset, ledger: LedgerId): Show | null {
     if (draw.ledger !== ledger) continue;
     const show = data.shows.find((s) => s.id === draw.winnerId);
     if (!show) continue;
-    return watchState(show) === "complete" ? null : show;
+    return caughtUp(show) ? null : show;
   }
   return null;
 }
@@ -195,13 +195,17 @@ function describeProgress(show: Show): string {
   return left === 0 ? "finished" : `${left} season${left === 1 ? "" : "s"} left`;
 }
 
-/** Search the whole list to put a ballot on something by hand. */
+/** Search the whole list to put a ballot, or the side list, on something. */
 function ShowPicker({ data, onPick }: { data: Dataset; onPick: (id: string) => void }) {
   const [query, setQuery] = useState("");
   const matches = useMemo(() => {
     const needle = query.trim().toLowerCase();
     if (needle.length < 2) return [];
-    return data.shows.filter((s) => s.title.toLowerCase().includes(needle)).slice(0, 12);
+    return data.shows
+      // Nothing to start on a show with every aired season ticked off.
+      .filter((show) => !caughtUp(show))
+      .filter((show) => show.title.toLowerCase().includes(needle))
+      .slice(0, 12);
   }, [data.shows, query]);
 
   return (
@@ -288,6 +292,7 @@ function AsidePanel({ store, data }: { store: Store; data: Dataset }) {
   const shows = data.watching.asides
     .map((id) => data.shows.find((s) => s.id === id))
     .filter((s): s is Show => s !== undefined);
+  const finished = shows.filter(caughtUp);
 
   return (
     <aside className="now-side panel">
@@ -298,6 +303,17 @@ function AsidePanel({ store, data }: { store: Store; data: Dataset }) {
         </button>
       </div>
       <p className="small muted">Watched outside the voting.</p>
+
+      {finished.length > 0 && (
+        <button
+          className="small"
+          onClick={() =>
+            store.dispatch(...finished.map((show) => ({ type: "aside" as const, showId: show.id, add: false })))
+          }
+        >
+          Clear {finished.length} caught up
+        </button>
+      )}
 
       {adding && (
         <ShowPicker

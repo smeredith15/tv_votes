@@ -13375,6 +13375,59 @@
    "nextAirDate": null
   },
   {
+   "id": "brothers",
+   "title": "Brothers",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "nextAirDate": "2026-09-29",
+   "tmdbId": 250203,
+   "poster": "/jD7ZQpDEZzAVReJzkOtmuFoIl2m.jpg",
+   "providers": [
+    {
+     "name": "Apple TV",
+     "type": "flatrate",
+     "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+    },
+    {
+     "name": "Apple TV Amazon Channel",
+     "type": "flatrate",
+     "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+    }
+   ],
+   "providersUpdated": "2026-09-24T01:35:23.267Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2026-09-22",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-24T01:35:23.267Z"
+  },
+  {
    "id": "brothers-sun",
    "title": "The Brothers Sun",
    "runtime": 60,
@@ -98591,6 +98644,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "youth",
+   "title": "Youth",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 285418,
+   "poster": "/bk1zbzbu0xaYQuIANv4Pe8HHyAY.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-09-24T01:35:00.772Z"
   },
   {
    "id": "zen-diaries-of-garry-shandling",

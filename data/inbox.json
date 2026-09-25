@@ -1,5 +1,16 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 305357,
+   "title": "A Different World",
+   "firstAirDate": "2026-09-24",
+   "overview": "Deborah Wayne enters her freshman year at her parents' HBCU alma mater and finds their shadow difficult to escape. She sets out to build her own legacy – while having the time of her life – alongside a whole new generation of Hillman’s best and brightest.",
+   "poster": "/mmE4RNbsPOwwRo5rnVRd1IXzgcZ.jpg",
+   "network": "Netflix",
+   "runtime": 30,
+   "suggestedAt": "2026-09-25T12:33:52.432Z"
+  }
+ ],
  "dismissed": [
   300507,
   318312,

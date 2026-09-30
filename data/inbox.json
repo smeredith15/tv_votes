@@ -19,6 +19,16 @@
    "network": "STARZ",
    "runtime": 60,
    "suggestedAt": "2026-09-26T12:03:18.810Z"
+  },
+  {
+   "tmdbId": 318918,
+   "title": "LEGO ONE PIECE",
+   "firstAirDate": "2026-09-29",
+   "overview": "The Straw Hats hit the high seas in a two-part LEGO special! Join Luffy, Nami, Usopp and the crew on their epic journey, fully reimagined brick by brick.",
+   "poster": "/hTUHZ337JzqPvRXBQ3lu0GBkOvz.jpg",
+   "network": "Netflix",
+   "runtime": 30,
+   "suggestedAt": "2026-09-30T13:20:26.526Z"
   }
  ],
  "dismissed": [

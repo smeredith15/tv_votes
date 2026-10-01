@@ -29,6 +29,26 @@
    "network": "Netflix",
    "runtime": 30,
    "suggestedAt": "2026-09-30T13:20:26.526Z"
+  },
+  {
+   "tmdbId": 258165,
+   "title": "East of Eden",
+   "firstAirDate": "2026-10-01",
+   "overview": "In the early 1900s, a fiercely independent woman drives a rift between two brothers, igniting a saga that unfolds across two generations.",
+   "poster": "/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
+   "network": "Netflix",
+   "runtime": null,
+   "suggestedAt": "2026-10-01T14:10:37.138Z"
+  },
+  {
+   "tmdbId": 334653,
+   "title": "The Split Up",
+   "firstAirDate": "2026-09-20",
+   "overview": "For Manchester's elite, family firm Kishan Law are the go-to divorce lawyers. But amid the messiness of love, marriage and deception, the personal and professional will collide.",
+   "poster": "/jzuDyQQLpJcNM1l7kKcjgg8QsjE.jpg",
+   "network": "BBC One",
+   "runtime": 60,
+   "suggestedAt": "2026-10-01T14:10:37.138Z"
   }
  ],
  "dismissed": [

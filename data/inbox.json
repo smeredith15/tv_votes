@@ -49,6 +49,36 @@
    "network": "BBC One",
    "runtime": 60,
    "suggestedAt": "2026-10-01T14:10:37.138Z"
+  },
+  {
+   "tmdbId": 284558,
+   "title": "Kill Jackie",
+   "firstAirDate": "2026-10-02",
+   "overview": "Jackie Price has been living a wealthy, luxurious life for the past 20 years after escaping a dangerous past as an international cocaine dealer. But just as life begins to feel a little boring, she discovers that The Seven Demons, a group of the world’s most terrifying hitmen, have been hired to kill her.",
+   "poster": "/xECrN4jpKMhTOxUbnCdiKo7QWdL.jpg",
+   "network": "Prime Video",
+   "runtime": 60,
+   "suggestedAt": "2026-10-03T12:14:09.498Z"
+  },
+  {
+   "tmdbId": 298505,
+   "title": "Coven Academy",
+   "firstAirDate": "2026-10-01",
+   "overview": "In the haunted heart of New Orleans, follow three teenage witches and their dangerously charming warlock peers at an elite magic boarding school where power is currency, secrets are lethal and attraction is a liability. Caught between ancient supernatural wars and forbidden love interests, the coven must decide how far they’re willing to go to protect their city—and themselves.",
+   "poster": "/f4R4YGeMQrXEu6jm3oAbSPeGC3M.jpg",
+   "network": "Freeform",
+   "runtime": 30,
+   "suggestedAt": "2026-10-03T12:14:09.498Z"
+  },
+  {
+   "tmdbId": 298852,
+   "title": "WAR",
+   "firstAirDate": "2026-10-02",
+   "overview": "An anthology series set in the elite world of London law following two rival firms, Cathcarts and Taylor & Byrne, as they face off in a different headline-making legal battle each season.",
+   "poster": "/AtCR5LMuvwepTi1kipKq878Rbuq.jpg",
+   "network": "Sky Atlantic",
+   "runtime": 60,
+   "suggestedAt": "2026-10-03T12:14:09.498Z"
   }
  ],
  "dismissed": [

@@ -82,6 +82,18 @@ export function ballotFor(show: Show, ledger: LedgerId): Ballot {
     return { seasons: [], label: show.seasons.length ? "Fully watched" : "Seasons unknown" };
   }
 
+  // The Friday show runs to the end whatever its length; only the number of
+  // episodes a sitting delivers changes.
+  if (ledger === "weekly") {
+    return {
+      seasons: remaining,
+      label:
+        remaining.length === show.seasons.length
+          ? "Whole series"
+          : `Seasons ${remaining[0]}–${remaining[remaining.length - 1]}`,
+    };
+  }
+
   const oneAtATime = ledger === "mini" || ONE_SEASON_FORMATS.has(show.format) || show.runtime === 60;
   if (oneAtATime) {
     const next = remaining[0];

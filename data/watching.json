@@ -13,5 +13,14 @@
   "scrubs-2026",
   "animal-control",
   "fall-and-rise-of-reggie-dinkins"
- ]
+ ],
+ "progress": {
+  "weekly": {
+   "showId": "wire",
+   "episode": 25,
+   "startedOn": "2026-09-11",
+   "startEpisode": 25,
+   "longWeekends": 0
+  }
+ }
 }

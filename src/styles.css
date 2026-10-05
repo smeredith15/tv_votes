@@ -193,7 +193,8 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
 .now-main { display: flex; flex-direction: column; }
 .now-side { position: sticky; top: 64px; margin-top: 14px; }
 .now-side-list { max-height: 55vh; overflow-y: auto; margin-top: 8px; gap: 2px; }
-.aside-row { gap: 6px; align-items: center; }
+/* The title truncates rather than pushing the remove button onto its own line. */
+.aside-row { gap: 6px; align-items: center; flex-wrap: nowrap; }
 .aside-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 @media (max-width: 820px) {
@@ -220,3 +221,7 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
 }
 .aside-open:disabled { opacity: 1; cursor: default; }
 .now-side .season { padding: 3px 6px; font-size: 12px; }
+
+/* Episode position for the show a ballot is on. */
+.tracker { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+.tracker .meter { height: 5px; }

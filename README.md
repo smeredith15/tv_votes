@@ -13,7 +13,7 @@ whole ledger has a history and there is no server to run or pay for.
 | --- | --- |
 | Half-hour | One series start to finish — or half of it if the run is 6 seasons or more |
 | Hour-long | One season at a time |
-| Weekly | Friday nights: 2 episodes if it's a half-hour show, 1 if it's an hour |
+| Weekly | Friday nights, to the end of the series: 2 episodes if it's a half-hour show, 1 if it's an hour |
 | Mini / anthology | One season at a time |
 
 A show with every aired season ticked off is on no ballot at all — there is
@@ -74,8 +74,14 @@ Locally, `npm run dev` serves it at `localhost:5173` and reads `data/` off disk.
 ## Day to day
 
 - **Now watching** — what you are in the middle of, one card per ballot: the
-  season you are on, where it is streaming, how many episodes are left, and for
-  Friday nights how many Fridays that is. Tick a season off from here. Keeping a
+  episode you are on, where it is streaming, and how much is left. Each pick
+  carries a cursor you move an episode at a time — the season ticks follow it,
+  so the two never disagree.
+
+  The Friday pick also keeps to a schedule. Give it the night the run began and
+  it works out where you should be by now: *"4 behind. By tonight you should be
+  on S03E05 — 4 Fridays since 11/09/2026."* **+ Long weekend** banks a double
+  sitting, worth another week's episodes, as often as you need it. Keeping a
   draw puts that ballot on the show it landed on, and any ballot can also be
   pointed at a show by hand, or cleared. Alongside it, **on the side** is a list
   for whatever you are watching outside the voting altogether.

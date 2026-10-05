@@ -1,5 +1,6 @@
+import { episodesFromSeasons, seasonsCovered } from "./episodes";
 import { insertionIndex } from "./titles";
-import type { Dataset, Draw, InboxItem, LedgerId, Show } from "./types";
+import type { Dataset, Draw, InboxItem, LedgerId, Progress, Show } from "./types";
 
 /**
  * Every change is recorded as an operation rather than applied to a snapshot.
@@ -29,7 +30,36 @@ export type Op =
   /** Add or drop a show from the list watched outside the voting. */
   | { type: "aside"; showId: string; add: boolean }
   /** Forget every refusal, so the suggestions can come round again. */
-  | { type: "clearDismissed" };
+  | { type: "clearDismissed" }
+  /** Move the episode cursor for a ballot's current show. */
+  | { type: "setEpisode"; ledger: LedgerId; showId: string; episode: number }
+  /** Record when a run began, and where it began from. */
+  | { type: "startRun"; ledger: LedgerId; showId: string; startedOn: string; startEpisode: number }
+  /** A weekend worth a double sitting, or one taken back. */
+  | { type: "longWeekend"; ledger: LedgerId; showId: string; delta: number };
+
+/**
+ * Progress for this ballot, starting fresh if it is about another show.
+ *
+ * A first touch inherits the position the season ticks already imply, rather
+ * than starting from nothing — otherwise recording when a run began would
+ * throw away everything watched before it.
+ */
+function progressFor(data: Dataset, ledger: LedgerId, showId: string): Progress {
+  const stored = data.watching.progress?.[ledger];
+  if (stored && stored.showId === showId) return stored;
+
+  const show = findShow(data, showId);
+  const watched = show ? episodesFromSeasons(show) : 0;
+  return { showId, episode: watched, startEpisode: watched, longWeekends: 0 };
+}
+
+function setProgress(data: Dataset, ledger: LedgerId, progress: Progress): void {
+  data.watching = {
+    ...data.watching,
+    progress: { ...data.watching.progress, [ledger]: progress },
+  };
+}
 
 function findShow(data: Dataset, id: string): Show | undefined {
   return data.shows.find((s) => s.id === id);
@@ -116,6 +146,34 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       data.history = data.history.filter((d) => d.id !== op.drawId);
       return data;
     }
+    case "setEpisode": {
+      const show = findShow(data, op.showId);
+      if (!show) return data;
+
+      const episode = Math.max(0, Math.min(op.episode, show.seasons.reduce((n, x) => n + x.episodes, 0)));
+      setProgress(data, op.ledger, { ...progressFor(data, op.ledger, op.showId), episode });
+
+      // The season ticks follow the cursor, so the two never disagree.
+      const covered = new Set(seasonsCovered(show.seasons, episode));
+      show.seasons = show.seasons.map((season) => ({ ...season, watched: covered.has(season.number) }));
+      return data;
+    }
+    case "startRun": {
+      setProgress(data, op.ledger, {
+        ...progressFor(data, op.ledger, op.showId),
+        startedOn: op.startedOn,
+        startEpisode: Math.max(0, op.startEpisode),
+      });
+      return data;
+    }
+    case "longWeekend": {
+      const current = progressFor(data, op.ledger, op.showId);
+      setProgress(data, op.ledger, {
+        ...current,
+        longWeekends: Math.max(0, current.longWeekends + op.delta),
+      });
+      return data;
+    }
     case "clearDismissed": {
       data.dismissed = [];
       return data;
@@ -195,7 +253,11 @@ export function cloneForOps(data: Dataset, ops: Op[]): Dataset {
     inbox: [...data.inbox],
     dismissed: [...data.dismissed],
     plex: { ...data.plex, shows: { ...data.plex.shows } },
-    watching: { picks: { ...data.watching.picks }, asides: [...data.watching.asides] },
+    watching: {
+      picks: { ...data.watching.picks },
+      asides: [...data.watching.asides],
+      progress: { ...data.watching.progress },
+    },
   };
 }
 
@@ -212,6 +274,8 @@ export function compact(ops: Op[]): Op[] {
     else if (op.type === "freePoints") key = `free:${op.showId}:${op.ledger ?? "all"}`;
     else if (op.type === "setPick") key = `pick:${op.ledger}`;
     else if (op.type === "aside") key = `aside:${op.showId}`;
+    else if (op.type === "setEpisode") key = `episode:${op.ledger}`;
+    else if (op.type === "startRun") key = `run:${op.ledger}`;
 
     if (key) keyed.set(key, op);
     else rest.push(op);

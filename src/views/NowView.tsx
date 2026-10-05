@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { LEDGERS, ballotFor, caughtUp, episodesPerWeek, unwatchedSeasons } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, LedgerId, Show } from "../lib/types";
+import { EpisodeTracker } from "./EpisodeTracker";
 import { Poster, ProviderTags, StatusPill } from "./ShowBits";
 
 /**
@@ -144,29 +145,18 @@ function PickBody({
             <strong style={{ fontSize: 22 }}>{episodesLeft}</strong>
             <span className="small muted">
               episode{episodesLeft === 1 ? "" : "s"} to go
-              {ledger === "weekly" && ` · ${weeksLeft} Friday${weeksLeft === 1 ? "" : "s"}`}
+              {ledger === "weekly" && ` · ${weeksLeft} more Friday${weeksLeft === 1 ? "" : "s"}`}
             </span>
           </div>
         )}
       </div>
 
-      {onDeck.length > 0 && (
-        <div className="seasons" style={{ marginTop: 12 }}>
-          {onDeck.map((season) => (
-            <button
-              key={season.number}
-              className="season ballot"
-              onClick={() =>
-                store.dispatch({ type: "season", showId: show.id, season: season.number, watched: true })
-              }
-              title="Mark this season watched"
-            >
-              <span>○</span>
-              <span>S{season.number}</span>
-              <span className="muted">{season.episodes} ep</span>
-            </button>
-          ))}
-        </div>
+      <EpisodeTracker store={store} ledger={ledger} show={show} stored={data.watching.progress?.[ledger]} />
+
+      {onDeck.length === 0 && !nextUp && show.seasons.length === 0 && (
+        <p className="small muted" style={{ marginBottom: 0 }}>
+          No season list yet — the nightly refresh fills these in from TMDB.
+        </p>
       )}
 
       {show.status === "returning" && (

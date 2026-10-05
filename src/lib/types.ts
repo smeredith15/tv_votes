@@ -118,12 +118,28 @@ export interface PlexLibrary {
   shows: Record<string, number[]>;
 }
 
+/** How far into the current pick you are, and what the schedule expects. */
+export interface Progress {
+  /** Which show this is about; progress resets when the pick changes. */
+  showId: string;
+  /** Episodes watched, counted from the first episode of the first season. */
+  episode: number;
+  /** The night the run began. Left out until someone sets it. */
+  startedOn?: string;
+  /** Where the run began, so a show picked up mid-way paces correctly. */
+  startEpisode: number;
+  /** Weekends that were worth a double sitting. */
+  longWeekends: number;
+}
+
 /** What is being watched right now, and what is queued outside the voting. */
 export interface Watching {
   /** The show each ballot is on. Set by keeping a draw, or chosen by hand. */
   picks: Partial<Record<LedgerId, string | null>>;
   /** Shows being watched outside the voting framework, in the order added. */
   asides: string[];
+  /** Episode-level progress for the show each ballot is on. */
+  progress?: Partial<Record<LedgerId, Progress>>;
 }
 
 export interface Dataset {

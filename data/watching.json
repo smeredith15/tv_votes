@@ -21,6 +21,18 @@
    "startedOn": "2026-09-11",
    "startEpisode": 25,
    "longWeekends": 0
+  },
+  "half": {
+   "showId": "entourage",
+   "episode": 45,
+   "startEpisode": 42,
+   "longWeekends": 0
+  },
+  "mini": {
+   "showId": "crown",
+   "episode": 2,
+   "startEpisode": 0,
+   "longWeekends": 0
   }
  }
 }

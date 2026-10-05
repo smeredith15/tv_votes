@@ -1,92 +1,16 @@
 {
- "pending": [
-  {
-   "tmdbId": 305357,
-   "title": "A Different World",
-   "firstAirDate": "2026-09-24",
-   "overview": "Deborah Wayne enters her freshman year at her parents' HBCU alma mater and finds their shadow difficult to escape. She sets out to build her own legacy – while having the time of her life – alongside a whole new generation of Hillman’s best and brightest.",
-   "poster": "/mmE4RNbsPOwwRo5rnVRd1IXzgcZ.jpg",
-   "network": "Netflix",
-   "runtime": 30,
-   "suggestedAt": "2026-09-25T12:33:52.432Z"
-  },
-  {
-   "tmdbId": 292742,
-   "title": "S.W.A.T. Exiles",
-   "firstAirDate": "2026-09-25",
-   "overview": "After a high-profile mission goes sideways, Daniel 'Hondo' Harrelson is pulled out of forced retirement to lead a last-chance experimental SWAT unit made up of untested, unpredictable young recruits. Hondo must bridge a generational divide, navigate clashing personalities, and turn a squad of outsiders into a team capable of protecting the city and saving the program that made him who he is.",
-   "poster": "/pPiEujhVa2MBSowmvnNWqEzxH0x.jpg",
-   "network": "STARZ",
-   "runtime": 60,
-   "suggestedAt": "2026-09-26T12:03:18.810Z"
-  },
-  {
-   "tmdbId": 318918,
-   "title": "LEGO ONE PIECE",
-   "firstAirDate": "2026-09-29",
-   "overview": "The Straw Hats hit the high seas in a two-part LEGO special! Join Luffy, Nami, Usopp and the crew on their epic journey, fully reimagined brick by brick.",
-   "poster": "/hTUHZ337JzqPvRXBQ3lu0GBkOvz.jpg",
-   "network": "Netflix",
-   "runtime": 30,
-   "suggestedAt": "2026-09-30T13:20:26.526Z"
-  },
-  {
-   "tmdbId": 258165,
-   "title": "East of Eden",
-   "firstAirDate": "2026-10-01",
-   "overview": "In the early 1900s, a fiercely independent woman drives a rift between two brothers, igniting a saga that unfolds across two generations.",
-   "poster": "/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
-   "network": "Netflix",
-   "runtime": null,
-   "suggestedAt": "2026-10-01T14:10:37.138Z"
-  },
-  {
-   "tmdbId": 334653,
-   "title": "The Split Up",
-   "firstAirDate": "2026-09-20",
-   "overview": "For Manchester's elite, family firm Kishan Law are the go-to divorce lawyers. But amid the messiness of love, marriage and deception, the personal and professional will collide.",
-   "poster": "/jzuDyQQLpJcNM1l7kKcjgg8QsjE.jpg",
-   "network": "BBC One",
-   "runtime": 60,
-   "suggestedAt": "2026-10-01T14:10:37.138Z"
-  },
-  {
-   "tmdbId": 284558,
-   "title": "Kill Jackie",
-   "firstAirDate": "2026-10-02",
-   "overview": "Jackie Price has been living a wealthy, luxurious life for the past 20 years after escaping a dangerous past as an international cocaine dealer. But just as life begins to feel a little boring, she discovers that The Seven Demons, a group of the world’s most terrifying hitmen, have been hired to kill her.",
-   "poster": "/xECrN4jpKMhTOxUbnCdiKo7QWdL.jpg",
-   "network": "Prime Video",
-   "runtime": 60,
-   "suggestedAt": "2026-10-03T12:14:09.498Z"
-  },
-  {
-   "tmdbId": 298505,
-   "title": "Coven Academy",
-   "firstAirDate": "2026-10-01",
-   "overview": "In the haunted heart of New Orleans, follow three teenage witches and their dangerously charming warlock peers at an elite magic boarding school where power is currency, secrets are lethal and attraction is a liability. Caught between ancient supernatural wars and forbidden love interests, the coven must decide how far they’re willing to go to protect their city—and themselves.",
-   "poster": "/f4R4YGeMQrXEu6jm3oAbSPeGC3M.jpg",
-   "network": "Freeform",
-   "runtime": 30,
-   "suggestedAt": "2026-10-03T12:14:09.498Z"
-  },
-  {
-   "tmdbId": 298852,
-   "title": "WAR",
-   "firstAirDate": "2026-10-02",
-   "overview": "An anthology series set in the elite world of London law following two rival firms, Cathcarts and Taylor & Byrne, as they face off in a different headline-making legal battle each season.",
-   "poster": "/AtCR5LMuvwepTi1kipKq878Rbuq.jpg",
-   "network": "Sky Atlantic",
-   "runtime": 60,
-   "suggestedAt": "2026-10-03T12:14:09.498Z"
-  }
- ],
+ "pending": [],
  "dismissed": [
   300507,
   318312,
   332657,
   252105,
   319851,
-  321958
+  321958,
+  305357,
+  292742,
+  318918,
+  298505,
+  298852
  ]
 }

@@ -24964,6 +24964,39 @@
    "nextAirDate": null
   },
   {
+   "id": "east-of-eden",
+   "title": "East of Eden",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 258165,
+   "poster": "/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-05T15:57:54.022Z"
+  },
+  {
    "id": "eastbound-down",
    "title": "Eastbound & Down",
    "runtime": 30,
@@ -45229,6 +45262,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "kill-jackie",
+   "title": "Kill Jackie",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 284558,
+   "poster": "/xECrN4jpKMhTOxUbnCdiKo7QWdL.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-05T15:58:05.362Z"
   },
   {
    "id": "killer-inside-the-mind-of-aaron-hernandez",
@@ -81793,6 +81859,39 @@
    "nextAirDate": null
   },
   {
+   "id": "split-up",
+   "title": "The Split Up",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 334653,
+   "poster": "/jzuDyQQLpJcNM1l7kKcjgg8QsjE.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-05T15:58:00.879Z"
+  },
+  {
    "id": "splitting-up-together",
    "title": "Splitting Up Together",
    "runtime": 30,
@@ -96982,21 +97081,21 @@
      "name": "Season 3",
      "episodes": 12,
      "airDate": "2004-09-19",
-     "watched": true
+     "watched": false
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
      "airDate": "2006-09-10",
-     "watched": true
+     "watched": false
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
      "airDate": "2008-01-06",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {

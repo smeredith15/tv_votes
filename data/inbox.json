@@ -1,5 +1,16 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 231801,
+   "title": "GET JIRO",
+   "firstAirDate": "2026-10-04",
+   "overview": "In a post-apocalyptic, near-future Los Angeles where culinary culture reigns supreme, the world's most powerful figures are chefs, and food is both currency and a demarcation of class, the mysterious sushi chef Jiro sets out on a quest for vengeance.",
+   "poster": "/li3TH09EF6JyHPVoTvub4nPOfwU.jpg",
+   "network": "Adult Swim",
+   "runtime": 30,
+   "suggestedAt": "2026-10-06T13:55:27.354Z"
+  }
+ ],
  "dismissed": [
   300507,
   318312,

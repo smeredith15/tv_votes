@@ -29,6 +29,26 @@
    "network": "Netflix",
    "runtime": null,
    "suggestedAt": "2026-10-08T14:22:45.220Z"
+  },
+  {
+   "tmdbId": 334888,
+   "title": "Africa Earth's Wild Home",
+   "firstAirDate": "2026-10-02",
+   "overview": "African wildlife and landscapes is brought to the screen like never before, using the latest technology to tell the most extraordinary stories from the continent and cutting-edge CGI to unearth the deep history and forces that shaped Africa's natural worlds.",
+   "poster": "/wik5FpIY4XvVR29sZGnqseLGKN8.jpg",
+   "network": "National Geographic",
+   "runtime": 60,
+   "suggestedAt": "2026-10-09T14:07:51.775Z"
+  },
+  {
+   "tmdbId": 319800,
+   "title": "NCIS: New York",
+   "firstAirDate": "2026-10-06",
+   "overview": "Special Agent Sam Hanna returns to his hometown of New York City to the NCIS field office and partners with a roguish agent, Nick Schaeffer, to help lead a new team as they are tasked with high-stakes missions to defend one of the most vital cities and ports in the world.",
+   "poster": "/ifmi1Rr9v2qckSsxhNiQIVLE51p.jpg",
+   "network": "CBS",
+   "runtime": 60,
+   "suggestedAt": "2026-10-09T14:07:51.775Z"
   }
  ],
  "dismissed": [

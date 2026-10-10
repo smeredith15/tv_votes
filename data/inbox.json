@@ -49,6 +49,36 @@
    "network": "CBS",
    "runtime": 60,
    "suggestedAt": "2026-10-09T14:07:51.775Z"
+  },
+  {
+   "tmdbId": 284833,
+   "title": "Avatar: Seven Havens",
+   "firstAirDate": "2026-10-09",
+   "overview": "In a world shattered by a devastating cataclysm, a young Earthbender discovers she's the new Avatar after Korra. But in this dangerous era, that title marks her as humanity's destroyer, not its savior. Hunted by both human and spirit enemies, she and her long-lost twin must uncover their mysterious origins and save the Seven Havens before civilization's last strongholds collapse.",
+   "poster": "/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
+   "network": "Paramount+",
+   "runtime": 30,
+   "suggestedAt": "2026-10-10T13:17:20.635Z"
+  },
+  {
+   "tmdbId": 303630,
+   "title": "Cupertino",
+   "firstAirDate": "2026-10-08",
+   "overview": "A scrappy lawyer takes on a powerful tech giant in a high-stakes legal battle, navigating the cutthroat world of Silicon Valley while fighting for justice and the little guy's rights.",
+   "poster": "/70AhJpOqU2oKyQF2paJA764CSje.jpg",
+   "network": "CBS",
+   "runtime": 60,
+   "suggestedAt": "2026-10-10T13:17:20.635Z"
+  },
+  {
+   "tmdbId": 334151,
+   "title": "Pierre",
+   "firstAirDate": "2026-10-05",
+   "overview": "West London duty solicitor Pierre is a force of nature: charming and funny, a glamorous character in an unglamorous profession, juggling the pressures of his job, a fragile personal life and just keeping his head above water financially.",
+   "poster": "/lj7oMz6fvrGPRuJ2pv5S4Io60kZ.jpg",
+   "network": "Channel 4",
+   "runtime": null,
+   "suggestedAt": "2026-10-10T13:17:20.635Z"
   }
  ],
  "dismissed": [

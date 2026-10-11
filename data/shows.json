@@ -2211,6 +2211,39 @@
    "nextAirDate": null
   },
   {
+   "id": "africa-earth-s-wild-home",
+   "title": "Africa Earth's Wild Home",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 334888,
+   "poster": "/wik5FpIY4XvVR29sZGnqseLGKN8.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-11T23:44:23.547Z"
+  },
+  {
    "id": "after-life",
    "title": "After Life",
    "runtime": 30,
@@ -8579,6 +8612,39 @@
    "nextAirDate": null
   },
   {
+   "id": "below",
+   "title": "Below",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 285322,
+   "poster": "/wQcG0qZGRYAwfg3rfLCR1RwrBDZ.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-11T23:44:21.250Z"
+  },
+  {
    "id": "bernie-mac-show",
    "title": "The Bernie Mac Show",
    "runtime": 30,
@@ -14641,6 +14707,39 @@
    "nextAirDate": null
   },
   {
+   "id": "carrie",
+   "title": "Carrie",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 288673,
+   "poster": "/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-11T23:44:17.324Z"
+  },
+  {
    "id": "casey-anthony-an-american-murder-mystery",
    "title": "Casey Anthony: An American Murder Mystery",
    "runtime": 60,
@@ -19061,6 +19160,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "cupertino",
+   "title": "Cupertino",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 303630,
+   "poster": "/70AhJpOqU2oKyQF2paJA764CSje.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-11T23:44:27.833Z"
   },
   {
    "id": "curb-your-enthusiasm",

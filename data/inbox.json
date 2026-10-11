@@ -1,86 +1,5 @@
 {
- "pending": [
-  {
-   "tmdbId": 231801,
-   "title": "GET JIRO",
-   "firstAirDate": "2026-10-04",
-   "overview": "In a post-apocalyptic, near-future Los Angeles where culinary culture reigns supreme, the world's most powerful figures are chefs, and food is both currency and a demarcation of class, the mysterious sushi chef Jiro sets out on a quest for vengeance.",
-   "poster": "/li3TH09EF6JyHPVoTvub4nPOfwU.jpg",
-   "network": "Adult Swim",
-   "runtime": 30,
-   "suggestedAt": "2026-10-06T13:55:27.354Z"
-  },
-  {
-   "tmdbId": 288673,
-   "title": "Carrie",
-   "firstAirDate": "2026-10-07",
-   "overview": "Misfit teenager Carrie White has spent her life in seclusion with her domineering mother, Margaret. After her father's sudden death, Carrie finds herself contending with the challenges of attending public high school, a bullying scandal, and the emergence of mysterious telekinetic powers.",
-   "poster": "/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
-   "network": "Prime Video",
-   "runtime": null,
-   "suggestedAt": "2026-10-07T14:12:39.737Z"
-  },
-  {
-   "tmdbId": 285322,
-   "title": "Below",
-   "firstAirDate": "2026-10-08",
-   "overview": "When a mysterious sea creature terrorizes a small Newfoundland town, a hard-bitten fisherman and his family fight to protect their close-knit community.",
-   "poster": "/wQcG0qZGRYAwfg3rfLCR1RwrBDZ.jpg",
-   "network": "Netflix",
-   "runtime": null,
-   "suggestedAt": "2026-10-08T14:22:45.220Z"
-  },
-  {
-   "tmdbId": 334888,
-   "title": "Africa Earth's Wild Home",
-   "firstAirDate": "2026-10-02",
-   "overview": "African wildlife and landscapes is brought to the screen like never before, using the latest technology to tell the most extraordinary stories from the continent and cutting-edge CGI to unearth the deep history and forces that shaped Africa's natural worlds.",
-   "poster": "/wik5FpIY4XvVR29sZGnqseLGKN8.jpg",
-   "network": "National Geographic",
-   "runtime": 60,
-   "suggestedAt": "2026-10-09T14:07:51.775Z"
-  },
-  {
-   "tmdbId": 319800,
-   "title": "NCIS: New York",
-   "firstAirDate": "2026-10-06",
-   "overview": "Special Agent Sam Hanna returns to his hometown of New York City to the NCIS field office and partners with a roguish agent, Nick Schaeffer, to help lead a new team as they are tasked with high-stakes missions to defend one of the most vital cities and ports in the world.",
-   "poster": "/ifmi1Rr9v2qckSsxhNiQIVLE51p.jpg",
-   "network": "CBS",
-   "runtime": 60,
-   "suggestedAt": "2026-10-09T14:07:51.775Z"
-  },
-  {
-   "tmdbId": 284833,
-   "title": "Avatar: Seven Havens",
-   "firstAirDate": "2026-10-09",
-   "overview": "In a world shattered by a devastating cataclysm, a young Earthbender discovers she's the new Avatar after Korra. But in this dangerous era, that title marks her as humanity's destroyer, not its savior. Hunted by both human and spirit enemies, she and her long-lost twin must uncover their mysterious origins and save the Seven Havens before civilization's last strongholds collapse.",
-   "poster": "/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
-   "network": "Paramount+",
-   "runtime": 30,
-   "suggestedAt": "2026-10-10T13:17:20.635Z"
-  },
-  {
-   "tmdbId": 303630,
-   "title": "Cupertino",
-   "firstAirDate": "2026-10-08",
-   "overview": "A scrappy lawyer takes on a powerful tech giant in a high-stakes legal battle, navigating the cutthroat world of Silicon Valley while fighting for justice and the little guy's rights.",
-   "poster": "/70AhJpOqU2oKyQF2paJA764CSje.jpg",
-   "network": "CBS",
-   "runtime": 60,
-   "suggestedAt": "2026-10-10T13:17:20.635Z"
-  },
-  {
-   "tmdbId": 334151,
-   "title": "Pierre",
-   "firstAirDate": "2026-10-05",
-   "overview": "West London duty solicitor Pierre is a force of nature: charming and funny, a glamorous character in an unglamorous profession, juggling the pressures of his job, a fragile personal life and just keeping his head above water financially.",
-   "poster": "/lj7oMz6fvrGPRuJ2pv5S4Io60kZ.jpg",
-   "network": "Channel 4",
-   "runtime": null,
-   "suggestedAt": "2026-10-10T13:17:20.635Z"
-  }
- ],
+ "pending": [],
  "dismissed": [
   300507,
   318312,
@@ -92,6 +11,10 @@
   292742,
   318918,
   298505,
-  298852
+  298852,
+  231801,
+  319800,
+  284833,
+  334151
  ]
 }

@@ -5861,7 +5861,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -6429,7 +6429,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -8762,7 +8762,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -8934,7 +8934,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -9044,7 +9044,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -9173,7 +9173,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -9474,7 +9474,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -9585,7 +9585,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -9785,7 +9785,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -9832,7 +9832,7 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -9954,11 +9954,6 @@
    "poster": "/ga1zJ6UejPIfyL8BA22pK6dqsC8.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Netflix",
      "type": "flatrate",
      "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
@@ -9967,6 +9962,11 @@
      "name": "Disney Plus",
      "type": "flatrate",
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Philo",
@@ -9999,7 +9999,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -10120,7 +10120,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -10203,7 +10203,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -10291,7 +10291,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -10511,7 +10511,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -10623,7 +10623,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -10935,7 +10935,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11021,7 +11021,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11353,7 +11353,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11420,7 +11420,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11472,7 +11472,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11559,7 +11559,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11608,14 +11608,14 @@
    "poster": "/eyTu5c8LniVciRZIOSHTvvkkgJa.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Peacock Premium",
@@ -11653,7 +11653,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11782,7 +11782,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11854,7 +11854,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -11960,7 +11960,7 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12054,7 +12054,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12116,7 +12116,7 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12220,7 +12220,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12330,7 +12330,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12454,7 +12454,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12535,7 +12535,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12587,7 +12587,7 @@
      "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12659,7 +12659,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12847,7 +12847,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -12996,7 +12996,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -13102,7 +13102,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -13242,7 +13242,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -13345,7 +13345,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -13499,7 +13499,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -13586,7 +13586,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -13693,7 +13693,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -13953,7 +13953,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14067,7 +14067,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14289,7 +14289,7 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14341,7 +14341,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14418,7 +14418,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14480,7 +14480,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -14523,7 +14523,7 @@
      "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14652,14 +14652,14 @@
    "poster": "/BPwAlIL2IrWaq2B9NWm4OMd9hJ.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Disney Plus",
      "type": "flatrate",
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Philo",
@@ -14717,7 +14717,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14759,14 +14759,14 @@
    "poster": "/diXBeMzvfJb2iJg3G0kCUaMCzEc.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Philo",
@@ -14804,7 +14804,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14895,14 +14895,14 @@
    "poster": "/6dnUpv9ghx84pgxlMOb4uuJrWDs.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Netflix",
      "type": "flatrate",
      "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Netflix Standard with Ads",
@@ -14930,7 +14930,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -14999,7 +14999,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -15087,7 +15087,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -15203,7 +15203,7 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -15347,7 +15347,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -15451,7 +15451,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -15507,14 +15507,14 @@
    "poster": "/z4bPJ1BWU2EtV69NII2GVvsugQ2.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Peacock Premium",
@@ -15562,7 +15562,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -15904,7 +15904,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -15966,7 +15966,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16014,7 +16014,7 @@
    "tmdbId": 321777,
    "poster": "/jVt8wyiVxmqozjTcNIIK64REp2H.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16235,7 +16235,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16308,7 +16308,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16349,7 +16349,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -16526,7 +16526,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16567,7 +16567,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 15,
-     "airDate": "2024-07-17",
+     "airDate": "2024-07-18",
      "watched": false
     }
    ],
@@ -16680,7 +16680,7 @@
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16819,7 +16819,7 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16909,7 +16909,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -16986,7 +16986,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17052,7 +17052,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17204,7 +17204,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17374,7 +17374,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17426,7 +17426,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17488,7 +17488,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17612,7 +17612,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17674,7 +17674,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17761,7 +17761,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17842,7 +17842,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -17994,7 +17994,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -18007,7 +18007,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 16,
-     "airDate": "2011-06-07",
+     "airDate": "2011-06-06",
      "watched": false
     },
     {
@@ -18021,14 +18021,14 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 16,
-     "airDate": "2013-07-16",
+     "airDate": "2013-07-15",
      "watched": false
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 16,
-     "airDate": "2014-06-24",
+     "airDate": "2014-06-23",
      "watched": false
     }
    ],
@@ -18142,7 +18142,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -18183,7 +18183,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -18323,7 +18323,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -18634,7 +18634,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -18686,7 +18686,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -18789,7 +18789,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -18893,7 +18893,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -19032,7 +19032,7 @@
    "tmdbId": 65867,
    "poster": "/8ZNQiTu0YQaYotPmGztgm8p7cqC.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -19274,7 +19274,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -19528,7 +19528,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19614,14 +19614,14 @@
    "poster": "/bowEbW8Q3Oc02BvHBKTL5gWv9Nx.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Amazon Prime Video with Ads",
@@ -19654,7 +19654,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -19744,7 +19744,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -19838,7 +19838,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -20037,7 +20037,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20121,7 +20121,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20208,7 +20208,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20299,7 +20299,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20392,7 +20392,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20453,16 +20453,6 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
-     "name": "Netflix",
-     "type": "flatrate",
-     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
-    },
-    {
-     "name": "Netflix Standard with Ads",
-     "type": "flatrate",
-     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
-    },
-    {
      "name": "Tubi TV",
      "type": "ads",
      "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
@@ -20488,7 +20478,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20595,7 +20585,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20689,7 +20679,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20879,7 +20869,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -20965,7 +20955,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21038,7 +21028,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21090,7 +21080,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21131,7 +21121,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -21237,7 +21227,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21289,7 +21279,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21338,17 +21328,17 @@
    "poster": "/zsjiNaXqbWUCKFyU72N5HpALcUu.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Disney Plus",
      "type": "flatrate",
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21466,7 +21456,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21525,7 +21515,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21611,7 +21601,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21804,7 +21794,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -21985,7 +21975,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22071,7 +22061,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22123,7 +22113,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22190,7 +22180,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22277,7 +22267,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22482,7 +22472,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22534,7 +22524,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22615,7 +22605,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22784,7 +22774,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22853,7 +22843,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -22912,7 +22902,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23046,7 +23036,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23157,7 +23147,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23360,7 +23350,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23546,7 +23536,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23692,7 +23682,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23754,7 +23744,7 @@
    "tmdbId": 290209,
    "poster": "/iKFLpeZa1oGczjNDwVVrZO21gGc.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23796,17 +23786,17 @@
    "poster": "/qW8Gpddy29faTcD7VuyKjwLXbKU.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Disney Plus",
      "type": "flatrate",
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -23970,7 +23960,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24077,7 +24067,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24144,7 +24134,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24243,7 +24233,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24399,17 +24389,17 @@
    "poster": "/9SkOJF92FE0H1UXeOgLz7lAnoMb.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Disney Plus",
      "type": "flatrate",
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24563,7 +24553,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24665,7 +24655,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24738,7 +24728,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24797,7 +24787,7 @@
      "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24839,17 +24829,17 @@
    "poster": "/xaKb3cTh8mT6fgLSXuqo4JoS0dU.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Disney Plus",
      "type": "flatrate",
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -24926,6 +24916,11 @@
      "logo": "/8IqJpnC729OSsHaspCnj8CwRZF0.png"
     },
     {
+     "name": "WeTV",
+     "type": "flatrate",
+     "logo": "/wonfCSSdI55EfVFlWJyyQZIlYx7.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -24946,7 +24941,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25147,7 +25142,7 @@
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25302,7 +25297,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25343,7 +25338,7 @@
    "tmdbId": 31277,
    "poster": "/eW18jzBKxHQNcPRvxDv86wUss9I.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25385,14 +25380,14 @@
    "poster": "/q9dObe29W4bDpgzUfOOH3ZnzDbR.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Amazon Prime Video with Ads",
@@ -25425,7 +25420,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25754,7 +25749,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25861,7 +25856,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25945,7 +25940,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -25997,7 +25992,7 @@
      "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26049,7 +26044,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26116,7 +26111,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26195,7 +26190,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26321,7 +26316,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26471,7 +26466,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26548,7 +26543,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26675,7 +26670,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26716,7 +26711,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -26779,7 +26774,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -26835,14 +26830,14 @@
    "poster": "/zX0xZnyReJxtGAqDOS3WcsgpOgx.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Paramount Plus Premium",
@@ -26910,7 +26905,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -27038,7 +27033,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -27181,7 +27176,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -27254,7 +27249,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -27316,7 +27311,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -27395,7 +27390,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -27552,7 +27547,7 @@
      "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -27956,7 +27951,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28036,7 +28031,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28182,7 +28177,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28376,11 +28371,6 @@
    "poster": "/fz0Yp6Kw5uoKeYM3Dx32gIXZayz.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Netflix",
      "type": "flatrate",
      "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
@@ -28394,6 +28384,11 @@
      "name": "Disney Plus",
      "type": "flatrate",
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Philo",
@@ -28461,7 +28456,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28513,7 +28508,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28635,6 +28630,11 @@
      "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
     },
     {
+     "name": "Xumo Play",
+     "type": "ads",
+     "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -28655,7 +28655,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28796,7 +28796,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28848,7 +28848,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28890,14 +28890,14 @@
    "poster": "/vZcKsy4sGAvWMVqLluwYuoi11Kj.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Amazon Prime Video with Ads",
@@ -28925,7 +28925,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -28977,7 +28977,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29072,7 +29072,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29128,7 +29128,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -29171,7 +29171,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29223,7 +29223,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29292,7 +29292,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29470,7 +29470,7 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29542,7 +29542,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29621,7 +29621,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29690,7 +29690,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29777,7 +29777,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -29864,7 +29864,7 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30033,7 +30033,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30107,7 +30107,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30274,14 +30274,14 @@
    "poster": "/gYAb6GCVEFsU9hzMCG5rxaxoIv3.jpg",
    "providers": [
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "Amazon Prime Video",
      "type": "flatrate",
      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
      "name": "Paramount Plus Premium",
@@ -30339,7 +30339,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30501,7 +30501,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30563,7 +30563,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30665,7 +30665,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30797,7 +30797,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30892,7 +30892,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -30974,7 +30974,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -31089,7 +31089,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-04T13:02:25.412Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -31137,7 +31137,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32746,7 +32746,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32979,7 +32979,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -38347,7 +38347,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -44389,7 +44389,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -44585,7 +44585,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -50328,7 +50328,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -50960,7 +50960,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -52026,7 +52026,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52481,7 +52481,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52893,7 +52893,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -52925,7 +52925,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54420,7 +54420,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54597,7 +54597,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55478,7 +55478,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -56268,7 +56268,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -56300,7 +56300,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -56391,7 +56391,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -58272,7 +58272,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -59925,7 +59925,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -60024,7 +60024,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -60401,7 +60401,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -62079,7 +62079,7 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -63200,7 +63200,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -66762,7 +66762,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -68248,7 +68248,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -69001,7 +69001,7 @@
      "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -69381,7 +69381,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -70617,7 +70617,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -71729,7 +71729,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -77695,7 +77695,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -78963,7 +78963,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -81246,7 +81246,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -82560,7 +82560,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -82592,7 +82592,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -83111,7 +83111,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -83255,7 +83255,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -86605,7 +86605,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -86781,7 +86781,7 @@
     }
    },
    "addedAt": "2026-09-11T00:00:00.000Z",
-   "nextAirDate": "2026-10-08"
+   "nextAirDate": "2026-10-15"
   },
   {
    "id": "tattooist-of-auschwitz",
@@ -88662,7 +88662,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -90806,7 +90806,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -92036,7 +92036,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -92272,7 +92272,7 @@
      "logo": "/mkikn40hHk3K3Xis19dnzyRnHBB.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -94097,7 +94097,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -94323,7 +94323,7 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -94605,7 +94605,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -94674,7 +94674,7 @@
    "tmdbId": 80475,
    "poster": "/eaGpAP4bKMjVlMIoGqKzMRJ2OIG.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -95858,7 +95858,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -96492,7 +96492,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -96963,7 +96963,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -97337,7 +97337,7 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -98476,7 +98476,7 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -99125,7 +99125,7 @@
      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -99434,7 +99434,7 @@
      "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
     }
    ],
-   "providersUpdated": "2026-10-07T14:12:24.533Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [
     {
      "number": 1,
@@ -99531,7 +99531,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-10-10T13:17:06.000Z",
+   "providersUpdated": "2026-10-11T13:46:01.972Z",
    "seasons": [],
    "votes": {
     "weekly": {

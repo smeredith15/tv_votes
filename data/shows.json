@@ -32640,21 +32640,21 @@
      "name": "Picasso",
      "episodes": 10,
      "airDate": "2018-04-24",
-     "watched": true
+     "watched": false
     },
     {
      "number": 3,
      "name": "Aretha",
      "episodes": 8,
      "airDate": "2021-03-21",
-     "watched": true
+     "watched": false
     },
     {
      "number": 4,
      "name": "MLK/X",
      "episodes": 8,
      "airDate": "2024-02-01",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {

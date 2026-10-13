@@ -52728,7 +52728,7 @@
      "shelby": 0
     },
     "hour": {
-     "scotty": 1,
+     "scotty": 0,
      "shelby": 0
     },
     "half": {
@@ -57794,7 +57794,7 @@
      "name": "Season 2",
      "episodes": 9,
      "airDate": "2019-08-16",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -60001,7 +60001,7 @@
      "name": "season_4.0",
      "episodes": 13,
      "airDate": "2019-10-06",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -95287,14 +95287,14 @@
      "name": "Season Three: The New World",
      "episodes": 8,
      "airDate": "2020-03-15",
-     "watched": true
+     "watched": false
     },
     {
      "number": 4,
      "name": "Season Four: The Choice",
      "episodes": 8,
      "airDate": "2022-06-26",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {
@@ -96193,7 +96193,7 @@
      "shelby": 0
     },
     "hour": {
-     "scotty": 13,
+     "scotty": 0,
      "shelby": 0
     },
     "half": {
@@ -98898,28 +98898,28 @@
      "name": "Season 2",
      "episodes": 10,
      "airDate": "2019-06-19",
-     "watched": true
+     "watched": false
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
      "airDate": "2020-06-21",
-     "watched": true
+     "watched": false
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
      "airDate": "2021-11-07",
-     "watched": true
+     "watched": false
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 14,
      "airDate": "2022-11-13",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {

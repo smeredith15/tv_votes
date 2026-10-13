@@ -6945,7 +6945,7 @@
      "shelby": 0
     },
     "mini": {
-     "scotty": 10,
+     "scotty": 0,
      "shelby": 0
     }
    },
@@ -87890,7 +87890,7 @@
      "name": "Infamy",
      "episodes": 10,
      "airDate": "2019-08-12",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {

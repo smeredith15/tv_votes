@@ -40,7 +40,8 @@ export function App() {
     window.addEventListener("focus", onFocus);
     return () => window.removeEventListener("focus", onFocus);
   }, [checkVersion]);
-  const { data, needsToken, pending, sync, syncing, error } = store;
+  const { canUndo, data, discard, needsToken, pending, sync, syncing, undo, error } = store;
+  const [confirmDiscard, setConfirmDiscard] = useState(false);
 
   return (
     <div className="app">
@@ -55,6 +56,30 @@ export function App() {
           ))}
         </nav>
         <div className="spacer" />
+        {canUndo && (
+          <button onClick={undo} disabled={syncing} title="Take back the last change">
+            Undo
+          </button>
+        )}
+        {pending > 0 &&
+          (confirmDiscard ? (
+            <>
+              <span className="small muted">Drop all {pending}?</span>
+              <button
+                onClick={() => {
+                  discard();
+                  setConfirmDiscard(false);
+                }}
+              >
+                Yes, discard
+              </button>
+              <button onClick={() => setConfirmDiscard(false)}>Keep</button>
+            </>
+          ) : (
+            <button onClick={() => setConfirmDiscard(true)} disabled={syncing}>
+              Discard
+            </button>
+          ))}
         {pending > 0 && (
           <button className="primary" onClick={() => void sync()} disabled={syncing}>
             {syncing ? "Saving…" : `Save ${pending} change${pending === 1 ? "" : "s"}`}

@@ -199,6 +199,15 @@ A hard refresh (Ctrl/Cmd-Shift-R) does the same thing by hand. The service
 worker does not get in the way of this: `version.json` is left to reach the
 network, and the reload pulls the new bundle even when the worker is in charge.
 
+## Taking something back
+
+Nothing reaches the repo until *Save*, so an unsaved mistake is only ever on
+screen. **Undo** takes back the last change, however many shows it touched —
+one press of *Take back all* is one press of undo. **Discard** drops everything
+unsaved and asks first, and is itself undoable while the tab stays open.
+
+Once saved it is a commit like any other, and git is what undoes it.
+
 ## Fairness
 
 Each draw records the seed, the roll, the total ticket count, both allocations

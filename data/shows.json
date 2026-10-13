@@ -30794,7 +30794,7 @@
      "shelby": 0
     },
     "hour": {
-     "scotty": 2,
+     "scotty": 0,
      "shelby": 0
     },
     "half": {
@@ -45039,42 +45039,42 @@
      "name": "Season 1",
      "episodes": 13,
      "airDate": "2010-03-16",
-     "watched": true
+     "watched": false
     },
     {
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
      "airDate": "2011-02-09",
-     "watched": true
+     "watched": false
     },
     {
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
      "airDate": "2012-01-17",
-     "watched": true
+     "watched": false
     },
     {
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
      "airDate": "2013-01-08",
-     "watched": true
+     "watched": false
     },
     {
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
      "airDate": "2014-01-07",
-     "watched": true
+     "watched": false
     },
     {
      "number": 6,
      "name": "Season 6",
      "episodes": 13,
      "airDate": "2015-01-20",
-     "watched": true
+     "watched": false
     }
    ],
    "votes": {

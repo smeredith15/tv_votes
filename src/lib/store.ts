@@ -60,6 +60,15 @@ async function fetchFromRepo(repo: RepoConfig): Promise<Dataset> {
   return datasetFrom(snapshot.files);
 }
 
+/** The unsaved queue, with enough history to take back a wrong press. */
+interface Queue {
+  pending: Op[];
+  undo: Op[][];
+}
+
+/** Actions remembered. Enough to climb out of a mistake, not a whole session. */
+const UNDO_DEPTH = 30;
+
 export interface Store {
   data: Dataset | null;
   settings: Settings;
@@ -67,6 +76,11 @@ export interface Store {
   /** Queue a change: applied on screen at once, pushed to the repo on sync. */
   dispatch: (...ops: Op[]) => void;
   pending: number;
+  /** Take back the last change made, while it is still unsaved. */
+  undo: () => void;
+  canUndo: boolean;
+  /** Drop every unsaved change, leaving what the repo holds. */
+  discard: () => void;
   sync: () => Promise<void>;
   syncing: boolean;
   error: string | null;
@@ -78,7 +92,11 @@ export interface Store {
 export function useStore(baseUrl: string): Store {
   const [settings, setSettingsState] = useState<Settings>(() => loadSettings());
   const [base, setBase] = useState<Dataset | null>(null);
-  const [pending, setPending] = useState<Op[]>(() => loadList<Op>(localStorage, PENDING_KEY));
+  const [queue, setQueue] = useState<Queue>(() => ({
+    pending: loadList<Op>(localStorage, PENDING_KEY),
+    undo: [],
+  }));
+  const pending = queue.pending;
   const [syncing, setSyncing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [needsToken, setNeedsToken] = useState(false);
@@ -125,7 +143,25 @@ export function useStore(baseUrl: string): Store {
   }, []);
 
   const dispatch = useCallback((...ops: Op[]) => {
-    setPending((prev) => compact([...prev, ...ops]));
+    setQueue((current) => ({
+      pending: compact([...current.pending, ...ops]),
+      // Keep what the queue looked like first, so one wrong press is one press
+      // to put right — the queue before the action, whatever the action did.
+      undo: [...current.undo, current.pending].slice(-UNDO_DEPTH),
+    }));
+  }, []);
+
+  const undo = useCallback(() => {
+    setQueue((current) =>
+      current.undo.length === 0
+        ? current
+        : { pending: current.undo[current.undo.length - 1], undo: current.undo.slice(0, -1) },
+    );
+  }, []);
+
+  /** Throw away everything unsaved. The repo is untouched, so this is a reset. */
+  const discard = useCallback(() => {
+    setQueue((current) => ({ pending: [], undo: [...current.undo, current.pending].slice(-UNDO_DEPTH) }));
   }, []);
 
   // What the screen shows: the published data with your unsaved changes on top.
@@ -155,7 +191,11 @@ export function useStore(baseUrl: string): Store {
       // previous commit for a moment after a write — which looked exactly like
       // the save not having registered.
       setBase(saved);
-      setPending((queued) => queued.filter((op) => !sending.includes(op)));
+      // Saved changes cannot be undone from here; that is what the repo is for.
+      setQueue((current) => ({
+        pending: current.pending.filter((op) => !sending.includes(op)),
+        undo: [],
+      }));
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     } finally {
@@ -163,7 +203,21 @@ export function useStore(baseUrl: string): Store {
     }
   }, [pending, settings.repo]);
 
-  return { data, settings, setSettings, dispatch, pending: pending.length, sync, syncing, error, needsToken, reload };
+  return {
+    data,
+    settings,
+    setSettings,
+    dispatch,
+    pending: pending.length,
+    undo,
+    canUndo: queue.undo.length > 0,
+    discard,
+    sync,
+    syncing,
+    error,
+    needsToken,
+    reload,
+  };
 }
 
 /**

@@ -1,6 +1,15 @@
 import { memo, useMemo, useState } from "react";
 import { DrawError, drawWinner, spinTitles, tickets, totalWeight } from "../lib/draw";
-import { LEDGERS, ballotFor, effectiveSpent, episodesPerWeek, isEligible, strandedPoints, strandedShows } from "../lib/ledgers";
+import {
+  LEDGERS,
+  ballotFor,
+  effectiveSpent,
+  episodesPerWeek,
+  isEligible,
+  strandedPoints,
+  strandedReason,
+  strandedShows,
+} from "../lib/ledgers";
 import { EVERYONE, type Store } from "../lib/store";
 import type { Dataset, Draw, LedgerId, Show } from "../lib/types";
 import { DrawWheel } from "./DrawWheel";
@@ -56,6 +65,11 @@ export function VoteView({ store, data }: Props) {
   }, [data.people, data.shows, ledger, query, sealed, voter]);
 
   const visible = candidates.slice(0, limit);
+
+  const universeNames = useMemo(
+    () => new Map(data.universes.map((u) => [u.id, u.name])),
+    [data.universes],
+  );
 
   /** A universe has no seasons; what it offers is the next item in its order. */
   const universeNext = useMemo(() => {
@@ -167,27 +181,15 @@ export function VoteView({ store, data }: Props) {
         </div>
 
         {stuck.length > 0 && spends.some((s) => s.stranded > 0 && !hidden(s.person)) && (
-          <div className="row" style={{ marginTop: 10, justifyContent: "space-between" }}>
-            <p className="small muted" style={{ margin: 0, flex: "1 1 300px" }}>
-              {spends
-                .filter((s) => s.stranded > 0 && !hidden(s.person))
-                .map((s) => `${data.displayNames?.[s.person] ?? s.person} has ${s.stranded}`)
-                .join(" and ")}{" "}
-              points on {stuck.length === 1 ? stuck[0].title : `${stuck.length} shows`} with nothing left
-              to watch. Those points are already out of the draw — taking them back lets you place them
-              on something that can still win.
-            </p>
-            <button
-              className="small"
-              onClick={() =>
-                store.dispatch(
-                  ...stuck.map((show) => ({ type: "freePoints" as const, showId: show.id, ledger })),
-                )
-              }
-            >
-              Take them back
-            </button>
-          </div>
+          <Stranded
+            shows={stuck}
+            ledger={ledger}
+            people={data.people}
+            displayNames={data.displayNames}
+            universeNames={universeNames}
+            hidden={hidden}
+            dispatch={store.dispatch}
+          />
         )}
 
         {!balanced && (
@@ -287,6 +289,96 @@ export function VoteView({ store, data }: Props) {
         )}
       </div>
     </>
+  );
+}
+
+/**
+ * Points sitting where they cannot win.
+ *
+ * It used to give a count and no names, for shows the ballot hides — so there
+ * was no way to see what it was talking about, and it blamed all of them on
+ * being watched when some were simply the wrong length for this ballot.
+ */
+function Stranded({
+  shows,
+  ledger,
+  people,
+  displayNames,
+  universeNames,
+  hidden,
+  dispatch,
+}: {
+  shows: Show[];
+  ledger: LedgerId;
+  people: string[];
+  displayNames?: Record<string, string>;
+  universeNames: Map<string, string>;
+  hidden: (person: string) => boolean;
+  dispatch: Store["dispatch"];
+}) {
+  const [open, setOpen] = useState(false);
+  const name = (person: string) => displayNames?.[person] ?? person;
+  const held = (show: Show, person: string) => show.votes[ledger]?.[person] ?? 0;
+
+  return (
+    <div className="stranded">
+      <div className="row" style={{ justifyContent: "space-between" }}>
+        <p className="small muted" style={{ margin: 0, flex: "1 1 260px" }}>
+          {people
+            .filter((person) => !hidden(person) && shows.some((show) => held(show, person) > 0))
+            .map((person) => `${name(person)} has ${shows.reduce((sum, s) => sum + held(s, person), 0)}`)
+            .join(" and ")}{" "}
+          points on {shows.length} show{shows.length === 1 ? "" : "s"} this ballot cannot land on. They
+          count for nothing where they are.
+        </p>
+        <button className="small" onClick={() => setOpen(!open)}>
+          {open ? "Hide" : "Which?"}
+        </button>
+      </div>
+
+      {open && (
+        <table style={{ marginTop: 8 }}>
+          <tbody>
+            {shows.map((show) => (
+              <tr key={show.id}>
+                <td>
+                  <div className="stack">
+                    <span className="small">{show.title}</span>
+                    <span className="small muted">
+                      {strandedReason(show, ledger, universeNames.get(show.universe ?? ""))}
+                    </span>
+                  </div>
+                </td>
+                <td className="num small muted">
+                  {people
+                    .filter((person) => !hidden(person) && held(show, person) > 0)
+                    .map((person) => `${name(person)} ${held(show, person)}`)
+                    .join(", ")}
+                </td>
+                <td className="num">
+                  <button
+                    className="small"
+                    onClick={() => dispatch({ type: "freePoints", showId: show.id, ledger })}
+                  >
+                    Take back
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+
+      <button
+        className="small"
+        style={{ marginTop: 8 }}
+        onClick={() =>
+          dispatch(...shows.map((show) => ({ type: "freePoints" as const, showId: show.id, ledger })))
+        }
+      >
+        Take back all {shows.length}
+      </button>
+    </div>
   );
 }
 

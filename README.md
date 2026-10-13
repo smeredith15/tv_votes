@@ -246,6 +246,10 @@ alone.
 - **TMDB status lags reality.** A show cancelled this week may say *Returning*
   for a while. Streaming data comes from JustWatch via TMDB and churns, which is
   why it is refreshed rather than stored once.
+- **Points can end up where they cannot win**, and the vote screen names the
+  shows rather than only counting them: being caught up is one reason, but an
+  hour-long show carrying half-hour votes is another, and that one is worth a
+  look at the runtime rather than a shrug.
 - **Points on a finished show are already out of the draw.** The cheater check
   measures what the draw will actually use, not the raw column total — the two
   were the same in the workbook, which had no way for a show to drop off, but

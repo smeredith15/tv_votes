@@ -165,6 +165,34 @@ export function ledgerBalanced(data: Dataset, ledger: LedgerId): boolean {
   return spends.every((s) => s === spends[0]);
 }
 
+/**
+ * Why a show's points on this ballot can never win anything.
+ *
+ * Several different things strand points and they want different answers:
+ * being caught up is done with, while an hour-long show carrying half-hour
+ * votes is a runtime worth checking. Saying "nothing left to watch" for all of
+ * them was simply wrong for the second kind.
+ *
+ * Follows the same order as eligibleLedgers, so the reason always matches the
+ * rule that actually excluded it.
+ */
+export function strandedReason(show: Show, ledger: LedgerId, universeName?: string): string {
+  if (show.universe && !show.universeEntry) {
+    return `watched inside ${universeName ?? "a universe"}`;
+  }
+  if (caughtUp(show)) return "caught up — nothing left to watch";
+  if (show.autoResume) return "set to start new seasons on its own";
+  if (show.exclude?.includes(ledger)) return "kept off this ballot by hand";
+
+  const length = show.runtime === null ? "a show of unrecorded length" : `a ${show.runtime}-minute show`;
+  if (ledger === "hour" && show.runtime !== 60) return `${length}, so not an hour-long one`;
+  if (ledger === "half" && show.runtime !== 30) return `${length}, so not a half-hour one`;
+  if (ledger === "mini" && !ONE_SEASON_FORMATS.has(show.format)) {
+    return `a ${show.format}, not a mini or anthology`;
+  }
+  return "not eligible for this ballot";
+}
+
 /** Shows holding points on this ballot that can no longer win them anything. */
 export function strandedShows(data: Dataset, ledger: LedgerId): Show[] {
   return data.shows.filter(

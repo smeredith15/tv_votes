@@ -90298,6 +90298,39 @@
    "nextAirDate": null
   },
   {
+   "id": "treasure-island",
+   "title": "Treasure Island",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 333101,
+   "poster": "/xZQ5ABJF1iLjGq9xR4MthpgQEFF.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-13T00:36:06.317Z"
+  },
+  {
    "id": "treme",
    "title": "Treme",
    "runtime": 60,

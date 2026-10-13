@@ -1,1 +1,293 @@
-[]
+[
+ {
+  "id": "half-1791855178690",
+  "ledger": "half",
+  "drawnAt": "2026-10-13T01:32:58.690Z",
+  "allocations": {
+   "scotty": {
+    "30-rock": 25,
+    "atlanta": 30,
+    "bait": 5,
+    "beef": 5,
+    "better-things": 45,
+    "boy-meets-world": 5,
+    "broad-city": 20,
+    "brockmire": 5,
+    "brooklyn-nine-nine": 45,
+    "chad-powers": 5,
+    "chair-company": 55,
+    "crazy-ex-girlfriend": 5,
+    "derry-girls": 5,
+    "detectorists": 5,
+    "documentary-now": 5,
+    "drew-carey-show": 5,
+    "entourage": 290,
+    "everybody-loves-raymond": 5,
+    "four-seasons": 15,
+    "frasier": 5,
+    "glow": 5,
+    "it-crowd": 5,
+    "jury-duty": 40,
+    "key-peele": 15,
+    "landscapers": 5,
+    "margo-s-got-money-troubles": 70,
+    "master-of-none": 5,
+    "maximum-pleasure-guaranteed": 15,
+    "miracle-workers": 5,
+    "mr-inbetween": 30,
+    "murderbot": 5,
+    "my-name-is-earl": 25,
+    "new-girl": 25,
+    "nurse-jackie": 10,
+    "other-two": 5,
+    "party-down": 15,
+    "pen15": 5,
+    "schitt-s-creek": 45,
+    "superstore": 20,
+    "swedish-dicks": 5,
+    "taxi": 5,
+    "weeds": 5,
+    "what-we-do-in-the-shadows": 25,
+    "you-re-the-worst": 25
+   },
+   "shelby": {
+    "entourage": 650,
+    "rocket-power": 50,
+    "schitt-s-creek": 300
+   }
+  },
+  "totalWeight": 2000,
+  "roll": 1113,
+  "seed": "83104695ef67e4e2",
+  "winnerId": "entourage",
+  "winnerTitle": "Entourage",
+  "ballot": "Seasons 5–8",
+  "standings": [
+   {
+    "id": "entourage",
+    "title": "Entourage",
+    "weight": 940
+   },
+   {
+    "id": "schitt-s-creek",
+    "title": "Schitt's Creek",
+    "weight": 345
+   },
+   {
+    "id": "margo-s-got-money-troubles",
+    "title": "Margo's Got Money Troubles",
+    "weight": 70
+   },
+   {
+    "id": "chair-company",
+    "title": "The Chair Company",
+    "weight": 55
+   },
+   {
+    "id": "rocket-power",
+    "title": "Rocket Power",
+    "weight": 50
+   },
+   {
+    "id": "better-things",
+    "title": "Better Things",
+    "weight": 45
+   },
+   {
+    "id": "brooklyn-nine-nine",
+    "title": "Brooklyn Nine-Nine",
+    "weight": 45
+   },
+   {
+    "id": "jury-duty",
+    "title": "Jury Duty",
+    "weight": 40
+   },
+   {
+    "id": "atlanta",
+    "title": "Atlanta",
+    "weight": 30
+   },
+   {
+    "id": "mr-inbetween",
+    "title": "Mr. Inbetween",
+    "weight": 30
+   },
+   {
+    "id": "30-rock",
+    "title": "30 Rock",
+    "weight": 25
+   },
+   {
+    "id": "my-name-is-earl",
+    "title": "My Name is Earl",
+    "weight": 25
+   },
+   {
+    "id": "new-girl",
+    "title": "New Girl",
+    "weight": 25
+   },
+   {
+    "id": "what-we-do-in-the-shadows",
+    "title": "What We Do in the Shadows",
+    "weight": 25
+   },
+   {
+    "id": "you-re-the-worst",
+    "title": "You're the Worst",
+    "weight": 25
+   },
+   {
+    "id": "broad-city",
+    "title": "Broad City",
+    "weight": 20
+   },
+   {
+    "id": "superstore",
+    "title": "Superstore",
+    "weight": 20
+   },
+   {
+    "id": "four-seasons",
+    "title": "The Four Seasons",
+    "weight": 15
+   },
+   {
+    "id": "key-peele",
+    "title": "Key & Peele",
+    "weight": 15
+   },
+   {
+    "id": "maximum-pleasure-guaranteed",
+    "title": "Maximum Pleasure Guaranteed",
+    "weight": 15
+   },
+   {
+    "id": "party-down",
+    "title": "Party Down",
+    "weight": 15
+   },
+   {
+    "id": "nurse-jackie",
+    "title": "Nurse Jackie",
+    "weight": 10
+   },
+   {
+    "id": "bait",
+    "title": "Bait",
+    "weight": 5
+   },
+   {
+    "id": "beef",
+    "title": "BEEF",
+    "weight": 5
+   },
+   {
+    "id": "boy-meets-world",
+    "title": "Boy Meets World",
+    "weight": 5
+   },
+   {
+    "id": "brockmire",
+    "title": "Brockmire",
+    "weight": 5
+   },
+   {
+    "id": "chad-powers",
+    "title": "Chad Powers",
+    "weight": 5
+   },
+   {
+    "id": "crazy-ex-girlfriend",
+    "title": "Crazy Ex-Girlfriend",
+    "weight": 5
+   },
+   {
+    "id": "derry-girls",
+    "title": "Derry Girls",
+    "weight": 5
+   },
+   {
+    "id": "detectorists",
+    "title": "Detectorists",
+    "weight": 5
+   },
+   {
+    "id": "documentary-now",
+    "title": "Documentary Now!",
+    "weight": 5
+   },
+   {
+    "id": "drew-carey-show",
+    "title": "The Drew Carey Show",
+    "weight": 5
+   },
+   {
+    "id": "everybody-loves-raymond",
+    "title": "Everybody Loves Raymond",
+    "weight": 5
+   },
+   {
+    "id": "frasier",
+    "title": "Frasier",
+    "weight": 5
+   },
+   {
+    "id": "glow",
+    "title": "GLOW",
+    "weight": 5
+   },
+   {
+    "id": "it-crowd",
+    "title": "The IT Crowd",
+    "weight": 5
+   },
+   {
+    "id": "landscapers",
+    "title": "Landscapers",
+    "weight": 5
+   },
+   {
+    "id": "master-of-none",
+    "title": "Master of None",
+    "weight": 5
+   },
+   {
+    "id": "miracle-workers",
+    "title": "Miracle Workers",
+    "weight": 5
+   },
+   {
+    "id": "murderbot",
+    "title": "Murderbot",
+    "weight": 5
+   },
+   {
+    "id": "other-two",
+    "title": "The Other Two",
+    "weight": 5
+   },
+   {
+    "id": "pen15",
+    "title": "PEN15",
+    "weight": 5
+   },
+   {
+    "id": "swedish-dicks",
+    "title": "Swedish Dicks",
+    "weight": 5
+   },
+   {
+    "id": "taxi",
+    "title": "Taxi",
+    "weight": 5
+   },
+   {
+    "id": "weeds",
+    "title": "Weeds",
+    "weight": 5
+   }
+  ]
+ }
+]

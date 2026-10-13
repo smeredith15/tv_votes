@@ -6234,7 +6234,7 @@
     },
     "half": {
      "scotty": 30,
-     "shelby": 200
+     "shelby": 0
     },
     "mini": {
      "scotty": 0,
@@ -26537,7 +26537,7 @@
     },
     "half": {
      "scotty": 290,
-     "shelby": 0
+     "shelby": 650
     },
     "mini": {
      "scotty": 0,
@@ -30707,7 +30707,7 @@
     },
     "half": {
      "scotty": 5,
-     "shelby": 250
+     "shelby": 0
     },
     "mini": {
      "scotty": 0,

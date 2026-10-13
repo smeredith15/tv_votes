@@ -1,4 +1,4 @@
-import { memo, useMemo, useState } from "react";
+import { memo, useEffect, useMemo, useState } from "react";
 import { DrawError, drawWinner, spinTitles, tickets, totalWeight } from "../lib/draw";
 import {
   LEDGERS,
@@ -27,6 +27,17 @@ export function VoteView({ store, data }: Props) {
   const [ledger, setLedger] = useState<LedgerId>("half");
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(PAGE);
+  /**
+   * Bumped each time the queue empties — a save, a discard, or opening the
+   * page with nothing waiting. Only then is it safe to sort the ballot again.
+   * Reading store.pending directly is not enough: the first keystroke takes it
+   * from 0 to 1, which is itself a change, and the order would shift under the
+   * box being typed into.
+   */
+  const [settled, setSettled] = useState(0);
+  useEffect(() => {
+    if (store.pending === 0) setSettled((n) => n + 1);
+  }, [store.pending]);
   const [result, setResult] = useState<Draw | null>(null);
   const [spin, setSpin] = useState<{ teasers: string[]; draw: Draw } | null>(null);
   const [drawError, setDrawError] = useState<string | null>(null);
@@ -50,19 +61,36 @@ export function VoteView({ store, data }: Props) {
     (show) => (show.votes[ledger]?.[voter] ?? 0) > 0 && isEligible(show, ledger),
   );
 
-  const candidates = useMemo(() => {
-    const needle = query.trim().toLowerCase();
+  /**
+   * Where each show sits, fixed until the ballot itself changes.
+   *
+   * Sorting by points as they are typed makes a row bolt down the list the
+   * moment a field is cleared to retype it — often past the end of what is
+   * drawn, so the box being typed into simply vanishes. The order is taken
+   * once and held: on opening a ballot, on switching who is voting, and once
+   * changes are saved.
+   */
+  const ranks = useMemo(() => {
     const backers = sealed ? [voter] : data.people;
     const weigh = (show: Show) => backers.reduce((sum, p) => sum + (show.votes[ledger]?.[p] ?? 0), 0);
+    const ordered = data.shows
+      .filter((show) => isEligible(show, ledger))
+      .sort((a, b) => weigh(b) - weigh(a) || a.title.localeCompare(b.title));
+    return new Map(ordered.map((show, index) => [show.id, index]));
+    // The vote values are left out on purpose: depending on them is the bug.
+  }, [ledger, sealed, voter, settled]);
 
-    // Every show this ballot could land on, backed ones first. It used to list
-    // only what already had points, which meant nothing could be found without
-    // knowing its name first.
+  const candidates = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    const rank = (show: Show) => ranks.get(show.id) ?? Number.MAX_SAFE_INTEGER;
+
+    // Every show this ballot could land on, in the order settled above. A show
+    // added since then has no rank and goes to the end, alphabetically.
     return data.shows
       .filter((show) => isEligible(show, ledger))
       .filter((show) => !needle || show.title.toLowerCase().includes(needle))
-      .sort((a, b) => weigh(b) - weigh(a) || a.title.localeCompare(b.title));
-  }, [data.people, data.shows, ledger, query, sealed, voter]);
+      .sort((a, b) => rank(a) - rank(b) || a.title.localeCompare(b.title));
+  }, [data.shows, ledger, query, ranks]);
 
   const visible = candidates.slice(0, limit);
 
@@ -382,6 +410,41 @@ function Stranded({
   );
 }
 
+/**
+ * A points box that lets itself be emptied.
+ *
+ * Bound straight to the stored number, clearing it to type a new one wrote a
+ * zero on the first keystroke and put a 0 back in the box. While it has focus
+ * the box keeps whatever has been typed, including nothing at all, and an empty
+ * box only becomes a zero when you leave it.
+ */
+function PointsInput({ value, onChange }: { value: number; onChange: (points: number) => void }) {
+  const [typed, setTyped] = useState<string | null>(null);
+
+  return (
+    <input
+      className="points"
+      type="number"
+      min={0}
+      inputMode="numeric"
+      value={typed ?? String(value)}
+      onFocus={(e) => e.currentTarget.select()}
+      onChange={(e) => {
+        const text = e.target.value;
+        setTyped(text);
+        if (text !== "") {
+          const points = Number(text);
+          if (Number.isFinite(points)) onChange(Math.max(0, Math.round(points)));
+        }
+      }}
+      onBlur={() => {
+        if (typed === "") onChange(0);
+        setTyped(null);
+      }}
+    />
+  );
+}
+
 interface RowProps {
   show: Show;
   ledger: LedgerId;
@@ -426,20 +489,9 @@ const VoteRow = memo(function VoteRow({
           {hidden(person) ? (
             <span className="muted">—</span>
           ) : (
-            <input
-              className="points"
-              type="number"
-              min={0}
+            <PointsInput
               value={show.votes[ledger]?.[person] ?? 0}
-              onChange={(e) =>
-                dispatch({
-                  type: "vote",
-                  showId: show.id,
-                  ledger,
-                  person,
-                  points: Math.max(0, Math.round(Number(e.target.value) || 0)),
-                })
-              }
+              onChange={(points) => dispatch({ type: "vote", showId: show.id, ledger, person, points })}
             />
           )}
         </td>

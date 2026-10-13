@@ -118,6 +118,9 @@ nav button[aria-current="true"] { background: var(--accent-soft); color: var(--a
 .pill.ended { color: var(--muted); }
 .pill.universe { color: var(--accent); border-color: var(--accent); }
 .pill.flat { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+/* What a vote actually buys: the season, said plainly, at every width. */
+.pill.ballot { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+@media (prefers-color-scheme: dark) { .pill.ballot { color: #1a1320; } }
 
 /* Budget meter */
 .meter { height: 7px; border-radius: 999px; background: var(--line); overflow: hidden; }
@@ -132,6 +135,11 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); }
 
 .points { width: 68px; text-align: right; font-variant-numeric: tabular-nums; }
+/* The spinners cost more width than they are worth here, and clip the numbers
+   on a phone. The field still brings up a numeric keypad. */
+.points { -moz-appearance: textfield; appearance: textfield; }
+.points::-webkit-outer-spin-button,
+.points::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
 .winner {
   text-align: center;
@@ -171,6 +179,9 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
 
 @media (max-width: 620px) {
   .hide-sm { display: none; }
+  /* Keep the ballot inside the screen: no sideways scrolling to place a vote. */
+  th, td { padding: 7px 5px; }
+  .points { width: 56px; }
   header.bar h1 { width: 100%; }
 }
 

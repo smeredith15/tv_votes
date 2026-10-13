@@ -57,6 +57,16 @@ export function VoteView({ store, data }: Props) {
 
   const visible = candidates.slice(0, limit);
 
+  /** A universe has no seasons; what it offers is the next item in its order. */
+  const universeNext = useMemo(() => {
+    const next = new Map<string, string>();
+    for (const universe of data.universes) {
+      const item = universe.order.find((entry) => !entry.watched);
+      next.set(universe.id, item ? `Next: ${item.label}` : "Nothing left in the order");
+    }
+    return next;
+  }, [data.universes]);
+
   /**
    * Settle the draw first, then spin. Nothing is written to history until one
    * of you says to keep it, so a curiosity draw costs nothing.
@@ -241,11 +251,10 @@ export function VoteView({ store, data }: Props) {
           <thead>
             <tr>
               <th>Show</th>
-              <th className="hide-sm">On the ballot for</th>
               {data.people.map((p) => (
                 <th key={p} className="num">{data.displayNames?.[p] ?? p}</th>
               ))}
-              <th className="num">Tickets</th>
+              <th className="num hide-sm">Tickets</th>
             </tr>
           </thead>
           <tbody>
@@ -254,6 +263,7 @@ export function VoteView({ store, data }: Props) {
                 key={show.id}
                 show={show}
                 ledger={ledger}
+                universeNext={show.universeEntry ? universeNext.get(show.universe ?? "") : undefined}
                 people={data.people}
                 displayNames={data.displayNames}
                 hidden={hidden}
@@ -283,6 +293,8 @@ export function VoteView({ store, data }: Props) {
 interface RowProps {
   show: Show;
   ledger: LedgerId;
+  /** For a universe, the next thing in its order — it has no seasons of its own. */
+  universeNext?: string;
   people: string[];
   displayNames?: Record<string, string>;
   hidden: (person: string) => boolean;
@@ -293,6 +305,7 @@ interface RowProps {
 const VoteRow = memo(function VoteRow({
   show,
   ledger,
+  universeNext,
   people,
   hidden,
   sealed,
@@ -307,14 +320,14 @@ const VoteRow = memo(function VoteRow({
         <div className="stack">
           <span>{show.title}</span>
           <span className="row small" style={{ gap: 6 }}>
+            <span className="pill ballot">
+              {universeNext ?? ballot.label}
+              {ledger === "weekly" && ballot.seasons.length > 0 && `, ${episodesPerWeek(show)}/week`}
+            </span>
             <StatusPill show={show} />
             <ProviderTags show={show} limit={2} />
           </span>
         </div>
-      </td>
-      <td className="hide-sm small muted">
-        {ballot.label}
-        {ledger === "weekly" && ` · ${episodesPerWeek(show)} ep/week`}
       </td>
       {people.map((person) => (
         <td key={person} className="num">
@@ -339,7 +352,7 @@ const VoteRow = memo(function VoteRow({
           )}
         </td>
       ))}
-      <td className="num">{sealed ? "—" : weight.toLocaleString()}</td>
+      <td className="num hide-sm">{sealed ? "—" : weight.toLocaleString()}</td>
     </tr>
   );
 });

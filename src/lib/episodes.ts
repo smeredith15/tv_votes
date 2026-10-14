@@ -97,3 +97,25 @@ export function pace(
 function startOfDay(date: Date): Date {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 }
+
+/**
+ * Episodes still to watch of the seasons a ballot covers.
+ *
+ * Counting whole unwatched seasons gets this wrong halfway through one: the
+ * figure then stays put as the cursor moves and only drops when a season is
+ * finished. The cursor is a flat count, so each season contributes whatever
+ * part of it lies ahead of the cursor.
+ */
+export function episodesLeftIn(show: Show, seasonNumbers: number[], watched: number): number {
+  const wanted = new Set(seasonNumbers);
+  let start = 0;
+  let left = 0;
+  for (const season of show.seasons) {
+    const end = start + season.episodes;
+    if (wanted.has(season.number) && !season.watched) {
+      left += Math.max(0, end - Math.max(watched, start));
+    }
+    start = end;
+  }
+  return left;
+}

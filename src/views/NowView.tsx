@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { LEDGERS, ballotFor, caughtUp, episodesPerWeek, unwatchedSeasons } from "../lib/ledgers";
+import { episodesFromSeasons, episodesLeftIn, perSitting } from "../lib/episodes";
+import { LEDGERS, ballotFor, caughtUp, unwatchedSeasons } from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, LedgerId, Show } from "../lib/types";
 import { EpisodeTracker } from "./EpisodeTracker";
@@ -122,8 +123,12 @@ function PickBody({
 }) {
   const ballot = ballotFor(show, ledger);
   const onDeck = show.seasons.filter((s) => ballot.seasons.includes(s.number) && !s.watched);
-  const episodesLeft = onDeck.reduce((sum, s) => sum + s.episodes, 0);
-  const weeksLeft = Math.ceil(episodesLeft / episodesPerWeek(show));
+  // Counted from the episode cursor, so moving it moves this figure too — part
+  // way through a season, whole unwatched seasons overstate what is left.
+  const progress = data.watching.progress?.[ledger];
+  const cursor = progress?.showId === show.id ? progress.episode : episodesFromSeasons(show);
+  const episodesLeft = episodesLeftIn(show, ballot.seasons, cursor);
+  const weeksLeft = Math.ceil(episodesLeft / perSitting(show));
   const universe = data.universes.find((u) => u.id === show.universe);
   const nextUp = universe?.order.find((i) => !i.watched);
 

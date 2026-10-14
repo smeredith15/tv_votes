@@ -118,11 +118,6 @@ export function ballotFor(show: Show, ledger: LedgerId): Ballot {
   };
 }
 
-/** Episodes per sitting, for the Friday-night ledger. */
-export function episodesPerWeek(show: Show): number {
-  return show.runtime === 30 ? 2 : 1;
-}
-
 /** Every point committed on this ballot, whether or not it can still win. */
 export function totalSpent(data: Dataset, ledger: LedgerId, person: string): number {
   return data.shows.reduce((sum, show) => sum + (show.votes[ledger]?.[person] ?? 0), 0);

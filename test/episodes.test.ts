@@ -4,6 +4,7 @@ import {
   episodesFromSeasons,
   formatPosition,
   pace,
+  episodesLeftIn,
   perSitting,
   positionAfter,
   seasonsCovered,
@@ -126,4 +127,19 @@ test("a start date in the future is not yet a sitting, and a bad one says nothin
   assert.equal(soon?.sittings, 0);
   assert.equal(soon?.target, 25);
   assert.equal(pace(wire, { startedOn: "not a date", startEpisode: 0, longWeekends: 0, watched: 0 }), null);
+});
+
+test("what is left of a ballot counts from the cursor, not whole seasons", () => {
+  const whatsLeft = [3, 4, 5];
+  // Standing at the start of season 3: all three seasons to go.
+  assert.equal(episodesLeftIn(wire, whatsLeft, 25), 35);
+  // Four episodes into season 3 — the figure has to move, not wait for the
+  // season to finish.
+  assert.equal(episodesLeftIn(wire, whatsLeft, 29), 31);
+  // A ballot for one season only stops at its end.
+  assert.equal(episodesLeftIn(wire, [3], 29), 8);
+  // A cursor past the seasons asked about leaves nothing, never a negative.
+  assert.equal(episodesLeftIn(wire, [3], 40), 0);
+  // Seasons already ticked off are done, wherever the cursor happens to be.
+  assert.equal(episodesLeftIn(wire, [1, 2, 3], 0), 12);
 });

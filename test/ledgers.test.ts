@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { ballotFor, eligibleLedgers, episodesPerWeek, ledgerBalanced, watchState } from "../src/lib/ledgers";
+import { ballotFor, eligibleLedgers, ledgerBalanced, watchState } from "../src/lib/ledgers";
 import { makeData, makeShow, seasons } from "./helpers";
 
 test("an hour-long series lands on the weekly and hour ballots", () => {
@@ -87,11 +87,6 @@ test("a mini or anthology goes one season at a time even at half-hour length", (
 test("a fully watched show has nothing left to vote for", () => {
   const show = makeShow({ id: "over", seasons: seasons(2, 2) });
   assert.deepEqual(ballotFor(show, "hour"), { seasons: [], label: "Fully watched" });
-});
-
-test("Friday nights are two half-hours or one hour", () => {
-  assert.equal(episodesPerWeek(makeShow({ id: "a", runtime: 30 })), 2);
-  assert.equal(episodesPerWeek(makeShow({ id: "b", runtime: 60 })), 1);
 });
 
 test("the cheater check compares what each person spent", () => {

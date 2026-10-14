@@ -1,10 +1,10 @@
 import { memo, useEffect, useMemo, useState } from "react";
 import { DrawError, drawWinner, spinTitles, tickets, totalWeight } from "../lib/draw";
+import { perSitting } from "../lib/episodes";
 import {
   LEDGERS,
   ballotFor,
   effectiveSpent,
-  episodesPerWeek,
   isEligible,
   strandedPoints,
   strandedReason,
@@ -477,7 +477,7 @@ const VoteRow = memo(function VoteRow({
           <span className="row small" style={{ gap: 6 }}>
             <span className="pill ballot">
               {universeNext ?? ballot.label}
-              {ledger === "weekly" && ballot.seasons.length > 0 && `, ${episodesPerWeek(show)}/week`}
+              {ledger === "weekly" && ballot.seasons.length > 0 && `, ${perSitting(show)}/week`}
             </span>
             <StatusPill show={show} />
             <ProviderTags show={show} limit={2} />

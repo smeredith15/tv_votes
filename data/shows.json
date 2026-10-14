@@ -43103,7 +43103,7 @@
      "name": "Season 18",
      "episodes": 10,
      "airDate": "2026-08-17",
-     "watched": false
+     "watched": true
     }
    ],
    "votes": {
@@ -97548,6 +97548,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "winter",
+   "title": "Winter",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 321532,
+   "poster": "/r6Uf6RXvvnAgQphfpRuw47XJnhe.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-14T01:37:11.045Z"
   },
   {
    "id": "wire",

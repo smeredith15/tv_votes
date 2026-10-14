@@ -1,16 +1,5 @@
 {
- "pending": [
-  {
-   "tmdbId": 321532,
-   "title": "Winter",
-   "firstAirDate": "2026-09-30",
-   "overview": "Dr Ethan Winter, an analytical detective, partners with driven DI Lauren Bell. His deductive genius aids her murder squad, but he's haunted by an unsolved murder of someone close to him.",
-   "poster": "/r6Uf6RXvvnAgQphfpRuw47XJnhe.jpg",
-   "network": "ITV1",
-   "runtime": null,
-   "suggestedAt": "2026-10-13T14:47:49.210Z"
-  }
- ],
+ "pending": [],
  "dismissed": [
   300507,
   318312,

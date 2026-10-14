@@ -32,6 +32,12 @@ export interface Show {
   id: string;
   title: string;
   runtime: Runtime;
+  /**
+   * Runtime chosen by hand, so the nightly refresh leaves it alone. Without
+   * this the refresh would only ever fill a blank one in, and a show the
+   * workbook filed on the wrong sheet would keep that runtime for ever.
+   */
+  runtimeByHand?: boolean;
   format: ShowFormat;
   franchise: string | null;
   /** Set when the show is watched as part of a combined universe instead. */

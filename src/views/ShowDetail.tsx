@@ -56,7 +56,7 @@ export function ShowDetail({ store, data, show, onClose }: Props) {
           tmdbId: id,
           status: toReturningStatus(details),
           nextAirDate: (details as { next_episode_to_air?: { air_date?: string } }).next_episode_to_air?.air_date ?? null,
-          runtime: show.runtime ?? toRuntime(details),
+          runtime: show.runtimeByHand ? show.runtime : (toRuntime(details) ?? show.runtime),
           format: toFormat(details, show.format),
           seasons: toSeasons(details, show.seasons),
           providers: toProviders(providers),
@@ -140,7 +140,16 @@ export function ShowDetail({ store, data, show, onClose }: Props) {
       <div className="grid" style={{ marginTop: 16 }}>
         <label className="stack small">
           <span className="muted">Runtime</span>
-          <select value={show.runtime ?? ""} onChange={(e) => patch({ runtime: e.target.value ? (Number(e.target.value) as 30 | 60) : null })}>
+          <select
+            value={show.runtime ?? ""}
+            onChange={(e) =>
+              patch({
+                runtime: e.target.value ? (Number(e.target.value) as 30 | 60) : null,
+                // Answered here, so the nightly refresh stops deciding it.
+                runtimeByHand: e.target.value !== "",
+              })
+            }
+          >
             <option value="">Unknown</option>
             <option value="30">Half-hour</option>
             <option value="60">Hour-long</option>

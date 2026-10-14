@@ -1,5 +1,16 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 213375,
+   "title": "VisionQuest",
+   "firstAirDate": "2026-10-13",
+   "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
+   "poster": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+   "network": "Disney+",
+   "runtime": 60,
+   "suggestedAt": "2026-10-14T12:39:12.972Z"
+  }
+ ],
  "dismissed": [
   300507,
   318312,

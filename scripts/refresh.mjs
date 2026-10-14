@@ -79,7 +79,9 @@ async function main() {
 
       show.status = toReturningStatus(details);
       show.nextAirDate = details.next_episode_to_air?.air_date ?? null;
-      show.runtime = show.runtime ?? toRuntime(details);
+      // TMDB decides the runtime, so a show the workbook filed on the wrong
+      // sheet gets put right — unless someone has set it by hand.
+      if (!show.runtimeByHand) show.runtime = toRuntime(details) ?? show.runtime;
       show.format = toFormat(details, show.format);
       if (show.assumeWatched) {
         // Added as a show they had already finished: everything aired by now

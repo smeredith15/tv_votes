@@ -1,10 +1,10 @@
 import { memo, useEffect, useMemo, useState } from "react";
 import { DrawError, drawWinner, spinTitles, tickets, totalWeight } from "../lib/draw";
+import { perSitting } from "../lib/episodes";
 import {
   LEDGERS,
   ballotFor,
   effectiveSpent,
-  episodesPerWeek,
   isEligible,
   strandedPoints,
   strandedReason,
@@ -18,13 +18,15 @@ import { ProviderTags, StatusPill } from "./ShowBits";
 interface Props {
   store: Store;
   data: Dataset;
+  /** The ballot on show. Held by the app so other pages can send you to one. */
+  ledger: LedgerId;
+  setLedger: (ledger: LedgerId) => void;
 }
 
 /** Rows drawn at once. The rest are a click away rather than all at once. */
 const PAGE = 50;
 
-export function VoteView({ store, data }: Props) {
-  const [ledger, setLedger] = useState<LedgerId>("half");
+export function VoteView({ store, data, ledger, setLedger }: Props) {
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(PAGE);
   /**
@@ -477,7 +479,7 @@ const VoteRow = memo(function VoteRow({
           <span className="row small" style={{ gap: 6 }}>
             <span className="pill ballot">
               {universeNext ?? ballot.label}
-              {ledger === "weekly" && ballot.seasons.length > 0 && `, ${episodesPerWeek(show)}/week`}
+              {ledger === "weekly" && ballot.seasons.length > 0 && `, ${perSitting(show)}/week`}
             </span>
             <StatusPill show={show} />
             <ProviderTags show={show} limit={2} />

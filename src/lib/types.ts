@@ -32,6 +32,12 @@ export interface Show {
   id: string;
   title: string;
   runtime: Runtime;
+  /**
+   * Runtime chosen by hand, so the nightly refresh leaves it alone. Without
+   * this the refresh would only ever fill a blank one in, and a show the
+   * workbook filed on the wrong sheet would keep that runtime for ever.
+   */
+  runtimeByHand?: boolean;
   format: ShowFormat;
   franchise: string | null;
   /** Set when the show is watched as part of a combined universe instead. */
@@ -130,6 +136,12 @@ export interface Progress {
   startEpisode: number;
   /** Weekends that were worth a double sitting. */
   longWeekends: number;
+  /**
+   * The seasons this run covers — what the vote actually bought, which is not
+   * the same as what is next. Finishing them ends the run and asks whether to
+   * vote again or carry on, rather than quietly rolling onto the next half.
+   */
+  seasons?: number[];
 }
 
 /** What is being watched right now, and what is queued outside the voting. */

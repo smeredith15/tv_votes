@@ -22,7 +22,7 @@ import { join } from "node:path";
 const METADATA = ["status", "nextAirDate", "providers", "providersUpdated"];
 
 /** Fields the refresh only fills in when empty, so a human's answer wins. */
-const FILL_IF_EMPTY = ["tmdbId", "runtime", "poster"];
+const FILL_IF_EMPTY = ["tmdbId", "poster"];
 
 const read = (dir, name) => JSON.parse(readFileSync(join(dir, name), "utf8"));
 const write = (name, value) => writeFileSync(join("data", name), `${JSON.stringify(value, null, 1)}\n`);
@@ -50,6 +50,8 @@ export function mergeShows(base, ours, theirs) {
     for (const field of FILL_IF_EMPTY) {
       if (merged[field] === null || merged[field] === undefined) merged[field] = our[field];
     }
+    // Runtime comes from TMDB as well, unless the branch pinned it by hand.
+    if (!their.runtimeByHand && our.runtime != null) merged.runtime = our.runtime;
     if (our.seasons?.length) merged.seasons = mergeSeasons(our.seasons, their.seasons);
     return merged;
   });

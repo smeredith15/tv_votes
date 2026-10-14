@@ -48,7 +48,9 @@ test("seasons come from TMDB but the watched ticks come from the branch", () => 
 test("a correction made in the app outranks what TMDB guessed", () => {
   const base = wrap([show("bait", { runtime: null, format: "series" })]);
   const ours = wrap([show("bait", { runtime: 60, format: "documentary" })]);
-  const theirs = wrap([show("bait", { runtime: 30, format: "series" })]);
+  // Answering the runtime in the app is what pins it; format is never
+  // overwritten either way.
+  const theirs = wrap([show("bait", { runtime: 30, runtimeByHand: true, format: "series" })]);
 
   const merged = mergeShows(base, ours, theirs);
   assert.equal(merged.shows[0].runtime, 30);
@@ -110,4 +112,23 @@ test("an older bare-array inbox merges without losing anything", () => {
   const merged = mergeInbox([], [item(3)], [item(1)]);
   assert.deepEqual(merged.pending.map((i) => i.tmdbId), [1, 3]);
   assert.deepEqual(merged.dismissed, []);
+});
+
+test("the refresh corrects a runtime, unless it was set by hand", () => {
+  // Filed on the workbook's half-hour sheet; TMDB says it is an hour.
+  const base = wrap([show("ponies", { runtime: 30 }), show("riot-women", { runtime: 30, runtimeByHand: true })]);
+  const ours = wrap([show("ponies", { runtime: 60 }), show("riot-women", { runtime: 60 })]);
+  const theirs = wrap([show("ponies", { runtime: 30 }), show("riot-women", { runtime: 30, runtimeByHand: true })]);
+
+  const merged = mergeShows(base, ours, theirs);
+  assert.equal(merged.shows[0].runtime, 60, "TMDB puts a wrong category right");
+  assert.equal(merged.shows[1].runtime, 30, "a hand-set runtime is left alone");
+});
+
+test("a runtime TMDB has no answer for keeps whatever the branch has", () => {
+  const base = wrap([show("ponies", { runtime: 30 })]);
+  const ours = wrap([show("ponies", { runtime: null })]);
+  const theirs = wrap([show("ponies", { runtime: 30 })]);
+
+  assert.equal(mergeShows(base, ours, theirs).shows[0].runtime, 30);
 });

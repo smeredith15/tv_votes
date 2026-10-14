@@ -1,4 +1,4 @@
-import type { Dataset, LedgerId, Show, WatchState } from "./types";
+import type { Dataset, LedgerId, Progress, Show, WatchState } from "./types";
 
 export const LEDGERS: { id: LedgerId; name: string; blurb: string }[] = [
   { id: "half", name: "Half-hour", blurb: "One series at a time, start to finish" },
@@ -69,6 +69,14 @@ export interface Ballot {
   label: string;
 }
 
+/** How a run of seasons reads on screen. */
+export function labelForSeasons(show: Show, seasons: number[]): string {
+  if (seasons.length === 0) return show.seasons.length ? "Fully watched" : "Seasons unknown";
+  if (seasons.length === show.seasons.length) return "Whole series";
+  if (seasons.length === 1) return `Season ${seasons[0]}`;
+  return `Seasons ${seasons[0]}–${seasons[seasons.length - 1]}`;
+}
+
 /**
  * What you are actually voting for when you back a show on a given ballot.
  *
@@ -77,28 +85,20 @@ export interface Ballot {
  * half so it does not eat the whole rotation.
  */
 export function ballotFor(show: Show, ledger: LedgerId): Ballot {
+  const seasons = ballotSeasons(show, ledger);
+  return { seasons, label: labelForSeasons(show, seasons) };
+}
+
+function ballotSeasons(show: Show, ledger: LedgerId): number[] {
   const remaining = unwatchedSeasons(show);
-  if (remaining.length === 0) {
-    return { seasons: [], label: show.seasons.length ? "Fully watched" : "Seasons unknown" };
-  }
+  if (remaining.length === 0) return [];
 
   // The Friday show runs to the end whatever its length; only the number of
   // episodes a sitting delivers changes.
-  if (ledger === "weekly") {
-    return {
-      seasons: remaining,
-      label:
-        remaining.length === show.seasons.length
-          ? "Whole series"
-          : `Seasons ${remaining[0]}–${remaining[remaining.length - 1]}`,
-    };
-  }
+  if (ledger === "weekly") return remaining;
 
   const oneAtATime = ledger === "mini" || ONE_SEASON_FORMATS.has(show.format) || show.runtime === 60;
-  if (oneAtATime) {
-    const next = remaining[0];
-    return { seasons: [next], label: `Season ${next}` };
-  }
+  if (oneAtATime) return [remaining[0]];
 
   // Half-hour series: the whole run, or one half of it when the run is long.
   // The halves are fixed by the full season count, so finishing the first half
@@ -106,21 +106,27 @@ export function ballotFor(show: Show, ledger: LedgerId): Ballot {
   if (show.seasons.length >= LONG_SERIES_SEASONS) {
     const split = Math.ceil(show.seasons.length / 2);
     const inFirstHalf = remaining[0] <= split;
-    const half = remaining.filter((n) => (inFirstHalf ? n <= split : n > split));
-    return {
-      seasons: half,
-      label: half.length === 1 ? `Season ${half[0]}` : `Seasons ${half[0]}–${half[half.length - 1]}`,
-    };
+    return remaining.filter((n) => (inFirstHalf ? n <= split : n > split));
   }
-  return {
-    seasons: remaining,
-    label: remaining.length === show.seasons.length ? "Whole series" : `Seasons ${remaining[0]}–${remaining[remaining.length - 1]}`,
-  };
+  return remaining;
 }
 
-/** Episodes per sitting, for the Friday-night ledger. */
-export function episodesPerWeek(show: Show): number {
-  return show.runtime === 30 ? 2 : 1;
+/**
+ * The seasons the run in progress covers.
+ *
+ * Recorded when the ballot landed on the show, because what a vote bought and
+ * what comes next stop agreeing the moment the first of them is watched. Older
+ * progress, saved before this was kept, falls back to what the ballot says.
+ */
+export function runSeasons(show: Show, ledger: LedgerId, progress?: Progress): number[] {
+  if (progress?.showId === show.id && progress.seasons) return progress.seasons;
+  return ballotFor(show, ledger).seasons;
+}
+
+/** Everything the run covered is watched: the show has had its turn. */
+export function runFinished(show: Show, seasons: number[]): boolean {
+  const covered = show.seasons.filter((s) => seasons.includes(s.number));
+  return covered.length > 0 && covered.every((s) => s.watched);
 }
 
 /** Every point committed on this ballot, whether or not it can still win. */

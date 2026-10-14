@@ -1,6 +1,14 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { ballotFor, eligibleLedgers, ledgerBalanced, watchState } from "../src/lib/ledgers";
+import {
+  ballotFor,
+  eligibleLedgers,
+  labelForSeasons,
+  ledgerBalanced,
+  runFinished,
+  runSeasons,
+  watchState,
+} from "../src/lib/ledgers";
 import { makeData, makeShow, seasons } from "./helpers";
 
 test("an hour-long series lands on the weekly and hour ballots", () => {
@@ -98,4 +106,34 @@ test("the cheater check compares what each person spent", () => {
 
   even.shows[1].votes.weekly.shelby = 5;
   assert.equal(ledgerBalanced(even, "weekly"), false);
+});
+
+test("a run covers what the ballot bought, not what comes next", () => {
+  // Eight half-hour seasons: the vote buys the first four.
+  const show = makeShow({ id: "ent", runtime: 30, format: "series", seasons: seasons(8, 3) });
+  assert.deepEqual(ballotFor(show, "half").seasons, [4]);
+
+  const progress = { showId: "ent", episode: 30, startEpisode: 0, longWeekends: 0, seasons: [1, 2, 3, 4] };
+  assert.deepEqual(runSeasons(show, "half", progress), [1, 2, 3, 4]);
+  assert.equal(runFinished(show, [1, 2, 3, 4]), false, "season 4 still going");
+
+  const done = makeShow({ id: "ent", runtime: 30, format: "series", seasons: seasons(8, 4) });
+  assert.equal(runFinished(done, [1, 2, 3, 4]), true);
+  // And what a vote would buy next is the whole back half, not one season.
+  assert.deepEqual(ballotFor(done, "half").seasons, [5, 6, 7, 8]);
+});
+
+test("progress about another show does not stand in for this one's run", () => {
+  const show = makeShow({ id: "crown", runtime: 60, seasons: seasons(6, 2) });
+  const elsewhere = { showId: "wire", episode: 25, startEpisode: 0, longWeekends: 0, seasons: [3, 4, 5] };
+  assert.deepEqual(runSeasons(show, "hour", elsewhere), [3]);
+});
+
+test("a run of seasons is named for what it holds", () => {
+  const show = makeShow({ id: "ent", runtime: 30, seasons: seasons(8) });
+  assert.equal(labelForSeasons(show, []), "Fully watched");
+  assert.equal(labelForSeasons(makeShow({ id: "new" }), []), "Seasons unknown");
+  assert.equal(labelForSeasons(show, [5]), "Season 5");
+  assert.equal(labelForSeasons(show, [5, 6, 7, 8]), "Seasons 5–8");
+  assert.equal(labelForSeasons(show, [1, 2, 3, 4, 5, 6, 7, 8]), "Whole series");
 });

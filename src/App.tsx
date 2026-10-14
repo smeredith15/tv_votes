@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { useStore } from "./lib/store";
+import type { LedgerId } from "./lib/types";
 import { RUNNING_BUNDLE, fetchVersion, reloadTo, type VersionInfo } from "./lib/version";
 import { HistoryView } from "./views/HistoryView";
 import { InboxView } from "./views/InboxView";
@@ -27,6 +28,9 @@ type TabId = (typeof TABS)[number]["id"];
 export function App() {
   const store = useStore(import.meta.env.BASE_URL);
   const [tab, setTab] = useState<TabId>("now");
+  // Which ballot the Vote tab is showing. Held here so a run that has had its
+  // turn can send you straight to the ballot that decides what follows it.
+  const [voteLedger, setVoteLedger] = useState<LedgerId>("half");
   const [published, setPublished] = useState<VersionInfo | null>(null);
 
   // Check on open, and whenever you come back to the tab.
@@ -115,8 +119,19 @@ export function App() {
         <p className="muted">Loading the ledgers…</p>
       ) : (
         <>
-          {tab === "now" && <NowView store={store} data={data} />}
-          {tab === "vote" && <VoteView store={store} data={data} />}
+          {tab === "now" && (
+            <NowView
+              store={store}
+              data={data}
+              onVote={(ledger) => {
+                setVoteLedger(ledger);
+                setTab("vote");
+              }}
+            />
+          )}
+          {tab === "vote" && (
+            <VoteView store={store} data={data} ledger={voteLedger} setLedger={setVoteLedger} />
+          )}
           {tab === "shows" && <ShowsView store={store} data={data} />}
           {tab === "library" && <LibraryView store={store} data={data} />}
           {tab === "universes" && <UniverseView store={store} data={data} />}

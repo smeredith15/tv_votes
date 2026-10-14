@@ -1,6 +1,14 @@
 import { useMemo, useState } from "react";
 import { episodesFromSeasons, episodesLeftIn, perSitting } from "../lib/episodes";
-import { LEDGERS, ballotFor, caughtUp, unwatchedSeasons } from "../lib/ledgers";
+import {
+  LEDGERS,
+  ballotFor,
+  caughtUp,
+  labelForSeasons,
+  runFinished,
+  runSeasons,
+  unwatchedSeasons,
+} from "../lib/ledgers";
 import type { Store } from "../lib/store";
 import type { Dataset, LedgerId, Show } from "../lib/types";
 import { EpisodeTracker } from "./EpisodeTracker";
@@ -25,7 +33,16 @@ function pickFor(data: Dataset, ledger: LedgerId): Show | null {
   return null;
 }
 
-export function NowView({ store, data }: { store: Store; data: Dataset }) {
+export function NowView({
+  store,
+  data,
+  onVote,
+}: {
+  store: Store;
+  data: Dataset;
+  /** Send the ballot page to a ledger, for when a run has had its turn. */
+  onVote: (ledger: LedgerId) => void;
+}) {
   /** Shows set to pick themselves back up, with something waiting. */
   const resuming = useMemo(
     () => data.shows.filter((s) => s.autoResume && unwatchedSeasons(s).length > 0),
@@ -36,7 +53,7 @@ export function NowView({ store, data }: { store: Store; data: Dataset }) {
     <div className="now">
       <div className="now-main">
         {LEDGERS.map((ledger) => (
-          <PickCard key={ledger.id} store={store} data={data} ledger={ledger.id} />
+          <PickCard key={ledger.id} store={store} data={data} ledger={ledger.id} onVote={onVote} />
         ))}
 
         {resuming.length > 0 && (
@@ -70,7 +87,17 @@ export function NowView({ store, data }: { store: Store; data: Dataset }) {
   );
 }
 
-function PickCard({ store, data, ledger }: { store: Store; data: Dataset; ledger: LedgerId }) {
+function PickCard({
+  store,
+  data,
+  ledger,
+  onVote,
+}: {
+  store: Store;
+  data: Dataset;
+  ledger: LedgerId;
+  onVote: (ledger: LedgerId) => void;
+}) {
   const [choosing, setChoosing] = useState(false);
   const show = pickFor(data, ledger);
   const ledgerName = LEDGERS.find((l) => l.id === ledger)!.name;
@@ -101,7 +128,7 @@ function PickCard({ store, data, ledger }: { store: Store; data: Dataset; ledger
         />
       )}
 
-      {show ? <PickBody store={store} data={data} ledger={ledger} show={show} /> : (
+      {show ? <PickBody store={store} data={data} ledger={ledger} show={show} onVote={onVote} /> : (
         <p className="small muted" style={{ marginBottom: 0 }}>
           Nothing on the go. Draw one, or choose it yourself.
         </p>
@@ -115,19 +142,23 @@ function PickBody({
   data,
   ledger,
   show,
+  onVote,
 }: {
   store: Store;
   data: Dataset;
   ledger: LedgerId;
   show: Show;
+  onVote: (ledger: LedgerId) => void;
 }) {
-  const ballot = ballotFor(show, ledger);
-  const onDeck = show.seasons.filter((s) => ballot.seasons.includes(s.number) && !s.watched);
+  const progress = data.watching.progress?.[ledger];
+  // What this run covers, not what the ballot would land on next: the two part
+  // company as soon as the first season of the run is ticked off.
+  const run = runSeasons(show, ledger, progress);
+  const finished = caughtUp(show) || runFinished(show, run);
   // Counted from the episode cursor, so moving it moves this figure too — part
   // way through a season, whole unwatched seasons overstate what is left.
-  const progress = data.watching.progress?.[ledger];
   const cursor = progress?.showId === show.id ? progress.episode : episodesFromSeasons(show);
-  const episodesLeft = episodesLeftIn(show, ballot.seasons, cursor);
+  const episodesLeft = episodesLeftIn(show, run, cursor);
   const weeksLeft = Math.ceil(episodesLeft / perSitting(show));
   const universe = data.universes.find((u) => u.id === show.universe);
   const nextUp = universe?.order.find((i) => !i.watched);
@@ -138,7 +169,7 @@ function PickBody({
         <Poster show={show} size={64} />
         <div className="stack" style={{ flex: "1 1 220px" }}>
           <strong style={{ fontSize: 19 }}>{show.title}</strong>
-          <span className="small">{nextUp ? `Up next: ${nextUp.label}` : ballot.label}</span>
+          <span className="small">{nextUp ? `Up next: ${nextUp.label}` : labelForSeasons(show, run)}</span>
           <span className="row small" style={{ gap: 6 }}>
             <StatusPill show={show} />
             <ProviderTags show={show} limit={3} />
@@ -156,9 +187,11 @@ function PickBody({
         )}
       </div>
 
-      <EpisodeTracker store={store} ledger={ledger} show={show} stored={data.watching.progress?.[ledger]} />
+      {finished && <HadItsTurn store={store} ledger={ledger} show={show} onVote={onVote} />}
 
-      {onDeck.length === 0 && !nextUp && show.seasons.length === 0 && (
+      <EpisodeTracker store={store} ledger={ledger} show={show} stored={progress} />
+
+      {!nextUp && show.seasons.length === 0 && (
         <p className="small muted" style={{ marginBottom: 0 }}>
           No season list yet — the nightly refresh fills these in from TMDB.
         </p>
@@ -177,6 +210,55 @@ function PickBody({
         </label>
       )}
     </>
+  );
+}
+
+/**
+ * The run is over: vote again, or carry on by hand.
+ *
+ * A vote buys a season, or half a long series — not the whole thing — so when
+ * that much is watched the ballot has had its turn. Rolling straight on to the
+ * next half would skip the vote that decides whether it is next at all.
+ */
+function HadItsTurn({
+  store,
+  ledger,
+  show,
+  onVote,
+}: {
+  store: Store;
+  ledger: LedgerId;
+  show: Show;
+  onVote: (ledger: LedgerId) => void;
+}) {
+  const next = ballotFor(show, ledger);
+
+  return (
+    <div className="turn-over">
+      <strong className="small">
+        {next.seasons.length > 0 ? `${show.title} has had its turn.` : `${show.title} is finished.`}
+      </strong>
+      <p className="small muted" style={{ margin: "4px 0 8px" }}>
+        {next.seasons.length > 0
+          ? `Put it back to a vote, or carry on with ${next.label.toLowerCase()} without voting.`
+          : "Nothing left to watch — the ballot is free for something else."}
+      </p>
+      <div className="row small">
+        <button className="primary small" onClick={() => onVote(ledger)}>
+          Vote now
+        </button>
+        {next.seasons.length > 0 && (
+          <button
+            className="small"
+            onClick={() =>
+              store.dispatch({ type: "continueRun", ledger, showId: show.id, seasons: next.seasons })
+            }
+          >
+            Keep going — {next.label}
+          </button>
+        )}
+      </div>
+    </div>
   );
 }
 

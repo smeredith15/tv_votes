@@ -1,4 +1,5 @@
 import { episodesFromSeasons, seasonsCovered } from "./episodes";
+import { ballotFor } from "./ledgers";
 import { insertionIndex } from "./titles";
 import type { Dataset, Draw, InboxItem, LedgerId, Progress, Show } from "./types";
 
@@ -36,7 +37,13 @@ export type Op =
   /** Record when a run began, and where it began from. */
   | { type: "startRun"; ledger: LedgerId; showId: string; startedOn: string; startEpisode: number }
   /** A weekend worth a double sitting, or one taken back. */
-  | { type: "longWeekend"; ledger: LedgerId; showId: string; delta: number };
+  | { type: "longWeekend"; ledger: LedgerId; showId: string; delta: number }
+  /**
+   * Carry on with the same show: the seasons chosen become the run. They are
+   * named rather than worked out on the way in, because compacting a save can
+   * put a cursor move after this one, and re-deriving them then would undo it.
+   */
+  | { type: "continueRun"; ledger: LedgerId; showId: string; seasons: number[] };
 
 /**
  * Progress for this ballot, starting fresh if it is about another show.
@@ -46,12 +53,38 @@ export type Op =
  * throw away everything watched before it.
  */
 function progressFor(data: Dataset, ledger: LedgerId, showId: string): Progress {
-  const stored = data.watching.progress?.[ledger];
-  if (stored && stored.showId === showId) return stored;
-
   const show = findShow(data, showId);
+  const stored = data.watching.progress?.[ledger];
+  if (stored && stored.showId === showId) {
+    // Progress saved before runs recorded their seasons: take the ones the
+    // ballot is on now, which is the run under way.
+    return stored.seasons ? stored : { ...stored, seasons: show ? ballotFor(show, ledger).seasons : [] };
+  }
+
   const watched = show ? episodesFromSeasons(show) : 0;
-  return { showId, episode: watched, startEpisode: watched, longWeekends: 0 };
+  return {
+    showId,
+    episode: watched,
+    startEpisode: watched,
+    longWeekends: 0,
+    seasons: show ? ballotFor(show, ledger).seasons : [],
+  };
+}
+
+/**
+ * Put a ballot's run on a show, or move it along to the next part of one.
+ *
+ * A show that wins again — or is carried on by hand — starts on the half or
+ * season after the one just watched. The cursor survives: it is the same run
+ * of the same show, further along.
+ */
+function beginRun(data: Dataset, ledger: LedgerId, showId: string, seasons?: number[]): void {
+  const show = findShow(data, showId);
+  if (!show) return;
+  setProgress(data, ledger, {
+    ...progressFor(data, ledger, showId),
+    seasons: seasons ?? ballotFor(show, ledger).seasons,
+  });
 }
 
 function setProgress(data: Dataset, ledger: LedgerId, progress: Progress): void {
@@ -108,6 +141,7 @@ export function applyOp(data: Dataset, op: Op): Dataset {
         ...data.watching,
         picks: { ...data.watching.picks, [op.draw.ledger]: op.draw.winnerId },
       };
+      beginRun(data, op.draw.ledger, op.draw.winnerId);
       return data;
     }
     case "universeItem": {
@@ -193,6 +227,11 @@ export function applyOp(data: Dataset, op: Op): Dataset {
     }
     case "setPick": {
       data.watching = { ...data.watching, picks: { ...data.watching.picks, [op.ledger]: op.showId } };
+      if (op.showId) beginRun(data, op.ledger, op.showId);
+      return data;
+    }
+    case "continueRun": {
+      beginRun(data, op.ledger, op.showId, op.seasons);
       return data;
     }
     case "aside": {
@@ -276,6 +315,7 @@ export function compact(ops: Op[]): Op[] {
     else if (op.type === "aside") key = `aside:${op.showId}`;
     else if (op.type === "setEpisode") key = `episode:${op.ledger}`;
     else if (op.type === "startRun") key = `run:${op.ledger}`;
+    else if (op.type === "continueRun") key = `continue:${op.ledger}`;
 
     if (key) keyed.set(key, op);
     else rest.push(op);

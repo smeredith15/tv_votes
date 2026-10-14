@@ -18,13 +18,15 @@ import { ProviderTags, StatusPill } from "./ShowBits";
 interface Props {
   store: Store;
   data: Dataset;
+  /** The ballot on show. Held by the app so other pages can send you to one. */
+  ledger: LedgerId;
+  setLedger: (ledger: LedgerId) => void;
 }
 
 /** Rows drawn at once. The rest are a click away rather than all at once. */
 const PAGE = 50;
 
-export function VoteView({ store, data }: Props) {
-  const [ledger, setLedger] = useState<LedgerId>("half");
+export function VoteView({ store, data, ledger, setLedger }: Props) {
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(PAGE);
   /**

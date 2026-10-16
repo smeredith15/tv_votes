@@ -19,6 +19,26 @@
    "network": "Peacock",
    "runtime": null,
    "suggestedAt": "2026-10-15T12:27:29.943Z"
+  },
+  {
+   "tmdbId": 307176,
+   "title": "Dustfall",
+   "firstAirDate": "2026-10-11",
+   "overview": "Seasoned detective Tig returns to her hometown of North Gap after years in the city, and uncovers a string of drink-spiking assaults, the case is turned on its head when a primary suspect is found murdered.",
+   "poster": "/a7LdXshL4vuCA3LWB2gNNckBIpO.jpg",
+   "network": "ABC TV",
+   "runtime": 60,
+   "suggestedAt": "2026-10-16T12:06:12.157Z"
+  },
+  {
+   "tmdbId": 313630,
+   "title": "Eternally Yours",
+   "firstAirDate": "2026-10-08",
+   "overview": "Charles and Liz are a charming, married 500-year-old vampire couple whose relationship has survived centuries because, as vampires, divorce isn’t exactly an option. Together, they navigate modern society and their daughter dating a human.",
+   "poster": "/gMKJJtwOnTkhkbdQabyo7OKTosb.jpg",
+   "network": "CBS",
+   "runtime": null,
+   "suggestedAt": "2026-10-16T12:06:12.157Z"
   }
  ],
  "dismissed": [

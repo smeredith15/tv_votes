@@ -39,6 +39,16 @@
    "network": "CBS",
    "runtime": null,
    "suggestedAt": "2026-10-16T12:06:12.157Z"
+  },
+  {
+   "tmdbId": 335536,
+   "title": "TYSON",
+   "firstAirDate": "2026-10-13",
+   "overview": "Explore the explosive life of Mike Tyson — one of the most feared and fascinating figures in sports history.",
+   "poster": "/mdtpJEWW1j5Ns7bIcbw1UeIdvhp.jpg",
+   "network": "Netflix",
+   "runtime": 60,
+   "suggestedAt": "2026-10-17T11:22:21.205Z"
   }
  ],
  "dismissed": [

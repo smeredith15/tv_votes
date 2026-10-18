@@ -49,6 +49,26 @@
    "network": "Netflix",
    "runtime": 60,
    "suggestedAt": "2026-10-17T11:22:21.205Z"
+  },
+  {
+   "tmdbId": 286183,
+   "title": "Hollywood Arts",
+   "firstAirDate": "2026-10-15",
+   "overview": "Class is in session at Hollywood Arts! Self-proclaimed icon Trina Vega returns to steer gifted teens toward stardom, status and hilarious havoc.",
+   "poster": "/xsL1ig6Tyi0j9AZPt23yZprslGS.jpg",
+   "network": "Netflix",
+   "runtime": 30,
+   "suggestedAt": "2026-10-18T11:56:43.908Z"
+  },
+  {
+   "tmdbId": 292111,
+   "title": "The Reluctant Vampire",
+   "firstAirDate": "2026-10-04",
+   "overview": "A young vampire finds out he is not in fact a vampire at all, and has to live a double life.",
+   "poster": "/8nAWtAkMOtmAyq0ZaqEI3Ia7w8M.jpg",
+   "network": "BBC One",
+   "runtime": 30,
+   "suggestedAt": "2026-10-18T11:56:43.908Z"
   }
  ],
  "dismissed": [

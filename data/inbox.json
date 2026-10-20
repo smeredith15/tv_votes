@@ -1,5 +1,16 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 336418,
+   "title": "The Pet Cemetery Murders: A Ghost Story",
+   "firstAirDate": "2026-10-11",
+   "overview": "The re-opening of a mysterious 1985 cold case murder in Louisiana unearths a haunting history of bloodshed and long-buried trauma.",
+   "poster": "/aSD3YkLuTBnoYgyTCXtZRAxezNP.jpg",
+   "network": "HBO",
+   "runtime": 60,
+   "suggestedAt": "2026-10-20T12:32:12.303Z"
+  }
+ ],
  "dismissed": [
   300507,
   318312,

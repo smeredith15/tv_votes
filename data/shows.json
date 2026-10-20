@@ -19021,6 +19021,39 @@
    "nextAirDate": null
   },
   {
+   "id": "crystal-lake",
+   "title": "Crystal Lake",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 213562,
+   "poster": "/3ENhExiD2fcjk5FX0AcAXcvLu9N.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-20T00:05:52.695Z"
+  },
+  {
    "id": "csi-crime-scene-investigation",
    "title": "CSI: Crime Scene Investigation",
    "runtime": 60,
@@ -25100,6 +25133,39 @@
    "nextAirDate": null
   },
   {
+   "id": "dustfall",
+   "title": "Dustfall",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 307176,
+   "poster": "/a7LdXshL4vuCA3LWB2gNNckBIpO.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-20T00:06:02.089Z"
+  },
+  {
    "id": "dying-for-sex",
    "title": "Dying for Sex",
    "runtime": 30,
@@ -27008,6 +27074,39 @@
      "shelby": 0
     }
    }
+  },
+  {
+   "id": "eternally-yours",
+   "title": "Eternally Yours",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 313630,
+   "poster": "/gMKJJtwOnTkhkbdQabyo7OKTosb.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-20T00:05:54.612Z"
   },
   {
    "id": "euphoria",
@@ -72877,6 +72976,39 @@
    "nextAirDate": null
   },
   {
+   "id": "reluctant-vampire",
+   "title": "The Reluctant Vampire",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 292111,
+   "poster": "/8nAWtAkMOtmAyq0ZaqEI3Ia7w8M.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-20T00:06:09.504Z"
+  },
+  {
    "id": "rescue-me",
    "title": "Rescue Me",
    "runtime": 60,
@@ -93681,6 +93813,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "visionquest",
+   "title": "VisionQuest",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 213375,
+   "poster": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-20T00:05:50.832Z"
   },
   {
    "id": "wacky-races",

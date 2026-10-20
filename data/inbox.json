@@ -1,76 +1,5 @@
 {
- "pending": [
-  {
-   "tmdbId": 213375,
-   "title": "VisionQuest",
-   "firstAirDate": "2026-10-13",
-   "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
-   "poster": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-   "network": "Disney+",
-   "runtime": 60,
-   "suggestedAt": "2026-10-14T12:39:12.972Z"
-  },
-  {
-   "tmdbId": 213562,
-   "title": "Crystal Lake",
-   "firstAirDate": "2026-10-15",
-   "overview": "Single mother Pam Voorhees has been unable to shake her grief after her young, sickly son Jason tragically drowned in the town lake almost a year before. When two strangers arrive at Pam's door digging into her past, a disturbing chain of events is set into motion, leaving the townspeople of Crystal Lake wondering: just who is Pam Voorhees?",
-   "poster": "/3ENhExiD2fcjk5FX0AcAXcvLu9N.jpg",
-   "network": "Peacock",
-   "runtime": null,
-   "suggestedAt": "2026-10-15T12:27:29.943Z"
-  },
-  {
-   "tmdbId": 307176,
-   "title": "Dustfall",
-   "firstAirDate": "2026-10-11",
-   "overview": "Seasoned detective Tig returns to her hometown of North Gap after years in the city, and uncovers a string of drink-spiking assaults, the case is turned on its head when a primary suspect is found murdered.",
-   "poster": "/a7LdXshL4vuCA3LWB2gNNckBIpO.jpg",
-   "network": "ABC TV",
-   "runtime": 60,
-   "suggestedAt": "2026-10-16T12:06:12.157Z"
-  },
-  {
-   "tmdbId": 313630,
-   "title": "Eternally Yours",
-   "firstAirDate": "2026-10-08",
-   "overview": "Charles and Liz are a charming, married 500-year-old vampire couple whose relationship has survived centuries because, as vampires, divorce isn’t exactly an option. Together, they navigate modern society and their daughter dating a human.",
-   "poster": "/gMKJJtwOnTkhkbdQabyo7OKTosb.jpg",
-   "network": "CBS",
-   "runtime": null,
-   "suggestedAt": "2026-10-16T12:06:12.157Z"
-  },
-  {
-   "tmdbId": 335536,
-   "title": "TYSON",
-   "firstAirDate": "2026-10-13",
-   "overview": "Explore the explosive life of Mike Tyson — one of the most feared and fascinating figures in sports history.",
-   "poster": "/mdtpJEWW1j5Ns7bIcbw1UeIdvhp.jpg",
-   "network": "Netflix",
-   "runtime": 60,
-   "suggestedAt": "2026-10-17T11:22:21.205Z"
-  },
-  {
-   "tmdbId": 286183,
-   "title": "Hollywood Arts",
-   "firstAirDate": "2026-10-15",
-   "overview": "Class is in session at Hollywood Arts! Self-proclaimed icon Trina Vega returns to steer gifted teens toward stardom, status and hilarious havoc.",
-   "poster": "/xsL1ig6Tyi0j9AZPt23yZprslGS.jpg",
-   "network": "Netflix",
-   "runtime": 30,
-   "suggestedAt": "2026-10-18T11:56:43.908Z"
-  },
-  {
-   "tmdbId": 292111,
-   "title": "The Reluctant Vampire",
-   "firstAirDate": "2026-10-04",
-   "overview": "A young vampire finds out he is not in fact a vampire at all, and has to live a double life.",
-   "poster": "/8nAWtAkMOtmAyq0ZaqEI3Ia7w8M.jpg",
-   "network": "BBC One",
-   "runtime": 30,
-   "suggestedAt": "2026-10-18T11:56:43.908Z"
-  }
- ],
+ "pending": [],
  "dismissed": [
   300507,
   318312,
@@ -86,6 +15,8 @@
   231801,
   319800,
   284833,
-  334151
+  334151,
+  335536,
+  286183
  ]
 }

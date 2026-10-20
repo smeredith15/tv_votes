@@ -89531,6 +89531,64 @@
    "nextAirDate": null
   },
   {
+   "id": "top-cat",
+   "title": "Top Cat",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 4232,
+   "poster": "/hnWYwPE7nwqAD1OGLEEXyML5LaH.jpg",
+   "providers": [
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    },
+    {
+     "name": "Apple TV Store",
+     "type": "buy",
+     "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Google Play Movies",
+     "type": "buy",
+     "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+    }
+   ],
+   "providersUpdated": "2026-10-20T00:08:34.990Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 30,
+     "airDate": "1961-09-27",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-20T00:08:34.990Z"
+  },
+  {
    "id": "torchwood",
    "title": "Torchwood",
    "runtime": 60,

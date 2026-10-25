@@ -32052,6 +32052,59 @@
    "nextAirDate": null
   },
   {
+   "id": "furious",
+   "title": "Furious",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "nextAirDate": null,
+   "tmdbId": 287238,
+   "poster": "/xnxxrEKtBaIcI1ewq50pLkOMU6u.jpg",
+   "providers": [
+    {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    }
+   ],
+   "providersUpdated": "2026-10-25T21:18:00.795Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2026-07-27",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-25T21:18:00.795Z"
+  },
+  {
    "id": "futurama",
    "title": "Futurama",
    "runtime": 30,

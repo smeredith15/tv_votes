@@ -47901,6 +47901,59 @@
    "nextAirDate": null
   },
   {
+   "id": "lanterns",
+   "title": "Lanterns",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "nextAirDate": null,
+   "tmdbId": 95350,
+   "poster": "/rb94rKVIzLyfWufIN7WqLvadBDH.jpg",
+   "providers": [
+    {
+     "name": "HBO Max Amazon Channel",
+     "type": "flatrate",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "name": "HBO Max",
+     "type": "flatrate",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    }
+   ],
+   "providersUpdated": "2026-10-25T21:19:54.848Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Season 1",
+     "episodes": 8,
+     "airDate": "2026-08-16",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-25T21:19:54.848Z"
+  },
+  {
    "id": "larry-charles-dangerous-world-of-comedy",
    "title": "Larry Charles' Dangerous World of Comedy",
    "runtime": 60,

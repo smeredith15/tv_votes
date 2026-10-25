@@ -1,26 +1,5 @@
 {
- "pending": [
-  {
-   "tmdbId": 336418,
-   "title": "The Pet Cemetery Murders: A Ghost Story",
-   "firstAirDate": "2026-10-11",
-   "overview": "The re-opening of a mysterious 1985 cold case murder in Louisiana unearths a haunting history of bloodshed and long-buried trauma.",
-   "poster": "/aSD3YkLuTBnoYgyTCXtZRAxezNP.jpg",
-   "network": "HBO",
-   "runtime": 60,
-   "suggestedAt": "2026-10-20T12:32:12.303Z"
-  },
-  {
-   "tmdbId": 275139,
-   "title": "Phony",
-   "firstAirDate": "2026-10-20",
-   "overview": "After waking up from a freak car accident, Sonny discovers that his mother has been replaced by an impostor.",
-   "poster": "/iCyQc8cSSHkxUHbkvzbC77owALt.jpg",
-   "network": "Hulu",
-   "runtime": 30,
-   "suggestedAt": "2026-10-21T12:42:56.529Z"
-  }
- ],
+ "pending": [],
  "dismissed": [
   300507,
   318312,
@@ -38,6 +17,7 @@
   284833,
   334151,
   335536,
-  286183
+  286183,
+  336418
  ]
 }

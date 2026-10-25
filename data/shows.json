@@ -69227,6 +69227,39 @@
    "nextAirDate": null
   },
   {
+   "id": "phony",
+   "title": "Phony",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 275139,
+   "poster": "/iCyQc8cSSHkxUHbkvzbC77owALt.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-25T21:16:51.396Z"
+  },
+  {
    "id": "physical",
    "title": "Physical",
    "runtime": 30,

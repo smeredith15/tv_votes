@@ -1,5 +1,7 @@
 import { useState } from "react";
 import {
+  airedEpisodes,
+  airsNext,
   episodesFromSeasons,
   formatPosition,
   pace,
@@ -8,11 +10,14 @@ import {
   totalEpisodes,
 } from "../lib/episodes";
 import type { Store } from "../lib/store";
-import type { LedgerId, Progress, Show } from "../lib/types";
+import type { LedgerId, Progress, RunId, Show } from "../lib/types";
 
 interface Props {
   store: Store;
-  ledger: LedgerId;
+  /** Which cursor this is: a ballot, or a show watched on the side. */
+  run: RunId;
+  /** The ballot's rules, for the Friday schedule. Side shows have none. */
+  ledger?: LedgerId;
   show: Show;
   stored?: Progress;
 }
@@ -24,7 +29,7 @@ interface Props {
  * falling behind is measured in episodes, and the useful question is which one
  * you are supposed to be on tonight.
  */
-export function EpisodeTracker({ store, ledger, show, stored }: Props) {
+export function EpisodeTracker({ store, run, ledger, show, stored }: Props) {
   const [editing, setEditing] = useState(false);
 
   const total = totalEpisodes(show);
@@ -38,6 +43,10 @@ export function EpisodeTracker({ store, ledger, show, stored }: Props) {
 
   const watched = progress.episode;
   const upNext = positionAfter(show.seasons, watched);
+  // Nothing to watch past what has gone out, however many the season will
+  // end up with. A show that has finished airing has all of them.
+  const aired = airedEpisodes(show);
+  const waiting = Math.max(0, aired - watched);
   const schedule =
     ledger === "weekly" && progress.startedOn
       ? pace(show, {
@@ -49,7 +58,7 @@ export function EpisodeTracker({ store, ledger, show, stored }: Props) {
       : null;
 
   const move = (episode: number) =>
-    store.dispatch({ type: "setEpisode", ledger, showId: show.id, episode });
+    store.dispatch({ type: "setEpisode", run, showId: show.id, episode });
 
   return (
     <div className="tracker">
@@ -58,13 +67,20 @@ export function EpisodeTracker({ store, ledger, show, stored }: Props) {
           <button className="small" onClick={() => move(watched - 1)} disabled={watched <= 0} title="Back one">
             −
           </button>
-          <strong>{formatPosition(upNext)}</strong>
-          <span className="small muted">up next</span>
-          <button className="small" onClick={() => move(watched + 1)} disabled={watched >= total} title="Watched one">
+          <strong>{waiting > 0 ? formatPosition(upNext) : "Caught up"}</strong>
+          <span className="small muted">{waiting > 0 ? "up next" : airsNext(show)}</span>
+          <button
+            className="small"
+            onClick={() => move(watched + 1)}
+            disabled={waiting <= 0}
+            title={waiting > 0 ? "Watched one" : "Nothing further has aired"}
+          >
             +
           </button>
         </span>
         <span className="small muted">
+          {/* Still going out: what is waiting matters more than the full run. */}
+          {aired < total && waiting > 0 && `${waiting} waiting · `}
           {watched} of {total} watched
         </span>
       </div>

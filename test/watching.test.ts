@@ -104,7 +104,7 @@ test("finishing a run leaves it where it is rather than rolling on", () => {
   const ops: Op[] = [
     { type: "draw", draw: draw("half", "ent") },
     // Through the rest of season 4.
-    { type: "setEpisode", ledger: "half", showId: "ent", episode: 40 },
+    { type: "setEpisode", run: "half", showId: "ent", episode: 40 },
   ];
   applyOps(data, ops);
 
@@ -149,7 +149,7 @@ test("a cursor move made after carrying on does not undo it", () => {
     { type: "setPick", ledger: "mini", showId: "crown" },
     { type: "continueRun", ledger: "mini", showId: "crown", seasons: [2] },
     // Back one, so season 1 is no longer finished.
-    { type: "setEpisode", ledger: "mini", showId: "crown", episode: 9 },
+    { type: "setEpisode", run: "mini", showId: "crown", episode: 9 },
   ];
 
   for (const order of [ops, compact(ops), [ops[0], ops[2], ops[1]]]) {
@@ -165,7 +165,7 @@ test("a vote kept on the same show overrides the prompt to keep going", () => {
   applyOps(data, [
     { type: "setPick", ledger: "mini", showId: "crown" },
     // Through season 1, which is all that vote bought.
-    { type: "setEpisode", ledger: "mini", showId: "crown", episode: 10 },
+    { type: "setEpisode", run: "mini", showId: "crown", episode: 10 },
   ]);
   assert.deepEqual(data.watching.progress?.mini?.seasons, [1]);
   assert.equal(runFinished(data.shows[0], [1]), true, "season 1 watched: the run is over");

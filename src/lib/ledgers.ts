@@ -1,4 +1,4 @@
-import type { Dataset, LedgerId, Progress, Show, WatchState } from "./types";
+import type { Dataset, LedgerId, Progress, RunId, Show, WatchState } from "./types";
 
 export const LEDGERS: { id: LedgerId; name: string; blurb: string }[] = [
   { id: "half", name: "Half-hour", blurb: "One series at a time, start to finish" },
@@ -121,6 +121,11 @@ function ballotSeasons(show: Show, ledger: LedgerId): number[] {
 export function runSeasons(show: Show, ledger: LedgerId, progress?: Progress): number[] {
   if (progress?.showId === show.id && progress.seasons) return progress.seasons;
   return ballotFor(show, ledger).seasons;
+}
+
+/** The cursor a show on the side keeps, kept apart from the four ballots. */
+export function asideRun(showId: string): RunId {
+  return `aside:${showId}`;
 }
 
 /** Everything the run covered is watched: the show has had its turn. */

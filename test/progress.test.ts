@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { ballotFor } from "../src/lib/ledgers";
-import { applyOps, cloneForOps, type Op } from "../src/lib/ops";
+import { airedEpisodes, totalEpisodes } from "../src/lib/episodes";
+import { asideRun, ballotFor } from "../src/lib/ledgers";
+import { applyOps, cloneForOps, migrate, type Op } from "../src/lib/ops";
 import { makeData, makeShow, seasons } from "./helpers";
 
 const wireSeasons = [
@@ -32,7 +33,7 @@ test("the Friday show runs to the end whatever its length", () => {
 
 test("moving the cursor keeps the season ticks in step", () => {
   const data = withWire();
-  applyOps(data, [{ type: "setEpisode", ledger: "weekly", showId: "wire", episode: 30 }]);
+  applyOps(data, [{ type: "setEpisode", run: "weekly", showId: "wire", episode: 30 }]);
 
   assert.equal(data.watching.progress?.weekly?.episode, 30);
   assert.deepEqual(
@@ -41,16 +42,16 @@ test("moving the cursor keeps the season ticks in step", () => {
     "part way through the third season",
   );
 
-  applyOps(data, [{ type: "setEpisode", ledger: "weekly", showId: "wire", episode: 37 }]);
+  applyOps(data, [{ type: "setEpisode", run: "weekly", showId: "wire", episode: 37 }]);
   assert.deepEqual(data.shows[0].seasons.map((s) => s.watched), [true, true, true, false, false]);
 });
 
 test("the cursor cannot run off either end", () => {
   const data = withWire();
-  applyOps(data, [{ type: "setEpisode", ledger: "weekly", showId: "wire", episode: -5 }]);
+  applyOps(data, [{ type: "setEpisode", run: "weekly", showId: "wire", episode: -5 }]);
   assert.equal(data.watching.progress?.weekly?.episode, 0);
 
-  applyOps(data, [{ type: "setEpisode", ledger: "weekly", showId: "wire", episode: 999 }]);
+  applyOps(data, [{ type: "setEpisode", run: "weekly", showId: "wire", episode: 999 }]);
   assert.equal(data.watching.progress?.weekly?.episode, 60);
 });
 
@@ -101,11 +102,11 @@ test("progress belongs to a ballot's show, and starts over when the pick does", 
   const data = withWire();
   data.shows.push(makeShow({ id: "fargo", runtime: 60, seasons: seasons(5) }));
   applyOps(data, [
-    { type: "setEpisode", ledger: "weekly", showId: "wire", episode: 30 },
+    { type: "setEpisode", run: "weekly", showId: "wire", episode: 30 },
     { type: "longWeekend", ledger: "weekly", showId: "wire", delta: 2 },
   ]);
 
-  applyOps(data, [{ type: "setEpisode", ledger: "weekly", showId: "fargo", episode: 3 }]);
+  applyOps(data, [{ type: "setEpisode", run: "weekly", showId: "fargo", episode: 3 }]);
   const progress = data.watching.progress?.weekly;
   assert.equal(progress?.showId, "fargo");
   assert.equal(progress?.episode, 3);
@@ -116,8 +117,8 @@ test("each ballot tracks its own show", () => {
   const data = withWire();
   data.shows.push(makeShow({ id: "entourage", runtime: 30, seasons: seasons(8) }));
   applyOps(data, [
-    { type: "setEpisode", ledger: "weekly", showId: "wire", episode: 26 },
-    { type: "setEpisode", ledger: "half", showId: "entourage", episode: 12 },
+    { type: "setEpisode", run: "weekly", showId: "wire", episode: 26 },
+    { type: "setEpisode", run: "half", showId: "entourage", episode: 12 },
   ]);
   assert.equal(data.watching.progress?.weekly?.episode, 26);
   assert.equal(data.watching.progress?.half?.episode, 12);
@@ -125,10 +126,55 @@ test("each ballot tracks its own show", () => {
 
 test("progress does not leak back through the cheap copy", () => {
   const base = withWire();
-  const ops: Op[] = [{ type: "setEpisode", ledger: "weekly", showId: "wire", episode: 30 }];
+  const ops: Op[] = [{ type: "setEpisode", run: "weekly", showId: "wire", episode: 30 }];
   const next = applyOps(cloneForOps(base, ops), ops);
 
   assert.equal(next.watching.progress?.weekly?.episode, 30);
   assert.equal(base.watching.progress?.weekly, undefined, "progress leaked");
   assert.deepEqual(base.shows[0].seasons.map((s) => s.watched), [true, true, false, false, false]);
+});
+
+test("a show on the side keeps a cursor of its own", () => {
+  const data = makeData([
+    makeShow({ id: "abbott", runtime: 30, seasons: seasons(6, 5) }),
+    makeShow({ id: "wire", runtime: 60, seasons: seasons(5, 2) }),
+  ]);
+  applyOps(data, [
+    { type: "aside", showId: "abbott", add: true },
+    { type: "setEpisode", run: asideRun("abbott"), showId: "abbott", episode: 52 },
+    { type: "setEpisode", run: "weekly", showId: "wire", episode: 30 },
+  ]);
+
+  assert.equal(data.watching.progress?.["aside:abbott"]?.episode, 52);
+  assert.equal(data.watching.progress?.weekly?.episode, 30, "the Friday ballot is untouched");
+  // Ticks follow the cursor here too, so the season list agrees with it.
+  assert.deepEqual(
+    data.shows[0].seasons.map((s) => s.watched),
+    [true, true, true, true, true, false],
+  );
+});
+
+test("only the episodes that have aired count as waiting", () => {
+  const show = makeShow({
+    id: "abbott",
+    seasons: [
+      { number: 1, episodes: 10, aired: 10, watched: true },
+      // Four ordered, two of them out so far.
+      { number: 2, episodes: 4, aired: 2, watched: false },
+    ],
+  });
+  assert.equal(totalEpisodes(show), 14);
+  assert.equal(airedEpisodes(show), 12);
+
+  // Seasons stored before airing was tracked are taken as fully out.
+  const older = makeShow({ id: "old", seasons: seasons(2) });
+  assert.equal(airedEpisodes(older), totalEpisodes(older));
+});
+
+test("an unsaved cursor from an older bundle still lands on its ballot", () => {
+  const legacy = [{ type: "setEpisode", ledger: "weekly", showId: "wire", episode: 30 }] as unknown as Op[];
+  const data = makeData([makeShow({ id: "wire", runtime: 60, seasons: seasons(5, 2) })]);
+  applyOps(data, migrate(legacy));
+
+  assert.equal(data.watching.progress?.weekly?.episode, 30);
 });

@@ -18,6 +18,18 @@ export function totalEpisodes(show: Show): number {
   return show.seasons.reduce((sum, season) => sum + season.episodes, 0);
 }
 
+/**
+ * Episodes that have actually gone out.
+ *
+ * A season still airing has fewer episodes available than it will end with,
+ * and the cursor must not run past them — being "behind" on an episode nobody
+ * has seen is not a thing. Seasons stored before airing was tracked carry no
+ * count, and are taken as fully aired.
+ */
+export function airedEpisodes(show: Show): number {
+  return show.seasons.reduce((sum, season) => sum + (season.aired ?? season.episodes), 0);
+}
+
 /** Episodes accounted for by the seasons already ticked off. */
 export function episodesFromSeasons(show: Show): number {
   return show.seasons.filter((s) => s.watched).reduce((sum, s) => sum + s.episodes, 0);
@@ -52,6 +64,18 @@ export function seasonsCovered(seasons: Season[], watched: number): number[] {
     if (watched >= running) done.push(season.number);
   }
   return done;
+}
+
+/**
+ * What is coming after the last episode that has aired.
+ *
+ * A show on the side is usually still going out, so "caught up" is only half
+ * an answer: the other half is when the next one lands.
+ */
+export function airsNext(show: Show): string {
+  if (totalEpisodes(show) <= airedEpisodes(show)) return "nothing left";
+  if (!show.nextAirDate) return "no date yet";
+  return `next ${new Date(`${show.nextAirDate}T00:00:00`).toLocaleDateString()}`;
 }
 
 /** Episodes a sitting delivers: two half-hours, or one hour. */

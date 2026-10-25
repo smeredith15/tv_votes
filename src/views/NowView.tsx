@@ -1,7 +1,16 @@
 import { useMemo, useState } from "react";
-import { episodesFromSeasons, episodesLeftIn, perSitting } from "../lib/episodes";
+import {
+  airedEpisodes,
+  airsNext,
+  episodesFromSeasons,
+  episodesLeftIn,
+  formatPosition,
+  perSitting,
+  positionAfter,
+} from "../lib/episodes";
 import {
   LEDGERS,
+  asideRun,
   ballotFor,
   caughtUp,
   labelForSeasons,
@@ -189,7 +198,7 @@ function PickBody({
 
       {finished && <HadItsTurn store={store} ledger={ledger} show={show} onVote={onVote} />}
 
-      <EpisodeTracker store={store} ledger={ledger} show={show} stored={progress} />
+      <EpisodeTracker store={store} run={ledger} ledger={ledger} show={show} stored={progress} />
 
       {!nextUp && show.seasons.length === 0 && (
         <p className="small muted" style={{ marginBottom: 0 }}>
@@ -302,16 +311,20 @@ function ShowPicker({ data, onPick }: { data: Dataset; onPick: (id: string) => v
 }
 
 /**
- * One show on the side, with its seasons a click away.
+ * One show on the side, with its episodes and seasons a click away.
  *
- * Nothing here goes through a ballot, so this is the only place these seasons
- * can be ticked off — collapsed by default, because the panel is narrow and a
- * long-running show would otherwise fill it.
+ * Nothing here goes through a ballot, so this is the only place these can be
+ * ticked off — collapsed by default, because the panel is narrow and a
+ * long-running show would otherwise fill it. Most of these are still going
+ * out week to week, so the line that matters is how many are waiting.
  */
-function AsideRow({ store, show }: { store: Store; show: Show }) {
+function AsideRow({ store, data, show }: { store: Store; data: Dataset; show: Show }) {
   const [open, setOpen] = useState(false);
-  const left = unwatchedSeasons(show);
-  const watched = show.seasons.length - left.length;
+  const run = asideRun(show.id);
+  const progress = data.watching.progress?.[run];
+  const cursor = progress?.showId === show.id ? progress.episode : episodesFromSeasons(show);
+  const waiting = Math.max(0, airedEpisodes(show) - cursor);
+  const upNext = positionAfter(show.seasons, cursor);
 
   return (
     <div className="aside-row-wrap">
@@ -320,13 +333,15 @@ function AsideRow({ store, show }: { store: Store; show: Show }) {
           className="stack aside-open"
           onClick={() => setOpen(!open)}
           disabled={show.seasons.length === 0}
-          title={show.seasons.length ? "Show the seasons" : undefined}
+          title={show.seasons.length ? "Show the episodes" : undefined}
         >
           <span className="small aside-title">{show.title}</span>
           <span className="small muted">
             {show.seasons.length === 0
               ? describeProgress(show)
-              : `${watched}/${show.seasons.length} watched${left.length ? ` · S${left[0]} next` : ""}`}
+              : waiting > 0
+                ? `${formatPosition(upNext)} · ${waiting} waiting`
+                : `caught up · ${airsNext(show)}`}
           </span>
         </button>
         <button
@@ -339,25 +354,28 @@ function AsideRow({ store, show }: { store: Store; show: Show }) {
       </div>
 
       {open && show.seasons.length > 0 && (
-        <div className="seasons" style={{ paddingBottom: 6 }}>
-          {show.seasons.map((season) => (
-            <button
-              key={season.number}
-              className={`season${season.watched ? " watched" : ""}`}
-              onClick={() =>
-                store.dispatch({
-                  type: "season",
-                  showId: show.id,
-                  season: season.number,
-                  watched: !season.watched,
-                })
-              }
-            >
-              <span>{season.watched ? "✓" : "○"}</span>
-              <span>S{season.number}</span>
-            </button>
-          ))}
-        </div>
+        <>
+          <EpisodeTracker store={store} run={run} show={show} stored={progress} />
+          <div className="seasons" style={{ paddingBottom: 6 }}>
+            {show.seasons.map((season) => (
+              <button
+                key={season.number}
+                className={`season${season.watched ? " watched" : ""}`}
+                onClick={() =>
+                  store.dispatch({
+                    type: "season",
+                    showId: show.id,
+                    season: season.number,
+                    watched: !season.watched,
+                  })
+                }
+              >
+                <span>{season.watched ? "✓" : "○"}</span>
+                <span>S{season.number}</span>
+              </button>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );
@@ -405,7 +423,7 @@ function AsidePanel({ store, data }: { store: Store; data: Dataset }) {
       <div className="stack now-side-list">
         {shows.length === 0 && !adding && <span className="small muted">Nothing here yet.</span>}
         {shows.map((show) => (
-          <AsideRow key={show.id} store={store} show={show} />
+          <AsideRow key={show.id} store={store} data={data} show={show} />
         ))}
       </div>
     </aside>

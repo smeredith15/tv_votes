@@ -17,6 +17,12 @@ export interface Season {
   number: number;
   name?: string;
   episodes: number;
+  /**
+   * How many of those episodes have gone out. A season still airing has fewer
+   * than it will end with, and there is no being behind on one nobody has
+   * seen. Missing on data written before this was tracked: assume all of them.
+   */
+  aired?: number;
   airDate?: string | null;
   watched: boolean;
 }
@@ -144,14 +150,22 @@ export interface Progress {
   seasons?: number[];
 }
 
+/**
+ * What a cursor belongs to: one of the four ballots, or a show on the side.
+ *
+ * Side shows have no ballot and never draw, but they are watched the same way
+ * — an episode at a time — so they keep a cursor of their own.
+ */
+export type RunId = LedgerId | `aside:${string}`;
+
 /** What is being watched right now, and what is queued outside the voting. */
 export interface Watching {
   /** The show each ballot is on. Set by keeping a draw, or chosen by hand. */
   picks: Partial<Record<LedgerId, string | null>>;
   /** Shows being watched outside the voting framework, in the order added. */
   asides: string[];
-  /** Episode-level progress for the show each ballot is on. */
-  progress?: Partial<Record<LedgerId, Progress>>;
+  /** Episode-level progress, by ballot and by show on the side. */
+  progress?: Partial<Record<RunId, Progress>>;
 }
 
 export interface Dataset {

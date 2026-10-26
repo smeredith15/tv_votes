@@ -23,7 +23,7 @@
   },
   "half": {
    "showId": "entourage",
-   "episode": 58,
+   "episode": 59,
    "startEpisode": 42,
    "longWeekends": 0,
    "seasons": [
@@ -38,6 +38,51 @@
    "episode": 2,
    "startEpisode": 0,
    "longWeekends": 0
+  },
+  "aside:abbott-elementary": {
+   "showId": "abbott-elementary",
+   "episode": 95,
+   "startEpisode": 92,
+   "longWeekends": 0,
+   "seasons": [
+    6
+   ]
+  },
+  "aside:sugar": {
+   "showId": "sugar",
+   "episode": 13,
+   "startEpisode": 8,
+   "longWeekends": 0,
+   "seasons": [
+    2
+   ]
+  },
+  "aside:scrubs-2026": {
+   "showId": "scrubs-2026",
+   "episode": 14,
+   "startEpisode": 9,
+   "longWeekends": 0,
+   "seasons": [
+    2
+   ]
+  },
+  "aside:animal-control": {
+   "showId": "animal-control",
+   "episode": 46,
+   "startEpisode": 43,
+   "longWeekends": 0,
+   "seasons": [
+    5
+   ]
+  },
+  "aside:below": {
+   "showId": "below",
+   "episode": 5,
+   "startEpisode": 0,
+   "longWeekends": 0,
+   "seasons": [
+    1
+   ]
   }
  }
 }

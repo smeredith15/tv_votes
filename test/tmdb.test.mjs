@@ -61,9 +61,38 @@ test("specials are not seasons, and ticks survive a refresh", () => {
     [{ number: 1, episodes: 10, watched: true }],
   );
   assert.deepEqual(seasons, [
-    { number: 1, name: "Season 1", episodes: 10, airDate: "2019-01-01", watched: true },
-    { number: 2, name: "Season 2", episodes: 8, airDate: null, watched: false },
+    { number: 1, name: "Season 1", episodes: 10, aired: 10, airDate: "2019-01-01", watched: true },
+    // No date and nothing aired to go by: taken as not out yet.
+    { number: 2, name: "Season 2", episodes: 8, aired: 0, airDate: null, watched: false },
   ]);
+});
+
+test("a season still going out counts only the episodes that have aired", () => {
+  const seasons = toSeasons({
+    last_episode_to_air: { season_number: 3, episode_number: 5, air_date: "2026-10-21" },
+    next_episode_to_air: { season_number: 3, episode_number: 6, air_date: "2026-10-28" },
+    seasons: [
+      { season_number: 1, episode_count: 10, air_date: "2024-01-01" },
+      { season_number: 2, episode_count: 10, air_date: "2025-01-01" },
+      { season_number: 3, episode_count: 12, air_date: "2026-09-16" },
+      { season_number: 4, episode_count: 10, air_date: "2027-09-16" },
+    ],
+  });
+
+  assert.deepEqual(
+    seasons.map((s) => s.aired),
+    [10, 10, 5, 0],
+    "done, done, five in, not started",
+  );
+});
+
+test("an episode order that outruns the season count is held to it", () => {
+  // TMDB sometimes numbers a special or a two-parter past the listed count.
+  const [season] = toSeasons({
+    last_episode_to_air: { season_number: 1, episode_number: 13 },
+    seasons: [{ season_number: 1, episode_count: 10, air_date: "2026-01-01" }],
+  });
+  assert.equal(season.aired, 10);
 });
 
 test("titles match across articles and punctuation", () => {

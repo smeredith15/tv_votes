@@ -26,6 +26,6 @@ export function toReturningStatus(tmdb: unknown): ReturningStatus;
 export function toRuntime(tmdb: unknown): Runtime;
 export function toFormat(tmdb: unknown, current?: ShowFormat): ShowFormat;
 export function toProviders(entry: unknown): Provider[];
-export function toSeasons(tmdb: unknown, existing?: Season[]): Season[];
+export function toSeasons(tmdb: unknown, existing?: Season[], now?: number): Season[];
 export function matchKey(title: string): string;
 export function bestMatch(title: string, results: TmdbSearchResult[]): TmdbSearchResult | null;

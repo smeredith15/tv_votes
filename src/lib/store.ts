@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ConflictError, commitFiles, readRepo, type RepoConfig } from "./github";
-import { applyOps, cloneForOps, compact, type Op } from "./ops";
+import { applyOps, cloneForOps, compact, migrate, type Op } from "./ops";
 import { loadList, loadRecord, save } from "./persist";
 import { ALL_FILES, changedFiles, datasetFrom, describe, serialize } from "./sync";
 import type { Dataset } from "./types";
@@ -93,7 +93,7 @@ export function useStore(baseUrl: string): Store {
   const [settings, setSettingsState] = useState<Settings>(() => loadSettings());
   const [base, setBase] = useState<Dataset | null>(null);
   const [queue, setQueue] = useState<Queue>(() => ({
-    pending: loadList<Op>(localStorage, PENDING_KEY),
+    pending: migrate(loadList<Op>(localStorage, PENDING_KEY)),
     undo: [],
   }));
   const pending = queue.pending;

@@ -1,7 +1,7 @@
 import { episodesFromSeasons, seasonsCovered } from "./episodes";
 import { ballotFor } from "./ledgers";
 import { insertionIndex } from "./titles";
-import type { Dataset, Draw, InboxItem, LedgerId, Progress, Show } from "./types";
+import type { Dataset, Draw, InboxItem, LedgerId, Progress, RunId, Show } from "./types";
 
 /**
  * Every change is recorded as an operation rather than applied to a snapshot.
@@ -32,8 +32,8 @@ export type Op =
   | { type: "aside"; showId: string; add: boolean }
   /** Forget every refusal, so the suggestions can come round again. */
   | { type: "clearDismissed" }
-  /** Move the episode cursor for a ballot's current show. */
-  | { type: "setEpisode"; ledger: LedgerId; showId: string; episode: number }
+  /** Move the episode cursor of a ballot's show, or of one on the side. */
+  | { type: "setEpisode"; run: RunId; showId: string; episode: number }
   /** Record when a run began, and where it began from. */
   | { type: "startRun"; ledger: LedgerId; showId: string; startedOn: string; startEpisode: number }
   /** A weekend worth a double sitting, or one taken back. */
@@ -52,13 +52,13 @@ export type Op =
  * than starting from nothing — otherwise recording when a run began would
  * throw away everything watched before it.
  */
-function progressFor(data: Dataset, ledger: LedgerId, showId: string): Progress {
+function progressFor(data: Dataset, run: RunId, showId: string): Progress {
   const show = findShow(data, showId);
-  const stored = data.watching.progress?.[ledger];
+  const stored = data.watching.progress?.[run];
   if (stored && stored.showId === showId) {
     // Progress saved before runs recorded their seasons: take the ones the
     // ballot is on now, which is the run under way.
-    return stored.seasons ? stored : { ...stored, seasons: show ? ballotFor(show, ledger).seasons : [] };
+    return stored.seasons ? stored : { ...stored, seasons: show ? ballotFor(show, runLedger(run)).seasons : [] };
   }
 
   const watched = show ? episodesFromSeasons(show) : 0;
@@ -67,8 +67,16 @@ function progressFor(data: Dataset, ledger: LedgerId, showId: string): Progress 
     episode: watched,
     startEpisode: watched,
     longWeekends: 0,
-    seasons: show ? ballotFor(show, ledger).seasons : [],
+    seasons: show ? ballotFor(show, runLedger(run)).seasons : [],
   };
+}
+
+/**
+ * Which ballot's rules a run follows. A show on the side answers to none, but
+ * it is still watched to the end, which is what the Friday ballot does.
+ */
+function runLedger(run: RunId): LedgerId {
+  return run.startsWith("aside:") ? "weekly" : (run as LedgerId);
 }
 
 /**
@@ -87,10 +95,10 @@ function beginRun(data: Dataset, ledger: LedgerId, showId: string, seasons?: num
   });
 }
 
-function setProgress(data: Dataset, ledger: LedgerId, progress: Progress): void {
+function setProgress(data: Dataset, run: RunId, progress: Progress): void {
   data.watching = {
     ...data.watching,
-    progress: { ...data.watching.progress, [ledger]: progress },
+    progress: { ...data.watching.progress, [run]: progress },
   };
 }
 
@@ -185,7 +193,7 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       if (!show) return data;
 
       const episode = Math.max(0, Math.min(op.episode, show.seasons.reduce((n, x) => n + x.episodes, 0)));
-      setProgress(data, op.ledger, { ...progressFor(data, op.ledger, op.showId), episode });
+      setProgress(data, op.run, { ...progressFor(data, op.run, op.showId), episode });
 
       // The season ticks follow the cursor, so the two never disagree.
       const covered = new Set(seasonsCovered(show.seasons, episode));
@@ -300,6 +308,22 @@ export function cloneForOps(data: Dataset, ops: Op[]): Dataset {
   };
 }
 
+/**
+ * Unsaved changes written by an older bundle.
+ *
+ * The episode cursor used to belong to a ballot and was keyed by one; now a
+ * show on the side keeps one too, so the field names the run instead. A queue
+ * sitting in a browser across that change would otherwise file its cursor
+ * under nothing at all.
+ */
+export function migrate(ops: Op[]): Op[] {
+  return ops.map((op) => {
+    if (op.type !== "setEpisode" || op.run) return op;
+    const { ledger } = op as unknown as { ledger?: LedgerId };
+    return ledger ? { ...op, run: ledger } : op;
+  });
+}
+
 /** Collapse repeat edits to the same target so a sync sends one change, not ten. */
 export function compact(ops: Op[]): Op[] {
   const keyed = new Map<string, Op>();
@@ -313,7 +337,7 @@ export function compact(ops: Op[]): Op[] {
     else if (op.type === "freePoints") key = `free:${op.showId}:${op.ledger ?? "all"}`;
     else if (op.type === "setPick") key = `pick:${op.ledger}`;
     else if (op.type === "aside") key = `aside:${op.showId}`;
-    else if (op.type === "setEpisode") key = `episode:${op.ledger}`;
+    else if (op.type === "setEpisode") key = `episode:${op.run}`;
     else if (op.type === "startRun") key = `run:${op.ledger}`;
     else if (op.type === "continueRun") key = `continue:${op.ledger}`;
 

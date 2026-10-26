@@ -115,17 +115,35 @@ export function toProviders(entry) {
 }
 
 /** Real seasons only — TMDB files extras and specials as season 0. */
-export function toSeasons(tmdb, existing = []) {
+export function toSeasons(tmdb, existing = [], now = Date.now()) {
   const watched = new Map(existing.map((s) => [s.number, s.watched]));
+  const last = tmdb?.last_episode_to_air ?? null;
   return (tmdb?.seasons ?? [])
     .filter((s) => s.season_number > 0 && s.episode_count > 0)
     .map((s) => ({
       number: s.season_number,
       name: s.name,
       episodes: s.episode_count,
+      aired: airedCount(s, last, now),
       airDate: s.air_date ?? null,
       watched: watched.get(s.season_number) ?? false,
     }));
+}
+
+/**
+ * How many of a season's episodes have gone out.
+ *
+ * The last episode to air says where the show has got to: everything before
+ * its season is done, everything after it has not started, and its own season
+ * has got as far as that episode. A show that has aired nothing at all has no
+ * such marker, so the season's own date decides.
+ */
+function airedCount(season, last, now) {
+  if (last?.season_number === season.season_number) {
+    return Math.max(0, Math.min(last.episode_number, season.episode_count));
+  }
+  if (last) return season.season_number < last.season_number ? season.episode_count : 0;
+  return season.air_date && Date.parse(`${season.air_date}T00:00:00Z`) <= now ? season.episode_count : 0;
 }
 
 /** Strip articles and punctuation so "The 100" and "100, The" compare equal. */

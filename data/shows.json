@@ -68351,6 +68351,194 @@
    "nextAirDate": null
   },
   {
+   "id": "peep-show",
+   "title": "Peep Show",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "ended",
+   "nextAirDate": null,
+   "tmdbId": 815,
+   "poster": "/6rdoQ0cTjsEQLIwEjhBV8U98oUm.jpg",
+   "providers": [
+    {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Hulu",
+     "type": "flatrate",
+     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+    },
+    {
+     "name": "Britbox Apple TV channel",
+     "type": "flatrate",
+     "logo": "/r5LXOt96llVEmgwAQeheJuxUaMR.png"
+    },
+    {
+     "name": "BritBox",
+     "type": "flatrate",
+     "logo": "/eZeWGG6DDIi4Kmu1z9RfTeZtqZX.png"
+    },
+    {
+     "name": "BritBox Amazon Channel",
+     "type": "flatrate",
+     "logo": "/dneArfNvYnCY0LQwDs6n0wVLpPh.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "name": "Fawesome",
+     "type": "free",
+     "logo": "/dNF4vWhF3TduWvOyfVxEyTqSNRl.png"
+    },
+    {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
+     "name": "Pluto TV",
+     "type": "ads",
+     "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+    },
+    {
+     "name": "Plex",
+     "type": "ads",
+     "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
+    },
+    {
+     "name": "Plex Channel",
+     "type": "ads",
+     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
+    },
+    {
+     "name": "Amazon Prime Video Free with Ads",
+     "type": "ads",
+     "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
+    },
+    {
+     "name": "Cineverse",
+     "type": "ads",
+     "logo": "/rqCIpmrCBpnL6oliak6E1mrq5DD.png"
+    },
+    {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
+     "name": "Amazon MX Player",
+     "type": "ads",
+     "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
+    },
+    {
+     "name": "Amazon Video",
+     "type": "buy",
+     "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+    }
+   ],
+   "providersUpdated": "2026-10-28T12:22:18.012Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Series 1",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2003-09-19",
+     "watched": false
+    },
+    {
+     "number": 2,
+     "name": "Series 2",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2004-11-12",
+     "watched": false
+    },
+    {
+     "number": 3,
+     "name": "Series 3",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2005-11-11",
+     "watched": false
+    },
+    {
+     "number": 4,
+     "name": "Series 4",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2007-04-13",
+     "watched": false
+    },
+    {
+     "number": 5,
+     "name": "Series 5",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2008-05-02",
+     "watched": false
+    },
+    {
+     "number": 6,
+     "name": "Series 6",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2009-09-18",
+     "watched": false
+    },
+    {
+     "number": 7,
+     "name": "Series 7",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2010-11-26",
+     "watched": false
+    },
+    {
+     "number": 8,
+     "name": "Series 8",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2012-11-25",
+     "watched": false
+    },
+    {
+     "number": 9,
+     "name": "Series 9",
+     "episodes": 6,
+     "aired": 6,
+     "airDate": "2015-11-11",
+     "watched": false
+    }
+   ],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-10-28T12:22:18.020Z"
+  },
+  {
    "id": "pen15",
    "title": "PEN15",
    "runtime": 30,

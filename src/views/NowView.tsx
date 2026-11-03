@@ -1,10 +1,12 @@
 import { useMemo, useState } from "react";
 import {
   airedEpisodes,
+  airedIn,
   airsNext,
   episodesFromSeasons,
   episodesLeftIn,
   formatPosition,
+  fullyAired,
   perSitting,
   positionAfter,
 } from "../lib/episodes";
@@ -198,7 +200,14 @@ function PickBody({
 
       {finished && <HadItsTurn store={store} ledger={ledger} show={show} onVote={onVote} />}
 
-      <EpisodeTracker store={store} run={ledger} ledger={ledger} show={show} stored={progress} />
+      <EpisodeTracker
+        store={store}
+        run={ledger}
+        ledger={ledger}
+        show={show}
+        stored={progress}
+        guide={data.guide}
+      />
 
       {!nextUp && show.seasons.length === 0 && (
         <p className="small muted" style={{ marginBottom: 0 }}>
@@ -323,7 +332,7 @@ function AsideRow({ store, data, show }: { store: Store; data: Dataset; show: Sh
   const run = asideRun(show.id);
   const progress = data.watching.progress?.[run];
   const cursor = progress?.showId === show.id ? progress.episode : episodesFromSeasons(show);
-  const waiting = Math.max(0, airedEpisodes(show) - cursor);
+  const waiting = Math.max(0, airedEpisodes(show, data.guide) - cursor);
   const upNext = positionAfter(show.seasons, cursor);
 
   return (
@@ -341,7 +350,7 @@ function AsideRow({ store, data, show }: { store: Store; data: Dataset; show: Sh
               ? describeProgress(show)
               : waiting > 0
                 ? `${formatPosition(upNext)} · ${waiting} waiting`
-                : `caught up · ${airsNext(show)}`}
+                : `caught up · ${airsNext(show, data.guide)}`}
           </span>
         </button>
         <button
@@ -355,25 +364,31 @@ function AsideRow({ store, data, show }: { store: Store; data: Dataset; show: Sh
 
       {open && show.seasons.length > 0 && (
         <>
-          <EpisodeTracker store={store} run={run} show={show} stored={progress} />
+          <EpisodeTracker store={store} run={run} show={show} stored={progress} guide={data.guide} />
           <div className="seasons" style={{ paddingBottom: 6 }}>
-            {show.seasons.map((season) => (
-              <button
-                key={season.number}
-                className={`season${season.watched ? " watched" : ""}`}
-                onClick={() =>
-                  store.dispatch({
-                    type: "season",
-                    showId: show.id,
-                    season: season.number,
-                    watched: !season.watched,
-                  })
-                }
-              >
-                <span>{season.watched ? "✓" : "○"}</span>
-                <span>S{season.number}</span>
-              </button>
-            ))}
+            {show.seasons.map((season) => {
+              const out = airedIn(show, season, data.guide);
+              return (
+                <button
+                  key={season.number}
+                  className={`season${season.watched ? " watched" : ""}`}
+                  // Half a season is not a season: those go through the + above.
+                  disabled={!season.watched && !fullyAired(show, season, data.guide)}
+                  title={out < season.episodes ? `${out} of ${season.episodes} out so far` : undefined}
+                  onClick={() =>
+                    store.dispatch({
+                      type: "season",
+                      showId: show.id,
+                      season: season.number,
+                      watched: !season.watched,
+                    })
+                  }
+                >
+                  <span>{season.watched ? "✓" : "○"}</span>
+                  <span>S{season.number}</span>
+                </button>
+              );
+            })}
           </div>
         </>
       )}

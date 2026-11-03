@@ -48,6 +48,8 @@ export function createClient({ key, region = "US", fetchImpl = fetch }) {
       get("/search/tv", { query: title, first_air_date_year: year }).then((r) => r.results ?? []),
     details: (id) => get(`/tv/${id}`, { append_to_response: "external_ids" }),
     providers: (id) => get(`/tv/${id}/watch/providers`).then((r) => r.results?.[region] ?? null),
+    /** One season in full: the only call that carries episode titles and dates. */
+    season: (id, number) => get(`/tv/${id}/season/${number}`),
     /** Shows that premiered in a window, narrowed to first seasons. */
     discover: (from, to, page = 1, options = {}) =>
       get("/discover/tv", {
@@ -144,6 +146,23 @@ function airedCount(season, last, now) {
   }
   if (last) return season.season_number < last.season_number ? season.episode_count : 0;
   return season.air_date && Date.parse(`${season.air_date}T00:00:00Z`) <= now ? season.episode_count : 0;
+}
+
+/**
+ * A season's episodes, as the guide stores them.
+ *
+ * Titles TMDB has not been given read as "Episode 7", which is no more than
+ * the number already says, so they are dropped. A date is what says whether an
+ * episode is out yet, and an episode without one is treated as not out.
+ */
+export function toGuide(season) {
+  return (season?.episodes ?? [])
+    .map((episode) => ({
+      n: episode.episode_number,
+      title: /^episode\s+\d+$/i.test(String(episode.name ?? "").trim()) ? null : (episode.name ?? null),
+      airDate: episode.air_date || null,
+    }))
+    .sort((a, b) => a.n - b.n);
 }
 
 /** Strip articles and punctuation so "The 100" and "100, The" compare equal. */

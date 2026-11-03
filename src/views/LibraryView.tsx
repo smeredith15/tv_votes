@@ -1,7 +1,8 @@
 import { memo, useMemo, useState } from "react";
+import { airedIn, fullyAired } from "../lib/episodes";
 import { LEDGERS, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
-import type { Dataset, Show } from "../lib/types";
+import type { Dataset, EpisodeGuide, Show } from "../lib/types";
 
 type Filter = "in_progress" | "started" | "won" | "plex" | "missing" | "all";
 
@@ -108,6 +109,7 @@ export function LibraryView({ store, data }: { store: Store; data: Dataset }) {
               key={show.id}
               show={show}
               onPlex={data.plex.shows[show.id]}
+              guide={data.guide}
               people={data.people}
               dispatch={store.dispatch}
             />
@@ -127,6 +129,8 @@ interface SeasonsProps {
   show: Show;
   /** Season numbers on the server, straight from the Plex file. */
   onPlex?: number[];
+  /** Air dates, where they are known, so a season still going out stays shut. */
+  guide: EpisodeGuide;
   people: string[];
   dispatch: Store["dispatch"];
 }
@@ -139,7 +143,7 @@ interface SeasonsProps {
  * Memoised on props that hold their identity between renders, so ticking one
  * season redraws that show alone rather than every row on screen.
  */
-const ShowSeasons = memo(function ShowSeasons({ show, onPlex, people, dispatch }: SeasonsProps) {
+const ShowSeasons = memo(function ShowSeasons({ show, onPlex, guide, people, dispatch }: SeasonsProps) {
   const present = new Set(onPlex ?? []);
   const watched = show.seasons.filter((s) => s.watched).length;
   const finished = show.seasons.length > 0 && watched === show.seasons.length;
@@ -151,11 +155,15 @@ const ShowSeasons = memo(function ShowSeasons({ show, onPlex, people, dispatch }
 
   function setAll(row: "watched" | "plex", value: boolean) {
     dispatch(
-      ...show.seasons.map((season) =>
-        row === "watched"
-          ? ({ type: "season", showId: show.id, season: season.number, watched: value } as const)
-          : ({ type: "plexSeason", showId: show.id, season: season.number, present: value } as const),
-      ),
+      // "All watched" stops at what has aired; "All on Plex" does not, since a
+      // season can sit there in part.
+      ...show.seasons
+        .filter((season) => row !== "watched" || !value || fullyAired(show, season, guide))
+        .map((season) =>
+          row === "watched"
+            ? ({ type: "season", showId: show.id, season: season.number, watched: value } as const)
+            : ({ type: "plexSeason", showId: show.id, season: season.number, present: value } as const),
+        ),
     );
   }
 
@@ -199,7 +207,14 @@ const ShowSeasons = memo(function ShowSeasons({ show, onPlex, people, dispatch }
         <>
           <SeasonRow
             label="Watched"
-            seasons={show.seasons.map((s) => ({ number: s.number, episodes: s.episodes, on: s.watched }))}
+            seasons={show.seasons.map((s) => ({
+              number: s.number,
+              episodes: s.episodes,
+              on: s.watched,
+              // Ticking a season still going out would claim episodes nobody
+              // has seen; the Now watching page moves through those one by one.
+              locked: fullyAired(show, s, guide) ? undefined : `${airedIn(show, s, guide)} of ${s.episodes} out so far`,
+            }))}
             onToggle={(number, on) => dispatch({ type: "season", showId: show.id, season: number, watched: !on })}
             onAll={(value) => setAll("watched", value)}
           />
@@ -228,7 +243,7 @@ function SeasonRow({
   onAll,
 }: {
   label: string;
-  seasons: { number: number; episodes: number; on: boolean }[];
+  seasons: { number: number; episodes: number; on: boolean; locked?: string }[];
   onToggle: (number: number, on: boolean) => void;
   onAll: (value: boolean) => void;
 }) {
@@ -241,6 +256,8 @@ function SeasonRow({
             key={season.number}
             className={`season${season.on ? " watched" : ""}`}
             onClick={() => onToggle(season.number, season.on)}
+            disabled={season.locked !== undefined && !season.on}
+            title={season.locked}
           >
             <span>{season.on ? "\u2713" : "\u25cb"}</span>
             <span>S{season.number}</span>

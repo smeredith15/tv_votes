@@ -237,6 +237,15 @@ tr.voted { background: color-mix(in srgb, var(--accent-soft) 60%, transparent); 
 .tracker { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
 .tracker .meter { height: 5px; }
 
+/* An episode name, which can be long in a column that is not. */
+.episode-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  font-style: italic;
+}
+
 /* A run that has watched everything it bought, waiting on a decision. */
 .turn-over {
   margin-top: 12px;

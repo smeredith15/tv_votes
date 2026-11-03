@@ -8,6 +8,7 @@ import {
   toRuntime,
   toSeasons,
 } from "../../scripts/tmdb.mjs";
+import { airedIn } from "../lib/episodes";
 import { drawsFor, showRecords } from "../lib/history";
 import { LEDGERS, ballotFor, eligibleLedgers, watchState } from "../lib/ledgers";
 import type { Store } from "../lib/store";
@@ -118,11 +119,22 @@ export function ShowDetail({ store, data, show, onClose }: Props) {
           <div className="seasons" style={{ marginTop: 8 }}>
             {show.seasons.map((season) => {
               const onBallot = ledgers.some((l) => ballotFor(show, l).seasons.includes(season.number));
+              const out = airedIn(show, season, store.data?.guide);
+              // Still going out: it can only be worked through an episode at a
+              // time, on Now watching, so there is nothing to tick here yet.
+              const locked = !season.watched && out < season.episodes;
               return (
                 <button
                   key={season.number}
                   className={`season${season.watched ? " watched" : ""}${onBallot && !season.watched ? " ballot" : ""}`}
-                  title={onBallot && !season.watched ? "This is what a vote would commit you to" : undefined}
+                  disabled={locked}
+                  title={
+                    locked
+                      ? `${out} of ${season.episodes} out so far`
+                      : onBallot && !season.watched
+                        ? "This is what a vote would commit you to"
+                        : undefined
+                  }
                   onClick={() =>
                     store.dispatch({ type: "season", showId: show.id, season: season.number, watched: !season.watched })
                   }

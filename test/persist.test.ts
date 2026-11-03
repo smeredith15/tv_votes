@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { loadList, loadRecord, save, type Storage } from "../src/lib/persist";
+import { datasetFrom } from "../src/lib/sync";
 
 function memoryStore(seed: Record<string, string> = {}): Storage {
   const map = new Map(Object.entries(seed));
@@ -67,4 +68,20 @@ test("storage that throws does not take the app down", () => {
   assert.deepEqual(loadList(broken, "pending"), []);
   assert.deepEqual(loadRecord(broken, "settings", { voter: "both" }), { voter: "both" });
   assert.doesNotThrow(() => save(broken, "pending", []));
+});
+
+test("a file the site has not got yet does not take the load down", () => {
+  const files = {
+    "data/shows.json": JSON.stringify({ people: ["scotty"], shows: [] }),
+    // Some hosts answer a missing path with their own page, status and all.
+    "data/episodes.json": "<!doctype html><title>404</title>",
+  };
+
+  const data = datasetFrom(files);
+  assert.deepEqual(data.guide, { updatedAt: null, shows: {} });
+  assert.deepEqual(data.people, ["scotty"]);
+});
+
+test("a broken shows.json is still an error, not an empty ledger", () => {
+  assert.throws(() => datasetFrom({ "data/shows.json": "{oops" }));
 });

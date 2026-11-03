@@ -119,6 +119,30 @@ export interface Universe {
   order: UniverseItem[];
 }
 
+/** One episode as the guide holds it: what it is called, and when it went out. */
+export interface GuideEpisode {
+  /** Episode number within its season. */
+  n: number;
+  /** Null where TMDB has no title worth showing. */
+  title: string | null;
+  /** Null where TMDB has no date, which counts as not out yet. */
+  airDate: string | null;
+}
+
+/**
+ * Episode titles and air dates, for the handful of shows being watched.
+ *
+ * Kept out of shows.json and fetched only for what is being tracked: a
+ * thousand shows' episodes would be megabytes, and the titles are only of use
+ * where you are actually working through a run. Air dates are also what says
+ * which episodes exist to be watched at all.
+ */
+export interface EpisodeGuide {
+  updatedAt: string | null;
+  /** Show id -> season number -> that season's episodes, in order. */
+  shows: Record<string, Record<number, GuideEpisode[]>>;
+}
+
 /**
  * Which seasons of a show are sitting on the Plex server, keyed by show id.
  * Kept in its own file: it is regenerated wholesale by the sync script and has
@@ -178,6 +202,7 @@ export interface Dataset {
   /** TMDB ids turned down, so nothing suggests them again. */
   dismissed: number[];
   plex: PlexLibrary;
+  guide: EpisodeGuide;
   watching: Watching;
   updatedAt?: string;
 }

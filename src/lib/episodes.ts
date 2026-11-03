@@ -1,4 +1,4 @@
-import type { Season, Show } from "./types";
+import type { EpisodeGuide, GuideEpisode, Season, Show } from "./types";
 
 /**
  * Counting a run in episodes rather than seasons.
@@ -18,16 +18,70 @@ export function totalEpisodes(show: Show): number {
   return show.seasons.reduce((sum, season) => sum + season.episodes, 0);
 }
 
+/** Today where you are, as the guide writes its dates. */
+export function today(now = new Date()): string {
+  const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+  return local.toISOString().slice(0, 10);
+}
+
+/** A season's episodes, where the guide has been filled in for them. */
+export function guideFor(guide: EpisodeGuide | undefined, showId: string, season: number): GuideEpisode[] {
+  return guide?.shows[showId]?.[season] ?? [];
+}
+
+/**
+ * How many of a season's episodes have gone out.
+ *
+ * The guide's dates answer this exactly and stay right as days pass. Without
+ * one there is the count the nightly refresh left, and without that — seasons
+ * stored before any of this — the season is taken as fully aired.
+ */
+export function airedIn(show: Show, season: Season, guide?: EpisodeGuide, stamp = today()): number {
+  const listed = guideFor(guide, show.id, season.number);
+  if (listed.length > 0) {
+    const out = listed.filter((episode) => episode.airDate && episode.airDate <= stamp).length;
+    // The guide can lag a season that has just grown; never claim more than it holds.
+    return Math.min(out, season.episodes);
+  }
+  return season.aired ?? season.episodes;
+}
+
 /**
  * Episodes that have actually gone out.
  *
  * A season still airing has fewer episodes available than it will end with,
  * and the cursor must not run past them — being "behind" on an episode nobody
- * has seen is not a thing. Seasons stored before airing was tracked carry no
- * count, and are taken as fully aired.
+ * has seen is not a thing.
  */
-export function airedEpisodes(show: Show): number {
-  return show.seasons.reduce((sum, season) => sum + (season.aired ?? season.episodes), 0);
+export function airedEpisodes(show: Show, guide?: EpisodeGuide, stamp = today()): number {
+  return show.seasons.reduce((sum, season) => sum + airedIn(show, season, guide, stamp), 0);
+}
+
+/** A season with nothing still to come, and so safe to tick off whole. */
+export function fullyAired(show: Show, season: Season, guide?: EpisodeGuide, stamp = today()): boolean {
+  return airedIn(show, season, guide, stamp) >= season.episodes;
+}
+
+/** What an episode is called, where the guide knows. */
+export function titleAt(guide: EpisodeGuide | undefined, showId: string, at: Position | null): string | null {
+  if (!at) return null;
+  return guideFor(guide, showId, at.season).find((episode) => episode.n === at.episode)?.title ?? null;
+}
+
+/** The first episode still to come: where it sits, and when it lands. */
+export function nextAiring(
+  show: Show,
+  guide: EpisodeGuide | undefined,
+  stamp = today(),
+): { position: Position; airDate: string } | null {
+  for (const season of show.seasons) {
+    for (const episode of guideFor(guide, show.id, season.number)) {
+      if (episode.airDate && episode.airDate > stamp) {
+        return { position: { season: season.number, episode: episode.n }, airDate: episode.airDate };
+      }
+    }
+  }
+  return null;
 }
 
 /** Episodes accounted for by the seasons already ticked off. */
@@ -72,10 +126,24 @@ export function seasonsCovered(seasons: Season[], watched: number): number[] {
  * A show on the side is usually still going out, so "caught up" is only half
  * an answer: the other half is when the next one lands.
  */
-export function airsNext(show: Show): string {
-  if (totalEpisodes(show) <= airedEpisodes(show)) return "nothing left";
-  if (!show.nextAirDate) return "no date yet";
-  return `next ${new Date(`${show.nextAirDate}T00:00:00`).toLocaleDateString()}`;
+export function airsNext(show: Show, guide?: EpisodeGuide, stamp = today()): string {
+  if (totalEpisodes(show) <= airedEpisodes(show, guide, stamp)) return "nothing left";
+  // The guide dates each episode, so it knows sooner than the show's own field,
+  // which only moves when the nightly refresh reaches the show.
+  const date = nextAiring(show, guide, stamp)?.airDate ?? show.nextAirDate;
+  if (!date) return "no date yet";
+  return `next ${shortDate(date, stamp)}`;
+}
+
+/** "Nov 4", or "Nov 4 2027" when it is not this year. The panel is narrow. */
+function shortDate(date: string, stamp: string): string {
+  const when = new Date(`${date}T00:00:00`);
+  const sameYear = date.slice(0, 4) === stamp.slice(0, 4);
+  return when.toLocaleDateString(undefined, {
+    month: "short",
+    day: "numeric",
+    ...(sameYear ? {} : { year: "numeric" }),
+  });
 }
 
 /** Episodes a sitting delivers: two half-hours, or one hour. */

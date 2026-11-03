@@ -83,6 +83,15 @@
    "seasons": [
     1
    ]
+  },
+  "aside:st-denis-medical": {
+   "showId": "st-denis-medical",
+   "episode": 37,
+   "startEpisode": 36,
+   "longWeekends": 0,
+   "seasons": [
+    3
+   ]
   }
  }
 }

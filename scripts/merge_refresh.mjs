@@ -25,6 +25,15 @@ const METADATA = ["status", "nextAirDate", "providers", "providersUpdated"];
 const FILL_IF_EMPTY = ["tmdbId", "poster"];
 
 const read = (dir, name) => JSON.parse(readFileSync(join(dir, name), "utf8"));
+
+/** The guide is newer than some checkouts, so its absence is not an error. */
+const readGuide = (dir) => {
+  try {
+    return read(dir, "episodes.json");
+  } catch {
+    return { updatedAt: null, shows: {} };
+  }
+};
 const write = (name, value) => writeFileSync(join("data", name), `${JSON.stringify(value, null, 1)}\n`);
 
 /** Season list comes from TMDB; which of them you have watched does not. */
@@ -88,15 +97,33 @@ export function mergeInbox(baseRaw, oursRaw, theirsRaw) {
   return { pending: [...theirs.pending, ...fresh], dismissed: [...dismissed] };
 }
 
+/**
+ * The episode guide, which both this job and the app can write.
+ *
+ * Seasons are whole units straight from TMDB, so there is no reconciling to
+ * do inside one: take the branch's, and lay this run's over the top. A show
+ * the run dropped as no longer watched stays until a run that is not merging
+ * prunes it, which is better than losing one somebody has just picked up.
+ */
+export function mergeGuide(ours, theirs) {
+  const shows = { ...(theirs.shows ?? {}) };
+  for (const [id, seasons] of Object.entries(ours.shows ?? {})) {
+    shows[id] = { ...shows[id], ...seasons };
+  }
+  return { updatedAt: ours.updatedAt ?? theirs.updatedAt ?? null, shows };
+}
+
 function main() {
   const [baseDir, oursDir] = process.argv.slice(2);
   if (!baseDir || !oursDir) throw new Error("Usage: merge_refresh.mjs <base-dir> <ours-dir>");
 
   const shows = mergeShows(read(baseDir, "shows.json"), read(oursDir, "shows.json"), read("data", "shows.json"));
   const inbox = mergeInbox(read(baseDir, "inbox.json"), read(oursDir, "inbox.json"), read("data", "inbox.json"));
+  const guide = mergeGuide(readGuide(oursDir), readGuide("data"));
 
   write("shows.json", shows);
   write("inbox.json", inbox);
+  write("episodes.json", guide);
   console.log(`Merged onto the branch: ${shows.shows.length} shows, ${inbox.length} in the inbox.`);
 }
 

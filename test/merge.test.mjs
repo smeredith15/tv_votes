@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { mergeInbox, mergeShows } from "../scripts/merge_refresh.mjs";
+import { mergeGuide, mergeInbox, mergeShows } from "../scripts/merge_refresh.mjs";
 
 const show = (id, extra = {}) => ({
   id,
@@ -131,4 +131,23 @@ test("a runtime TMDB has no answer for keeps whatever the branch has", () => {
   const theirs = wrap([show("ponies", { runtime: 30 })]);
 
   assert.equal(mergeShows(base, ours, theirs).shows[0].runtime, 30);
+});
+
+test("an episode guide written while the refresh ran is not lost", () => {
+  // The job fetched The Crown's seasons; meanwhile the app fetched Sugar's.
+  const ours = { updatedAt: "2026-11-03T07:00:00Z", shows: { crown: { 1: [{ n: 1, title: "Wolferton Splash", airDate: "2016-11-04" }] } } };
+  const theirs = { updatedAt: "2026-11-03T02:00:00Z", shows: { sugar: { 2: [{ n: 1, title: null, airDate: null }] } } };
+
+  const merged = mergeGuide(ours, theirs);
+  assert.deepEqual(Object.keys(merged.shows).sort(), ["crown", "sugar"]);
+  assert.equal(merged.updatedAt, "2026-11-03T07:00:00Z");
+});
+
+test("the run's own seasons win where both fetched the same one", () => {
+  const ours = { updatedAt: "b", shows: { crown: { 2: [{ n: 1, title: "Misadventure", airDate: "2017-12-08" }] } } };
+  const theirs = { updatedAt: "a", shows: { crown: { 1: [{ n: 1, title: "Old", airDate: null }], 2: [] } } };
+
+  const merged = mergeGuide(ours, theirs);
+  assert.equal(merged.shows.crown[2].length, 1, "the fetched season replaces the stale one");
+  assert.equal(merged.shows.crown[1].length, 1, "and a season only the branch has is kept");
 });

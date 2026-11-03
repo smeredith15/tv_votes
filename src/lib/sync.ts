@@ -1,5 +1,5 @@
 import type { Op } from "./ops";
-import type { Dataset, Draw, InboxItem, PlexLibrary, Universe, Watching } from "./types";
+import type { Dataset, Draw, EpisodeGuide, InboxItem, PlexLibrary, Universe, Watching } from "./types";
 
 /** Which repo file each kind of change lands in. */
 export const FILES = {
@@ -8,6 +8,7 @@ export const FILES = {
   history: "data/history.json",
   inbox: "data/inbox.json",
   plex: "data/plex.json",
+  guide: "data/episodes.json",
   watching: "data/watching.json",
 } as const;
 
@@ -25,6 +26,8 @@ function format(value: unknown): string {
 }
 
 export const EMPTY_PLEX: PlexLibrary = { updatedAt: null, shows: {} };
+
+export const EMPTY_GUIDE: EpisodeGuide = { updatedAt: null, shows: {} };
 
 /** The inbox file: suggestions waiting, and the ids already turned down. */
 interface InboxFile {
@@ -47,8 +50,17 @@ export const EMPTY_WATCHING: Watching = { picks: {}, asides: [] };
  * that predates it.
  */
 export function datasetFrom(files: Record<string, string>): Dataset {
-  const read = <T,>(path: string, fallback: T): T =>
-    files[path] === undefined ? fallback : (JSON.parse(files[path]) as T);
+  const read = <T,>(path: string, fallback: T): T => {
+    if (files[path] === undefined) return fallback;
+    try {
+      return JSON.parse(files[path]) as T;
+    } catch {
+      // A host that answers a missing file with its own page rather than a
+      // 404 would otherwise take the whole load down with it. shows.json is
+      // read without this on purpose: that one really is the ledger.
+      return fallback;
+    }
+  };
 
   return {
     ...(JSON.parse(files[FILES.shows]) as ShowsFile),
@@ -57,6 +69,7 @@ export function datasetFrom(files: Record<string, string>): Dataset {
     inbox: readInbox(files[FILES.inbox]).pending,
     dismissed: readInbox(files[FILES.inbox]).dismissed,
     plex: read<PlexLibrary>(FILES.plex, EMPTY_PLEX),
+    guide: read<EpisodeGuide>(FILES.guide, EMPTY_GUIDE),
     watching: read<Watching>(FILES.watching, EMPTY_WATCHING),
   };
 }
@@ -73,6 +86,7 @@ export function serialize(data: Dataset): Record<string, string> {
     [FILES.history]: format(data.history),
     [FILES.inbox]: format({ pending: data.inbox, dismissed: data.dismissed }),
     [FILES.plex]: format(data.plex),
+    [FILES.guide]: format(data.guide),
     [FILES.watching]: format(data.watching),
   };
 }

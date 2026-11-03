@@ -1,4 +1,4 @@
-import type { Provider, ReturningStatus, Runtime, Season, ShowFormat } from "../src/lib/types";
+import type { GuideEpisode, Provider, ReturningStatus, Runtime, Season, ShowFormat } from "../src/lib/types";
 
 export const IMAGE_BASE: string;
 
@@ -17,6 +17,7 @@ export interface TmdbClient {
   search(title: string, year?: number): Promise<TmdbSearchResult[]>;
   details(id: number): Promise<Record<string, unknown>>;
   providers(id: number): Promise<Record<string, unknown> | null>;
+  season(id: number, number: number): Promise<Record<string, unknown>>;
   discover(from: string, to: string, page?: number): Promise<{ results: TmdbSearchResult[]; total_pages: number }>;
 }
 
@@ -27,5 +28,6 @@ export function toRuntime(tmdb: unknown): Runtime;
 export function toFormat(tmdb: unknown, current?: ShowFormat): ShowFormat;
 export function toProviders(entry: unknown): Provider[];
 export function toSeasons(tmdb: unknown, existing?: Season[], now?: number): Season[];
+export function toGuide(season: unknown): GuideEpisode[];
 export function matchKey(title: string): string;
 export function bestMatch(title: string, results: TmdbSearchResult[]): TmdbSearchResult | null;

@@ -7,10 +7,12 @@ import {
   pace,
   perSitting,
   positionAfter,
+  titleAt,
   totalEpisodes,
 } from "../lib/episodes";
 import type { Store } from "../lib/store";
-import type { LedgerId, Progress, RunId, Show } from "../lib/types";
+import type { EpisodeGuide, LedgerId, Progress, RunId, Show } from "../lib/types";
+import { GuideButton } from "./GuideButton";
 
 interface Props {
   store: Store;
@@ -20,6 +22,8 @@ interface Props {
   ledger?: LedgerId;
   show: Show;
   stored?: Progress;
+  /** Episode titles and air dates, where they have been fetched. */
+  guide?: EpisodeGuide;
 }
 
 /**
@@ -29,7 +33,7 @@ interface Props {
  * falling behind is measured in episodes, and the useful question is which one
  * you are supposed to be on tonight.
  */
-export function EpisodeTracker({ store, run, ledger, show, stored }: Props) {
+export function EpisodeTracker({ store, run, ledger, show, stored, guide }: Props) {
   const [editing, setEditing] = useState(false);
 
   const total = totalEpisodes(show);
@@ -45,8 +49,9 @@ export function EpisodeTracker({ store, run, ledger, show, stored }: Props) {
   const upNext = positionAfter(show.seasons, watched);
   // Nothing to watch past what has gone out, however many the season will
   // end up with. A show that has finished airing has all of them.
-  const aired = airedEpisodes(show);
+  const aired = airedEpisodes(show, guide);
   const waiting = Math.max(0, aired - watched);
+  const title = titleAt(guide, show.id, upNext);
   const schedule =
     ledger === "weekly" && progress.startedOn
       ? pace(show, {
@@ -68,7 +73,7 @@ export function EpisodeTracker({ store, run, ledger, show, stored }: Props) {
             −
           </button>
           <strong>{waiting > 0 ? formatPosition(upNext) : "Caught up"}</strong>
-          <span className="small muted">{waiting > 0 ? "up next" : airsNext(show)}</span>
+          <span className="small muted">{waiting > 0 ? "up next" : airsNext(show, guide)}</span>
           <button
             className="small"
             onClick={() => move(watched + 1)}
@@ -84,6 +89,13 @@ export function EpisodeTracker({ store, run, ledger, show, stored }: Props) {
           {watched} of {total} watched
         </span>
       </div>
+
+      {(title || show.tmdbId) && (
+        <div className="row small" style={{ marginTop: 6, gap: 6 }}>
+          {title && waiting > 0 && <span className="episode-title">“{title}”</span>}
+          <GuideButton store={store} show={show} from={upNext?.season} />
+        </div>
+      )}
 
       <div className="meter" style={{ marginTop: 8 }}>
         <div style={{ width: `${(watched / total) * 100}%` }} />

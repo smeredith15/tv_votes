@@ -51,6 +51,12 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           TMDB_REGION: ${{ vars.TMDB_REGION || 'US' }}
 
+      - name: Fill in episode titles for what is being watched
+        run: node scripts/episodes.mjs
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          TMDB_REGION: ${{ vars.TMDB_REGION || 'US' }}
+
       - name: Queue newly premiered shows for approval
         run: node scripts/discover.mjs
         env:

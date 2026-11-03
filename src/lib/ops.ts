@@ -1,7 +1,7 @@
 import { episodesFromSeasons, seasonsCovered } from "./episodes";
 import { ballotFor } from "./ledgers";
 import { insertionIndex } from "./titles";
-import type { Dataset, Draw, InboxItem, LedgerId, Progress, RunId, Show } from "./types";
+import type { Dataset, Draw, GuideEpisode, InboxItem, LedgerId, Progress, RunId, Show } from "./types";
 
 /**
  * Every change is recorded as an operation rather than applied to a snapshot.
@@ -43,7 +43,9 @@ export type Op =
    * named rather than worked out on the way in, because compacting a save can
    * put a cursor move after this one, and re-deriving them then would undo it.
    */
-  | { type: "continueRun"; ledger: LedgerId; showId: string; seasons: number[] };
+  | { type: "continueRun"; ledger: LedgerId; showId: string; seasons: number[] }
+  /** A season's episode titles and air dates, as fetched from TMDB. */
+  | { type: "guide"; showId: string; season: number; at: string; episodes: GuideEpisode[] };
 
 /**
  * Progress for this ballot, starting fresh if it is about another show.
@@ -233,6 +235,14 @@ export function applyOp(data: Dataset, op: Op): Dataset {
       if (seasons.length === 0) delete data.plex.shows[op.showId];
       return data;
     }
+    case "guide": {
+      const shows = { ...data.guide.shows };
+      shows[op.showId] = { ...shows[op.showId], [op.season]: op.episodes };
+      // The time is carried rather than taken here: the same op is replayed
+      // against the repo on save, and the two must come out identical.
+      data.guide = { updatedAt: op.at, shows };
+      return data;
+    }
     case "setPick": {
       data.watching = { ...data.watching, picks: { ...data.watching.picks, [op.ledger]: op.showId } };
       if (op.showId) beginRun(data, op.ledger, op.showId);
@@ -300,6 +310,7 @@ export function cloneForOps(data: Dataset, ops: Op[]): Dataset {
     inbox: [...data.inbox],
     dismissed: [...data.dismissed],
     plex: { ...data.plex, shows: { ...data.plex.shows } },
+    guide: { ...data.guide, shows: { ...data.guide.shows } },
     watching: {
       picks: { ...data.watching.picks },
       asides: [...data.watching.asides],
@@ -340,6 +351,7 @@ export function compact(ops: Op[]): Op[] {
     else if (op.type === "setEpisode") key = `episode:${op.run}`;
     else if (op.type === "startRun") key = `run:${op.ledger}`;
     else if (op.type === "continueRun") key = `continue:${op.ledger}`;
+    else if (op.type === "guide") key = `guide:${op.showId}:${op.season}`;
 
     if (key) keyed.set(key, op);
     else rest.push(op);

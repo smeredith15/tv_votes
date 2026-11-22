@@ -1,51 +1,285 @@
 {
- "updatedAt": "2026-11-06T04:30:46.919Z",
+ "updatedAt": "2026-11-22T16:27:52.822Z",
  "shows": {
-  "fall-and-rise-of-reggie-dinkins": {
-   "2": [
+  "entourage": {
+   "1": [
     {
      "n": 1,
-     "title": "We Keep the Kisses",
-     "airDate": "2026-11-02"
+     "title": "Entourage",
+     "airDate": "2004-07-18"
     },
     {
      "n": 2,
-     "title": "The Spaghetti Loop",
-     "airDate": "2026-11-09"
+     "title": "The Review",
+     "airDate": "2004-07-25"
     },
     {
      "n": 3,
-     "title": "Hulk Want Candy",
-     "airDate": "2026-11-16"
+     "title": "Talk Show",
+     "airDate": "2004-08-01"
     },
     {
      "n": 4,
-     "title": null,
-     "airDate": "2026-11-23"
+     "title": "Date Night",
+     "airDate": "2004-08-08"
     },
     {
      "n": 5,
-     "title": null,
-     "airDate": "2026-11-30"
+     "title": "The Script and the Sherpa",
+     "airDate": "2004-08-15"
     },
     {
      "n": 6,
-     "title": null,
-     "airDate": "2026-12-07"
+     "title": "Busey and the Beach",
+     "airDate": "2004-08-22"
     },
     {
      "n": 7,
-     "title": null,
-     "airDate": "2026-12-14"
+     "title": "The Scene",
+     "airDate": "2004-08-29"
     },
     {
      "n": 8,
-     "title": null,
-     "airDate": "2026-12-21"
+     "title": "New York",
+     "airDate": "2004-09-12"
     }
-   ]
-  },
-  "entourage": {
+   ],
+   "2": [
+    {
+     "n": 1,
+     "title": "The Boys Are Back in Town",
+     "airDate": "2005-06-05"
+    },
+    {
+     "n": 2,
+     "title": "My Maserati Does 185",
+     "airDate": "2005-06-12"
+    },
+    {
+     "n": 3,
+     "title": "Aquamansion",
+     "airDate": "2005-06-19"
+    },
+    {
+     "n": 4,
+     "title": "An Offer Refused",
+     "airDate": "2005-06-26"
+    },
+    {
+     "n": 5,
+     "title": "Neighbors",
+     "airDate": "2005-07-03"
+    },
+    {
+     "n": 6,
+     "title": "Chinatown",
+     "airDate": "2005-07-10"
+    },
+    {
+     "n": 7,
+     "title": "The Sundance Kids",
+     "airDate": "2005-07-17"
+    },
+    {
+     "n": 8,
+     "title": "Oh, Mandy",
+     "airDate": "2005-07-24"
+    },
+    {
+     "n": 9,
+     "title": "I Love You Too",
+     "airDate": "2005-07-31"
+    },
+    {
+     "n": 10,
+     "title": "The Bat Mitzvah",
+     "airDate": "2005-08-07"
+    },
+    {
+     "n": 11,
+     "title": "Blue Balls Lagoon",
+     "airDate": "2005-08-14"
+    },
+    {
+     "n": 12,
+     "title": "Good Morning, Saigon",
+     "airDate": "2005-08-21"
+    },
+    {
+     "n": 13,
+     "title": "Exodus",
+     "airDate": "2005-08-28"
+    },
+    {
+     "n": 14,
+     "title": "The Abyss",
+     "airDate": "2005-09-04"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "title": "Aquamom",
+     "airDate": "2006-06-11"
+    },
+    {
+     "n": 2,
+     "title": "One Day in the Valley",
+     "airDate": "2006-06-18"
+    },
+    {
+     "n": 3,
+     "title": "Dominated",
+     "airDate": "2006-06-25"
+    },
+    {
+     "n": 4,
+     "title": "Guys and Doll",
+     "airDate": "2006-07-02"
+    },
+    {
+     "n": 5,
+     "title": "Crash and Burn",
+     "airDate": "2006-07-09"
+    },
+    {
+     "n": 6,
+     "title": "Three's Company",
+     "airDate": "2006-07-16"
+    },
+    {
+     "n": 7,
+     "title": "Strange Days",
+     "airDate": "2006-07-23"
+    },
+    {
+     "n": 8,
+     "title": "The Release",
+     "airDate": "2006-07-30"
+    },
+    {
+     "n": 9,
+     "title": "Vegas Baby, Vegas!",
+     "airDate": "2006-08-06"
+    },
+    {
+     "n": 10,
+     "title": "I Wanna Be Sedated",
+     "airDate": "2006-08-13"
+    },
+    {
+     "n": 11,
+     "title": "What About Bob?",
+     "airDate": "2006-08-20"
+    },
+    {
+     "n": 12,
+     "title": "Sorry, Ari",
+     "airDate": "2006-08-27"
+    },
+    {
+     "n": 13,
+     "title": "Less Than 30",
+     "airDate": "2007-04-08"
+    },
+    {
+     "n": 14,
+     "title": "Dog Day Afternoon",
+     "airDate": "2007-04-15"
+    },
+    {
+     "n": 15,
+     "title": "Manic Monday",
+     "airDate": "2007-04-22"
+    },
+    {
+     "n": 16,
+     "title": "Gotcha",
+     "airDate": "2007-04-29"
+    },
+    {
+     "n": 17,
+     "title": "Return of the King",
+     "airDate": "2007-05-06"
+    },
+    {
+     "n": 18,
+     "title": "The Resurrection",
+     "airDate": "2007-05-13"
+    },
+    {
+     "n": 19,
+     "title": "The Prince's Bride",
+     "airDate": "2007-05-20"
+    },
+    {
+     "n": 20,
+     "title": "Adios Amigos",
+     "airDate": "2007-06-03"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "title": "Welcome to the Jungle",
+     "airDate": "2007-06-17"
+    },
+    {
+     "n": 2,
+     "title": "The First Cut Is the Deepest",
+     "airDate": "2007-06-24"
+    },
+    {
+     "n": 3,
+     "title": "Malibooty",
+     "airDate": "2007-07-01"
+    },
+    {
+     "n": 4,
+     "title": "Sorry, Harvey",
+     "airDate": "2007-07-08"
+    },
+    {
+     "n": 5,
+     "title": "The Dream Team",
+     "airDate": "2007-07-15"
+    },
+    {
+     "n": 6,
+     "title": "The Weho Ho",
+     "airDate": "2007-07-22"
+    },
+    {
+     "n": 7,
+     "title": "The Day Fuckers",
+     "airDate": "2007-07-29"
+    },
+    {
+     "n": 8,
+     "title": "Gary's Desk",
+     "airDate": "2007-08-05"
+    },
+    {
+     "n": 9,
+     "title": "The Young and the Stoned",
+     "airDate": "2007-08-12"
+    },
+    {
+     "n": 10,
+     "title": "Snow Job",
+     "airDate": "2007-08-19"
+    },
+    {
+     "n": 11,
+     "title": "No Cannes Do",
+     "airDate": "2007-08-26"
+    },
+    {
+     "n": 12,
+     "title": "The Cannes Kids",
+     "airDate": "2007-09-02"
+    }
+   ],
    "5": [
     {
      "n": 1,
@@ -266,6 +500,135 @@
    ]
   },
   "wire": {
+   "1": [
+    {
+     "n": 1,
+     "title": "The Target",
+     "airDate": "2002-06-02"
+    },
+    {
+     "n": 2,
+     "title": "The Detail",
+     "airDate": "2002-06-09"
+    },
+    {
+     "n": 3,
+     "title": "The Buys",
+     "airDate": "2002-06-16"
+    },
+    {
+     "n": 4,
+     "title": "Old Cases",
+     "airDate": "2002-06-23"
+    },
+    {
+     "n": 5,
+     "title": "The Pager",
+     "airDate": "2002-06-30"
+    },
+    {
+     "n": 6,
+     "title": "The Wire",
+     "airDate": "2002-07-07"
+    },
+    {
+     "n": 7,
+     "title": "One Arrest",
+     "airDate": "2002-07-21"
+    },
+    {
+     "n": 8,
+     "title": "Lessons",
+     "airDate": "2002-07-28"
+    },
+    {
+     "n": 9,
+     "title": "Game Day",
+     "airDate": "2002-08-04"
+    },
+    {
+     "n": 10,
+     "title": "The Cost",
+     "airDate": "2002-08-11"
+    },
+    {
+     "n": 11,
+     "title": "The Hunt",
+     "airDate": "2002-08-18"
+    },
+    {
+     "n": 12,
+     "title": "Cleaning Up",
+     "airDate": "2002-09-01"
+    },
+    {
+     "n": 13,
+     "title": "Sentencing",
+     "airDate": "2002-09-08"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "title": "Ebb Tide",
+     "airDate": "2003-06-01"
+    },
+    {
+     "n": 2,
+     "title": "Collateral Damage",
+     "airDate": "2003-06-08"
+    },
+    {
+     "n": 3,
+     "title": "Hot Shots",
+     "airDate": "2003-06-15"
+    },
+    {
+     "n": 4,
+     "title": "Hard Cases",
+     "airDate": "2003-06-22"
+    },
+    {
+     "n": 5,
+     "title": "Undertow",
+     "airDate": "2003-06-29"
+    },
+    {
+     "n": 6,
+     "title": "All Prologue",
+     "airDate": "2003-07-06"
+    },
+    {
+     "n": 7,
+     "title": "Backwash",
+     "airDate": "2003-07-13"
+    },
+    {
+     "n": 8,
+     "title": "Duck and Cover",
+     "airDate": "2003-07-27"
+    },
+    {
+     "n": 9,
+     "title": "Stray Rounds",
+     "airDate": "2003-08-03"
+    },
+    {
+     "n": 10,
+     "title": "Storm Warnings",
+     "airDate": "2003-08-10"
+    },
+    {
+     "n": 11,
+     "title": "Bad Dreams",
+     "airDate": "2003-08-17"
+    },
+    {
+     "n": 12,
+     "title": "Port in a Storm",
+     "airDate": "2003-08-24"
+    }
+   ],
    "3": [
     {
      "n": 1,
@@ -763,6 +1126,476 @@
    ]
   },
   "abbott-elementary": {
+   "1": [
+    {
+     "n": 1,
+     "title": "Pilot",
+     "airDate": "2021-12-07"
+    },
+    {
+     "n": 2,
+     "title": "Light Bulb",
+     "airDate": "2022-01-04"
+    },
+    {
+     "n": 3,
+     "title": "Wishlist",
+     "airDate": "2022-01-11"
+    },
+    {
+     "n": 4,
+     "title": "New Tech",
+     "airDate": "2022-01-18"
+    },
+    {
+     "n": 5,
+     "title": "Student Transfer",
+     "airDate": "2022-01-25"
+    },
+    {
+     "n": 6,
+     "title": "Gifted Program",
+     "airDate": "2022-02-01"
+    },
+    {
+     "n": 7,
+     "title": "Art Teacher",
+     "airDate": "2022-02-08"
+    },
+    {
+     "n": 8,
+     "title": "Work Family",
+     "airDate": "2022-02-15"
+    },
+    {
+     "n": 9,
+     "title": "Step Class",
+     "airDate": "2022-02-22"
+    },
+    {
+     "n": 10,
+     "title": "Open House",
+     "airDate": "2022-03-22"
+    },
+    {
+     "n": 11,
+     "title": "Desking",
+     "airDate": "2022-03-29"
+    },
+    {
+     "n": 12,
+     "title": "Ava vs. Superintendent",
+     "airDate": "2022-04-05"
+    },
+    {
+     "n": 13,
+     "title": "Zoo Balloon",
+     "airDate": "2022-04-12"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "title": "Development Day",
+     "airDate": "2022-09-21"
+    },
+    {
+     "n": 2,
+     "title": "Wrong Delivery",
+     "airDate": "2022-09-28"
+    },
+    {
+     "n": 3,
+     "title": "Story Samurai",
+     "airDate": "2022-10-05"
+    },
+    {
+     "n": 4,
+     "title": "The Principal's Office",
+     "airDate": "2022-10-12"
+    },
+    {
+     "n": 5,
+     "title": "Juice",
+     "airDate": "2022-10-19"
+    },
+    {
+     "n": 6,
+     "title": "Candy Zombies",
+     "airDate": "2022-10-26"
+    },
+    {
+     "n": 7,
+     "title": "Attack Ad",
+     "airDate": "2022-11-02"
+    },
+    {
+     "n": 8,
+     "title": "Egg Drop",
+     "airDate": "2022-11-16"
+    },
+    {
+     "n": 9,
+     "title": "Sick Day",
+     "airDate": "2022-11-30"
+    },
+    {
+     "n": 10,
+     "title": "Holiday Hookah",
+     "airDate": "2022-12-07"
+    },
+    {
+     "n": 11,
+     "title": "Read-a-Thon",
+     "airDate": "2023-01-04"
+    },
+    {
+     "n": 12,
+     "title": "Fight",
+     "airDate": "2023-01-11"
+    },
+    {
+     "n": 13,
+     "title": "Fundraiser",
+     "airDate": "2023-01-18"
+    },
+    {
+     "n": 14,
+     "title": "Valentine's Day",
+     "airDate": "2023-02-08"
+    },
+    {
+     "n": 15,
+     "title": "Fire",
+     "airDate": "2023-02-15"
+    },
+    {
+     "n": 16,
+     "title": "Teacher Conference",
+     "airDate": "2023-02-22"
+    },
+    {
+     "n": 17,
+     "title": "Mural Arts",
+     "airDate": "2023-03-01"
+    },
+    {
+     "n": 18,
+     "title": "Teacher Appreciation",
+     "airDate": "2023-03-08"
+    },
+    {
+     "n": 19,
+     "title": "Festival",
+     "airDate": "2023-03-15"
+    },
+    {
+     "n": 20,
+     "title": "Educator of the Year",
+     "airDate": "2023-04-05"
+    },
+    {
+     "n": 21,
+     "title": "Mom",
+     "airDate": "2023-04-12"
+    },
+    {
+     "n": 22,
+     "title": "Franklin Institute",
+     "airDate": "2023-04-19"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "title": "Career Day (1) / Career Day (2)",
+     "airDate": "2024-02-07"
+    },
+    {
+     "n": 3,
+     "title": "Gregory's Garden Goofballs",
+     "airDate": "2024-02-14"
+    },
+    {
+     "n": 4,
+     "title": "Smoking",
+     "airDate": "2024-02-21"
+    },
+    {
+     "n": 5,
+     "title": "Breakup",
+     "airDate": "2024-02-28"
+    },
+    {
+     "n": 6,
+     "title": "Willard R. Abbott",
+     "airDate": "2024-03-10"
+    },
+    {
+     "n": 7,
+     "title": "Librarian",
+     "airDate": "2024-03-13"
+    },
+    {
+     "n": 8,
+     "title": "Panel",
+     "airDate": "2024-03-20"
+    },
+    {
+     "n": 9,
+     "title": "Alex",
+     "airDate": "2024-04-10"
+    },
+    {
+     "n": 10,
+     "title": "2 Ava 2 Fest",
+     "airDate": "2024-04-17"
+    },
+    {
+     "n": 11,
+     "title": "Double Date",
+     "airDate": "2024-05-01"
+    },
+    {
+     "n": 12,
+     "title": "Mother's Day",
+     "airDate": "2024-05-08"
+    },
+    {
+     "n": 13,
+     "title": "Smith Playground",
+     "airDate": "2024-05-15"
+    },
+    {
+     "n": 14,
+     "title": "Party",
+     "airDate": "2024-05-22"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "title": "Back to School",
+     "airDate": "2024-10-09"
+    },
+    {
+     "n": 2,
+     "title": "Ringworm",
+     "airDate": "2024-10-16"
+    },
+    {
+     "n": 3,
+     "title": "Class Pet",
+     "airDate": "2024-10-23"
+    },
+    {
+     "n": 4,
+     "title": "Costume Contest",
+     "airDate": "2024-10-30"
+    },
+    {
+     "n": 5,
+     "title": "Dad Fight",
+     "airDate": "2024-11-06"
+    },
+    {
+     "n": 6,
+     "title": "The Deli",
+     "airDate": "2024-11-13"
+    },
+    {
+     "n": 7,
+     "title": "Winter Show",
+     "airDate": "2024-12-04"
+    },
+    {
+     "n": 8,
+     "title": "Winter Break",
+     "airDate": "2024-12-04"
+    },
+    {
+     "n": 9,
+     "title": "Volunteers",
+     "airDate": "2025-01-08"
+    },
+    {
+     "n": 10,
+     "title": "Testing",
+     "airDate": "2025-01-15"
+    },
+    {
+     "n": 11,
+     "title": "Strike",
+     "airDate": "2025-01-22"
+    },
+    {
+     "n": 12,
+     "title": "Girard Creek",
+     "airDate": "2025-01-29"
+    },
+    {
+     "n": 13,
+     "title": "The Science Fair",
+     "airDate": "2025-02-05"
+    },
+    {
+     "n": 14,
+     "title": "District Budget Meeting",
+     "airDate": "2025-02-12"
+    },
+    {
+     "n": 15,
+     "title": "100th Day of School",
+     "airDate": "2025-02-26"
+    },
+    {
+     "n": 16,
+     "title": "Books",
+     "airDate": "2025-03-05"
+    },
+    {
+     "n": 17,
+     "title": "Karaoke",
+     "airDate": "2025-03-12"
+    },
+    {
+     "n": 18,
+     "title": "Audit",
+     "airDate": "2025-03-19"
+    },
+    {
+     "n": 19,
+     "title": "Music Class",
+     "airDate": "2025-03-26"
+    },
+    {
+     "n": 20,
+     "title": "Ava Fest: Tokyo Drift",
+     "airDate": "2025-04-02"
+    },
+    {
+     "n": 21,
+     "title": "Rally",
+     "airDate": "2025-04-09"
+    },
+    {
+     "n": 22,
+     "title": "Please Touch Museum",
+     "airDate": "2025-04-16"
+    }
+   ],
+   "5": [
+    {
+     "n": 1,
+     "title": "Team Building",
+     "airDate": "2025-10-01"
+    },
+    {
+     "n": 2,
+     "title": "Cheating",
+     "airDate": "2025-10-08"
+    },
+    {
+     "n": 3,
+     "title": "Ballgame",
+     "airDate": "2025-10-15"
+    },
+    {
+     "n": 4,
+     "title": "Game Night",
+     "airDate": "2025-10-22"
+    },
+    {
+     "n": 5,
+     "title": "Camping",
+     "airDate": "2025-10-29"
+    },
+    {
+     "n": 6,
+     "title": "No Phones",
+     "airDate": "2025-11-05"
+    },
+    {
+     "n": 7,
+     "title": "Goofgirl",
+     "airDate": "2025-12-03"
+    },
+    {
+     "n": 8,
+     "title": "Birthday",
+     "airDate": "2025-12-10"
+    },
+    {
+     "n": 9,
+     "title": "Mall (1)",
+     "airDate": "2026-01-07"
+    },
+    {
+     "n": 10,
+     "title": "Mall (2): Questions & Concerns",
+     "airDate": "2026-01-14"
+    },
+    {
+     "n": 11,
+     "title": "Mall (3): Heroes",
+     "airDate": "2026-01-21"
+    },
+    {
+     "n": 12,
+     "title": "Picture Day",
+     "airDate": "2026-01-28"
+    },
+    {
+     "n": 13,
+     "title": "Candygrams",
+     "airDate": "2026-02-04"
+    },
+    {
+     "n": 14,
+     "title": "Aide",
+     "airDate": "2026-03-04"
+    },
+    {
+     "n": 15,
+     "title": "Safety Day",
+     "airDate": "2026-03-11"
+    },
+    {
+     "n": 16,
+     "title": "Campaign",
+     "airDate": "2026-03-18"
+    },
+    {
+     "n": 17,
+     "title": "No Homework",
+     "airDate": "2026-03-25"
+    },
+    {
+     "n": 18,
+     "title": "April Fools",
+     "airDate": "2026-04-01"
+    },
+    {
+     "n": 19,
+     "title": "Trip",
+     "airDate": "2026-04-08"
+    },
+    {
+     "n": 20,
+     "title": "Night Out",
+     "airDate": "2026-04-15"
+    },
+    {
+     "n": 21,
+     "title": "Ava & Fest",
+     "airDate": "2026-04-22"
+    },
+    {
+     "n": 22,
+     "title": "Miami",
+     "airDate": "2026-04-22"
+    }
+   ],
    "6": [
     {
      "n": 1,
@@ -796,22 +1629,64 @@
     },
     {
      "n": 7,
-     "title": null,
-     "airDate": "2026-11-25"
-    },
-    {
-     "n": 8,
-     "title": null,
+     "title": "One Hundred",
      "airDate": "2026-12-02"
     },
     {
-     "n": 9,
+     "n": 8,
      "title": "Parents",
      "airDate": "2026-12-09"
+    },
+    {
+     "n": 9,
+     "title": null,
+     "airDate": "2027-01-13"
     }
    ]
   },
   "sugar": {
+   "1": [
+    {
+     "n": 1,
+     "title": "Olivia",
+     "airDate": "2024-04-04"
+    },
+    {
+     "n": 2,
+     "title": "These People, These Places",
+     "airDate": "2024-04-04"
+    },
+    {
+     "n": 3,
+     "title": "Shibuya Crossing",
+     "airDate": "2024-04-11"
+    },
+    {
+     "n": 4,
+     "title": "Starry-Eyed",
+     "airDate": "2024-04-18"
+    },
+    {
+     "n": 5,
+     "title": "Boy in the Corner",
+     "airDate": "2024-04-25"
+    },
+    {
+     "n": 6,
+     "title": "Go Home",
+     "airDate": "2024-05-02"
+    },
+    {
+     "n": 7,
+     "title": "The Friends You Keep",
+     "airDate": "2024-05-09"
+    },
+    {
+     "n": 8,
+     "title": "Farewell",
+     "airDate": "2024-05-16"
+    }
+   ],
    "2": [
     {
      "n": 1,
@@ -856,6 +1731,214 @@
    ]
   },
   "outer-banks": {
+   "1": [
+    {
+     "n": 1,
+     "title": "Pilot",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 2,
+     "title": "The Lucky Compass",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 3,
+     "title": "The Forbidden Zone",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 4,
+     "title": "Spy Games",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 5,
+     "title": "Midsummers",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 6,
+     "title": "Parcel 9",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 7,
+     "title": "Dead Calm",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 8,
+     "title": "The Runway",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 9,
+     "title": "The Bell Tower",
+     "airDate": "2020-04-15"
+    },
+    {
+     "n": 10,
+     "title": "The Phantom",
+     "airDate": "2020-04-15"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "title": "The Gold",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 2,
+     "title": "The Heist",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 3,
+     "title": "Prayers",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 4,
+     "title": "Homecoming",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 5,
+     "title": "The Darkest Hour",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 6,
+     "title": "My Druthers",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 7,
+     "title": "The Bonfire",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 8,
+     "title": "The Cross",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 9,
+     "title": "Trapped",
+     "airDate": "2021-07-30"
+    },
+    {
+     "n": 10,
+     "title": "The Coastal Venture",
+     "airDate": "2021-07-30"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "title": "Poguelandia",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 2,
+     "title": "The Bells",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 3,
+     "title": "Fathers and Sons",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 4,
+     "title": "The Diary",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 5,
+     "title": "Heists",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 6,
+     "title": "The Dark Forest",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 7,
+     "title": "Happy Anniversary",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 8,
+     "title": "Tapping the Rudder",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 9,
+     "title": "Welcome to Kitty Hawk",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 10,
+     "title": "Secret of the Gnomon",
+     "airDate": "2023-02-23"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "title": "The Enduro",
+     "airDate": "2024-10-10"
+    },
+    {
+     "n": 2,
+     "title": "Blackbeard",
+     "airDate": "2024-10-10"
+    },
+    {
+     "n": 3,
+     "title": "The Lupine Corsairs",
+     "airDate": "2024-10-10"
+    },
+    {
+     "n": 4,
+     "title": "The Swell",
+     "airDate": "2024-10-10"
+    },
+    {
+     "n": 5,
+     "title": "Albatross",
+     "airDate": "2024-10-10"
+    },
+    {
+     "n": 6,
+     "title": "The Town Council",
+     "airDate": "2024-11-07"
+    },
+    {
+     "n": 7,
+     "title": "Mothers and Fathers",
+     "airDate": "2024-11-07"
+    },
+    {
+     "n": 8,
+     "title": "Family Plot",
+     "airDate": "2024-11-07"
+    },
+    {
+     "n": 9,
+     "title": "The Storm",
+     "airDate": "2024-11-07"
+    },
+    {
+     "n": 10,
+     "title": "The Blue Crown",
+     "airDate": "2024-11-07"
+    }
+   ],
    "5": [
     {
      "n": 1,
@@ -910,6 +1993,53 @@
    ]
   },
   "scrubs-2026": {
+   "1": [
+    {
+     "n": 1,
+     "title": "My Return",
+     "airDate": "2026-02-25"
+    },
+    {
+     "n": 2,
+     "title": "My 2nd First Day",
+     "airDate": "2026-02-25"
+    },
+    {
+     "n": 3,
+     "title": "My Rom-Com",
+     "airDate": "2026-03-04"
+    },
+    {
+     "n": 4,
+     "title": "My Poker Face",
+     "airDate": "2026-03-11"
+    },
+    {
+     "n": 5,
+     "title": "My Angel",
+     "airDate": "2026-03-18"
+    },
+    {
+     "n": 6,
+     "title": "My V.I.P.",
+     "airDate": "2026-03-25"
+    },
+    {
+     "n": 7,
+     "title": "My Best Friend's Barbecue",
+     "airDate": "2026-04-01"
+    },
+    {
+     "n": 8,
+     "title": "My Odds",
+     "airDate": "2026-04-08"
+    },
+    {
+     "n": 9,
+     "title": "My Celebration",
+     "airDate": "2026-04-15"
+    }
+   ],
    "2": [
     {
      "n": 1,
@@ -953,22 +2083,240 @@
     },
     {
      "n": 9,
-     "title": null,
-     "airDate": "2026-11-25"
-    },
-    {
-     "n": 10,
-     "title": null,
+     "title": "My Worthless Peon",
      "airDate": "2026-12-02"
     },
     {
-     "n": 11,
-     "title": null,
+     "n": 10,
+     "title": "My Wonderful Life",
      "airDate": "2026-12-09"
     }
    ]
   },
   "animal-control": {
+   "1": [
+    {
+     "n": 1,
+     "title": "Weasels and Ostriches",
+     "airDate": "2023-02-16"
+    },
+    {
+     "n": 2,
+     "title": "Rabbits and Pythons",
+     "airDate": "2023-02-23"
+    },
+    {
+     "n": 3,
+     "title": "Cougars and Kangaroos",
+     "airDate": "2023-03-02"
+    },
+    {
+     "n": 4,
+     "title": "Dogs and Bears and Minks",
+     "airDate": "2023-03-09"
+    },
+    {
+     "n": 5,
+     "title": "Cows and Raccoons",
+     "airDate": "2023-03-16"
+    },
+    {
+     "n": 6,
+     "title": "Skunks and Llamas",
+     "airDate": "2023-03-23"
+    },
+    {
+     "n": 7,
+     "title": "Peacocks and Pumas",
+     "airDate": "2023-03-30"
+    },
+    {
+     "n": 8,
+     "title": "Hellhounds and Sturgeons",
+     "airDate": "2023-04-06"
+    },
+    {
+     "n": 9,
+     "title": "Dogs and Geese",
+     "airDate": "2023-04-13"
+    },
+    {
+     "n": 10,
+     "title": "Pigs and Minks",
+     "airDate": "2023-04-20"
+    },
+    {
+     "n": 11,
+     "title": "Birds and Foxes",
+     "airDate": "2023-04-27"
+    },
+    {
+     "n": 12,
+     "title": "Unicorns and Mountain Lions",
+     "airDate": "2023-05-04"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "title": "Raccoons and Mutts",
+     "airDate": "2024-03-06"
+    },
+    {
+     "n": 2,
+     "title": "Cats and Monkeys",
+     "airDate": "2024-03-13"
+    },
+    {
+     "n": 3,
+     "title": "Tortoises and Labradors",
+     "airDate": "2024-03-20"
+    },
+    {
+     "n": 4,
+     "title": "Big Dogs and Mini Horses",
+     "airDate": "2024-03-27"
+    },
+    {
+     "n": 5,
+     "title": "Dogs and Chickens",
+     "airDate": "2024-04-10"
+    },
+    {
+     "n": 6,
+     "title": "Bunnies and Veggies",
+     "airDate": "2024-04-17"
+    },
+    {
+     "n": 7,
+     "title": "Skunks and Swans",
+     "airDate": "2024-04-24"
+    },
+    {
+     "n": 8,
+     "title": "Bulls and Potbellies",
+     "airDate": "2024-05-01"
+    },
+    {
+     "n": 9,
+     "title": "Beagles and Lemurs",
+     "airDate": "2024-05-08"
+    }
+   ],
+   "3": [
+    {
+     "n": 1,
+     "title": "Giraffes, Gorillas, and Penguins",
+     "airDate": "2025-01-02"
+    },
+    {
+     "n": 2,
+     "title": "Rattlers and Gators",
+     "airDate": "2025-01-09"
+    },
+    {
+     "n": 3,
+     "title": "Goats, Snakes, and Dogs",
+     "airDate": "2025-01-16"
+    },
+    {
+     "n": 4,
+     "title": "Baby Kangaroos and Chickens",
+     "airDate": "2025-01-23"
+    },
+    {
+     "n": 5,
+     "title": "Hot Dogs and Lobsters",
+     "airDate": "2025-01-30"
+    },
+    {
+     "n": 6,
+     "title": "Buffalo and Beavers",
+     "airDate": "2025-02-13"
+    },
+    {
+     "n": 7,
+     "title": "Ducks and Penguins",
+     "airDate": "2025-02-20"
+    },
+    {
+     "n": 8,
+     "title": "Party Animals",
+     "airDate": "2025-02-27"
+    },
+    {
+     "n": 9,
+     "title": "Retrievers and Fruit Bats",
+     "airDate": "2025-03-06"
+    },
+    {
+     "n": 10,
+     "title": "Strays and Lovebirds",
+     "airDate": "2025-03-13"
+    }
+   ],
+   "4": [
+    {
+     "n": 1,
+     "title": "Bear Cubs and Broncos",
+     "airDate": "2025-12-28"
+    },
+    {
+     "n": 2,
+     "title": "Bagged Birds and Alley Dogs",
+     "airDate": "2026-01-15"
+    },
+    {
+     "n": 3,
+     "title": "Dragons and Dognappers",
+     "airDate": "2026-01-22"
+    },
+    {
+     "n": 4,
+     "title": "Lost Dogs and Bar Flies",
+     "airDate": "2026-01-29"
+    },
+    {
+     "n": 5,
+     "title": "French Bulldogs and White Broncos",
+     "airDate": "2026-02-05"
+    },
+    {
+     "n": 6,
+     "title": "Roosters and Moles",
+     "airDate": "2026-02-26"
+    },
+    {
+     "n": 7,
+     "title": "Donkeys and Weasels",
+     "airDate": "2026-03-05"
+    },
+    {
+     "n": 8,
+     "title": "Squirrels and Fat Cats",
+     "airDate": "2026-03-12"
+    },
+    {
+     "n": 9,
+     "title": "Bats and Camels",
+     "airDate": "2026-04-02"
+    },
+    {
+     "n": 10,
+     "title": "Scaredy Cats and Card Sharks",
+     "airDate": "2026-04-09"
+    },
+    {
+     "n": 11,
+     "title": "Coyotes and Eagles",
+     "airDate": "2026-04-16"
+    },
+    {
+     "n": 12,
+     "title": "Golden Moose and Wiener Dogs",
+     "airDate": "2026-04-23"
+    }
+   ],
    "5": [
     {
      "n": 1,
@@ -1012,12 +2360,12 @@
     },
     {
      "n": 9,
-     "title": "Scarecrows and Creepy Crawlers",
+     "title": "Baby Goats and Cat Naps",
      "airDate": "2026-11-29"
     },
     {
      "n": 10,
-     "title": "Baby Goats and Cat Naps",
+     "title": "Scarecrows and Creepy Crawlers",
      "airDate": "2026-12-06"
     },
     {
@@ -1037,7 +2385,297 @@
     }
    ]
   },
+  "fall-and-rise-of-reggie-dinkins": {
+   "1": [
+    {
+     "n": 1,
+     "title": "Pilot",
+     "airDate": "2026-01-18"
+    },
+    {
+     "n": 2,
+     "title": "Nittany Means Big",
+     "airDate": "2026-02-23"
+    },
+    {
+     "n": 3,
+     "title": "Put It on Your Cabbage!",
+     "airDate": "2026-03-02"
+    },
+    {
+     "n": 4,
+     "title": "Save the Cat",
+     "airDate": "2026-03-09"
+    },
+    {
+     "n": 5,
+     "title": "You May Hug Your Hero",
+     "airDate": "2026-03-16"
+    },
+    {
+     "n": 6,
+     "title": "Dr. Watson's Dad",
+     "airDate": "2026-03-23"
+    },
+    {
+     "n": 7,
+     "title": "The World Is Full of Beaks",
+     "airDate": "2026-03-30"
+    },
+    {
+     "n": 8,
+     "title": "The Loyalty Swamp",
+     "airDate": "2026-04-06"
+    },
+    {
+     "n": 9,
+     "title": "Mischief and Memories",
+     "airDate": "2026-04-13"
+    },
+    {
+     "n": 10,
+     "title": "A Real Cinderello Story",
+     "airDate": "2026-04-13"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "title": "We Keep the Kisses",
+     "airDate": "2026-11-02"
+    },
+    {
+     "n": 2,
+     "title": "The Spaghetti Loop",
+     "airDate": "2026-11-09"
+    },
+    {
+     "n": 3,
+     "title": "Hulk Want Candy",
+     "airDate": "2026-11-16"
+    },
+    {
+     "n": 4,
+     "title": "Turkey Can Be This",
+     "airDate": "2026-11-23"
+    },
+    {
+     "n": 5,
+     "title": "A Glove Full of Pudding",
+     "airDate": "2026-11-30"
+    },
+    {
+     "n": 6,
+     "title": null,
+     "airDate": "2026-12-07"
+    },
+    {
+     "n": 7,
+     "title": null,
+     "airDate": "2026-12-14"
+    },
+    {
+     "n": 8,
+     "title": null,
+     "airDate": "2026-12-21"
+    },
+    {
+     "n": 9,
+     "title": null,
+     "airDate": "2026-12-28"
+    },
+    {
+     "n": 10,
+     "title": null,
+     "airDate": "2027-01-04"
+    }
+   ]
+  },
   "st-denis-medical": {
+   "1": [
+    {
+     "n": 1,
+     "title": "Welcome to St. Denis",
+     "airDate": "2024-11-12"
+    },
+    {
+     "n": 2,
+     "title": "A Very Robust Personal Life",
+     "airDate": "2024-11-12"
+    },
+    {
+     "n": 3,
+     "title": "Weird Stuff You Can't Explain",
+     "airDate": "2024-11-19"
+    },
+    {
+     "n": 4,
+     "title": "Salamat You Too",
+     "airDate": "2024-11-26"
+    },
+    {
+     "n": 5,
+     "title": "A Peanut and Caramel-Filled Miracle",
+     "airDate": "2024-12-03"
+    },
+    {
+     "n": 6,
+     "title": "Ho-Ho-Hollo",
+     "airDate": "2024-12-17"
+    },
+    {
+     "n": 7,
+     "title": "50 cc's of Kindness",
+     "airDate": "2025-01-14"
+    },
+    {
+     "n": 8,
+     "title": "Gimme the Scuttlebutt",
+     "airDate": "2025-01-21"
+    },
+    {
+     "n": 9,
+     "title": "You Gotta Have a Plan",
+     "airDate": "2025-01-28"
+    },
+    {
+     "n": 10,
+     "title": "People Just Say Stuff Online",
+     "airDate": "2025-02-04"
+    },
+    {
+     "n": 11,
+     "title": "Nobody Even Mentions the Brownies!",
+     "airDate": "2025-02-11"
+    },
+    {
+     "n": 12,
+     "title": "Buffalo Bruce and Matty the Kid",
+     "airDate": "2025-02-18"
+    },
+    {
+     "n": 13,
+     "title": "Some Famous Internet Guy",
+     "airDate": "2025-02-25"
+    },
+    {
+     "n": 14,
+     "title": "Listen to Your Ladybugs",
+     "airDate": "2025-03-11"
+    },
+    {
+     "n": 15,
+     "title": "Sometimes It's Good to Be Cautious",
+     "airDate": "2025-03-25"
+    },
+    {
+     "n": 16,
+     "title": "Anything to Push Zaluva",
+     "airDate": "2025-04-01"
+    },
+    {
+     "n": 17,
+     "title": "Bruce-ic and the Mus-ic",
+     "airDate": "2025-04-22"
+    },
+    {
+     "n": 18,
+     "title": "This Place Is Our Everything",
+     "airDate": "2025-04-29"
+    }
+   ],
+   "2": [
+    {
+     "n": 1,
+     "title": "Aloha, Everyone",
+     "airDate": "2025-11-03"
+    },
+    {
+     "n": 2,
+     "title": "Mama Bear Activated",
+     "airDate": "2025-11-03"
+    },
+    {
+     "n": 3,
+     "title": "Get Me in the Pod, Brother",
+     "airDate": "2025-11-10"
+    },
+    {
+     "n": 4,
+     "title": "Two Docs, One Conf",
+     "airDate": "2025-11-17"
+    },
+    {
+     "n": 5,
+     "title": "A Strong Cup of Coffee",
+     "airDate": "2025-11-24"
+    },
+    {
+     "n": 6,
+     "title": "I Left a Woman on the Table",
+     "airDate": "2025-12-01"
+    },
+    {
+     "n": 7,
+     "title": "No Wonder His Kidney Wants Out",
+     "airDate": "2025-12-08"
+    },
+    {
+     "n": 8,
+     "title": "A Waste of Time and Marble",
+     "airDate": "2025-12-15"
+    },
+    {
+     "n": 9,
+     "title": "You're in His Bubble Space",
+     "airDate": "2026-01-05"
+    },
+    {
+     "n": 10,
+     "title": "This Is from Joyce",
+     "airDate": "2026-01-12"
+    },
+    {
+     "n": 11,
+     "title": "This Isn't Bingo",
+     "airDate": "2026-01-26"
+    },
+    {
+     "n": 12,
+     "title": "Nod and Agree",
+     "airDate": "2026-02-02"
+    },
+    {
+     "n": 13,
+     "title": "A New Best Friend",
+     "airDate": "2026-03-02"
+    },
+    {
+     "n": 14,
+     "title": "Happy Birthday, Matty",
+     "airDate": "2026-03-09"
+    },
+    {
+     "n": 15,
+     "title": "Everyone Loves Portland General",
+     "airDate": "2026-03-16"
+    },
+    {
+     "n": 16,
+     "title": "Experience with Human Babies",
+     "airDate": "2026-03-23"
+    },
+    {
+     "n": 17,
+     "title": "Here a Righteous Woman Comes",
+     "airDate": "2026-03-30"
+    },
+    {
+     "n": 18,
+     "title": "We Make Time",
+     "airDate": "2026-04-06"
+    }
+   ],
    "3": [
     {
      "n": 1,
@@ -1056,17 +2694,17 @@
     },
     {
      "n": 4,
-     "title": null,
+     "title": "The Intoxication Aroma of True Love",
      "airDate": "2026-11-23"
     },
     {
      "n": 5,
-     "title": null,
+     "title": "Hand of Gold",
      "airDate": "2026-11-30"
     },
     {
      "n": 6,
-     "title": null,
+     "title": "Roads Not Taken",
      "airDate": "2026-12-07"
     },
     {

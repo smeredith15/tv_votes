@@ -1,5 +1,66 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 291507,
+   "title": "The Body",
+   "firstAirDate": "2026-11-11",
+   "overview": "On Halloween night, an all-girls dance squad tumbles into Catholic guilt, unholy desires and ghostly visions when an initiation goes to hell.",
+   "poster": "/195kCuy2RqGaEAZDDpGTx7gBUBZ.jpg",
+   "network": "Netflix",
+   "runtime": 60,
+   "suggestedAt": "2026-11-22T16:27:52.957Z"
+  },
+  {
+   "tmdbId": 254630,
+   "title": "12 12 12",
+   "firstAirDate": "2026-11-12",
+   "overview": "A heist takes 12 months to plan, 12 hours to execute—and a thief not caught within 12 days won't be caught at all. Across three pulse-pounding timelines, an FBI agent and a career criminal face off in a deadly game of cat and mouse through Europe.",
+   "poster": "/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
+   "network": "Apple TV",
+   "runtime": 60,
+   "suggestedAt": "2026-11-22T16:27:52.957Z"
+  },
+  {
+   "tmdbId": 308007,
+   "title": "The Altruists",
+   "firstAirDate": "2026-11-19",
+   "overview": "The story of Sam Bankman-Fried and Caroline Ellison, two hyper-smart, ambitious young idealists who tried to remake the global financial system in the blink of an eye - before they were accused of stealing $8 billion and became Gen Z's own Bonnie & Clyde.",
+   "poster": "/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
+   "network": "Netflix",
+   "runtime": 60,
+   "suggestedAt": "2026-11-22T16:27:52.957Z"
+  },
+  {
+   "tmdbId": 249565,
+   "title": "The Good Daughter",
+   "firstAirDate": "2026-11-12",
+   "overview": "Sisters Charlotte and Samantha Quinn have spent the last twenty-eight years trying to piece together the lives that were fractured by a single night of violence. When another attack splinters the small town of Pikeville, Charlotte is the first witness on the scene. Now a lawyer like her father, she’s forced to confront her own demons as the case twists through one shocking revelation after another. In the end, both she and Samantha find themselves wondering if the price of being the good daughter was worth it after all.",
+   "poster": "/qJPvyo9Pxz3MQndd3tKSocLz1Nt.jpg",
+   "network": "Peacock",
+   "runtime": 60,
+   "suggestedAt": "2026-11-22T16:27:52.957Z"
+  },
+  {
+   "tmdbId": 335981,
+   "title": "Cunk on Cinema",
+   "firstAirDate": "2026-11-12",
+   "overview": "Philomena Cunk asks experts all of the hard-hitting questions about the history of cinema, from the invention of the camera, to the New Wave filmmakers of the 60s, right up to the entrance of CGI and what the future of AI holds. Cunk will attempt to demystify it all while sitting in lumpy seats with stale popcorn, asking herself where did cinema come from? And why? What does it want? And why can't it tell us?",
+   "poster": "/zrrRRvavkLQupkC6aEkdA8sX4E8.jpg",
+   "network": "BBC Two",
+   "runtime": 30,
+   "suggestedAt": "2026-11-22T16:27:52.957Z"
+  },
+  {
+   "tmdbId": 287296,
+   "title": "Honey",
+   "firstAirDate": "2026-11-14",
+   "overview": "East Berlin, 1982. Marta, 24, is a deep cover agent for MI6. Surrounded by enemies and constantly under threat of her cover being blown, she tries her hardest to avoid detection by Friedrich Bauman, the new Head of Counter Espionage for the Stasi. Finding herself caught between Friedrich and the reckless, arrogant (and incredibly attractive…) CIA operative Aaron Neeland, she is blind-sided by desire in this Cold War menage-a-trois.",
+   "poster": "/wKrubUacVFYxSjYBkiZYrgiCjXh.jpg",
+   "network": "BBC One",
+   "runtime": 60,
+   "suggestedAt": "2026-11-22T16:27:52.957Z"
+  }
+ ],
  "dismissed": [
   300507,
   318312,

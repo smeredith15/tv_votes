@@ -191,6 +191,39 @@
    "nextAirDate": null
   },
   {
+   "id": "12-12-12",
+   "title": "12 12 12",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 254630,
+   "poster": "/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-22T22:59:34.517Z"
+  },
+  {
    "id": "13-reasons-why",
    "title": "13 Reasons Why",
    "runtime": 60,
@@ -3143,6 +3176,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "altruists",
+   "title": "The Altruists",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 308007,
+   "poster": "/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-22T22:59:36.634Z"
   },
   {
    "id": "amadeus",
@@ -11629,6 +11695,39 @@
    "nextAirDate": null
   },
   {
+   "id": "body",
+   "title": "The Body",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 291507,
+   "poster": "/195kCuy2RqGaEAZDDpGTx7gBUBZ.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-22T22:58:55.776Z"
+  },
+  {
    "id": "bodyguard",
    "title": "Bodyguard",
    "runtime": 60,
@@ -19457,6 +19556,39 @@
     }
    },
    "nextAirDate": null
+  },
+  {
+   "id": "cunk-on-cinema",
+   "title": "Cunk on Cinema",
+   "runtime": 30,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 335981,
+   "poster": "/zrrRRvavkLQupkC6aEkdA8sX4E8.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-22T22:59:41.983Z"
   },
   {
    "id": "cupertino",
@@ -35019,6 +35151,39 @@
    "nextAirDate": null
   },
   {
+   "id": "good-daughter",
+   "title": "The Good Daughter",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 249565,
+   "poster": "/qJPvyo9Pxz3MQndd3tKSocLz1Nt.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-22T22:59:39.622Z"
+  },
+  {
    "id": "good-doctor",
    "title": "The Good Doctor",
    "runtime": 60,
@@ -40270,6 +40435,39 @@
     }
    },
    "addedAt": "2026-09-12T02:52:37.973Z"
+  },
+  {
+   "id": "honey",
+   "title": "Honey",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 287296,
+   "poster": "/wKrubUacVFYxSjYBkiZYrgiCjXh.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-22T22:59:45.222Z"
   },
   {
    "id": "hong-kong-phooey",

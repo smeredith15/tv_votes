@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T18:38:29.837Z",
+ "updatedAt": "2026-11-25T17:48:04.635Z",
  "shows": {
   "entourage": {
    "1": [
@@ -2366,12 +2366,12 @@
     {
      "n": 10,
      "title": "Scarecrows and Creepy Crawlers",
-     "airDate": "2026-12-06"
+     "airDate": "2026-12-13"
     },
     {
      "n": 11,
      "title": "Runaway Dogs and Bullwhips",
-     "airDate": "2026-12-13"
+     "airDate": "2026-12-20"
     },
     {
      "n": 12,
@@ -2381,7 +2381,7 @@
     {
      "n": 13,
      "title": null,
-     "airDate": "2027-01-03"
+     "airDate": null
     }
    ]
   },
@@ -2700,12 +2700,12 @@
     {
      "n": 5,
      "title": "Hand of Gold",
-     "airDate": "2026-11-30"
+     "airDate": "2026-12-07"
     },
     {
      "n": 6,
-     "title": "Roads Not Taken",
-     "airDate": null
+     "title": "A.I. Is The Future And I Love It",
+     "airDate": "2026-12-14"
     },
     {
      "n": 7,

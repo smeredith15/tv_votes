@@ -23430,6 +23430,39 @@
    "nextAirDate": null
   },
   {
+   "id": "dig",
+   "title": "DIG",
+   "runtime": null,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 290826,
+   "poster": "/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-25T02:17:02.167Z"
+  },
+  {
    "id": "diplomat",
    "title": "The Diplomat",
    "runtime": 60,

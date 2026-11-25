@@ -11393,6 +11393,39 @@
    "addedAt": "2026-09-12T02:22:21.472Z"
   },
   {
+   "id": "blade-runner-2099",
+   "title": "Blade Runner 2099",
+   "runtime": 60,
+   "format": "series",
+   "franchise": null,
+   "universe": null,
+   "status": "returning",
+   "tmdbId": 171802,
+   "poster": "/d8IKBDXQvj3d6clsjqydT4xcw14.jpg",
+   "providers": [],
+   "providersUpdated": null,
+   "seasons": [],
+   "votes": {
+    "weekly": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "hour": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "half": {
+     "scotty": 0,
+     "shelby": 0
+    },
+    "mini": {
+     "scotty": 0,
+     "shelby": 0
+    }
+   },
+   "addedAt": "2026-11-25T23:53:57.904Z"
+  },
+  {
    "id": "blindspot",
    "title": "Blindspot",
    "runtime": 60,

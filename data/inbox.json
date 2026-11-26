@@ -1,5 +1,16 @@
 {
- "pending": [],
+ "pending": [
+  {
+   "tmdbId": 314131,
+   "title": "MELANIA the Series",
+   "firstAirDate": "2026-11-20",
+   "overview": "Experience Melania Trump's transition to First Lady as she navigates the White House and puts her mission into action.",
+   "poster": "/75uNmW51SXsljGTFpNuH464eW4r.jpg",
+   "network": "Prime Video",
+   "runtime": 30,
+   "suggestedAt": "2026-11-26T17:31:55.854Z"
+  }
+ ],
  "dismissed": [
   300507,
   318312,

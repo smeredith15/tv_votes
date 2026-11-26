@@ -2370,6 +2370,11 @@
      "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
     },
     {
+     "name": "National Geographic",
+     "type": "ads",
+     "logo": "/yZtxolQEo9EEfu72AtegMwXE4Em.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -2385,12 +2390,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2026-10-02",
      "watched": false
     }
@@ -6275,7 +6281,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -9093,12 +9099,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2026-10-08",
      "watched": true
     }
@@ -11396,15 +11403,24 @@
    "id": "blade-runner-2099",
    "title": "Blade Runner 2099",
    "runtime": 60,
-   "format": "series",
+   "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "returning",
+   "status": "ended",
    "tmdbId": 171802,
    "poster": "/d8IKBDXQvj3d6clsjqydT4xcw14.jpg",
    "providers": [],
-   "providersUpdated": null,
-   "seasons": [],
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
+   "seasons": [
+    {
+     "number": 1,
+     "name": "Miniseries",
+     "episodes": 8,
+     "aired": 8,
+     "airDate": "2026-11-24",
+     "watched": false
+    }
+   ],
    "votes": {
     "weekly": {
      "scotty": 0,
@@ -11423,7 +11439,8 @@
      "shelby": 0
     }
    },
-   "addedAt": "2026-11-25T23:53:57.904Z"
+   "addedAt": "2026-11-25T23:53:57.904Z",
+   "nextAirDate": null
   },
   {
    "id": "blindspot",
@@ -15352,7 +15369,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -15523,7 +15540,7 @@
    "format": "mini",
    "franchise": null,
    "universe": null,
-   "status": "ended",
+   "status": "returning",
    "tmdbId": 288673,
    "poster": "/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
    "providers": [
@@ -15548,12 +15565,13 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
-     "name": "Miniseries",
+     "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2026-10-07",
      "watched": false
     }
@@ -17331,7 +17349,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -19214,7 +19232,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -20834,7 +20852,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -21151,7 +21169,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -22491,7 +22509,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -22983,12 +23001,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2016-09-21",
      "watched": false
     },
@@ -22996,6 +23015,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2017-09-27",
      "watched": false
     },
@@ -23003,6 +23023,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-06-07",
      "watched": false
     }
@@ -23142,11 +23163,6 @@
      "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
     },
     {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
      "name": "Amazon Prime Video Free with Ads",
      "type": "ads",
      "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
@@ -23177,12 +23193,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2014-10-02",
      "watched": false
     },
@@ -23190,6 +23207,7 @@
      "number": 2,
      "name": "Series 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2015-10-29",
      "watched": false
     },
@@ -23197,6 +23215,7 @@
      "number": 3,
      "name": "Series 3",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2017-11-08",
      "watched": false
     }
@@ -23348,12 +23367,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2017-09-10",
      "watched": false
     },
@@ -23361,6 +23381,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2018-09-09",
      "watched": false
     },
@@ -23368,6 +23389,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-09-09",
      "watched": false
     }
@@ -23434,12 +23456,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2025-10-16",
      "watched": false
     }
@@ -23486,12 +23509,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 5,
+     "aired": 5,
      "airDate": "2019-11-04",
      "watched": false
     }
@@ -23553,12 +23577,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2020-03-05",
      "watched": false
     }
@@ -23620,11 +23645,6 @@
      "logo": "/tnZCMxbcKdxuVmjxefyXCaip7q3.png"
     },
     {
-     "name": "Spectrum On Demand",
-     "type": "flatrate",
-     "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
-    },
-    {
      "name": "Apple TV Store",
      "type": "buy",
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
@@ -23640,12 +23660,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2006-10-01",
      "watched": false
     },
@@ -23653,6 +23674,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2007-09-30",
      "watched": false
     },
@@ -23660,6 +23682,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2008-09-28",
      "watched": false
     },
@@ -23667,6 +23690,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2009-09-27",
      "watched": false
     },
@@ -23674,6 +23698,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2010-09-26",
      "watched": false
     },
@@ -23681,6 +23706,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2011-10-02",
      "watched": false
     },
@@ -23688,6 +23714,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2012-09-30",
      "watched": false
     },
@@ -23695,6 +23722,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2013-06-30",
      "watched": false
     }
@@ -23849,12 +23877,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 3,
+     "aired": 3,
      "airDate": "2017-12-06",
      "watched": false
     }
@@ -23893,20 +23922,21 @@
     {
      "name": "Apple TV",
      "type": "flatrate",
-     "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+     "logo": "/v9SnyvYt0U3KGgBH3Sbh3z4yODe.png"
     },
     {
      "name": "Apple TV Amazon Channel",
      "type": "flatrate",
-     "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+     "logo": "/giKLP7saeUA0WykEPRyZUcOVv92.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-11-01",
      "watched": false
     },
@@ -23914,6 +23944,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-01-08",
      "watched": false
     },
@@ -23921,6 +23952,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-11-04",
      "watched": false
     }
@@ -23982,12 +24014,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2015-08-05",
      "watched": false
     },
@@ -23995,6 +24028,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2016-07-12",
      "watched": false
     },
@@ -24002,6 +24036,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-08-08",
      "watched": false
     }
@@ -24189,11 +24224,6 @@
      "logo": "/wsCUflcmL4dCkzBUaGP8cj1cTkh.png"
     },
     {
-     "name": "The Roku Channel",
-     "type": "ads",
-     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
-    },
-    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -24209,12 +24239,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2016-10-22",
      "watched": false
     },
@@ -24222,6 +24253,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-10-14",
      "watched": false
     }
@@ -24278,12 +24310,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2018-11-25",
      "watched": false
     },
@@ -24291,6 +24324,7 @@
      "number": 2,
      "name": "The Betty Broderick Story",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2020-06-02",
      "watched": false
     }
@@ -24337,12 +24371,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2018-01-26",
      "watched": false
     },
@@ -24350,6 +24385,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2020-03-11",
      "watched": false
     }
@@ -24421,11 +24457,6 @@
      "logo": "/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
     },
     {
-     "name": "Shudder",
-     "type": "flatrate",
-     "logo": "/58O6yqUFM6qoOiBNAddJs7xNKc.png"
-    },
-    {
      "name": "Spectrum On Demand",
      "type": "flatrate",
      "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
@@ -24444,11 +24475,6 @@
      "name": "The Roku Channel",
      "type": "ads",
      "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
-    },
-    {
-     "name": "Xumo Play",
-     "type": "ads",
-     "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
     },
     {
      "name": "Amazon Video",
@@ -24471,12 +24497,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2018-09-14",
      "watched": false
     },
@@ -24484,6 +24511,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-01-08",
      "watched": false
     },
@@ -24491,6 +24519,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2022-01-07",
      "watched": false
     }
@@ -24582,12 +24611,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-03-01",
      "watched": false
     }
@@ -24788,12 +24818,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2005-03-26",
      "watched": false
     },
@@ -24801,6 +24832,7 @@
      "number": 2,
      "name": "Series 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2006-04-15",
      "watched": false
     },
@@ -24808,6 +24840,7 @@
      "number": 3,
      "name": "Series 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2007-04-01",
      "watched": false
     },
@@ -24815,6 +24848,7 @@
      "number": 4,
      "name": "Series 4",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2008-04-05",
      "watched": false
     },
@@ -24822,6 +24856,7 @@
      "number": 5,
      "name": "Series 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2010-04-03",
      "watched": false
     },
@@ -24829,6 +24864,7 @@
      "number": 6,
      "name": "Series 6",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2011-04-23",
      "watched": false
     },
@@ -24836,6 +24872,7 @@
      "number": 7,
      "name": "Series 7",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2012-09-01",
      "watched": false
     },
@@ -24843,6 +24880,7 @@
      "number": 8,
      "name": "Series 8",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2014-08-23",
      "watched": false
     },
@@ -24850,6 +24888,7 @@
      "number": 9,
      "name": "Series 9",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2015-09-19",
      "watched": false
     },
@@ -24857,6 +24896,7 @@
      "number": 10,
      "name": "Series 10",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2017-04-15",
      "watched": false
     },
@@ -24864,6 +24904,7 @@
      "number": 11,
      "name": "Series 11",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2018-10-07",
      "watched": false
     },
@@ -24871,6 +24912,7 @@
      "number": 12,
      "name": "Series 12",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-01-01",
      "watched": false
     },
@@ -24878,6 +24920,7 @@
      "number": 13,
      "name": "Flux",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2021-10-31",
      "watched": false
     }
@@ -24954,6 +24997,11 @@
      "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
     },
     {
+     "name": "Plex",
+     "type": "ads",
+     "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -24974,12 +25022,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 50",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2015-08-20",
      "watched": false
     },
@@ -24987,6 +25036,7 @@
      "number": 2,
      "name": "Season 51",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2016-09-14",
      "watched": false
     },
@@ -24994,6 +25044,7 @@
      "number": 3,
      "name": "Season 52",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2019-02-20",
      "watched": false
     },
@@ -25001,6 +25052,7 @@
      "number": 4,
      "name": "Season 53",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2022-10-19",
      "watched": false
     }
@@ -25120,12 +25172,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2019-02-15",
      "watched": false
     },
@@ -25133,6 +25186,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2020-06-25",
      "watched": false
     },
@@ -25140,6 +25194,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-09-23",
      "watched": false
     },
@@ -25147,6 +25202,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2022-12-08",
      "watched": false
     }
@@ -25182,12 +25238,13 @@
    "tmdbId": 290209,
    "poster": "/iKFLpeZa1oGczjNDwVVrZO21gGc.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2025-07-04",
      "watched": false
     }
@@ -25234,12 +25291,13 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2021-10-13",
      "watched": false
     }
@@ -25399,12 +25457,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2010-09-26",
      "watched": false
     },
@@ -25412,6 +25471,7 @@
      "number": 2,
      "name": "Series 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2011-09-18",
      "watched": false
     },
@@ -25419,6 +25479,7 @@
      "number": 3,
      "name": "Series 3",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2012-09-16",
      "watched": false
     },
@@ -25426,6 +25487,7 @@
      "number": 4,
      "name": "Series 4",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2013-09-22",
      "watched": false
     },
@@ -25433,6 +25495,7 @@
      "number": 5,
      "name": "Series 5",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2014-09-21",
      "watched": false
     },
@@ -25440,6 +25503,7 @@
      "number": 6,
      "name": "Series 6",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2015-09-20",
      "watched": false
     }
@@ -25506,12 +25570,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 3,
+     "aired": 3,
      "airDate": "2020-01-01",
      "watched": false
     }
@@ -25573,12 +25638,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2021-07-15",
      "watched": false
     },
@@ -25586,6 +25652,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-12-21",
      "watched": false
     }
@@ -25642,11 +25709,6 @@
      "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
     },
     {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
      "name": "Xumo Play",
      "type": "ads",
      "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
@@ -25672,12 +25734,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1995-09-13",
      "watched": false
     },
@@ -25685,6 +25748,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1996-09-18",
      "watched": false
     },
@@ -25692,6 +25756,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 28,
+     "aired": 28,
      "airDate": "1997-09-23",
      "watched": false
     },
@@ -25699,6 +25764,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 27,
+     "aired": 27,
      "airDate": "1998-09-23",
      "watched": false
     },
@@ -25706,6 +25772,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 26,
+     "aired": 26,
      "airDate": "1999-09-22",
      "watched": false
     },
@@ -25713,6 +25780,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 27,
+     "aired": 27,
      "airDate": "2000-10-04",
      "watched": false
     },
@@ -25720,6 +25788,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 27,
+     "aired": 27,
      "airDate": "2001-09-26",
      "watched": false
     },
@@ -25727,6 +25796,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 26,
+     "aired": 26,
      "airDate": "2002-09-09",
      "watched": false
     },
@@ -25734,6 +25804,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 26,
+     "aired": 26,
      "airDate": "2004-06-02",
      "watched": false
     }
@@ -25839,12 +25910,13 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-03-03",
      "watched": false
     }
@@ -25994,12 +26066,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2013-07-09",
      "watched": false
     },
@@ -26007,6 +26080,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2014-07-01",
      "watched": false
     },
@@ -26014,6 +26088,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-09-01",
      "watched": false
     },
@@ -26021,6 +26096,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2016-09-27",
      "watched": false
     },
@@ -26028,6 +26104,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2018-01-23",
      "watched": false
     },
@@ -26035,6 +26112,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2019-01-15",
      "watched": false
     }
@@ -26096,12 +26174,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2026-03-01",
      "watched": false
     }
@@ -26230,12 +26309,13 @@
      "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2025-05-15",
      "watched": false
     }
@@ -26325,12 +26405,13 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2025-04-04",
      "watched": false
     }
@@ -26402,9 +26483,9 @@
      "logo": "/8IqJpnC729OSsHaspCnj8CwRZF0.png"
     },
     {
-     "name": "WeTV",
+     "name": "Tencent Video",
      "type": "flatrate",
-     "logo": "/wonfCSSdI55EfVFlWJyyQZIlYx7.png"
+     "logo": "/oxcvMEkpFb1x4I2xQuRH1yxuJoA.png"
     },
     {
      "name": "Amazon Video",
@@ -26427,12 +26508,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Dynasties",
      "episodes": 5,
+     "aired": 5,
      "airDate": "2018-11-11",
      "watched": false
     },
@@ -26440,6 +26522,7 @@
      "number": 2,
      "name": "Dynasties II",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2022-03-20",
      "watched": false
     }
@@ -26486,12 +26569,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2026-10-01",
      "watched": false
     }
@@ -26628,12 +26712,13 @@
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 5,
+     "aired": 5,
      "airDate": "2024-01-09",
      "watched": false
     }
@@ -26789,12 +26874,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2020-05-08",
      "watched": false
     }
@@ -26830,12 +26916,13 @@
    "tmdbId": 31277,
    "poster": "/eW18jzBKxHQNcPRvxDv86wUss9I.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 3,
+     "aired": 3,
      "airDate": "2009-09-29",
      "watched": false
     }
@@ -26912,12 +26999,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2012-09-27",
      "watched": false
     },
@@ -26925,6 +27013,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2013-09-26",
      "watched": false
     },
@@ -26932,6 +27021,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2014-10-30",
      "watched": false
     },
@@ -26939,6 +27029,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2015-11-05",
      "watched": false
     },
@@ -26946,6 +27037,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2016-10-02",
      "watched": false
     },
@@ -26953,6 +27045,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2018-04-30",
      "watched": false
     },
@@ -26960,6 +27053,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-05-23",
      "watched": false
     }
@@ -27246,12 +27340,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2015-01-07",
      "watched": false
     },
@@ -27259,6 +27354,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2015-09-23",
      "watched": false
     },
@@ -27266,6 +27362,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2016-09-21",
      "watched": false
     },
@@ -27273,6 +27370,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2017-09-27",
      "watched": false
     },
@@ -27280,6 +27378,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2018-09-26",
      "watched": false
     },
@@ -27287,6 +27386,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2019-09-24",
      "watched": false
     }
@@ -27323,16 +27423,6 @@
    "poster": "/f1OV9xEJCZVYcYSDRr5xOD8NJw3.jpg",
    "providers": [
     {
-     "name": "Netflix",
-     "type": "flatrate",
-     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
-    },
-    {
-     "name": "Netflix Standard with Ads",
-     "type": "flatrate",
-     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
-    },
-    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -27353,12 +27443,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2017-10-24",
      "watched": false
     },
@@ -27366,6 +27457,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-11-04",
      "watched": false
     }
@@ -27437,12 +27529,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-02-25",
      "watched": false
     }
@@ -27489,12 +27582,13 @@
      "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2022-11-10",
      "watched": false
     }
@@ -27541,12 +27635,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2020-03-20",
      "watched": false
     }
@@ -27583,6 +27678,11 @@
    "poster": "/iSLATWqOkbzizf00LTXWvzgKKDs.jpg",
    "providers": [
     {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
      "name": "Hulu",
      "type": "flatrate",
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
@@ -27608,12 +27708,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2024-09-02",
      "watched": false
     },
@@ -27621,6 +27722,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2025-09-25",
      "watched": false
     }
@@ -27687,12 +27789,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2004-07-18",
      "watched": true
     },
@@ -27700,6 +27803,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 14,
+     "aired": 14,
      "airDate": "2005-06-05",
      "watched": true
     },
@@ -27707,6 +27811,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2006-06-11",
      "watched": true
     },
@@ -27714,6 +27819,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2007-06-17",
      "watched": true
     },
@@ -27721,6 +27827,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2008-09-07",
      "watched": true
     },
@@ -27728,6 +27835,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2009-07-12",
      "watched": true
     },
@@ -27735,6 +27843,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2010-06-27",
      "watched": false
     },
@@ -27742,6 +27851,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2011-07-24",
      "watched": false
     }
@@ -27813,12 +27923,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1994-09-19",
      "watched": false
     },
@@ -27826,6 +27937,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1995-09-21",
      "watched": false
     },
@@ -27833,6 +27945,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1996-09-26",
      "watched": false
     },
@@ -27840,6 +27953,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1997-09-25",
      "watched": false
     },
@@ -27847,6 +27961,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1998-09-24",
      "watched": false
     },
@@ -27854,6 +27969,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1999-09-30",
      "watched": false
     },
@@ -27861,6 +27977,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2000-10-12",
      "watched": false
     },
@@ -27868,6 +27985,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2001-09-27",
      "watched": false
     },
@@ -27875,6 +27993,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2002-09-26",
      "watched": false
     },
@@ -27882,6 +28001,7 @@
      "number": 10,
      "name": "Season 10",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2003-09-25",
      "watched": false
     },
@@ -27889,6 +28009,7 @@
      "number": 11,
      "name": "Season 11",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2004-09-23",
      "watched": false
     },
@@ -27896,6 +28017,7 @@
      "number": 12,
      "name": "Season 12",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2005-09-22",
      "watched": false
     },
@@ -27903,6 +28025,7 @@
      "number": 13,
      "name": "Season 13",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2006-09-21",
      "watched": false
     },
@@ -27910,6 +28033,7 @@
      "number": 14,
      "name": "Season 14",
      "episodes": 19,
+     "aired": 19,
      "airDate": "2007-09-27",
      "watched": false
     },
@@ -27917,6 +28041,7 @@
      "number": 15,
      "name": "Season 15",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2008-09-25",
      "watched": false
     }
@@ -27963,12 +28088,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2024-05-30",
      "watched": false
     }
@@ -28040,12 +28166,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2012-05-20",
      "watched": false
     },
@@ -28053,6 +28180,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2013-10-03",
      "watched": false
     },
@@ -28060,6 +28188,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2014-11-06",
      "watched": false
     },
@@ -28067,6 +28196,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2016-08-05",
      "watched": false
     },
@@ -28074,6 +28204,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-10-26",
      "watched": false
     },
@@ -28081,6 +28212,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2023-06-05",
      "watched": false
     }
@@ -28167,12 +28299,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2018-11-18",
      "watched": false
     }
@@ -28208,7 +28341,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -28365,12 +28498,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-06-16",
      "watched": false
     },
@@ -28378,6 +28512,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-01-09",
      "watched": false
     },
@@ -28385,7 +28520,8 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
-     "airDate": "2026-04-11",
+     "aired": 8,
+     "airDate": "2026-04-12",
      "watched": false
     }
    ],
@@ -28439,6 +28575,11 @@
      "name": "Paramount Plus Essential",
      "type": "flatrate",
      "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
+    },
+    {
+     "name": "Philo",
+     "type": "flatrate",
+     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
     },
     {
      "name": "Paramount Plus Apple TV channel",
@@ -28496,12 +28637,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2005-09-22",
      "watched": false
     },
@@ -28509,6 +28651,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2006-10-01",
      "watched": false
     },
@@ -28516,6 +28659,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2007-10-01",
      "watched": false
     },
@@ -28523,6 +28667,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2008-10-03",
      "watched": false
     }
@@ -28624,12 +28769,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1996-09-13",
      "watched": false
     },
@@ -28637,6 +28783,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1997-09-22",
      "watched": false
     },
@@ -28644,6 +28791,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 26,
+     "aired": 26,
      "airDate": "1998-09-21",
      "watched": false
     },
@@ -28651,6 +28799,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1999-09-20",
      "watched": false
     },
@@ -28658,6 +28807,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 25,
+     "aired": 25,
      "airDate": "2000-10-02",
      "watched": false
     },
@@ -28665,6 +28815,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2001-09-24",
      "watched": false
     },
@@ -28672,6 +28823,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 25,
+     "aired": 25,
      "airDate": "2002-09-23",
      "watched": false
     },
@@ -28679,6 +28831,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2003-09-22",
      "watched": false
     },
@@ -28686,6 +28839,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2004-09-20",
      "watched": false
     }
@@ -28767,12 +28921,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-09-26",
      "watched": false
     },
@@ -28780,6 +28935,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2021-06-20",
      "watched": false
     },
@@ -28787,6 +28943,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2022-06-12",
      "watched": false
     },
@@ -28794,6 +28951,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 14,
+     "aired": 14,
      "airDate": "2024-05-23",
      "watched": false
     }
@@ -28840,12 +28998,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2018-05-11",
      "watched": false
     }
@@ -28902,12 +29061,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2016-09-23",
      "watched": false
     },
@@ -28915,6 +29075,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-09-29",
      "watched": false
     }
@@ -28981,12 +29142,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2015-12-14",
      "watched": false
     },
@@ -28994,6 +29156,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2017-02-01",
      "watched": false
     },
@@ -29001,6 +29164,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2018-04-11",
      "watched": false
     },
@@ -29008,6 +29172,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-12-13",
      "watched": false
     },
@@ -29015,6 +29180,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-12-16",
      "watched": false
     },
@@ -29022,6 +29188,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2021-12-09",
      "watched": false
     }
@@ -29140,12 +29307,13 @@
      "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2005-07-21",
      "watched": false
     },
@@ -29153,6 +29321,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2006-09-14",
      "watched": false
     }
@@ -29520,12 +29689,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2011-06-19",
      "watched": false
     },
@@ -29533,6 +29703,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2012-06-17",
      "watched": false
     },
@@ -29540,6 +29711,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2013-06-09",
      "watched": false
     },
@@ -29547,6 +29719,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2014-06-22",
      "watched": false
     },
@@ -29554,6 +29727,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2015-06-28",
      "watched": false
     }
@@ -29600,12 +29774,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-10-12",
      "watched": false
     }
@@ -29748,12 +29923,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1989-09-22",
      "watched": false
     },
@@ -29761,6 +29937,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1990-09-21",
      "watched": false
     },
@@ -29768,6 +29945,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1991-09-20",
      "watched": false
     },
@@ -29775,6 +29953,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1992-09-18",
      "watched": false
     },
@@ -29782,6 +29961,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1993-09-24",
      "watched": false
     },
@@ -29789,6 +29969,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1994-09-23",
      "watched": false
     },
@@ -29796,6 +29977,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1995-09-22",
      "watched": false
     },
@@ -29803,6 +29985,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1996-09-20",
      "watched": false
     },
@@ -29810,6 +29993,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1997-09-19",
      "watched": false
     }
@@ -30027,12 +30211,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 3,
+     "aired": 3,
      "airDate": "2023-05-29",
      "watched": false
     }
@@ -30079,12 +30264,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 3,
+     "aired": 3,
      "airDate": "2020-07-22",
      "watched": false
     }
@@ -30124,11 +30310,6 @@
      "name": "Netflix",
      "type": "flatrate",
      "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
-    },
-    {
-     "name": "Amazon Prime Video",
-     "type": "flatrate",
-     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
     },
     {
      "name": "Philo",
@@ -30176,9 +30357,9 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     },
     {
-     "name": "Amazon Prime Video with Ads",
-     "type": "flatrate",
-     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+     "name": "Amazon Prime Video",
+     "type": "free",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
     },
     {
      "name": "The Roku Channel",
@@ -30189,21 +30370,6 @@
      "name": "Pluto TV",
      "type": "ads",
      "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
-    },
-    {
-     "name": "Plex",
-     "type": "ads",
-     "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
-    },
-    {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
-     "name": "Xumo Play",
-     "type": "ads",
-     "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
     },
     {
      "name": "Amazon Video",
@@ -30226,12 +30392,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2015-08-23",
      "watched": false
     },
@@ -30239,6 +30406,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2016-04-10",
      "watched": false
     },
@@ -30246,6 +30414,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2017-06-04",
      "watched": false
     },
@@ -30253,6 +30422,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2018-04-15",
      "watched": false
     },
@@ -30260,6 +30430,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2019-06-02",
      "watched": false
     },
@@ -30267,6 +30438,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2020-10-11",
      "watched": false
     },
@@ -30274,6 +30446,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2021-10-17",
      "watched": false
     },
@@ -30281,6 +30454,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2023-05-14",
      "watched": false
     }
@@ -30367,12 +30541,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-10-29",
      "watched": false
     }
@@ -30419,12 +30594,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2022-11-09",
      "watched": false
     }
@@ -30496,12 +30672,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 11,
+     "aired": 11,
      "airDate": "2002-09-20",
      "watched": false
     }
@@ -30548,12 +30725,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2015-12-18",
      "watched": false
     },
@@ -30561,6 +30739,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-05-30",
      "watched": false
     },
@@ -30568,6 +30747,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2018-11-30",
      "watched": false
     },
@@ -30575,6 +30755,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-06-12",
      "watched": false
     },
@@ -30582,6 +30763,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2021-11-25",
      "watched": false
     }
@@ -30702,7 +30884,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -30737,20 +30919,21 @@
     {
      "name": "Apple TV",
      "type": "flatrate",
-     "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+     "logo": "/v9SnyvYt0U3KGgBH3Sbh3z4yODe.png"
     },
     {
      "name": "Apple TV Amazon Channel",
      "type": "flatrate",
-     "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+     "logo": "/giKLP7saeUA0WykEPRyZUcOVv92.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-08-11",
      "watched": false
     }
@@ -30797,12 +30980,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2016-03-11",
      "watched": false
     },
@@ -30810,6 +30994,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2017-06-02",
      "watched": false
     }
@@ -30866,12 +31051,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2014-10-06",
      "watched": true
     },
@@ -30879,6 +31065,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2015-10-05",
      "watched": true
     },
@@ -30886,6 +31073,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2016-10-03",
      "watched": true
     },
@@ -30893,6 +31081,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2017-10-10",
      "watched": true
     },
@@ -30900,6 +31089,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2018-10-09",
      "watched": true
     },
@@ -30907,6 +31097,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 19,
+     "aired": 19,
      "airDate": "2019-10-08",
      "watched": true
     },
@@ -30914,6 +31105,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2021-03-02",
      "watched": true
     },
@@ -30921,6 +31113,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2021-11-16",
      "watched": true
     },
@@ -30928,6 +31121,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2023-02-08",
      "watched": true
     }
@@ -31044,12 +31238,13 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-11-17",
      "watched": false
     }
@@ -31116,12 +31311,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2020-11-26",
      "watched": false
     },
@@ -31129,6 +31325,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-04-21",
      "watched": false
     }
@@ -31195,12 +31392,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2007-06-17",
      "watched": false
     },
@@ -31208,6 +31406,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2009-01-18",
      "watched": false
     }
@@ -31264,12 +31463,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 28,
+     "aired": 28,
      "airDate": "1960-09-30",
      "watched": false
     },
@@ -31277,6 +31477,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 32,
+     "aired": 32,
      "airDate": "1961-09-15",
      "watched": false
     },
@@ -31284,6 +31485,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 28,
+     "aired": 28,
      "airDate": "1962-09-14",
      "watched": false
     },
@@ -31291,6 +31493,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 26,
+     "aired": 26,
      "airDate": "1963-09-19",
      "watched": false
     },
@@ -31298,6 +31501,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 26,
+     "aired": 26,
      "airDate": "1964-09-17",
      "watched": false
     },
@@ -31305,6 +31509,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 26,
+     "aired": 26,
      "airDate": "1965-09-17",
      "watched": false
     }
@@ -31351,12 +31556,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2018-03-02",
      "watched": false
     }
@@ -31438,12 +31644,13 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2016-04-25",
      "watched": false
     },
@@ -31451,6 +31658,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2018-06-11",
      "watched": false
     }
@@ -31612,12 +31820,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2018-03-13",
      "watched": false
     },
@@ -31625,6 +31834,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-03-07",
      "watched": false
     }
@@ -31686,12 +31896,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-04-09",
      "watched": false
     }
@@ -31923,12 +32134,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1993-09-16",
      "watched": false
     },
@@ -31936,6 +32148,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1994-09-20",
      "watched": false
     },
@@ -31943,6 +32156,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1995-09-19",
      "watched": false
     },
@@ -31950,6 +32164,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1996-09-17",
      "watched": false
     },
@@ -31957,6 +32172,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1997-09-23",
      "watched": false
     },
@@ -31964,6 +32180,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1998-09-24",
      "watched": false
     },
@@ -31971,6 +32188,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1999-09-23",
      "watched": false
     },
@@ -31978,6 +32196,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2000-10-24",
      "watched": false
     },
@@ -31985,6 +32204,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2001-09-25",
      "watched": false
     },
@@ -31992,6 +32212,7 @@
      "number": 10,
      "name": "Season 10",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2002-09-24",
      "watched": false
     },
@@ -31999,6 +32220,7 @@
      "number": 11,
      "name": "Season 11",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2003-09-23",
      "watched": false
     }
@@ -32085,12 +32307,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 18,
+     "aired": 18,
      "airDate": "1999-09-25",
      "watched": true
     }
@@ -32132,6 +32355,11 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
+     "name": "The Roku Channel",
+     "type": "ads",
+     "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -32147,12 +32375,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-02-04",
      "watched": false
     },
@@ -32160,6 +32389,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2015-09-22",
      "watched": false
     },
@@ -32167,6 +32397,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2016-10-11",
      "watched": false
     },
@@ -32174,6 +32405,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 19,
+     "aired": 19,
      "airDate": "2017-10-03",
      "watched": false
     },
@@ -32181,6 +32413,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2018-10-05",
      "watched": false
     },
@@ -32188,6 +32421,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2019-09-27",
      "watched": false
     }
@@ -32249,12 +32483,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1990-09-10",
      "watched": false
     },
@@ -32262,6 +32497,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1991-09-09",
      "watched": false
     },
@@ -32269,6 +32505,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1992-09-14",
      "watched": false
     },
@@ -32276,6 +32513,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 26,
+     "aired": 26,
      "airDate": "1993-09-20",
      "watched": false
     },
@@ -32283,6 +32521,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1994-09-19",
      "watched": false
     },
@@ -32290,6 +32529,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1995-09-18",
      "watched": false
     }
@@ -32381,12 +32621,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2006-10-03",
      "watched": false
     },
@@ -32394,6 +32635,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2007-10-05",
      "watched": false
     },
@@ -32401,6 +32643,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2008-10-01",
      "watched": false
     },
@@ -32408,6 +32651,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2009-10-28",
      "watched": false
     },
@@ -32415,6 +32659,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2010-10-27",
      "watched": false
     }
@@ -32476,12 +32721,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2022-10-06",
      "watched": false
     }
@@ -32558,12 +32804,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1994-09-22",
      "watched": false
     },
@@ -32571,6 +32818,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1995-09-21",
      "watched": false
     },
@@ -32578,6 +32826,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 25,
+     "aired": 25,
      "airDate": "1996-09-16",
      "watched": false
     },
@@ -32585,6 +32834,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 23,
+     "aired": 23,
      "airDate": "1997-09-25",
      "watched": false
     },
@@ -32592,6 +32842,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 23,
+     "aired": 23,
      "airDate": "1998-09-24",
      "watched": false
     },
@@ -32599,6 +32850,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 23,
+     "aired": 23,
      "airDate": "1999-09-23",
      "watched": false
     },
@@ -32606,6 +32858,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2000-10-12",
      "watched": false
     },
@@ -32613,6 +32866,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2001-09-27",
      "watched": false
     },
@@ -32620,6 +32874,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2002-09-26",
      "watched": false
     },
@@ -32627,6 +32882,7 @@
      "number": 10,
      "name": "Season 10",
      "episodes": 17,
+     "aired": 17,
      "airDate": "2003-09-25",
      "watched": false
     }
@@ -32673,12 +32929,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-19T14:20:00.277Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2017-07-14",
      "watched": false
     },
@@ -32686,6 +32943,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-01-11",
      "watched": false
     }
@@ -32721,7 +32979,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -32790,12 +33048,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2008-09-09",
      "watched": false
     },
@@ -32803,6 +33062,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2009-09-17",
      "watched": false
     },
@@ -32810,6 +33070,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2010-09-23",
      "watched": false
     },
@@ -32817,6 +33078,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2011-09-23",
      "watched": false
     },
@@ -32824,6 +33086,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2012-09-28",
      "watched": false
     }
@@ -32997,12 +33260,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2016-11-06",
      "watched": false
     },
@@ -33010,6 +33274,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2017-10-18",
      "watched": false
     },
@@ -33017,6 +33282,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2018-12-07",
      "watched": false
     }
@@ -33154,17 +33420,23 @@
    "poster": "/tp8FUhXt14pr8acWzrOmrIRbX97.jpg",
    "providers": [
     {
+     "name": "Disney Plus",
+     "type": "flatrate",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    },
+    {
      "name": "Hulu",
      "type": "flatrate",
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-06-14",
      "watched": false
     }
@@ -33580,12 +33852,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2015-02-24",
      "watched": false
     },
@@ -33593,6 +33866,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2017-03-02",
      "watched": false
     }
@@ -33783,11 +34057,6 @@
      "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
     },
     {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -33808,12 +34077,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2014-08-07",
      "watched": false
     }
@@ -33944,12 +34214,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2008-07-13",
      "watched": false
     }
@@ -34016,12 +34287,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Einstein",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-04-25",
      "watched": true
     },
@@ -34029,6 +34301,7 @@
      "number": 2,
      "name": "Picasso",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2018-04-24",
      "watched": false
     },
@@ -34036,6 +34309,7 @@
      "number": 3,
      "name": "Aretha",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2021-03-21",
      "watched": false
     },
@@ -34043,6 +34317,7 @@
      "number": 4,
      "name": "MLK/X",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2024-02-01",
      "watched": false
     }
@@ -34125,12 +34400,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2024-03-29",
      "watched": false
     }
@@ -34263,12 +34539,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-09-28",
      "watched": false
     },
@@ -34276,6 +34553,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2025-09-17",
      "watched": false
     }
@@ -34322,12 +34600,13 @@
      "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 2,
+     "aired": 2,
      "airDate": "2022-05-20",
      "watched": false
     }
@@ -34374,12 +34653,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 11,
+     "aired": 11,
      "airDate": "2016-08-12",
      "watched": false
     }
@@ -34415,7 +34695,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -34664,7 +34944,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -34722,12 +35002,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2017-10-02",
      "watched": false
     },
@@ -34735,6 +35016,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2018-09-25",
      "watched": false
     }
@@ -34908,12 +35190,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2000-10-05",
      "watched": false
     },
@@ -34921,6 +35204,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2001-10-09",
      "watched": false
     },
@@ -34928,6 +35212,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2002-09-24",
      "watched": false
     },
@@ -34935,6 +35220,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2003-09-23",
      "watched": false
     },
@@ -34942,6 +35228,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2004-09-21",
      "watched": false
     },
@@ -34949,6 +35236,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2005-09-13",
      "watched": false
     },
@@ -34956,6 +35244,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2006-09-26",
      "watched": false
     }
@@ -35066,12 +35355,13 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2025-09-10",
      "watched": false
     }
@@ -35107,12 +35397,13 @@
    "tmdbId": 130288,
    "poster": "/7USklvu58xUcJ4kGbePdutrr7DR.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2013-02-08",
      "watched": false
     },
@@ -35120,6 +35411,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 14,
+     "aired": 14,
      "airDate": "2013-09-20",
      "watched": false
     },
@@ -35127,6 +35419,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2014-02-28",
      "watched": false
     },
@@ -35134,6 +35427,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2014-10-03",
      "watched": false
     },
@@ -35141,6 +35435,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-02-13",
      "watched": false
     },
@@ -35148,6 +35443,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 14,
+     "aired": 14,
      "airDate": "2015-09-25",
      "watched": false
     },
@@ -35155,6 +35451,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 14,
+     "aired": 14,
      "airDate": "2016-03-11",
      "watched": false
     },
@@ -35162,6 +35459,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 14,
+     "aired": 14,
      "airDate": "2016-09-30",
      "watched": false
     },
@@ -35169,6 +35467,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2017-03-24",
      "watched": false
     },
@@ -35176,6 +35475,7 @@
      "number": 10,
      "name": "Season 10",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2017-12-01",
      "watched": false
     }
@@ -35314,12 +35614,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2009-05-19",
      "watched": false
     },
@@ -35327,6 +35628,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2010-09-21",
      "watched": false
     },
@@ -35334,6 +35636,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2011-09-20",
      "watched": false
     },
@@ -35341,6 +35644,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2012-09-13",
      "watched": false
     },
@@ -35348,6 +35652,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2013-09-26",
      "watched": false
     },
@@ -35355,6 +35660,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-01-09",
      "watched": false
     }
@@ -35401,12 +35707,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-06-23",
      "watched": false
     },
@@ -35414,6 +35721,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2018-06-29",
      "watched": false
     },
@@ -35421,6 +35729,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-08-09",
      "watched": false
     }
@@ -35467,12 +35776,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2017-11-22",
      "watched": false
     }
@@ -35534,12 +35844,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2013-09-24",
      "watched": false
     },
@@ -35547,6 +35858,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2014-09-24",
      "watched": false
     },
@@ -35554,6 +35866,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2015-09-23",
      "watched": false
     },
@@ -35561,6 +35874,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2016-09-21",
      "watched": false
     },
@@ -35568,6 +35882,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2017-09-27",
      "watched": false
     },
@@ -35575,6 +35890,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2018-09-26",
      "watched": false
     },
@@ -35582,6 +35898,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2019-09-25",
      "watched": false
     },
@@ -35589,6 +35906,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2020-10-21",
      "watched": false
     },
@@ -35596,6 +35914,7 @@
      "number": 9,
      "name": "Season 9",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2021-09-22",
      "watched": false
     },
@@ -35603,6 +35922,7 @@
      "number": 10,
      "name": "Season 10",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2022-09-21",
      "watched": false
     }
@@ -35728,12 +36048,13 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2016-10-13",
      "watched": false
     },
@@ -35741,6 +36062,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2018-06-14",
      "watched": false
     },
@@ -35748,6 +36070,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-10-03",
      "watched": false
     },
@@ -35755,6 +36078,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2021-09-23",
      "watched": false
     }
@@ -35811,12 +36135,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2014-05-06",
      "watched": false
     },
@@ -35824,6 +36149,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2016-05-10",
      "watched": false
     },
@@ -35831,6 +36157,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2017-11-17",
      "watched": false
     },
@@ -35838,6 +36165,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2019-03-29",
      "watched": false
     },
@@ -35845,6 +36173,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-11-19",
      "watched": false
     }
@@ -35901,12 +36230,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2016-11-15",
      "watched": false
     },
@@ -35914,6 +36244,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-10-15",
      "watched": false
     }
@@ -36029,12 +36360,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2017-09-25",
      "watched": false
     },
@@ -36042,6 +36374,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2018-09-23",
      "watched": false
     },
@@ -36049,6 +36382,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2019-09-22",
      "watched": false
     },
@@ -36056,6 +36390,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2020-11-02",
      "watched": false
     },
@@ -36063,6 +36398,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2021-09-27",
      "watched": false
     },
@@ -36070,6 +36406,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2022-10-02",
      "watched": false
     },
@@ -36077,6 +36414,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2024-02-20",
      "watched": false
     }
@@ -36158,12 +36496,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-02-19",
      "watched": false
     },
@@ -36171,6 +36510,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2018-03-04",
      "watched": false
     },
@@ -36178,6 +36518,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-03-14",
      "watched": false
     },
@@ -36185,6 +36526,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2020-04-09",
      "watched": false
     },
@@ -36192,6 +36534,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-06-24",
      "watched": false
     },
@@ -36199,6 +36542,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2022-09-08",
      "watched": false
     }
@@ -36321,12 +36665,13 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2023-04-05",
      "watched": false
     }
@@ -36592,12 +36937,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2009-09-22",
      "watched": false
     },
@@ -36605,6 +36951,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2010-09-28",
      "watched": false
     },
@@ -36612,6 +36959,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2011-09-25",
      "watched": false
     },
@@ -36619,6 +36967,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2012-09-30",
      "watched": false
     },
@@ -36626,6 +36975,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2013-09-29",
      "watched": false
     },
@@ -36633,6 +36983,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2014-09-21",
      "watched": false
     },
@@ -36640,6 +36991,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2015-10-04",
      "watched": false
     }
@@ -36716,12 +37068,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2007-09-19",
      "watched": false
     },
@@ -36729,6 +37082,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 25,
+     "aired": 25,
      "airDate": "2008-09-01",
      "watched": false
     },
@@ -36736,6 +37090,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2009-09-14",
      "watched": false
     },
@@ -36743,6 +37098,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2010-09-13",
      "watched": false
     },
@@ -36750,6 +37106,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2011-09-26",
      "watched": false
     },
@@ -36757,6 +37114,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2012-10-08",
      "watched": false
     }
@@ -36914,12 +37272,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2023-03-14",
      "watched": false
     }
@@ -36966,12 +37325,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-05-08",
      "watched": false
     },
@@ -36979,6 +37339,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2016-05-06",
      "watched": false
     },
@@ -36986,6 +37347,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2017-03-24",
      "watched": false
     },
@@ -36993,6 +37355,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2018-01-19",
      "watched": false
     },
@@ -37000,6 +37363,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-01-18",
      "watched": false
     },
@@ -37007,6 +37371,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2020-01-15",
      "watched": false
     },
@@ -37014,6 +37379,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2021-08-13",
      "watched": false
     }
@@ -37060,6 +37426,11 @@
      "logo": "/sIVDZUo3rIKqbIE3Sh8djQJzJG5.png"
     },
     {
+     "name": "Hoopla",
+     "type": "free",
+     "logo": "/gtjNBzAoGgUtYzt0UKXmwG34WWL.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -37080,12 +37451,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-05-15",
      "watched": false
     },
@@ -37093,6 +37465,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-11-19",
      "watched": false
     },
@@ -37100,6 +37473,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2023-05-12",
      "watched": false
     }
@@ -37156,12 +37530,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-04-25",
      "watched": false
     },
@@ -37169,6 +37544,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2017-09-28",
      "watched": false
     }
@@ -37230,12 +37606,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 11,
+     "aired": 11,
      "airDate": "2021-01-03",
      "watched": false
     },
@@ -37243,6 +37620,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2021-09-26",
      "watched": false
     },
@@ -37250,6 +37628,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2022-09-25",
      "watched": false
     },
@@ -37257,6 +37636,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2024-01-07",
      "watched": false
     },
@@ -37264,6 +37644,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2024-12-22",
      "watched": false
     }
@@ -37318,14 +37699,20 @@
      "name": "Apple TV Store",
      "type": "buy",
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+    },
+    {
+     "name": "Fandango At Home",
+     "type": "buy",
+     "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2007-07-09",
      "watched": false
     },
@@ -37333,6 +37720,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2008-08-26",
      "watched": false
     },
@@ -37340,6 +37728,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2009-08-31",
      "watched": false
     },
@@ -37347,6 +37736,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2011-01-03",
      "watched": false
     }
@@ -37692,12 +38082,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2011-10-28",
      "watched": false
     },
@@ -37705,6 +38096,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2012-08-13",
      "watched": false
     },
@@ -37712,6 +38104,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2013-10-25",
      "watched": false
     },
@@ -37719,6 +38112,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2014-10-24",
      "watched": false
     },
@@ -37726,6 +38120,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2015-10-30",
      "watched": false
     },
@@ -37733,6 +38128,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2017-01-06",
      "watched": false
     }
@@ -37779,12 +38175,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2024-01-25",
      "watched": false
     }
@@ -37851,12 +38248,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2018-01-03",
      "watched": false
     },
@@ -37864,6 +38262,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2019-01-02",
      "watched": false
     },
@@ -37871,6 +38270,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 17,
+     "aired": 17,
      "airDate": "2020-01-16",
      "watched": false
     },
@@ -37878,6 +38278,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2021-07-08",
      "watched": false
     },
@@ -37885,6 +38286,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2022-07-20",
      "watched": false
     },
@@ -37892,6 +38294,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 18,
+     "aired": 18,
      "airDate": "2023-06-28",
      "watched": false
     }
@@ -38010,12 +38413,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-10-25",
      "watched": false
     }
@@ -38062,12 +38466,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-06-30",
      "watched": false
     }
@@ -38129,12 +38534,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-05-13",
      "watched": false
     },
@@ -38142,6 +38548,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-05-12",
      "watched": false
     },
@@ -38149,6 +38556,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2024-05-02",
      "watched": false
     },
@@ -38156,6 +38564,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2025-04-10",
      "watched": false
     },
@@ -38163,6 +38572,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2026-04-09",
      "watched": false
     }
@@ -38229,12 +38639,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2026-04-28",
      "watched": false
     }
@@ -38326,12 +38737,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2025-10-19",
      "watched": false
     }
@@ -38413,12 +38825,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2022-03-24",
      "watched": false
     },
@@ -38426,6 +38839,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2024-02-08",
      "watched": false
     }
@@ -38615,12 +39029,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-04-26",
      "watched": false
     },
@@ -38628,6 +39043,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2018-04-25",
      "watched": false
     },
@@ -38635,6 +39051,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-06-05",
      "watched": false
     },
@@ -38642,6 +39059,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-04-28",
      "watched": false
     },
@@ -38649,6 +39067,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2022-09-14",
      "watched": false
     },
@@ -38656,6 +39075,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2025-04-08",
      "watched": false
     }
@@ -38702,12 +39122,13 @@
      "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2014-08-28",
      "watched": false
     },
@@ -38715,6 +39136,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-03-10",
      "watched": false
     }
@@ -38786,12 +39208,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-03-28",
      "watched": false
     },
@@ -38799,6 +39222,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2020-07-03",
      "watched": false
     },
@@ -38806,6 +39230,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2021-11-23",
      "watched": false
     }
@@ -38872,22 +39297,18 @@
      "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
     },
     {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2013-04-04",
      "watched": false
     },
@@ -38895,6 +39316,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2014-02-28",
      "watched": false
     },
@@ -38902,6 +39324,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-06-04",
      "watched": false
     }
@@ -38993,12 +39416,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Savage Season",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2016-03-02",
      "watched": false
     },
@@ -39006,6 +39430,7 @@
      "number": 2,
      "name": "Mucho Mojo",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2017-03-15",
      "watched": false
     },
@@ -39013,6 +39438,7 @@
      "number": 3,
      "name": "The Two-Bear Mambo",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2018-03-07",
      "watched": false
     }
@@ -39048,12 +39474,13 @@
    "tmdbId": 88070,
    "poster": "/6cct5iNVVB6QUZEA2C74HnkspMV.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 203,
+     "aired": 203,
      "airDate": "1991-10-07",
      "watched": false
     }
@@ -39090,6 +39517,11 @@
    "poster": "/t17TmixmWhJeIC4ytLfis6frLYf.jpg",
    "providers": [
     {
+     "name": "Yipee Kids TV Amazon Channel",
+     "type": "flatrate",
+     "logo": "/tggH1gatJOaMYl05ftaFV4IdMSf.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -39110,12 +39542,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2017-12-06",
      "watched": false
     },
@@ -39123,6 +39556,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-03-27",
      "watched": false
     }
@@ -39164,11 +39598,6 @@
      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
     },
     {
-     "name": "Philo",
-     "type": "flatrate",
-     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
-    },
-    {
      "name": "Tubi TV",
      "type": "ads",
      "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
@@ -39194,12 +39623,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2011-04-13",
      "watched": false
     },
@@ -39207,6 +39637,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2011-09-28",
      "watched": false
     },
@@ -39214,6 +39645,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2012-10-23",
      "watched": false
     }
@@ -39400,12 +39832,13 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2010-10-10",
      "watched": false
     },
@@ -39413,6 +39846,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2011-11-14",
      "watched": false
     },
@@ -39420,6 +39854,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2015-10-26",
      "watched": false
     },
@@ -39427,6 +39862,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2018-03-20",
      "watched": false
     }
@@ -39596,12 +40032,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 3,
+     "aired": 3,
      "airDate": "2012-05-28",
      "watched": false
     }
@@ -39648,12 +40085,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2020-10-09",
      "watched": false
     }
@@ -39763,12 +40201,13 @@
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2021-11-24",
      "watched": false
     }
@@ -39943,11 +40382,6 @@
      "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
     },
     {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
      "name": "Xumo Play",
      "type": "ads",
      "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
@@ -39978,12 +40412,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2011-11-06",
      "watched": false
     },
@@ -39991,6 +40426,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2012-08-12",
      "watched": false
     },
@@ -39998,6 +40434,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2013-08-10",
      "watched": false
     },
@@ -40005,6 +40442,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2014-08-02",
      "watched": false
     },
@@ -40012,6 +40450,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 14,
+     "aired": 14,
      "airDate": "2015-07-18",
      "watched": false
     }
@@ -40083,12 +40522,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Genesis",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2006-09-25",
      "watched": false
     },
@@ -40096,6 +40536,7 @@
      "number": 2,
      "name": "Generations",
      "episodes": 11,
+     "aired": 11,
      "airDate": "2007-09-24",
      "watched": false
     },
@@ -40103,6 +40544,7 @@
      "number": 3,
      "name": "Villains / Fugitives",
      "episodes": 25,
+     "aired": 25,
      "airDate": "2008-09-22",
      "watched": false
     },
@@ -40110,6 +40552,7 @@
      "number": 4,
      "name": "Redemption",
      "episodes": 19,
+     "aired": 19,
      "airDate": "2009-09-21",
      "watched": false
     }
@@ -40151,12 +40594,13 @@
      "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 5,
+     "aired": 5,
      "airDate": "2021-07-05",
      "watched": false
     }
@@ -40192,7 +40636,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -40260,12 +40704,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-02-14",
      "watched": false
     }
@@ -40472,12 +40917,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-11-03",
      "watched": true
     },
@@ -40485,6 +40931,7 @@
      "number": 2,
      "name": "Series 2",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2020-11-08",
      "watched": true
     },
@@ -40492,6 +40939,7 @@
      "number": 3,
      "name": "Series 3",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-12-18",
      "watched": true
     }
@@ -40539,12 +40987,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2019-05-27",
      "watched": false
     }
@@ -40596,11 +41045,6 @@
      "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
     },
     {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
      "name": "Xumo Play",
      "type": "ads",
      "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
@@ -40621,12 +41065,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2017-02-09",
      "watched": false
     },
@@ -40634,6 +41079,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2018-07-15",
      "watched": false
     }
@@ -40680,12 +41126,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2021-01-05",
      "watched": false
     }
@@ -40747,12 +41194,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2021-07-11",
      "watched": false
     }
@@ -40809,12 +41257,13 @@
      "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2018-01-30",
      "watched": false
     }
@@ -40861,12 +41310,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2020-05-01",
      "watched": false
     }
@@ -40905,20 +41355,21 @@
     {
      "name": "Apple TV",
      "type": "flatrate",
-     "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+     "logo": "/v9SnyvYt0U3KGgBH3Sbh3z4yODe.png"
     },
     {
      "name": "Apple TV Amazon Channel",
      "type": "flatrate",
-     "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+     "logo": "/giKLP7saeUA0WykEPRyZUcOVv92.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-04-03",
      "watched": false
     },
@@ -40926,6 +41377,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-06-11",
      "watched": false
     }
@@ -41077,12 +41529,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2011-10-02",
      "watched": false
     },
@@ -41090,6 +41543,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2012-09-30",
      "watched": false
     },
@@ -41097,6 +41551,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2013-09-29",
      "watched": false
     },
@@ -41104,6 +41559,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2014-10-05",
      "watched": false
     },
@@ -41111,6 +41567,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2015-10-04",
      "watched": false
     },
@@ -41118,6 +41575,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2017-01-15",
      "watched": false
     },
@@ -41125,6 +41583,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2018-02-11",
      "watched": false
     },
@@ -41132,6 +41591,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2020-02-09",
      "watched": false
     }
@@ -41333,12 +41793,13 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 31,
+     "aired": 31,
      "airDate": "1974-09-07",
      "watched": false
     }
@@ -41395,12 +41856,13 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-07-06",
      "watched": false
     }
@@ -41492,12 +41954,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2010-06-16",
      "watched": false
     },
@@ -41505,6 +41968,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2011-01-19",
      "watched": false
     },
@@ -41512,6 +41976,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2011-11-30",
      "watched": false
     },
@@ -41519,6 +41984,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2012-11-28",
      "watched": false
     },
@@ -41526,6 +41992,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2014-03-26",
      "watched": false
     },
@@ -41533,6 +42000,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2014-11-05",
      "watched": false
     }
@@ -41609,12 +42077,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2004-11-16",
      "watched": false
     },
@@ -41622,6 +42091,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2005-09-13",
      "watched": false
     },
@@ -41629,6 +42099,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2006-09-05",
      "watched": false
     },
@@ -41636,6 +42107,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2007-09-25",
      "watched": false
     },
@@ -41643,6 +42115,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 24,
+     "aired": 24,
      "airDate": "2008-09-16",
      "watched": false
     },
@@ -41650,6 +42123,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 21,
+     "aired": 21,
      "airDate": "2009-09-21",
      "watched": false
     },
@@ -41657,6 +42131,7 @@
      "number": 7,
      "name": "Season 7",
      "episodes": 23,
+     "aired": 23,
      "airDate": "2010-09-20",
      "watched": false
     },
@@ -41664,6 +42139,7 @@
      "number": 8,
      "name": "Season 8",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2011-10-03",
      "watched": false
     }
@@ -42111,12 +42587,13 @@
      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2009-02-10",
      "watched": false
     },
@@ -42124,6 +42601,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2009-11-24",
      "watched": false
     }
@@ -42170,11 +42648,6 @@
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
     },
     {
-     "name": "Hulu",
-     "type": "flatrate",
-     "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
-    },
-    {
      "name": "HISTORY Vault Apple TV channel",
      "type": "flatrate",
      "logo": "/5BTLYTpmxk4esX7qkNstcjpczJO.png"
@@ -42210,12 +42683,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2011-05-03",
      "watched": false
     },
@@ -42223,6 +42697,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 19,
+     "aired": 19,
      "airDate": "2012-09-29",
      "watched": false
     }
@@ -42269,12 +42744,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2020-04-01",
      "watched": false
     }
@@ -42346,12 +42822,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2014-09-25",
      "watched": true
     },
@@ -42359,6 +42836,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2015-09-24",
      "watched": true
     },
@@ -42366,6 +42844,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2016-09-22",
      "watched": true
     },
@@ -42373,6 +42852,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2017-09-28",
      "watched": true
     },
@@ -42380,6 +42860,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2018-09-27",
      "watched": true
     },
@@ -42387,6 +42868,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 15,
+     "aired": 15,
      "airDate": "2019-09-26",
      "watched": true
     }
@@ -42434,12 +42916,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2026-02-12",
      "watched": false
     }
@@ -42486,12 +42969,13 @@
      "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2020-10-23",
      "watched": false
     },
@@ -42499,6 +42983,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2021-11-26",
      "watched": false
     },
@@ -42506,6 +42991,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2023-07-28",
      "watched": false
     }
@@ -42552,6 +43038,11 @@
      "logo": "/fZiIXJI0fAN09zTXY1U0xFirdIu.png"
     },
     {
+     "name": "Tubi TV",
+     "type": "ads",
+     "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+    },
+    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -42567,12 +43058,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 5,
+     "aired": 5,
      "airDate": "2025-07-14",
      "watched": false
     }
@@ -42699,12 +43191,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2009-06-28",
      "watched": false
     },
@@ -42712,6 +43205,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2010-06-27",
      "watched": false
     },
@@ -42719,6 +43213,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2011-10-02",
      "watched": false
     }
@@ -42790,12 +43285,13 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-02-20",
      "watched": false
     },
@@ -42803,6 +43299,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-01-12",
      "watched": false
     }
@@ -42849,12 +43346,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2020-02-26",
      "watched": false
     }
@@ -42896,12 +43394,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2019-01-28",
      "watched": true
     }
@@ -42968,12 +43467,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2020-05-09",
      "watched": false
     }
@@ -43113,12 +43613,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2020-06-07",
      "watched": false
     }
@@ -43257,12 +43758,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-07-12",
      "watched": false
     },
@@ -43270,6 +43772,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2019-01-09",
      "watched": false
     }
@@ -43346,12 +43849,13 @@
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2008-05-01",
      "watched": false
     },
@@ -43359,6 +43863,7 @@
      "number": 2,
      "name": "Series 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2009-04-02",
      "watched": false
     },
@@ -43366,6 +43871,7 @@
      "number": 3,
      "name": "Series 3",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2010-09-13",
      "watched": false
     }
@@ -43494,12 +44000,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-01-28",
      "watched": false
     }
@@ -43566,12 +44073,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2016-10-09",
      "watched": false
     },
@@ -43579,6 +44087,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2017-07-23",
      "watched": false
     },
@@ -43586,6 +44095,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2018-08-12",
      "watched": false
     },
@@ -43593,6 +44103,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2020-04-12",
      "watched": false
     },
@@ -43600,6 +44111,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2021-10-24",
      "watched": false
     }
@@ -43656,12 +44168,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2013-04-30",
      "watched": false
     },
@@ -43669,6 +44182,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2014-04-01",
      "watched": false
     },
@@ -43676,6 +44190,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2015-04-21",
      "watched": false
     },
@@ -43683,6 +44198,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2016-04-21",
      "watched": false
     },
@@ -43690,6 +44206,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 5,
+     "aired": 5,
      "airDate": "2022-10-20",
      "watched": false
     }
@@ -43756,12 +44273,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2022-09-26",
      "watched": false
     }
@@ -43803,12 +44321,13 @@
      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2020-11-13",
      "watched": false
     }
@@ -43925,12 +44444,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2022-10-02",
      "watched": false
     },
@@ -43938,6 +44458,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2024-05-12",
      "watched": false
     }
@@ -44004,12 +44525,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-04-04",
      "watched": false
     },
@@ -44017,6 +44539,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2020-04-16",
      "watched": false
     },
@@ -44024,6 +44547,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2021-06-23",
      "watched": false
     },
@@ -44031,6 +44555,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2022-06-06",
      "watched": false
     }
@@ -44112,11 +44637,6 @@
      "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
     },
     {
-     "name": "Plex Channel",
-     "type": "ads",
-     "logo": "/1gC0K43JMyMtVpqczxvwBp0pkxn.png"
-    },
-    {
      "name": "Amazon Video",
      "type": "buy",
      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
@@ -44137,12 +44657,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2015-11-15",
      "watched": false
     },
@@ -44150,6 +44671,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2017-03-19",
      "watched": false
     },
@@ -44157,6 +44679,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 16,
+     "aired": 16,
      "airDate": "2018-04-22",
      "watched": false
     }
@@ -44203,12 +44726,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Limited Series",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2022-02-11",
      "watched": false
     }
@@ -44275,12 +44799,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2022-06-06",
      "watched": true
     }
@@ -44453,12 +44978,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2006-02-03",
      "watched": false
     },
@@ -44466,6 +44992,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2007-08-24",
      "watched": false
     },
@@ -44473,6 +45000,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2008-11-21",
      "watched": false
     },
@@ -44480,6 +45008,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2010-06-25",
      "watched": false
     }
@@ -44802,12 +45331,13 @@
    "tmdbId": 89490,
    "poster": "/rYHY9KtMh9i5w7GwKg8C4lHN689.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2019-05-17",
      "watched": false
     }
@@ -44925,6 +45455,16 @@
    "poster": "/q4nqNwAhzVR7JuYctrWJvUWz3xR.jpg",
    "providers": [
     {
+     "name": "Amazon Prime Video",
+     "type": "flatrate",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "name": "Amazon Prime Video with Ads",
+     "type": "flatrate",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
      "name": "Pluto TV",
      "type": "ads",
      "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
@@ -44950,12 +45490,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-03-17",
      "watched": false
     },
@@ -44963,6 +45504,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 19,
+     "aired": 19,
      "airDate": "2015-10-06",
      "watched": false
     },
@@ -44970,6 +45512,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2017-04-04",
      "watched": false
     },
@@ -44977,6 +45520,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2018-02-26",
      "watched": false
     },
@@ -44984,6 +45528,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-05-02",
      "watched": false
     }
@@ -45065,26 +45610,29 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
-     "name": "Volume 1",
+     "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2000-04-12",
      "watched": false
     },
     {
      "number": 2,
-     "name": "Volume 2",
+     "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2000-12-30",
      "watched": false
     },
     {
      "number": 3,
-     "name": "Volume 3",
-     "episodes": 9,
+     "name": "Season 3",
+     "episodes": 8,
+     "aired": 8,
      "airDate": "2001-12-03",
      "watched": false
     }
@@ -45254,12 +45802,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-20T12:32:03.077Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1996-08-28",
      "watched": false
     },
@@ -45267,6 +45816,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "1997-09-07",
      "watched": false
     },
@@ -45274,6 +45824,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 20,
+     "aired": 20,
      "airDate": "1998-09-18",
      "watched": false
     },
@@ -45281,6 +45832,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1999-09-24",
      "watched": false
     },
@@ -45288,6 +45840,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2000-10-08",
      "watched": false
     }
@@ -45349,12 +45902,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2014-10-13",
      "watched": false
     },
@@ -45362,6 +45916,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2015-10-12",
      "watched": false
     },
@@ -45369,6 +45924,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 20,
+     "aired": 20,
      "airDate": "2016-10-17",
      "watched": false
     },
@@ -45376,6 +45932,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 17,
+     "aired": 17,
      "airDate": "2017-10-13",
      "watched": false
     },
@@ -45383,6 +45940,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 19,
+     "aired": 19,
      "airDate": "2019-03-27",
      "watched": false
     }
@@ -45429,12 +45987,13 @@
      "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 6,
+     "aired": 6,
      "airDate": "2016-08-19",
      "watched": false
     }
@@ -45481,12 +46040,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 4,
+     "aired": 4,
      "airDate": "2020-05-27",
      "watched": false
     }
@@ -45677,12 +46237,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 22,
+     "aired": 22,
      "airDate": "2006-09-20",
      "watched": false
     },
@@ -45690,6 +46251,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2008-02-12",
      "watched": false
     }
@@ -45766,12 +46328,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2013-02-19",
      "watched": false
     },
@@ -45779,6 +46342,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2013-07-09",
      "watched": false
     }
@@ -45924,12 +46488,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 24,
+     "aired": 24,
      "airDate": "1962-09-23",
      "watched": false
     },
@@ -45937,6 +46502,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 41,
+     "aired": 41,
      "airDate": "1985-09-16",
      "watched": false
     },
@@ -45944,6 +46510,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 10,
+     "aired": 10,
      "airDate": "1987-10-19",
      "watched": false
     }
@@ -46025,12 +46592,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2019-06-14",
      "watched": false
     }
@@ -46097,12 +46665,13 @@
      "logo": "/yZtxolQEo9EEfu72AtegMwXE4Em.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 3,
+     "aired": 3,
      "airDate": "2023-11-05",
      "watched": false
     }
@@ -46194,12 +46763,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 11,
+     "aired": 11,
      "airDate": "2015-07-15",
      "watched": false
     },
@@ -46207,6 +46777,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 12,
+     "aired": 12,
      "airDate": "2016-06-19",
      "watched": false
     }
@@ -46340,7 +46911,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -46378,14 +46949,14 @@
      "logo": "/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
     },
     {
+     "name": "Adult Swim",
+     "type": "flatrate",
+     "logo": "/lEboSJfLzmtWaoLsms0jYBxYqka.png"
+    },
+    {
      "name": "Spectrum On Demand",
      "type": "free",
      "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
-    },
-    {
-     "name": "Adult Swim",
-     "type": "ads",
-     "logo": "/lEboSJfLzmtWaoLsms0jYBxYqka.png"
     },
     {
      "name": "Amazon Video",
@@ -46408,12 +46979,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2018-05-21",
      "watched": false
     },
@@ -46421,6 +46993,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2019-12-07",
      "watched": false
     },
@@ -46428,6 +47001,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 9,
+     "aired": 9,
      "airDate": "2021-11-08",
      "watched": false
     }
@@ -46537,7 +47111,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -46569,12 +47143,13 @@
    "tmdbId": 10094,
    "poster": "/hf9pQ311qdpg6uPz2cQt5pscCtm.jpg",
    "providers": [],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 30,
+     "aired": 30,
      "airDate": "1968-09-17",
      "watched": false
     },
@@ -46582,6 +47157,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 30,
+     "aired": 30,
      "airDate": "1969-09-16",
      "watched": false
     },
@@ -46589,6 +47165,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 26,
+     "aired": 26,
      "airDate": "1970-09-15",
      "watched": false
     }
@@ -46645,12 +47222,13 @@
      "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2023-04-07",
      "watched": false
     }
@@ -46712,12 +47290,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2010-03-16",
      "watched": false
     },
@@ -46725,6 +47304,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2011-02-09",
      "watched": false
     },
@@ -46732,6 +47312,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2012-01-17",
      "watched": false
     },
@@ -46739,6 +47320,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2013-01-08",
      "watched": false
     },
@@ -46746,6 +47328,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2014-01-07",
      "watched": false
     },
@@ -46753,6 +47336,7 @@
      "number": 6,
      "name": "Season 6",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2015-01-20",
      "watched": false
     }
@@ -46868,12 +47452,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Series 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2024-08-29",
      "watched": false
     }
@@ -46920,12 +47505,13 @@
      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 7,
+     "aired": 7,
      "airDate": "2017-05-19",
      "watched": false
     }
@@ -47022,12 +47608,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Miniseries",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2011-04-03",
      "watched": false
     }
@@ -47072,11 +47659,6 @@
      "name": "Paramount Plus Essential",
      "type": "flatrate",
      "logo": "/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
-    },
-    {
-     "name": "Philo",
-     "type": "flatrate",
-     "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
     },
     {
      "name": "Paramount Plus Apple TV channel",
@@ -47124,12 +47706,13 @@
      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
     }
    ],
-   "providersUpdated": "2026-10-21T12:42:50.046Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 8,
+     "aired": 8,
      "airDate": "2012-01-31",
      "watched": false
     },
@@ -47137,6 +47720,7 @@
      "number": 2,
      "name": "Season 2",
      "episodes": 10,
+     "aired": 10,
      "airDate": "2012-09-26",
      "watched": false
     },
@@ -47144,6 +47728,7 @@
      "number": 3,
      "name": "Season 3",
      "episodes": 13,
+     "aired": 13,
      "airDate": "2013-09-18",
      "watched": false
     },
@@ -47151,6 +47736,7 @@
      "number": 4,
      "name": "Season 4",
      "episodes": 11,
+     "aired": 11,
      "airDate": "2014-09-24",
      "watched": false
     },
@@ -47158,6 +47744,7 @@
      "number": 5,
      "name": "Season 5",
      "episodes": 11,
+     "aired": 11,
      "airDate": "2015-07-08",
      "watched": false
     }
@@ -52451,7 +53038,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54179,7 +54766,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -54634,7 +55221,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55047,7 +55634,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -55079,7 +55666,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -56594,7 +57181,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -56771,7 +57358,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -57667,7 +58254,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -58465,7 +59052,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -58497,7 +59084,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -58588,7 +59175,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -60522,7 +61109,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -62228,7 +62815,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -62328,7 +62915,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -62705,7 +63292,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -65586,7 +66173,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -69320,7 +69907,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -71037,7 +71624,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -73559,7 +74146,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -74718,7 +75305,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -80956,7 +81543,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -82266,7 +82853,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -84628,7 +85215,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -85998,7 +86585,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -86030,7 +86617,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -86566,7 +87153,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -92309,7 +92896,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -92865,12 +93452,13 @@
      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
     }
    ],
-   "providersUpdated": "2026-10-20T00:08:34.990Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [
     {
      "number": 1,
      "name": "Season 1",
      "episodes": 30,
+     "aired": 30,
      "airDate": "1961-09-27",
      "watched": false
     }
@@ -98149,7 +98737,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
@@ -103854,7 +104442,7 @@
    "tmdbId": null,
    "poster": null,
    "providers": [],
-   "providersUpdated": "2026-11-25T17:47:51.593Z",
+   "providersUpdated": "2026-11-26T17:31:40.899Z",
    "seasons": [],
    "votes": {
     "weekly": {
